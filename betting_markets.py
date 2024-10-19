@@ -1,10 +1,21 @@
 import requests
 import json
-from typing import Literal, List
+from typing import TypedDict, Literal, List, Any
 from dateutil import parser
-from datetime import datetime
+from datetime import datetime, timezone
 
 BettingPlaform = Literal["Polymarket", "Kalshi"]
+
+POLYMARKET_ENDPOINT = "https://clob.polymarket.com/"
+
+class PolymarketGetMarketsResponse(TypedDict):
+    data: List[Any]
+    next_cursor: str
+    limit: int
+    count: int
+
+def is_timezone_aware(dt: datetime) -> bool:
+    return dt.tzinfo is not None and dt.tzinfo.utcoffset(dt) is not None
 
 class BinaryMarket:
     def __init__(self, 
@@ -55,9 +66,8 @@ def get_kalshi_market(market_id: str) -> BinaryMarket:
     )
 
 def get_polymarket_market(market_id: str) -> BinaryMarket:
-    polymarket_endpoint = "https://clob.polymarket.com/"
     # get_market information
-    response = requests.get(polymarket_endpoint + "markets/" + market_id)
+    response = requests.get(POLYMARKET_ENDPOINT + "markets/" + market_id)
     response_dict = json.loads(response.text)
     name = response_dict["question"]
     end_date = response_dict["end_date_iso"]
@@ -73,7 +83,7 @@ def get_polymarket_market(market_id: str) -> BinaryMarket:
             "token_id":token,
             "side": side
             }
-            response = requests.get(polymarket_endpoint + "price/", params)
+            response = requests.get(POLYMARKET_ENDPOINT + "price/", params)
             response_dict = json.loads(response.text)
             price_data.append(response_dict["price"])
 
@@ -87,28 +97,67 @@ def get_polymarket_market(market_id: str) -> BinaryMarket:
         end_date=parser.parse(end_date)
     )
 
-class MarketInterface:
+def get_polymarket_active_markets(n : int | None) -> List[List]:
+    
+    def make_request(cursor: str) -> PolymarketGetMarketsResponse:
+        url = POLYMARKET_ENDPOINT + "markets?next_cursor=" + cursor
+        response = requests.get(url)
+        response_dict : PolymarketGetMarketsResponse = json.loads(response.text)
+        return response_dict
+    
+    cursor = ""
+    questions : List[List] = [] 
+    question_count = 0
+    while True:
+        try:
+            response = make_request(cursor)
+            next_cursor = response["next_cursor"]
+            cursor = next_cursor
+            for market in response["data"]:
+                end_date = market["end_date_iso"]
+                if end_date != None:
+                    end_date = parser.parse(market["end_date_iso"]) 
+                    if question_count == n:
+                        return questions
+                    #check if end date is after now
+                    elif end_date > datetime.now(timezone.utc):
+                        entry = [market["question"], market["condition_id"]]
+                        questions.append(entry)
+                        print(question_count)
+                        question_count += 1
+        except KeyError:
+            break
+    return questions
+    
+class Market:
     def get_market(self, market_id: str) -> BinaryMarket:
         raise NotImplementedError("Subclasses must implement this method")
     
-    def get_markets(self, n: int) -> List[str]:
+    def get_active_markets(self, n: int) -> List[List]:
         raise NotImplementedError("Subclasses must implement this method")
+    
+    def save_active_markets(self, filename:str, n: int) -> None:
+        all_markets = self.get_active_markets(n)
+        with open(filename, 'w') as json_file:
+            json.dump(all_markets, json_file)
 
-class Polymarket(MarketInterface):
+class Polymarket(Market):
 
     def get_market(self, market_id:str) -> BinaryMarket:
         return get_polymarket_market(market_id)
     
-    def get_markets(self, n : int) -> List[str]:
-        raise NotImplementedError("TBU")
+    def get_active_markets(self, n : int | None) -> List[List]:
+        return get_polymarket_active_markets(n)
     
-class Kalshi(MarketInterface):
+class Kalshi(Market):
 
     def get_market(self, market_id:str) -> BinaryMarket:
         return get_kalshi_market(market_id)
     
-    def get_markets(self, n : int) -> List[str]:
+    def get_active_markets(self, n : int | None) -> List[List]:
         raise NotImplementedError("TBU")
 
 if __name__ == "__main__":
-    pass
+    polymarket = Polymarket()
+    polymarket.save_active_markets("polymarket_questions.json", None)
+    
