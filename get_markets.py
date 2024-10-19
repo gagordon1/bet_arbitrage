@@ -35,7 +35,7 @@ class BinaryMarket:
 
 def get_kalshi_market(market_id: str) -> BinaryMarket:
 
-    election_ids = {"PRES-2024-DJT"}
+    election_ids = {"PRES-2024-DJT", "PRESPARTYMI-24-R", "PRESPARTYPA-24-R", "POPVOTE-24-D", "PRESPARTYNC-24-R"}
     base_url = "https://trading-api.kalshi.com/trade-api/v2"
     if market_id in election_ids:
         base_url = "https://api.elections.kalshi.com/trade-api/v2/markets/"
@@ -45,7 +45,6 @@ def get_kalshi_market(market_id: str) -> BinaryMarket:
     
     response_dict = json.loads(response.text)
     market = response_dict["market"]
-
     return BinaryMarket(
         platform="Kalshi",
         market_name = market["title"],
@@ -53,7 +52,7 @@ def get_kalshi_market(market_id: str) -> BinaryMarket:
         yes_bid=float(market["yes_bid"])/100,
         no_ask=float(market["no_ask"])/100,
         no_bid=float(market["no_bid"])/100,
-        end_date=parser.parse(market["close_time"])
+        end_date=parser.parse(market["expected_expiration_time"])
     )
 
 def get_polymarket_market(market_id: str) -> BinaryMarket:
