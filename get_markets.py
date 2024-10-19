@@ -35,7 +35,7 @@ class BinaryMarket:
 
 def get_kalshi_market(market_id: str) -> BinaryMarket:
 
-    election_ids = {"PRES-2024-DJT", "PRESPARTYMI-24-R", "PRESPARTYPA-24-R", "POPVOTE-24-D", "PRESPARTYNC-24-R"}
+    election_ids = {"PRES-2024-DJT", "PRESPARTYMI-24-R", "PRESPARTYPA-24-R", "POPVOTE-24-D", "PRESPARTYNC-24-R", "SENATETX-24-R"}
     base_url = "https://trading-api.kalshi.com/trade-api/v2"
     if market_id in election_ids:
         base_url = "https://api.elections.kalshi.com/trade-api/v2/markets/"
