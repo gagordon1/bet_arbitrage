@@ -1,20 +1,24 @@
 import requests
 import json
+from typing import Literal
+from dateutil import parser
+from datetime import datetime
+
+BettingPlaform = Literal["Polymarket", "Kalshi"]
 
 
-markets = {
-    "Will Donald Trump win the presidency?": ["PRES-2024-DJT", "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"]
-}
 
 class BinaryMarket:
     def __init__(self, 
-                 name: str, 
+                 platform: BettingPlaform,
+                 market_name: str, 
                  yes_ask: float, 
                  yes_bid: float, 
                  no_ask: float, 
                  no_bid: float, 
-                 end_date : str) -> None:
-        self.name = name
+                 end_date : datetime) -> None:
+        self.platform = platform
+        self.market_name = market_name
         self.yes_bid = yes_bid
         self.yes_ask = yes_ask
         self.no_ask = no_ask
@@ -22,7 +26,13 @@ class BinaryMarket:
         self.end_date = end_date
 
     def __str__(self) -> str:
-        return "name: "+ self.name + "\nyes ask: " + str(self.yes_ask) + "\nno ask: " + str(self.no_ask)
+        return (
+                "platform: " + self.platform +
+                "\nname: "+ self.market_name + 
+                "\nyes ask: " + str(self.yes_ask) + 
+                "\nno ask: " + str(self.no_ask) + 
+                "\nend date: " + str(self.end_date)
+                )
 
 
 def get_kalshi_market(market_id: str) -> BinaryMarket:
@@ -37,13 +47,15 @@ def get_kalshi_market(market_id: str) -> BinaryMarket:
     
     response_dict = json.loads(response.text)
     market = response_dict["market"]
+
     return BinaryMarket(
-        name = market["title"],
+        platform="Kalshi",
+        market_name = market["title"],
         yes_ask=float(market["yes_ask"])/100,
         yes_bid=float(market["yes_bid"])/100,
         no_ask=float(market["no_ask"])/100,
         no_bid=float(market["no_bid"])/100,
-        end_date=market["expected_expiration_time"]
+        end_date=parser.parse(market["close_time"])
     )
 
 def get_polymarket_market(market_id: str) -> BinaryMarket:
@@ -70,22 +82,17 @@ def get_polymarket_market(market_id: str) -> BinaryMarket:
             price_data.append(response_dict["price"])
 
     return BinaryMarket(
-        name = name,
+        platform="Polymarket",
+        market_name = name,
         yes_ask=float(price_data[0]),
         yes_bid= float(price_data[1]),
         no_ask= float(price_data[2]),
         no_bid= float(price_data[3]),
-        end_date=end_date
+        end_date=parser.parse(end_date)
     )
 
-
-for market in markets:
-    kalshi_id = markets[market][0]
-    polymarket_id = markets[market][1]
-    kalshi_market = get_kalshi_market(kalshi_id)
-    polymarket_market = get_polymarket_market(polymarket_id)
-    print(kalshi_market)
-    print(polymarket_market)
+if __name__ == "__main__":
+    pass
 
     
     
