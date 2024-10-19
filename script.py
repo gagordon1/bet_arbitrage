@@ -6,7 +6,7 @@ markets = {
 
 def get_return(yes_contracts : float, yes_price : float, no_contracts: float, no_price : float) -> tuple[float,float]:
     investment = yes_contracts*yes_price + no_contracts*no_price
-    return (yes_contracts / investment, no_contracts / investment)
+    return (round(yes_contracts / investment - 1,3), round(no_contracts / investment - 1, 3))
 
 
 for market in markets:
@@ -17,5 +17,5 @@ for market in markets:
     min_yes_ask = min(kalshi_market.yes_ask, polymarket_market.yes_ask)
     min_no_ask = min(kalshi_market.no_ask, polymarket_market.no_ask)
     max_settle_time = max(kalshi_market.end_date, polymarket_market.end_date)
-
-    returns = get_return(500, min_yes_ask, 1000, min_no_ask)
+    returns = get_return(1, min_yes_ask, 1, min_no_ask)
+    print(returns)
