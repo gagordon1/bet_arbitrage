@@ -1,6 +1,6 @@
 import requests
 import json
-from typing import Literal
+from typing import Literal, List
 from dateutil import parser
 from datetime import datetime
 
@@ -32,10 +32,9 @@ class BinaryMarket:
                 "\nend date: " + str(self.end_date)
                 )
 
-
 def get_kalshi_market(market_id: str) -> BinaryMarket:
 
-    election_ids = {"PRES-2024-DJT", "PRESPARTYMI-24-R", "PRESPARTYPA-24-R", "POPVOTE-24-D", "PRESPARTYNC-24-R", "SENATETX-24-R"}
+    election_ids = {"PRES-2024-DJT", "PRESPARTYMI-24-R", "PRESPARTYPA-24-R", "POPVOTE-24-D", "PRESPARTYNC-24-R", "SENATETX-24-R","PRESPARTYWI-24-R"}
     base_url = "https://trading-api.kalshi.com/trade-api/v2"
     if market_id in election_ids:
         base_url = "https://api.elections.kalshi.com/trade-api/v2/markets/"
@@ -88,9 +87,28 @@ def get_polymarket_market(market_id: str) -> BinaryMarket:
         end_date=parser.parse(end_date)
     )
 
+class MarketInterface:
+    def get_market(self, market_id: str) -> BinaryMarket:
+        raise NotImplementedError("Subclasses must implement this method")
+    
+    def get_markets(self, n: int) -> List[str]:
+        raise NotImplementedError("Subclasses must implement this method")
+
+class Polymarket(MarketInterface):
+
+    def get_market(self, market_id:str) -> BinaryMarket:
+        return get_polymarket_market(market_id)
+    
+    def get_markets(self, n : int) -> List[str]:
+        raise NotImplementedError("TBU")
+    
+class Kalshi(MarketInterface):
+
+    def get_market(self, market_id:str) -> BinaryMarket:
+        return get_kalshi_market(market_id)
+    
+    def get_markets(self, n : int) -> List[str]:
+        raise NotImplementedError("TBU")
+
 if __name__ == "__main__":
     pass
-
-    
-    
-

@@ -1,4 +1,4 @@
-from get_markets import *
+from betting_markets import Polymarket, Kalshi
 
 markets = {
     "Will Donald Trump win the presidency?": ["PRES-2024-DJT", "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917"],
@@ -7,20 +7,23 @@ markets = {
     "Will Kamala Harris win the Popular Vote in Presidential Election 2024?": ["POPVOTE-24-D", "0x265366ede72d73e137b2b9095a6cdc9be6149290caa295738a95e3d881ad0865"],
     "Will Republicans win North Carolina in Presidential Election 2024?": ["PRESPARTYNC-24-R", "0x773f3ca26bdf685da92d2a8a701dd98e4e8b46e0b5366cf09aed9eb8fb6fc189"],
     "Will Republicans win Texas in Senate Race 2024?": ["SENATETX-24-R", "0x9f41292bea56c1a5671306d4285d1912af1a23e62bae6e58e6c0dc517cc98d46"],
+    "Will Republicans win Wisconsin Presidential Election 2024?" : ["PRESPARTYWI-24-R", "0xa59e2e79dc1a564477c8d77dc32c30b37c0f4c8782c8cc062a7f788295cd91bb"]
 }
 
 def get_return(yes_contracts : float, yes_price : float, no_contracts: float, no_price : float) -> tuple[float,float]:
     investment = yes_contracts*yes_price + no_contracts*no_price
     return (round(yes_contracts / investment - 1,3), round(no_contracts / investment - 1, 3))
 
+polymarket = Polymarket()
+kalshi = Kalshi()
 
 for market in markets:
     print("---"*10)
     kalshi_id = markets[market][0]
     polymarket_id = markets[market][1]
-    kalshi_market = get_kalshi_market(kalshi_id)
+    kalshi_market = kalshi.get_market(kalshi_id)
     print(kalshi_market)
-    polymarket_market = get_polymarket_market(polymarket_id)
+    polymarket_market = polymarket.get_market(polymarket_id)
     
     print("---"*5)
     print(polymarket_market)
