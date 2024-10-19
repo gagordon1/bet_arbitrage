@@ -6,8 +6,6 @@ from datetime import datetime
 
 BettingPlaform = Literal["Polymarket", "Kalshi"]
 
-
-
 class BinaryMarket:
     def __init__(self, 
                  platform: BettingPlaform,
