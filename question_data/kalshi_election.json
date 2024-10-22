@@ -1,0 +1,1466 @@
+[
+    [
+        "Jamie Dimon nominated to the Cabinet before Feb 1, 2025?",
+        "CABINETDIMON-25-FEB01"
+    ],
+    [
+        "Will Republicans have 56 seats or more in 119th Congress?",
+        "RSENATESEATS-25-56"
+    ],
+    [
+        "Will Republicans have 55 seats in 119th Congress?",
+        "RSENATESEATS-25-55"
+    ],
+    [
+        "Will Republicans have 54 seats in 119th Congress?",
+        "RSENATESEATS-25-54"
+    ],
+    [
+        "Will Republicans have 53 seats in 119th Congress?",
+        "RSENATESEATS-25-53"
+    ],
+    [
+        "Will Republicans have 52 seats in 119th Congress?",
+        "RSENATESEATS-25-52"
+    ],
+    [
+        "Will Republicans have 51 seats in 119th Congress?",
+        "RSENATESEATS-25-51"
+    ],
+    [
+        "Will Republicans have 50 seats in 119th Congress?",
+        "RSENATESEATS-25-50"
+    ],
+    [
+        "Will Republicans have 49 seats or fewer in 119th Congress?",
+        "RSENATESEATS-25-49"
+    ],
+    [
+        "Will the Republican party win NE-3 (Nebraska's third Congressional district) in the presidential election?",
+        "PRESPARTYNE3-24-R"
+    ],
+    [
+        "Will the Democratic party win NE-3 (Nebraska's third Congressional district) in the presidential election?",
+        "PRESPARTYNE3-24-D"
+    ],
+    [
+        "Will the Republican party win NE-2 (Nebraska's second Congressional district) in the presidential election?",
+        "PRESPARTYNE2-24-R"
+    ],
+    [
+        "Will the Democratic party win NE-2 (Nebraska's second Congressional district) in the presidential election?",
+        "PRESPARTYNE2-24-D"
+    ],
+    [
+        "Will the Republican party win NE-1 (Nebraska's first Congressional district) in the presidential election?",
+        "PRESPARTYNE1-24-R"
+    ],
+    [
+        "Will the Democratic party win NE-1 (Nebraska's first Congressional district) in the presidential election?",
+        "PRESPARTYNE1-24-D"
+    ],
+    [
+        "Will the Republican party win ME-2 (Maine's second Congressional district) in the presidential election?",
+        "PRESPARTYME2-24-R"
+    ],
+    [
+        "Will the Democratic party win ME-2 (Maine's second Congressional district) in the presidential election?",
+        "PRESPARTYME2-24-D"
+    ],
+    [
+        "Will the Democratic party win ME-1 (Maine's first Congressional district) in the presidential election?",
+        "PRESPARTYME1-24-D"
+    ],
+    [
+        "Will the Republican party win ME-1 (Maine's first Congressional district) in the presidential election?",
+        "PRESPARTYME1-24-R"
+    ],
+    [
+        "Will the Republican party win Washington, District of Columbia in the presidential election?",
+        "PRESPARTYDC-24-R"
+    ],
+    [
+        "Will the Democratic party win Washington, District of Columbia in the presidential election?",
+        "PRESPARTYDC-24-D"
+    ],
+    [
+        "Tulsi Gabbard nominated to the Cabinet before Feb 1, 2025?",
+        "CABINETTULSI-25-FEB01"
+    ],
+    [
+        "Robert F. Kennedy Jr. nominated to the Cabinet before Feb 1, 2025?",
+        "CABINETRFK-25-FEB01"
+    ],
+    [
+        "Elon Musk nominated to the Cabinet before Feb 1, 2025?",
+        "CABINETMUSK-25-FEB01"
+    ],
+    [
+        "Will the Republican party win Wyoming in the presidential election?",
+        "PRESPARTYWY-24-R"
+    ],
+    [
+        "Will the Democratic party win Wyoming in the presidential election?",
+        "PRESPARTYWY-24-D"
+    ],
+    [
+        "Will the Republican party win Vermont in the presidential election?",
+        "PRESPARTYVT-24-R"
+    ],
+    [
+        "Will the Democratic party win Vermont in the presidential election?",
+        "PRESPARTYVT-24-D"
+    ],
+    [
+        "Will the Democratic party win Alaska in the presidential election?",
+        "PRESPARTYAK-24-D"
+    ],
+    [
+        "Will the Republican party win Alaska in the presidential election?",
+        "PRESPARTYAK-24-R"
+    ],
+    [
+        "Will the Democratic party win North Dakota in the presidential election?",
+        "PRESPARTYND-24-D"
+    ],
+    [
+        "Will the Republican party win North Dakota in the presidential election?",
+        "PRESPARTYND-24-R"
+    ],
+    [
+        "Will the Republicn party win South Dakota in the presidential election?",
+        "PRESPARTYSD-24-R"
+    ],
+    [
+        "Will the Democratic party win South Dakota in the presidential election?",
+        "PRESPARTYSD-24-D"
+    ],
+    [
+        "Will the Democratic party win Delaware in the presidential election?",
+        "PRESPARTYDE-24-D"
+    ],
+    [
+        "Will the Republican party win Delaware in the presidential election?",
+        "PRESPARTYDE-24-R"
+    ],
+    [
+        "Will the Democratic party win Rhode Island in the presidential election?",
+        "PRESPARTYRI-24-D"
+    ],
+    [
+        "Will the Republican party win Rhode Island in the presidential election?",
+        "PRESPARTYRI-24-R"
+    ],
+    [
+        "Will the Democratic party win Montana in the presidential election?",
+        "PRESPARTYMT-24-D"
+    ],
+    [
+        "Will the Republican party win Montana in the presidential election?",
+        "PRESPARTYMT-24-R"
+    ],
+    [
+        "Will the Democratic party win Maine in the presidential election?",
+        "PRESPARTYME-24-D"
+    ],
+    [
+        "Will the Republican party win Maine in the presidential election?",
+        "PRESPARTYME-24-R"
+    ],
+    [
+        "Will the Democratic party win New Hampshire in the presidential election?",
+        "PRESPARTYNH-24-D"
+    ],
+    [
+        "Will the Republican party win New Hampshire in the presidential election?",
+        "PRESPARTYNH-24-R"
+    ],
+    [
+        "Will the Republican party win Hawaii in the presidential election?",
+        "PRESPARTYHI-24-R"
+    ],
+    [
+        "Will the Democratic party win Hawaii in the presidential election?",
+        "PRESPARTYHI-24-D"
+    ],
+    [
+        "Will the Democratic party win West Virginia in the presidential election?",
+        "PRESPARTYWV-24-D"
+    ],
+    [
+        "Will the Republican party win West Virginia in the presidential election?",
+        "PRESPARTYWV-24-R"
+    ],
+    [
+        "Will the Democratic party win Idaho in the presidential election?",
+        "PRESPARTYID-24-D"
+    ],
+    [
+        "Will the Republican party win Idaho in the presidential election?",
+        "PRESPARTYID-24-R"
+    ],
+    [
+        "Will the Democratic party win Nebraska in the presidential election?",
+        "PRESPARTYNE-24-D"
+    ],
+    [
+        "Will the Republican party win Nebraska in the presidential election?",
+        "PRESPARTYNE-24-R"
+    ],
+    [
+        "Will the Republican party win New Mexico in the presidential election?",
+        "PRESPARTYNM-24-R"
+    ],
+    [
+        "Will the Democratic party win New Mexico in the presidential election?",
+        "PRESPARTYNM-24-D"
+    ],
+    [
+        "Will the Democratic party win Minnesota in the presidential election?",
+        "PRESPARTYMN-24-D"
+    ],
+    [
+        "Will the Republican party win Minnesota in the presidential election?",
+        "PRESPARTYMN-24-R"
+    ],
+    [
+        "Will the Democratic party win Mississippi in the presidential election?",
+        "PRESPARTYMS-24-D"
+    ],
+    [
+        "Will the Republican party win Mississippi in the presidential election?",
+        "PRESPARTYMS-24-R"
+    ],
+    [
+        "Will the Republican party win Kansas in the presidential election?",
+        "PRESPARTYKS-24-R"
+    ],
+    [
+        "Will the Democratic party win Kansas in the presidential election?",
+        "PRESPARTYKS-24-D"
+    ],
+    [
+        "Will the Democratic party win Arkansas in the presidential election?",
+        "PRESPARTYAR-24-D"
+    ],
+    [
+        "Will the Republican party win Arkansas in the presidential election?",
+        "PRESPARTYAR-24-R"
+    ],
+    [
+        "Will the Republican party win Iowa in the presidential election?",
+        "PRESPARTYIA-24-R"
+    ],
+    [
+        "Will the Democratic party win Iowa in the presidential election?",
+        "PRESPARTYIA-24-D"
+    ],
+    [
+        "Will the Republican party win Utah in the presidential election?",
+        "PRESPARTYUT-24-R"
+    ],
+    [
+        "Will the Democratic party win Utah in the presidential election?",
+        "PRESPARTYUT-24-D"
+    ],
+    [
+        "Will the Republican party win Connecticut in the presidential election?",
+        "PRESPARTYCT-24-R"
+    ],
+    [
+        "Will the Democratic party win Connecticut in the presidential election?",
+        "PRESPARTYCT-24-D"
+    ],
+    [
+        "Will the Republican party win Oklahoma in the presidential election?",
+        "PRESPARTYOK-24-R"
+    ],
+    [
+        "Will the Democratic party win Oklahoma in the presidential election?",
+        "PRESPARTYOK-24-D"
+    ],
+    [
+        "Will the Democratic party win Oregon in the presidential election?",
+        "PRESPARTYOR-24-D"
+    ],
+    [
+        "Will the Republican party win Oregon in the presidential election?",
+        "PRESPARTYOR-24-R"
+    ],
+    [
+        "Will the Democratic party win Kentucky in the presidential election?",
+        "PRESPARTYKY-24-D"
+    ],
+    [
+        "Will the Republican party win Kentucky in the presidential election?",
+        "PRESPARTYKY-24-R"
+    ],
+    [
+        "Will the Republican party win Louisiana in the presidential election?",
+        "PRESPARTYLA-24-R"
+    ],
+    [
+        "Will the Democratic party win Louisiana in the presidential election?",
+        "PRESPARTYLA-24-D"
+    ],
+    [
+        "Will the Democratic party win Alabama in the presidential election?",
+        "PRESPARTYAL-24-D"
+    ],
+    [
+        "Will the Republican party win Alabama in the presidential election?",
+        "PRESPARTYAL-24-R"
+    ],
+    [
+        "Will the Republican party win South Carolina in the presidential election?",
+        "PRESPARTYSC-24-R"
+    ],
+    [
+        "Will the Democratic party win South Carolina in the presidential election?",
+        "PRESPARTYSC-24-D"
+    ],
+    [
+        "Will the Republican party win Colorado in the presidential election?",
+        "PRESPARTYCO-24-R"
+    ],
+    [
+        "Will the Democratic party win Colorado in the presidential election?",
+        "PRESPARTYCO-24-D"
+    ],
+    [
+        "Will the Republican party win Maryland in the presidential election?",
+        "PRESPARTYMD-24-R"
+    ],
+    [
+        "Will the Democratic party win Maryland in the presidential election?",
+        "PRESPARTYMD-24-D"
+    ],
+    [
+        "Will the Democratic party win Missouri in the presidential election?",
+        "PRESPARTYMO-24-D"
+    ],
+    [
+        "Will the Republican party win Missouri in the presidential election?",
+        "PRESPARTYMO-24-R"
+    ],
+    [
+        "Will the Democratic party win Indiana in the presidential election?",
+        "PRESPARTYIN-24-D"
+    ],
+    [
+        "Will the Republican party win Indiana in the presidential election?",
+        "PRESPARTYIN-24-R"
+    ],
+    [
+        "Will the Democratic party win Massachusetts in the presidential election?",
+        "PRESPARTYMA-24-D"
+    ],
+    [
+        "Will the Republican party win Massachusetts in the presidential election?",
+        "PRESPARTYMA-24-R"
+    ],
+    [
+        "Will the Democratic party win Tennessee in the presidential election?",
+        "PRESPARTYTN-24-D"
+    ],
+    [
+        "Will the Republican party win Tennessee in the presidential election?",
+        "PRESPARTYTN-24-R"
+    ],
+    [
+        "Will the Republican party win Washington in the presidential election?",
+        "PRESPARTYWA-24-R"
+    ],
+    [
+        "Will the Democratic party win Washington in the presidential election?",
+        "PRESPARTYWA-24-D"
+    ],
+    [
+        "Will the Democratic party win Virginia in the presidential election?",
+        "PRESPARTYVA-24-D"
+    ],
+    [
+        "Will the Republican party win Virginia in the presidential election?",
+        "PRESPARTYVA-24-R"
+    ],
+    [
+        "Will the Republican party win New Jersey in the presidential election?",
+        "PRESPARTYNJ-24-R"
+    ],
+    [
+        "Will the Democratic party win New Jersey in the presidential election?",
+        "PRESPARTYNJ-24-D"
+    ],
+    [
+        "Will the Republican party win New York in the presidential election?",
+        "PRESPARTYNY-24-R"
+    ],
+    [
+        "Will the Democratic party win New York in the presidential election?",
+        "PRESPARTYNY-24-D"
+    ],
+    [
+        "Will the Republican party win California in the presidential election?",
+        "PRESPARTYCA-24-R"
+    ],
+    [
+        "Will the Democratic party win California in the presidential election?",
+        "PRESPARTYCA-24-D"
+    ],
+    [
+        "Will the Democratic party win Illinois in the presidential election?",
+        "PRESPARTYIL-24-D"
+    ],
+    [
+        "Will the Republican party win Illinois in the presidential election?",
+        "PRESPARTYIL-24-R"
+    ],
+    [
+        "Will the Democratic party win Ohio in the presidential election?",
+        "PRESPARTYOH-24-D"
+    ],
+    [
+        "Will the Republican party win Ohio in the presidential election?",
+        "PRESPARTYOH-24-R"
+    ],
+    [
+        "Will the Republican party win Texas in the presidential election?",
+        "PRESPARTYTX-24-R"
+    ],
+    [
+        "Will the Democratic party win Texas in the presidential election?",
+        "PRESPARTYTX-24-D"
+    ],
+    [
+        "Will the Democratic party win Florida in the presidential election?",
+        "PRESPARTYFL-24-D"
+    ],
+    [
+        "Will the Republican party win Florida in the presidential election?",
+        "PRESPARTYFL-24-R"
+    ],
+    [
+        "Eric Adams out as NYC Mayor in 2024?",
+        "ADAMS-24-DEC31"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Nevada be 6.00% or more?",
+        "POPVOTEMOVNV-2024-R-T-5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Nevada be 5.00-5.99%?",
+        "POPVOTEMOVNV-2024-R-B-5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Nevada be 4.00-4.99%?",
+        "POPVOTEMOVNV-2024-R-B-4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Nevada be 3.00-3.99%?",
+        "POPVOTEMOVNV-2024-R-B-3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Nevada be 2.00-2.99%?",
+        "POPVOTEMOVNV-2024-R-B-2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Nevada be 1.00-1.99%?",
+        "POPVOTEMOVNV-2024-R-B-1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Nevada be 0.00-0.99%?",
+        "POPVOTEMOVNV-2024-R-B-0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Nevada be 5.00-5.99%?",
+        "POPVOTEMOVNV-2024-D-B5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Nevada be 4.00-4.99%?",
+        "POPVOTEMOVNV-2024-D-B4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Nevada be 3.00-3.99%?",
+        "POPVOTEMOVNV-2024-D-B3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Nevada be 2.00-2.99%?",
+        "POPVOTEMOVNV-2024-D-B2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Nevada be 1.00-1.99%?",
+        "POPVOTEMOVNV-2024-D-B1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Nevada be 0.00-0.99%?",
+        "POPVOTEMOVNV-2024-D-B0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Nevada be 6.00% or more?",
+        "POPVOTEMOVNV-2024-D-T5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Wisconsin be 6.00% or more?",
+        "POPVOTEMOVWI-24-R-T-5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Wisconsin be 5.00-5.99%?",
+        "POPVOTEMOVWI-24-R-B-5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Wisconsin be 4.00-4.99%?",
+        "POPVOTEMOVWI-24-R-B-4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Wisconsin be 3.00-3.99%?",
+        "POPVOTEMOVWI-24-R-B-3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Wisconsin be 2.00-2.99%?",
+        "POPVOTEMOVWI-24-R-B-2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Wisconsin be 1.00-1.99%?",
+        "POPVOTEMOVWI-24-R-B-1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Wisconsin be 0.00-0.99%?",
+        "POPVOTEMOVWI-24-R-B-0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Wisconsin be 5.00-5.99%?",
+        "POPVOTEMOVWI-24-D-B5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Wisconsin be 4.00-4.99%?",
+        "POPVOTEMOVWI-24-D-B4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Wisconsin be 3.00-3.99%?",
+        "POPVOTEMOVWI-24-D-B3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Wisconsin be 2.00-2.99%?",
+        "POPVOTEMOVWI-24-D-B2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Wisconsin be 1.00-1.99%?",
+        "POPVOTEMOVWI-24-D-B1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Wisconsin be 0.00-0.99%?",
+        "POPVOTEMOVWI-24-D-B0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Wisconsin be 6.00% or more?",
+        "POPVOTEMOVWI-24-D-T5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Georgia be 6.00% or more?",
+        "POPVOTEMOVGA-24-R-T-5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Georgia be 5.00-5.99%?",
+        "POPVOTEMOVGA-24-R-B-5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Georgia be 4.00-4.99%?",
+        "POPVOTEMOVGA-24-R-B-4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Georgia be 3.00-3.99%?",
+        "POPVOTEMOVGA-24-R-B-3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Georgia be 2.00-2.99%?",
+        "POPVOTEMOVGA-24-R-B-2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Georgia be 1.00-1.99%?",
+        "POPVOTEMOVGA-24-R-B-1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Georgia be 0.00-0.99%?",
+        "POPVOTEMOVGA-24-R-B-0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Georgia be 5.00-5.99%?",
+        "POPVOTEMOVGA-24-D-B5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Georgia be 4.00-4.99%?",
+        "POPVOTEMOVGA-24-D-B4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Georgia be 3.00-3.99%?",
+        "POPVOTEMOVGA-24-D-B3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Georgia be 2.00-2.99%?",
+        "POPVOTEMOVGA-24-D-B2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Georgia be 1.00-1.99%?",
+        "POPVOTEMOVGA-24-D-B1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Georgia be 0.00-0.99%?",
+        "POPVOTEMOVGA-24-D-B0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Georgia be 6.00% or more?",
+        "POPVOTEMOVGA-24-D-T5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in North Carolina be 6.00% or more?",
+        "POPVOTEMOVNC-24-R-T-5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in North Carolina be 5.00-5.99%?",
+        "POPVOTEMOVNC-24-R-B-5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in North Carolina be 4.00-4.99%?",
+        "POPVOTEMOVNC-24-R-B-4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in North Carolina be 3.00-3.99%?",
+        "POPVOTEMOVNC-24-R-B-3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in North Carolina be 2.00-2.99%?",
+        "POPVOTEMOVNC-24-R-B-2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in North Carolina be 1.00-1.99%?",
+        "POPVOTEMOVNC-24-R-B-1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in North Carolina be 0.00-0.99%?",
+        "POPVOTEMOVNC-24-R-B-0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in North Carolina be 6.00% or more?",
+        "POPVOTEMOVNC-24-D-T5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in North Carolina be 5.00-5.99%?",
+        "POPVOTEMOVNC-24-D-B5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in North Carolina be 4.00-4.99%?",
+        "POPVOTEMOVNC-24-D-B4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in North Carolina be 3.00-3.99%?",
+        "POPVOTEMOVNC-24-D-B3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in North Carolina be 2.00-2.99%?",
+        "POPVOTEMOVNC-24-D-B2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in North Carolina be 1.00-1.99%?",
+        "POPVOTEMOVNC-24-D-B1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in North Carolina be 0.00-0.99%?",
+        "POPVOTEMOVNC-24-D-B0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Michigan be 6.00% or more?",
+        "POPVOTEMOVMI-24-R-T-5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Michigan be 5.00-5.99%?",
+        "POPVOTEMOVMI-24-R-B-5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Michigan be 4.00-4.99%?",
+        "POPVOTEMOVMI-24-R-B-4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Michigan be 3.00-3.99%?",
+        "POPVOTEMOVMI-24-R-B-3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Michigan be 2.00-2.99%?",
+        "POPVOTEMOVMI-24-R-B-2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Michigan be 1.00-1.99%?",
+        "POPVOTEMOVMI-24-R-B-1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Michigan be 0.00-0.99%?",
+        "POPVOTEMOVMI-24-R-B-0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Michigan be 5.00-5.99%?",
+        "POPVOTEMOVMI-24-D-B5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Michigan be 4.00-4.99%?",
+        "POPVOTEMOVMI-24-D-B4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Michigan be 3.00-3.99%?",
+        "POPVOTEMOVMI-24-D-B3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Michigan be 2.00-2.99%?",
+        "POPVOTEMOVMI-24-D-B2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Michigan be 1.00-1.99%?",
+        "POPVOTEMOVMI-24-D-B1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Michigan be 0.00-0.99%?",
+        "POPVOTEMOVMI-24-D-B0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Michigan be 6.00% or more?",
+        "POPVOTEMOVMI-24-D-T5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Arizona be 6.00% or more?",
+        "POPVOTEMOVAZ-24-R-T-5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Arizona be 5.00-5.99%?",
+        "POPVOTEMOVAZ-24-R-B-5.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Arizona be 4.00-4.99%?",
+        "POPVOTEMOVAZ-24-R-B-4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Arizona be 3.00-3.99%?",
+        "POPVOTEMOVAZ-24-R-B-3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Arizona be 2.00-2.99%?",
+        "POPVOTEMOVAZ-24-R-B-2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Arizona be 1.00-1.99%?",
+        "POPVOTEMOVAZ-24-R-B-1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Arizona be 0.00-0.99%?",
+        "POPVOTEMOVAZ-24-R-B-0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Arizona be 4.00-4.99%?",
+        "POPVOTEMOVAZ-24-D-B4.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Arizona be 3.00-3.99%?",
+        "POPVOTEMOVAZ-24-D-B3.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Arizona be 2.00-2.99%?",
+        "POPVOTEMOVAZ-24-D-B2.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Arizona be 1.00-1.99%?",
+        "POPVOTEMOVAZ-24-D-B1.495"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Arizona be 0.00-0.99%?",
+        "POPVOTEMOVAZ-24-D-B0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Arizona be 6.00% or more?",
+        "POPVOTEMOVAZ-24-D-T5.99"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Arizona be 5.00-5.99%?",
+        "POPVOTEMOVAZ-24-D-B5.495"
+    ],
+    [
+        "Will the Republican party win the House, the Republican party win the Senate, and the Republican party win the Presidency?",
+        "POWER-24-RH-RS-RP"
+    ],
+    [
+        "Will the Republican party win the House, the Republican party win the Senate, and the Democratic party win the Presidency?",
+        "POWER-24-RH-RS-DP"
+    ],
+    [
+        "Will the Republican party win the House, the Democratic party win the Senate, and the Republican party win the Presidency?",
+        "POWER-24-RH-DS-RP"
+    ],
+    [
+        "Will the Republican party win the House, the Democratic party win the Senate, and the Democratic party win the Presidency?",
+        "POWER-24-RH-DS-DP"
+    ],
+    [
+        "Will the Democratic party win the House, the Republican party win the Senate, and the Republican party win the Presidency?",
+        "POWER-24-DH-RS-RP"
+    ],
+    [
+        "Will the Democratic party win the House, the Republican party win the Senate, and the Democratic party win the Presidency?",
+        "POWER-24-DH-RS-DP"
+    ],
+    [
+        "Will the Democratic party win the House, the Democratic party win the Senate, and the Republican party win the Presidency?",
+        "POWER-24-DH-DS-RP"
+    ],
+    [
+        "Will the Democratic party win the House, the Democratic party win the Senate, and the Democratic party win the Presidency?",
+        "POWER-24-DH-DS-DP"
+    ],
+    [
+        "Will the popular vote margin of victory for  be below -6.99?",
+        "POPVOTEMOV-24-R-T-6.99"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between -6.00 and -6.99?",
+        "POPVOTEMOV-24-R-B-6.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between -5.00 and -5.99?",
+        "POPVOTEMOV-24-R-B-5.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between -4.00 and -4.99?",
+        "POPVOTEMOV-24-R-B-4.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between -3.00 and -3.99?",
+        "POPVOTEMOV-24-R-B-3.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between -2.00 and -2.99?",
+        "POPVOTEMOV-24-R-B-2.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between -1.00 and -1.99?",
+        "POPVOTEMOV-24-R-B-1.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between -0.01 and -0.99?",
+        "POPVOTEMOV-24-R-B-0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 2.00 and 2.99?",
+        "POPVOTEMOV-24-D-B2.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 1.00 and 1.99?",
+        "POPVOTEMOV-24-D-B1.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 0.00 and 0.99?",
+        "POPVOTEMOV-24-D-B0.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 8.00 and 8.99?",
+        "POPVOTEMOV-24-D-B8.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 7.00 and 7.99?",
+        "POPVOTEMOV-24-D-B7.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 6.00 and 6.99?",
+        "POPVOTEMOV-24-D-B6.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 5.00 and 5.99?",
+        "POPVOTEMOV-24-D-B5.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 4.00 and 4.99?",
+        "POPVOTEMOV-24-D-B4.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be between 3.00 and 3.99?",
+        "POPVOTEMOV-24-D-B3.5"
+    ],
+    [
+        "Will the popular vote margin of victory for  be above 9.00?",
+        "POPVOTEMOV-24-D-T9.00"
+    ],
+    [
+        "Will the electoral college margin of victory be below -214 for Republican?",
+        "ECMOV-24-R-T215"
+    ],
+    [
+        "Will the electoral college margin of victory be between -65 and -104 for Republican?",
+        "ECMOV-24-R-B65-104"
+    ],
+    [
+        "Will the electoral college margin of victory be between -5 and -14 for Republican?",
+        "ECMOV-24-R-B5-14"
+    ],
+    [
+        "Will the electoral college margin of victory be between -35 and -64 for Republican?",
+        "ECMOV-24-R-B35-64"
+    ],
+    [
+        "Will the electoral college margin of victory be between -155 and -214 for Republican?",
+        "ECMOV-24-R-B155-214"
+    ],
+    [
+        "Will the electoral college margin of victory be between -15 and -34 for Republican?",
+        "ECMOV-24-R-B15-34"
+    ],
+    [
+        "Will the electoral college margin of victory be between -105 and -154 for Republican?",
+        "ECMOV-24-R-B105-154"
+    ],
+    [
+        "Will the electoral college margin of victory be between -1 and -4 for Republican?",
+        "ECMOV-24-R-B1-4"
+    ],
+    [
+        "Will the electoral college margin of victory be above 214 for Democratic?",
+        "ECMOV-24-D-T215"
+    ],
+    [
+        "Will the electoral college margin of victory be between 65 and 104 for Democratic?",
+        "ECMOV-24-D-B65-104"
+    ],
+    [
+        "Will the electoral college margin of victory be between 5 and 14 for Democratic?",
+        "ECMOV-24-D-B5-14"
+    ],
+    [
+        "Will the electoral college margin of victory be between 35 and 64 for Democratic?",
+        "ECMOV-24-D-B35-64"
+    ],
+    [
+        "Will the electoral college margin of victory be between 155 and 214 for Democratic?",
+        "ECMOV-24-D-B155-214"
+    ],
+    [
+        "Will the electoral college margin of victory be between 15 and 34 for Democratic?",
+        "ECMOV-24-D-B15-34"
+    ],
+    [
+        "Will the electoral college margin of victory be between 1 and 4 for Democratic?",
+        "ECMOV-24-D-B1-4"
+    ],
+    [
+        "Will the electoral college margin of victory be between 105 and 154 for Democratic?",
+        "ECMOV-24-D-B105-154"
+    ],
+    [
+        "Will the Senate margin of victory for Republicans be 4 or more?",
+        "SENATEMOV-24-R-T4"
+    ],
+    [
+        "Will the Senate margin of victory for Republicans be 3 ?",
+        "SENATEMOV-24-R-B3"
+    ],
+    [
+        "Will the Senate margin of victory for Republicans be 2 ?",
+        "SENATEMOV-24-R-B2"
+    ],
+    [
+        "Will the Senate margin of victory for Republicans be 1 ?",
+        "SENATEMOV-24-R-B1"
+    ],
+    [
+        "Will the Senate margin of victory for Republicans be 0 ?",
+        "SENATEMOV-24-R-B0"
+    ],
+    [
+        "Will the Senate margin of victory for Democrats be 3 ?",
+        "SENATEMOV-24-D-B3"
+    ],
+    [
+        "Will the Senate margin of victory for Democrats be 2 ?",
+        "SENATEMOV-24-D-B2"
+    ],
+    [
+        "Will the Senate margin of victory for Democrats be 1 ?",
+        "SENATEMOV-24-D-B1"
+    ],
+    [
+        "Will the Senate margin of victory for Democrats be 0 ?",
+        "SENATEMOV-24-D-B0"
+    ],
+    [
+        "Will the Senate margin of victory for Democrats be 4 or more?",
+        "SENATEMOV-24-D-T4"
+    ],
+    [
+        "Will the House margin of victory for Republicans be 16 or more?",
+        "HOUSEMOV-24-R-T16"
+    ],
+    [
+        "Will the House margin of victory for Republicans be 11-15 ?",
+        "HOUSEMOV-24-R-B11-15"
+    ],
+    [
+        "Will the House margin of victory for Republicans be 6-10 ?",
+        "HOUSEMOV-24-R-B6-10"
+    ],
+    [
+        "Will the House margin of victory for Republicans be 1-5 ?",
+        "HOUSEMOV-24-R-B1-5"
+    ],
+    [
+        "Will the House margin of victory for Democrats be 16 or more?",
+        "HOUSEMOV-24-D-T16"
+    ],
+    [
+        "Will the House margin of victory for Democrats be 6-10 ?",
+        "HOUSEMOV-24-D-B6-10"
+    ],
+    [
+        "Will the House margin of victory for Democrats be 1-5 ?",
+        "HOUSEMOV-24-D-B1-5"
+    ],
+    [
+        "Will the House margin of victory for Democrats be 11-15 ?",
+        "HOUSEMOV-24-D-B11-15"
+    ],
+    [
+        "Will Ohio be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-OH"
+    ],
+    [
+        "Will New Mexico be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-NM"
+    ],
+    [
+        "Will Colorado be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-CO"
+    ],
+    [
+        "Will Alaska be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-AK"
+    ],
+    [
+        "Will Wisconsin be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-WI"
+    ],
+    [
+        "Will Virginia be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-VA"
+    ],
+    [
+        "Will Texas be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-TX"
+    ],
+    [
+        "Will Pennsylvania be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-PA"
+    ],
+    [
+        "Will Nevada be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-NV"
+    ],
+    [
+        "Will New Hampshire be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-NH"
+    ],
+    [
+        "Will North Carolina be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-NC"
+    ],
+    [
+        "Will Minnesota be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-MN"
+    ],
+    [
+        "Will iowa be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-IA"
+    ],
+    [
+        "Will Georgia be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-GA"
+    ],
+    [
+        "Will Florida be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-FL"
+    ],
+    [
+        "Will Arizona be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-AZ"
+    ],
+    [
+        "Will Michigan be the closest state in the Presidential election?",
+        "CLOSESTSTATE-24-MI"
+    ],
+    [
+        "Will Texas be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-TX"
+    ],
+    [
+        "Will Ohio be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-OH"
+    ],
+    [
+        "Will Iowa be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-IA"
+    ],
+    [
+        "Will Colorado be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-CO"
+    ],
+    [
+        "Will Alaska be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-AK"
+    ],
+    [
+        "Will Wisconsin be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-WI"
+    ],
+    [
+        "Will Virginia be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-VA"
+    ],
+    [
+        "Will Nevada be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-NV"
+    ],
+    [
+        "Will New Mexico be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-NM"
+    ],
+    [
+        "Will New Hampshire be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-NH"
+    ],
+    [
+        "Will NE-2 be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-NE2"
+    ],
+    [
+        "Will North Carolina be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-NC"
+    ],
+    [
+        "Will Minnesota be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-MN"
+    ],
+    [
+        "Will Michigan be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-MI"
+    ],
+    [
+        "Will ME-2 be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-ME2"
+    ],
+    [
+        "Will Maine be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-ME"
+    ],
+    [
+        "Will Georgia be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-GA"
+    ],
+    [
+        "Will Florida be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-FL"
+    ],
+    [
+        "Will Arizona be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-AZ"
+    ],
+    [
+        "Will Pennsylvania be the tipping point in the Presidential election?",
+        "TIPPINGPOINT-24-PA"
+    ],
+    [
+        "Will the Republican party win Nevada in the presidential election?",
+        "PRESPARTYNV-24-R"
+    ],
+    [
+        "Will the Democratic party win Nevada in the presidential election?",
+        "PRESPARTYNV-24-D"
+    ],
+    [
+        "Will the Republican party win Georgia in the presidential election?",
+        "PRESPARTYGA-24-R"
+    ],
+    [
+        "Will the Democratic party win Georgia in the presidential election?",
+        "PRESPARTYGA-24-D"
+    ],
+    [
+        "Will the Republican party win Wisconsin in the presidential election?",
+        "PRESPARTYWI-24-R"
+    ],
+    [
+        "Will the Democratic party win Wisconsin in the presidential election?",
+        "PRESPARTYWI-24-D"
+    ],
+    [
+        "Will the Republican party win Pennsylvania in the presidential election?",
+        "PRESPARTYPA-24-R"
+    ],
+    [
+        "Will the Democratic party win Pennsylvania in the presidential election?",
+        "PRESPARTYPA-24-D"
+    ],
+    [
+        "Will the Republican party win Michigan in the presidential election?",
+        "PRESPARTYMI-24-R"
+    ],
+    [
+        "Will the Democratic party win Michigan in the presidential election?",
+        "PRESPARTYMI-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Nevada?",
+        "SENATENV-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Nevada?",
+        "SENATENV-24-D"
+    ],
+    [
+        "Will the Republican party win North Carolina in the presidential election?",
+        "PRESPARTYNC-24-R"
+    ],
+    [
+        "Will the Democratic party win North Carolina in the presidential election?",
+        "PRESPARTYNC-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Arizona?",
+        "SENATEAZ-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Arizona?",
+        "SENATEAZ-24-D"
+    ],
+    [
+        "Will the Republican party win Arizona in the presidential election?",
+        "PRESPARTYAZ-24-R"
+    ],
+    [
+        "Will the Democratic party win Arizona in the presidential election?",
+        "PRESPARTYAZ-24-D"
+    ],
+    [
+        "Will Trump win the Electoral College and Trump win the Popular Vote?",
+        "PRESPARTYFULL-24-REC-RPV"
+    ],
+    [
+        "Will Trump win the Electoral College and Harris win the Popular Vote?",
+        "PRESPARTYFULL-24-REC-DPV"
+    ],
+    [
+        "Will Harris win the Electoral College and Trump win the Popular Vote?",
+        "PRESPARTYFULL-24-DEC-RPV"
+    ],
+    [
+        "Will Harris win the Electoral College and Harris win the Popular Vote?",
+        "PRESPARTYFULL-24-DEC-DPV"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be above 4.49?",
+        "POPVOTEMOVPA-24-R-T-4.49"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 4.00 and 4.49?",
+        "POPVOTEMOVPA-24-R-B-4.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 3.50 and 3.99?",
+        "POPVOTEMOVPA-24-R-B-3.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 3.00 and 3.49?",
+        "POPVOTEMOVPA-24-R-B-3.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 2.50 and 2.99?",
+        "POPVOTEMOVPA-24-R-B-2.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 2.00 and 2.49?",
+        "POPVOTEMOVPA-24-R-B-2.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 1.50 and 1.99?",
+        "POPVOTEMOVPA-24-R-B-1.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 1.00 and 1.49?",
+        "POPVOTEMOVPA-24-R-B-1.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 0.50 and 0.99?",
+        "POPVOTEMOVPA-24-R-B-0.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Donald Trump in Pennsylvania be between 0.00 and 0.49?",
+        "POPVOTEMOVPA-24-R-B-0.25"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 4.00 and 4.49?",
+        "POPVOTEMOVPA-24-D-B4.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 3.50 and 3.99?",
+        "POPVOTEMOVPA-24-D-B3.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 3.00 and 3.49?",
+        "POPVOTEMOVPA-24-D-B3.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 2.50 and 2.99?",
+        "POPVOTEMOVPA-24-D-B2.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 2.00 and 2.49?",
+        "POPVOTEMOVPA-24-D-B2.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 1.50 and 1.99?",
+        "POPVOTEMOVPA-24-D-B1.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 1.00 and 1.49?",
+        "POPVOTEMOVPA-24-D-B1.245"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 0.50 and 0.99?",
+        "POPVOTEMOVPA-24-D-B0.745"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be between 0.00 and 0.49?",
+        "POPVOTEMOVPA-24-D-B-0.25"
+    ],
+    [
+        "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be above 4.49?",
+        "POPVOTEMOVPA-24-D-T4.49"
+    ],
+    [
+        "Will the Republican party win the popular vote?",
+        "POPVOTE-24-R"
+    ],
+    [
+        "Will the Democratic party win the popular vote?",
+        "POPVOTE-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Texas?",
+        "SENATETX-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Texas?",
+        "SENATETX-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Michigan?",
+        "SENATEMI-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Michigan?",
+        "SENATEMI-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Montana?",
+        "SENATEMT-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Montana?",
+        "SENATEMT-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Wisconsin?",
+        "SENATEWI-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Wisconsin?",
+        "SENATEWI-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Florida?",
+        "SENATEFL-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Florida?",
+        "SENATEFL-24-D"
+    ],
+    [
+        "Will Republican win the Senate race in Maryland?",
+        "SENATEMD-24-R"
+    ],
+    [
+        "Will Democratic win the Senate race in Maryland?",
+        "SENATEMD-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Nebraska?",
+        "SENATENE-24-R"
+    ],
+    [
+        "Will Independents win the Senate race in Nebraska?",
+        "SENATENE-24-I"
+    ],
+    [
+        "Will Republicans win the Senate race in Ohio?",
+        "SENATEOH-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Ohio?",
+        "SENATEOH-24-D"
+    ],
+    [
+        "Will Republicans win the Senate race in Pennsylvania?",
+        "SENATEPA-24-R"
+    ],
+    [
+        "Will Democratics win the Senate race in Pennsylvania?",
+        "SENATEPA-24-D"
+    ],
+    [
+        "Will the Democratic party win the governorship in New Hampshire",
+        "GOVPARTYNH-24-D"
+    ],
+    [
+        "Will the Republican party win the governorship in New Hampshire",
+        "GOVPARTYNH-24-R"
+    ],
+    [
+        "Will Robert F. Kennedy Jr. or another We the People nominee win the Presidency?",
+        "PRES-2024-RFK"
+    ],
+    [
+        "Will Jill Stein or another Green Party nominee win the Presidency?",
+        "PRES-2024-JS"
+    ],
+    [
+        "Will Donald Trump or another Republican win the Presidency?",
+        "PRES-2024-DJT"
+    ],
+    [
+        "Will Cornel West or another Justice for All nominee win the Presidency?",
+        "PRES-2024-CW"
+    ],
+    [
+        "Will Chase Oliver or another Libertarian win the Presidency?",
+        "PRES-2024-CO"
+    ],
+    [
+        "Will Kamala Harris or another Democrat win the Presidency?",
+        "PRES-2024-KH"
+    ],
+    [
+        "Will Republicans win the House?",
+        "CONTROLH-2024-R"
+    ],
+    [
+        "Will Democrats win the House?",
+        "CONTROLH-2024-D"
+    ],
+    [
+        "Will Republicans win the Senate?",
+        "CONTROLS-2024-R"
+    ],
+    [
+        "Will Democrats win the Senate?",
+        "CONTROLS-2024-D"
+    ]
+]

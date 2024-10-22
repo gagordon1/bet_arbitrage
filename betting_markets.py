@@ -10,13 +10,14 @@ from kalshi_python.models import *
 from pprint import pprint
 
 
-BettingPlaform = Literal["Polymarket", "Kalshi"]
+BettingPlaform = Literal["Polymarket", "Kalshi", "Kalshi-Election"]
 
 POLYMARKET_ENDPOINT = "https://clob.polymarket.com/"
 
 KALSHI_NON_ELECTION_ENDPOINT = "https://trading-api.kalshi.com/trade-api/v2"
 
 KALSHI_ELECTION_ENDPOINT = "https://api.elections.kalshi.com/trade-api/v2"
+
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -64,7 +65,7 @@ class Market:
     def save_active_markets(self, filename:str, n: int | None) -> None:
         all_markets = self.get_active_markets(n)
         with open(filename, 'w') as json_file:
-            json.dump(all_markets, json_file)
+            json.dump(all_markets, json_file, indent = 4)
 
 class Polymarket(Market):
 
@@ -132,19 +133,19 @@ class Polymarket(Market):
     
 class Kalshi(Market):
 
+    def __init__(self, host, platform_name : BettingPlaform):
+        self.host = host # election endpoint is different
+        self.platform_name = platform_name
+
     def get_market(self, market_id:str) -> BinaryMarket:
-        election_ids = {"PRES-2024-DJT", "PRESPARTYMI-24-R", "PRESPARTYPA-24-R", "POPVOTE-24-D", "PRESPARTYNC-24-R", "SENATETX-24-R","PRESPARTYWI-24-R"}
-        base_url = KALSHI_NON_ELECTION_ENDPOINT
-        if market_id in election_ids:
-            base_url = KALSHI_ELECTION_ENDPOINT
-        url = base_url + market_id
+        base_url = self.host
+        url = base_url + "/markets/" + market_id
         headers = {"accept": "application/json"}
         response = requests.get(url, headers=headers)
-        
         response_dict = json.loads(response.text)
         market = response_dict["market"]
         return BinaryMarket(
-            platform="Kalshi",
+            platform=self.platform_name,
             market_name = market["title"],
             yes_ask=float(market["yes_ask"])/100,
             yes_bid=float(market["yes_bid"])/100,
@@ -157,6 +158,8 @@ class Kalshi(Market):
         load_dotenv()
         questions = []
         config = kalshi_python.Configuration()
+
+        #use non election endpoint to login
         config.host = KALSHI_NON_ELECTION_ENDPOINT
         kalshi_api = kalshi_python.ApiInstance(
             email=os.getenv("KALSHI_EMAIL"),
@@ -165,25 +168,35 @@ class Kalshi(Market):
         )
         kalshi_api.auto_login_if_possible()
         question_count = 0
-        for host in [KALSHI_ELECTION_ENDPOINT, KALSHI_NON_ELECTION_ENDPOINT]:
-            config.host = host
-            cursor = None
-            cursors = set()
-            while True:
-                response = kalshi_api.market_api.get_markets(limit=100, status = "open", cursor = cursor)
-                cursor = response.cursor
-                markets = response.markets
-                #stop if cursor encountered twice
-                if cursor in cursors:
-                    break
-                else:
-                    cursors.add(cursor)
-                for market in markets:
-                    questions.append([market.title, market.ticker])
-                    question_count += 1
-                    if question_count == n:
-                        return questions
+       
+        config.host = self.host
+        cursor = None
+        cursors = set()
+        while True:
+            response = kalshi_api.market_api.get_markets(limit=100, status = "open", cursor = cursor)
+            cursor = response.cursor
+            markets = response.markets
+            #stop if cursor encountered twice
+            if cursor in cursors:
+                break
+            else:
+                cursors.add(cursor)
+            for market in markets:
+                questions.append([market.title, market.ticker])
+                question_count += 1
+                if question_count == n:
+                    return questions
         return questions
+
+class MarketData(TypedDict):
+    market: Market
+    market_name : BettingPlaform
+    questions_filepath : str
+
+class BetOpportunity(TypedDict):
+    question : str
+    market_1 : BinaryMarket
+    market_2 : BinaryMarket
 
 if __name__ == "__main__":
     # polymarket = Polymarket()
