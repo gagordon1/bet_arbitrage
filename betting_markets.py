@@ -3,14 +3,11 @@ import json
 from typing import TypedDict, Literal, List, Any
 from dateutil import parser
 from datetime import datetime, timezone
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 import os
-import kalshi_python
-from kalshi_python.models import *
+import kalshi_python # type: ignore
+from kalshi_python.models import * # type: ignore
 from pprint import pprint
-
-
-BettingPlaform = Literal["Polymarket", "Kalshi", "Kalshi-Election"]
 
 POLYMARKET_ENDPOINT = "https://clob.polymarket.com/"
 
@@ -30,7 +27,7 @@ def is_timezone_aware(dt: datetime) -> bool:
 
 class BinaryMarket:
     def __init__(self, 
-                 platform: BettingPlaform,
+                 platform: str,
                  market_name: str, 
                  yes_ask: float, 
                  yes_bid: float, 
@@ -46,20 +43,16 @@ class BinaryMarket:
         self.end_date = end_date
 
     def __str__(self) -> str:
-        return (
-                "platform: " + self.platform +
-                "\nname: "+ self.market_name + 
-                "\nyes ask: " + str(self.yes_ask) + 
-                "\nno ask: " + str(self.no_ask) + 
-                "\nend date: " + str(self.end_date)
-                )
-    
+        return (f"Platform: {self.platform}, Market: {self.market_name}\n"
+                f"  Yes Bid: {self.yes_bid}, Yes Ask: {self.yes_ask}\n"
+                f"  No Bid: {self.no_bid}, No Ask: {self.no_ask}\n"
+                f"  End Date: {self.end_date}")
     
 class Market:
     def get_market(self, market_id: str) -> BinaryMarket:
         raise NotImplementedError("Subclasses must implement this method")
     
-    def get_active_markets(self, n: int) -> List[List]:
+    def get_active_markets(self, n: (int | None)) -> List[List]:
         raise NotImplementedError("Subclasses must implement this method")
     
     def save_active_markets(self, filename:str, n: int | None) -> None:
@@ -133,7 +126,7 @@ class Polymarket(Market):
     
 class Kalshi(Market):
 
-    def __init__(self, host, platform_name : BettingPlaform):
+    def __init__(self, host : str, platform_name : str):
         self.host = host # election endpoint is different
         self.platform_name = platform_name
 
@@ -190,21 +183,59 @@ class Kalshi(Market):
 
 class MarketData(TypedDict):
     market: Market
-    market_name : BettingPlaform
+    market_name : str
     questions_filepath : str
 
-class BetOpportunity(TypedDict):
-    question : str
-    market_1 : BinaryMarket
-    market_2 : BinaryMarket
+class BetOpportunity:
+
+    def __init__(self, question : str, market_1 : BinaryMarket, market_2 : BinaryMarket):
+        self.question = question
+        self.market_1 = market_1
+        self.market_2 = market_2
+
+    def __str__(self) -> str:
+        return (f"Bet Opportunity on Question: {self.question}\n"
+                f"Market 1:\n{self.market_1}\n\n"
+                f"Market 2:\n{self.market_2}\n\n"
+                f"Est. Return: {self.calculate_return()}")
+    
+    def to_dict(self) -> dict[str, str | float]:
+        return {
+            "Question": self.question,
+            "Market 1 Platform": self.market_1.platform,
+            "Market 1 Name": self.market_1.market_name,
+            "Market 1 Yes Ask": self.market_1.yes_ask,
+            "Market 1 Yes Bid": self.market_1.yes_bid,
+            "Market 1 No Ask": self.market_1.no_ask,
+            "Market 1 No Bid": self.market_1.no_bid,
+            "Market 1 End Date": self.market_1.end_date.strftime("%Y-%m-%d %H:%M:%S"),
+            "Market 2 Platform": self.market_2.platform,
+            "Market 2 Name": self.market_2.market_name,
+            "Market 2 Yes Ask": self.market_2.yes_ask,
+            "Market 2 Yes Bid": self.market_2.yes_bid,
+            "Market 2 No Ask": self.market_2.no_ask,
+            "Market 2 No Bid": self.market_2.no_bid,
+            "Market 2 End Date": self.market_2.end_date.strftime("%Y-%m-%d %H:%M:%S")
+        }
+    
+    def calculate_return(self) -> float:
+        best_yes_price = min(self.market_1.yes_ask, self.market_2.yes_ask)
+        best_no_price = min(self.market_1.no_ask, self.market_2.no_ask)
+        # assumes buys 1 yes contract and 1 no contract
+        investment = best_yes_price + best_no_price
+        return 1 / investment - 1
+    
+    def calculate_orderbook_aware_return(self, investment : float) -> float:
+        #TBU
+        return 0.0
 
 if __name__ == "__main__":
     # polymarket = Polymarket()
     # print("Pulling Polymarket markets...")
     # polymarket.save_active_markets("question_data/polymarket_questions.json", None)
     
-    print("Pulling Kalshi markets...")
-    kalshi = Kalshi()
-    kalshi.save_active_markets("question_data/kalshi_questions.json", None)
+    # print("Pulling Kalshi markets...")
+    # kalshi = Kalshi()
+    # kalshi.save_active_markets("question_data/kalshi_questions.json", None)
     
-    
+    pass
