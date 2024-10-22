@@ -17,19 +17,21 @@ def get_return(yes_contracts : float, yes_price : float, no_contracts: float, no
 polymarket = Polymarket()
 kalshi = Kalshi()
 
-for market in markets:
-    print("---"*10)
-    kalshi_id = markets[market][0]
-    polymarket_id = markets[market][1]
-    kalshi_market = kalshi.get_market(kalshi_id)
-    print(kalshi_market)
-    polymarket_market = polymarket.get_market(polymarket_id)
+kalshi.save_active_markets("question_data/kalshi_test.json", 200)
+polymarket.save_active_markets("question_data/polymarket_test.json", 200)
+# for market in markets:
+#     print("---"*10)
+#     kalshi_id = markets[market][0]
+#     polymarket_id = markets[market][1]
+#     kalshi_market = kalshi.get_market(kalshi_id)
+#     print(kalshi_market)
+#     polymarket_market = polymarket.get_market(polymarket_id)
     
-    print("---"*5)
-    print(polymarket_market)
-    min_yes_ask = min(kalshi_market.yes_ask, polymarket_market.yes_ask)
-    min_no_ask = min(kalshi_market.no_ask, polymarket_market.no_ask)
-    max_settle_time = max(kalshi_market.end_date, polymarket_market.end_date)
-    returns = get_return(1, min_yes_ask, 1, min_no_ask)
-    print("---"*5)
-    print(returns)
+#     print("---"*5)
+#     print(polymarket_market)
+#     min_yes_ask = min(kalshi_market.yes_ask, polymarket_market.yes_ask)
+#     min_no_ask = min(kalshi_market.no_ask, polymarket_market.no_ask)
+#     max_settle_time = max(kalshi_market.end_date, polymarket_market.end_date)
+#     returns = get_return(1, min_yes_ask, 1, min_no_ask)
+#     print("---"*5)
+#     print(returns)
