@@ -61,7 +61,7 @@ class Market:
     def get_active_markets(self, n: int) -> List[List]:
         raise NotImplementedError("Subclasses must implement this method")
     
-    def save_active_markets(self, filename:str, n: int) -> None:
+    def save_active_markets(self, filename:str, n: int | None) -> None:
         all_markets = self.get_active_markets(n)
         with open(filename, 'w') as json_file:
             json.dump(all_markets, json_file)
@@ -122,7 +122,7 @@ class Polymarket(Market):
                         if question_count == n:
                             return questions
                         #check if end date is after now
-                        elif end_date > datetime.now(timezone.utc):
+                        elif end_date > datetime.now(timezone.utc) and market["condition_id"] != "":
                             entry = [market["question"], market["condition_id"]]
                             questions.append(entry)
                             question_count += 1
@@ -181,7 +181,6 @@ class Kalshi(Market):
                 for market in markets:
                     questions.append([market.title, market.ticker])
                     question_count += 1
-                    print(question_count)
                     if question_count == n:
                         return questions
         return questions

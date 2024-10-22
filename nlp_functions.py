@@ -10,7 +10,7 @@ def encode_questions(question_list : List[str]) -> torch.Tensor:
     question_list_embeddings = model.encode(question_list, convert_to_tensor=True)
     return question_list_embeddings
 
-def get_k_similar_questions(question: str, question_list : List[str],question_list_embeddings: torch.Tensor, k: int) -> List[Tuple[str, float]]:
+def get_k_similar_questions(question: str, question_list : List[str],question_list_embeddings: torch.Tensor, k: int, question_ids : List[str]= None) -> List[List[Tuple[str, float]]]:
     """
     Get the top-k semantically similar questions from a list of existing questions.
     
@@ -18,10 +18,10 @@ def get_k_similar_questions(question: str, question_list : List[str],question_li
     :param question_list: A list of questions to compare against.
     :param question_list_embeddings: Vector representation of the list of questions to compare against.
     :param k: The number of top similar questions to return.
-    :return: A list of tuples containing the top-k similar questions and their similarity scores.
+    :return: A 2x2 list of list of tuples containing the top-k similar questions and their similarity scores along with similar for question ids if provided, empty list otherwise
     """
     if question_list == []:
-        return []
+        return [[], []]
     # Encode the input question
     question_embedding = model.encode(question, convert_to_tensor=True)
     
@@ -34,4 +34,10 @@ def get_k_similar_questions(question: str, question_list : List[str],question_li
     # Create a list of the top-k most similar questions with their similarity scores
     top_k_similar_questions = [(question_list[i], similarities[i].item()) for i in top_k_indices]
     
-    return top_k_similar_questions
+    if question_ids != None:
+        top_k_similar_question_ids = [(question_ids[i], similarities[i].item()) for i in top_k_indices]
+    
+    if question_ids == None:
+        return [top_k_similar_questions, []]
+    else:
+        return [top_k_similar_questions, top_k_similar_question_ids]

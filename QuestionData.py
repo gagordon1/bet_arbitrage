@@ -1,10 +1,44 @@
-from typing import List
+from typing import List, TypedDict, Literal
 import json
-from find_overlapping_markets import map_questions_across_platforms, QuestionMap
+from find_overlapping_markets import map_questions_across_platforms, QuestionMap, get_best_match_by_platform
 import pandas as pd
 from pprint import pprint
+from betting_markets import Polymarket, Kalshi, Market, BettingPlaform
+
+class MarketData(TypedDict):
+    market: Market
+    market_name : Literal["Polymarket", "Kalshi"]
+    questions_filepath : str
+
 
 class QuestionData:
+
+    def __init__(self):
+        self.kalshi = Kalshi()
+        self.polymarket = Polymarket()
+        self.markets : List[MarketData] = [
+            {
+                "market" : self.kalshi,
+                "market_name" : "Kalshi",
+                "questions_filepath" : "question_data/kalshi.json"
+            },
+            {
+                "market" : self.polymarket,
+                "market_name" : "Polymarket",
+                "questions_filepath" : "question_data/polymarket.json"
+            }
+        ]
+
+    def open_question_map_json(self, json_file : str) -> QuestionMap:
+         with open(json_file, 'r') as f:
+            question_map: QuestionMap = json.load(f)
+            return question_map
+
+    def save_active_markets_to_json(self):
+        for marketdata in self.markets:
+            print("collecting data for "+ marketdata["market_name"] + " ...")
+            market = marketdata["market"]
+            market.save_active_markets(marketdata["questions_filepath"], None)
 
     def build_multiplatform_question_dataset(self, filepaths : List[str], platform_names : List[str], output_file : str):
 
@@ -16,6 +50,9 @@ class QuestionData:
                     [platform_names[i], platform_questions]
                 )
         cross_platform_matches = map_questions_across_platforms(questions_by_platform)
+        print("Mapping all questions across platforms to a semantically unique question...")
+        cross_platform_matches = get_best_match_by_platform(cross_platform_matches)
+        print("Finding most semantically equivalent question for each platform for each question...")
         with open(output_file, "w") as f:
             json.dump(cross_platform_matches, f, indent=4)
 
@@ -27,14 +64,16 @@ class QuestionData:
         :param excel_file: The path where the Excel file will be saved.
         """
         # Load the JSON file
-        with open(json_file, 'r') as f:
-            question_map: QuestionMap = json.load(f)
+        question_map = self.open_question_map_json(json_file)
 
         # Prepare the rows for the Excel file
         rows = []
-
+        count = 0
         # Iterate over the QuestionMap and flatten the structure
         for question, mappings in question_map.items():
+            mapping_len = len(mappings)
+            if mapping_len > 1:
+                count +=1
             for entry in mappings:
                 rows.append({
                     'Question': question,
@@ -49,32 +88,23 @@ class QuestionData:
 
         # Save the DataFrame to an Excel file
         df.to_excel(excel_file, index=False)
+        print("Successful mapping count: " + str(count))
         print(f"Data successfully written to {excel_file}")
 
 if __name__ == "__main__":
     filepaths = [
-        "question_data/kalshi_questions.json", 
-        "question_data/polymarket_questions.json"
+        "question_data/kalshi.json", 
+        "question_data/polymarket.json"
         ]
     platform_names = [
         "Kalshi", 
         "Polymarket"
         ]
-
-    #test data
-    # filepaths = [
-    #     "question_data/test/platform_1_semantically_unique_yes_no_questions.json",
-    #     "question_data/test/platform_2_semantically_unique_yes_no_questions.json",
-    #     "question_data/test/platform_3_semantically_unique_yes_no_questions.json",
-    #     ]
-    # platform_names = [
-    #     "Platform 1",
-    #     "Platform 2",
-    #     "Platform 3",
-    # ]
+    
     json_output_file = "overlapping_market_data/overlapping_market_data.json"
     excel_output_file = "overlapping_market_data/overlapping_market_data.xlsx"
 
     qdata = QuestionData()
+    # qdata.save_active_markets_to_json()
     qdata.build_multiplatform_question_dataset(filepaths, platform_names, json_output_file)
     qdata.json_to_excel(json_output_file, excel_output_file)

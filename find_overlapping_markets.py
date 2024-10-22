@@ -2,7 +2,7 @@ from typing import TypedDict, List, Tuple, Dict
 from nlp_functions import get_k_similar_questions, encode_questions
 import torch
 
-SIMILARITY_CUTOFF = .7
+SIMILARITY_CUTOFF = .8
 
 class QuestionEntry(TypedDict):
     platform_name : str
@@ -28,7 +28,7 @@ def question_exists(question :str, existing_questions : List[str], existing_ques
     """
     Checks whether a question exists in the question map, returning the unique question it maps to if so, false otherwise 
     """
-    similar_questions = get_k_similar_questions(question, existing_questions, existing_questions_embedding, k)
+    [similar_questions, similar_ids] = get_k_similar_questions(question, existing_questions, existing_questions_embedding, k)
     return most_similar_question(question, similar_questions)
 
 def get_question_entry(platform_name : str, question: str, question_id : str) -> QuestionEntry:
@@ -55,6 +55,25 @@ def map_questions_across_platforms(questions_by_platform) -> QuestionMap:
             else:
                 question_map[normalized_question] = [question_entry]
     return question_map
+
+def get_best_match_by_platform(question_map : QuestionMap) -> QuestionMap:
+
+    output : QuestionMap = {}
+    for question in question_map:
+        entry = question_map[question]
+        unique_platforms = {i["platform_name"] for i in entry}
+        if len(unique_platforms) > 1:
+            new_entry = []
+            for platform in unique_platforms:
+                platform_questions = [i["question"] for i in entry if i["platform_name"] == platform]
+                platform_ids = [i["question_id"] for i in entry if i["platform_name"] == platform]         
+                [(best_question, score)], [(best_id, score)] = get_k_similar_questions(question, platform_questions, encode_questions(platform_questions), 1, question_ids=platform_ids)
+                new_entry.append(get_question_entry(platform, best_question, best_id))
+            entry = new_entry
+        output[question] = entry
+    return output
+
+
 
 if __name__ == "__main__":
     pass
