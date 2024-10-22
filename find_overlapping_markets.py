@@ -1,16 +1,15 @@
-from typing import TypedDict, List, Tuple
+from typing import TypedDict, List, Tuple, Dict
 from nlp_functions import get_k_similar_questions, encode_questions
 import torch
 
+SIMILARITY_CUTOFF = .7
 
 class QuestionEntry(TypedDict):
     platform_name : str
     question : str
     question_id : str
 
-class QuestionMap(TypedDict):
-    question: str
-    mapped: List[QuestionEntry]
+QuestionMap = Dict[str, List[QuestionEntry]]
 
 # Function to normalize a question (e.g., lowercasing, stripping punctuation)
 def normalize_question(question):
@@ -21,7 +20,8 @@ def most_similar_question(question : str, similar_questions : List[Tuple[str, fl
     """Given a list of suggested similar questions, return the semantically equivalent question, False otherwise"""
     # naive method - TBU update with openai api call
     if len(similar_questions) > 0:
-        return similar_questions[0][0]
+        if similar_questions[0][1] > SIMILARITY_CUTOFF:
+            return similar_questions[0][0]
     return False
 
 def question_exists(question :str, existing_questions : List[str], existing_questions_embedding : torch.Tensor, k : int = 5) -> str | bool:
