@@ -1,11 +1,11 @@
 from typing import TypedDict, List, Tuple, Dict
 from nlp_functions import get_k_similar_questions, encode_questions
-from betting_markets import BinaryMarketMetaData
+from betting_markets import BinaryMarketMetadata
 import torch # type: ignore
 
 SIMILARITY_CUTOFF = .8
 
-QuestionMap = Dict[str, List[BinaryMarketMetaData]]
+QuestionMap = Dict[str, List[BinaryMarketMetadata]]
 
 # Function to normalize a question (e.g., lowercasing, stripping punctuation)
 def normalize_question(question):
@@ -27,7 +27,7 @@ def question_exists(question :str, existing_questions : List[str], existing_ques
     [similar_questions, similar_ids] = get_k_similar_questions(question, existing_questions, existing_questions_embedding, k)
     return most_similar_question(question, similar_questions)
 
-def map_questions_across_platforms(questions_by_platform : List[List[BinaryMarketMetaData]]) -> QuestionMap:
+def map_questions_across_platforms(questions_by_platform : List[List[BinaryMarketMetadata]]) -> QuestionMap:
     # Dictionary to store normalized questions as keys and list of platform/question IDs as values
     question_map : QuestionMap = {}
     count = 0

@@ -28,7 +28,7 @@ class PolymarketGetMarketsResponse(TypedDict):
 def is_timezone_aware(dt: datetime) -> bool:
     return dt.tzinfo is not None and dt.tzinfo.utcoffset(dt) is not None
 
-class BinaryMarketMetaData(TypedDict):
+class BinaryMarketMetadata(TypedDict):
     platform : str
     question : str
     id : str
@@ -36,39 +36,38 @@ class BinaryMarketMetaData(TypedDict):
     no_id : str | None
 
 class BinaryMarket:
-    def __init__(self, 
-                 platform: str,
-                 market_name: str, 
-                 yes_ask: float, 
-                 yes_bid: float, 
-                 no_ask: float, 
-                 no_bid: float, 
-                 end_date : datetime,
-                 yes_id : str | None = None,
-                 no_id : str | None = None
-                 ) -> None:
+    def __init__(
+            self,
+            platform : str, 
+            question : str, 
+            id : str, 
+            yes_id : str | None,
+            no_id : str | None,
+            yes_ask : float,
+            no_ask : float,
+            yes_bid : float,
+            no_bid : float,
+        ):
         self.platform = platform
-        self.market_name = market_name
-        self.yes_bid = yes_bid
+        self.question = question
+        self.id = id
+        self.yes_id = yes_id
+        self.no_id = no_id
         self.yes_ask = yes_ask
         self.no_ask = no_ask
+        self.yes_bid = yes_bid
         self.no_bid = no_bid
-        self.end_date = end_date
-
-    def __str__(self) -> str:
-        return (f"Platform: {self.platform}, Market: {self.market_name}\n"
-                f"  Yes Bid: {self.yes_bid}, Yes Ask: {self.yes_ask}\n"
-                f"  No Bid: {self.no_bid}, No Ask: {self.no_ask}\n"
-                f"  End Date: {self.end_date}")
+        
     
 class Market:
-    def get_markets_by_ids(self, market_ids : List[str]) -> List[BinaryMarket | None]:
-        raise NotImplementedError("Subclasses must implement this method")
     
-    def get_market(self, market_id: str) -> BinaryMarket:
+    def get_batch_markets_by_ids(self, 
+                                ids : List[str], 
+                                 yes_ids : List[str | None],
+                                 no_ids : List[str | None]) -> List[BinaryMarket]:
         raise NotImplementedError("Subclasses must implement this method")
-    
-    def get_active_markets(self, n: (int | None)) -> List[BinaryMarketMetaData]:
+
+    def get_active_markets(self, n: (int | None)) -> List[BinaryMarketMetadata]:
         raise NotImplementedError("Subclasses must implement this method")
     
     def save_active_markets(self, filename:str, n: int | None) -> None:
@@ -77,61 +76,13 @@ class Market:
             json.dump(all_markets, json_file, indent = 4)
 
 class Polymarket(Market):
-    def get_markets_by_ids(self, market_ids : List[str]) -> List[BinaryMarket | None]:
-        
-        out : List[BinaryMarket | None] = []
-        for id in market_ids:
-            try:
-                market = self.get_market(id)
-                out.append(market)
-            except:
-                print("could not get market for id " + id)
-                out.append(None)
-        return out
-    
-    def get_markets_by_ids_alt(self, market_ids : List[str]) -> List[BinaryMarket | None]:
-        
-        out : List[BinaryMarket | None] = []
-        for id in market_ids:
-            try:
-                market = self.get_market(id)
-                out.append(market)
-            except:
-                print("could not get market for id " + id)
-                out.append(None)
-        return out
-    
-    def get_market(self, market_id:str) -> BinaryMarket:
-        # get_market information
-        response = requests.get(POLYMARKET_ENDPOINT + "markets/" + market_id)
-        response_dict = json.loads(response.text)
-        name = response_dict["question"]
-        end_date = response_dict["end_date_iso"]
-        
-        tokens = response_dict["tokens"]
-        yes_token = next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None)
-        no_token = next((t["token_id"] for t in tokens if t["outcome"] == "No"),None)
-        # get best bid and ask
-        price_data = []
-        for token in [yes_token, no_token]:
-            for side in ["SELL", "BUY"]:
-                params = {
-                "token_id":token,
-                "side": side
-                }
-                response = requests.get(POLYMARKET_ENDPOINT + "price/", params)
-                response_dict = json.loads(response.text)
-                price_data.append(response_dict["price"])
 
-        return BinaryMarket(
-            platform="Polymarket",
-            market_name = name,
-            yes_ask=float(price_data[0]),
-            yes_bid= float(price_data[1]),
-            no_ask= float(price_data[2]),
-            no_bid= float(price_data[3]),
-            end_date=parser.parse(end_date)
-        )
+    def get_batch_markets_by_ids(self, 
+                                 ids : List[str], 
+                                 yes_ids : List[str | None],
+                                 no_ids : List[str | None]) -> List[BinaryMarket]:
+        raise NotImplementedError("TBU")
+    
     def make_get_markets_request(self, cursor: str) -> PolymarketGetMarketsResponse:
         params = {
             "next_cursor" : cursor,
@@ -141,9 +92,9 @@ class Polymarket(Market):
         response_dict : PolymarketGetMarketsResponse = json.loads(response.text)
         return response_dict
     
-    def get_active_markets(self, n : int | None) -> List[BinaryMarketMetaData]:
+    def get_active_markets(self, n : int | None) -> List[BinaryMarketMetadata]:
         cursor = ""
-        questions : List[BinaryMarketMetaData] = [] 
+        questions : List[BinaryMarketMetadata] = [] 
         question_count = 0
         while True:
             try:
@@ -159,7 +110,7 @@ class Polymarket(Market):
                         #check if end date is after now
                         elif end_date > datetime.now(timezone.utc) and market["condition_id"] != "":
                             tokens = market["tokens"]
-                            entry : BinaryMarketMetaData = {
+                            entry : BinaryMarketMetadata = {
                                 "platform" : "Polymarket",
                                 "question" : market["question"],
                                 "id" : market["condition_id"],
@@ -178,6 +129,12 @@ class Kalshi(Market):
         self.host = host # election endpoint is different
         self.platform_name = platform_name
 
+    def get_batch_markets_by_ids(self, 
+                                 ids : List[str], 
+                                 yes_ids : List[str | None],
+                                 no_ids : List[str | None]) -> List[BinaryMarket]:
+        raise NotImplementedError("TBU")
+    
     def login_to_kalshi(self):
         load_dotenv()
         config = kalshi_python.Configuration()
@@ -189,54 +146,11 @@ class Kalshi(Market):
         )
         kalshi_api.auto_login_if_possible()
         return kalshi_api, config
-
-    def get_markets_by_ids(self, market_ids : List[str]) -> List[BinaryMarket]:
-        kalshi_api, config = self.login_to_kalshi()
-        config.host = self.host
-        
-        out : List[BinaryMarket] = []
-        
-        for batch in [market_ids[i: i + KALSHI_REQUEST_LIMIT] for i in range (0, len(market_ids), KALSHI_REQUEST_LIMIT)]:
-            tickers_str = ",".join(batch)
-            response = kalshi_api.market_api.get_markets(limit=KALSHI_REQUEST_LIMIT, tickers=tickers_str)
-            for x in response.markets:
-                out.append(
-                    BinaryMarket(
-                        self.platform_name,
-                        x.title,
-                        x.yes_ask,
-                        x.yes_bid,
-                        x.no_ask,
-                        x.no_bid,
-                        parser.parse(x.expiration_time)
-                    )
-                )
-        return out
     
-    def kalshi_market_response_to_binary_market(self, kalshi_response_dict : dict) -> BinaryMarket:
-        market = kalshi_response_dict["market"]
-        return BinaryMarket(
-            platform=self.platform_name,
-            market_name = market["title"],
-            yes_ask=float(market["yes_ask"])/100,
-            yes_bid=float(market["yes_bid"])/100,
-            no_ask=float(market["no_ask"])/100,
-            no_bid=float(market["no_bid"])/100,
-            end_date=parser.parse(market["expected_expiration_time"])
-        )
-   
-    def get_market(self, market_id:str) -> BinaryMarket:
-        base_url = self.host
-        url = base_url + "/markets/" + market_id
-        headers = {"accept": "application/json"}
-        response = requests.get(url, headers=headers)
-        response_dict : dict = json.loads(response.text)
-        return self.kalshi_market_response_to_binary_market(response_dict)
-    
-    def get_active_markets(self, n : int | None) -> List[BinaryMarketMetaData]:
+    def get_active_markets(self, n : int | None) -> List[BinaryMarketMetadata]:
         
         kalshi_api, config = self.login_to_kalshi()
-        questions : List[BinaryMarketMetaData] = []
+        questions : List[BinaryMarketMetadata] = []
         question_count = 0
         config.host = self.host
         cursor = None
@@ -251,7 +165,7 @@ class Kalshi(Market):
             else:
                 cursors.add(cursor)
             for market in markets:
-                q : BinaryMarketMetaData = {
+                q : BinaryMarketMetadata = {
                     "platform" : self.platform_name,
                     "question" : market.title,
                     "id" : market.ticker,
@@ -263,11 +177,6 @@ class Kalshi(Market):
                 if question_count == n:
                     return questions
         return questions
-
-class MarketData(TypedDict):
-    market: Market
-    market_name : str
-    questions_filepath : str
 
 class BetOpportunity:
 
@@ -281,25 +190,6 @@ class BetOpportunity:
                 f"Market 1:\n{self.market_1}\n\n"
                 f"Market 2:\n{self.market_2}\n\n"
                 f"Est. Return: {self.calculate_return()}")
-    
-    def to_dict(self) -> dict[str, str | float]:
-        return {
-            "Question": self.question,
-            "Market 1 Platform": self.market_1.platform,
-            "Market 1 Name": self.market_1.market_name,
-            "Market 1 Yes Ask": self.market_1.yes_ask,
-            "Market 1 Yes Bid": self.market_1.yes_bid,
-            "Market 1 No Ask": self.market_1.no_ask,
-            "Market 1 No Bid": self.market_1.no_bid,
-            "Market 1 End Date": self.market_1.end_date.strftime("%Y-%m-%d %H:%M:%S"),
-            "Market 2 Platform": self.market_2.platform,
-            "Market 2 Name": self.market_2.market_name,
-            "Market 2 Yes Ask": self.market_2.yes_ask,
-            "Market 2 Yes Bid": self.market_2.yes_bid,
-            "Market 2 No Ask": self.market_2.no_ask,
-            "Market 2 No Bid": self.market_2.no_bid,
-            "Market 2 End Date": self.market_2.end_date.strftime("%Y-%m-%d %H:%M:%S")
-        }
     
     def calculate_return(self) -> float:
         best_yes_price = min(self.market_1.yes_ask, self.market_2.yes_ask)
