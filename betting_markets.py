@@ -15,6 +15,9 @@ KALSHI_NON_ELECTION_ENDPOINT = "https://trading-api.kalshi.com/trade-api/v2"
 
 KALSHI_ELECTION_ENDPOINT = "https://api.elections.kalshi.com/trade-api/v2"
 
+KALSHI_REQUEST_LIMIT = 100
+
+POLYMARKET_REQUEST_LIMIT = 100
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -25,6 +28,13 @@ class PolymarketGetMarketsResponse(TypedDict):
 def is_timezone_aware(dt: datetime) -> bool:
     return dt.tzinfo is not None and dt.tzinfo.utcoffset(dt) is not None
 
+class BinaryMarketMetaData(TypedDict):
+    platform : str
+    question : str
+    id : str
+    yes_id : str | None
+    no_id : str | None
+
 class BinaryMarket:
     def __init__(self, 
                  platform: str,
@@ -33,7 +43,10 @@ class BinaryMarket:
                  yes_bid: float, 
                  no_ask: float, 
                  no_bid: float, 
-                 end_date : datetime) -> None:
+                 end_date : datetime,
+                 yes_id : str | None = None,
+                 no_id : str | None = None
+                 ) -> None:
         self.platform = platform
         self.market_name = market_name
         self.yes_bid = yes_bid
@@ -49,10 +62,13 @@ class BinaryMarket:
                 f"  End Date: {self.end_date}")
     
 class Market:
+    def get_markets_by_ids(self, market_ids : List[str]) -> List[BinaryMarket | None]:
+        raise NotImplementedError("Subclasses must implement this method")
+    
     def get_market(self, market_id: str) -> BinaryMarket:
         raise NotImplementedError("Subclasses must implement this method")
     
-    def get_active_markets(self, n: (int | None)) -> List[List]:
+    def get_active_markets(self, n: (int | None)) -> List[BinaryMarketMetaData]:
         raise NotImplementedError("Subclasses must implement this method")
     
     def save_active_markets(self, filename:str, n: int | None) -> None:
@@ -61,7 +77,30 @@ class Market:
             json.dump(all_markets, json_file, indent = 4)
 
 class Polymarket(Market):
-
+    def get_markets_by_ids(self, market_ids : List[str]) -> List[BinaryMarket | None]:
+        
+        out : List[BinaryMarket | None] = []
+        for id in market_ids:
+            try:
+                market = self.get_market(id)
+                out.append(market)
+            except:
+                print("could not get market for id " + id)
+                out.append(None)
+        return out
+    
+    def get_markets_by_ids_alt(self, market_ids : List[str]) -> List[BinaryMarket | None]:
+        
+        out : List[BinaryMarket | None] = []
+        for id in market_ids:
+            try:
+                market = self.get_market(id)
+                out.append(market)
+            except:
+                print("could not get market for id " + id)
+                out.append(None)
+        return out
+    
     def get_market(self, market_id:str) -> BinaryMarket:
         # get_market information
         response = requests.get(POLYMARKET_ENDPOINT + "markets/" + market_id)
@@ -93,20 +132,22 @@ class Polymarket(Market):
             no_bid= float(price_data[3]),
             end_date=parser.parse(end_date)
         )
+    def make_get_markets_request(self, cursor: str) -> PolymarketGetMarketsResponse:
+        params = {
+            "next_cursor" : cursor,
+        }
+        url = POLYMARKET_ENDPOINT + "markets"
+        response = requests.get(url, params = params)
+        response_dict : PolymarketGetMarketsResponse = json.loads(response.text)
+        return response_dict
     
-    def get_active_markets(self, n : int | None) -> List[List]:
-        def make_request(cursor: str) -> PolymarketGetMarketsResponse:
-            url = POLYMARKET_ENDPOINT + "markets?next_cursor=" + cursor
-            response = requests.get(url)
-            response_dict : PolymarketGetMarketsResponse = json.loads(response.text)
-            return response_dict
-    
+    def get_active_markets(self, n : int | None) -> List[BinaryMarketMetaData]:
         cursor = ""
-        questions : List[List] = [] 
+        questions : List[BinaryMarketMetaData] = [] 
         question_count = 0
         while True:
             try:
-                response = make_request(cursor)
+                response = self.make_get_markets_request(cursor)
                 next_cursor = response["next_cursor"]
                 cursor = next_cursor
                 for market in response["data"]:
@@ -117,7 +158,14 @@ class Polymarket(Market):
                             return questions
                         #check if end date is after now
                         elif end_date > datetime.now(timezone.utc) and market["condition_id"] != "":
-                            entry = [market["question"], market["condition_id"]]
+                            tokens = market["tokens"]
+                            entry : BinaryMarketMetaData = {
+                                "platform" : "Polymarket",
+                                "question" : market["question"],
+                                "id" : market["condition_id"],
+                                "yes_id" : next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
+                                "no_id" : next((t["token_id"] for t in tokens if t["outcome"] == "No"),None)
+                            } 
                             questions.append(entry)
                             question_count += 1
             except KeyError:
@@ -130,13 +178,43 @@ class Kalshi(Market):
         self.host = host # election endpoint is different
         self.platform_name = platform_name
 
-    def get_market(self, market_id:str) -> BinaryMarket:
-        base_url = self.host
-        url = base_url + "/markets/" + market_id
-        headers = {"accept": "application/json"}
-        response = requests.get(url, headers=headers)
-        response_dict = json.loads(response.text)
-        market = response_dict["market"]
+    def login_to_kalshi(self):
+        load_dotenv()
+        config = kalshi_python.Configuration()
+        config.host = KALSHI_NON_ELECTION_ENDPOINT
+        kalshi_api = kalshi_python.ApiInstance(
+            email=os.getenv("KALSHI_EMAIL"),
+            password=os.getenv("KALSHI_PASSWORD"),
+            configuration=config,
+        )
+        kalshi_api.auto_login_if_possible()
+        return kalshi_api, config
+
+    def get_markets_by_ids(self, market_ids : List[str]) -> List[BinaryMarket]:
+        kalshi_api, config = self.login_to_kalshi()
+        config.host = self.host
+        
+        out : List[BinaryMarket] = []
+        
+        for batch in [market_ids[i: i + KALSHI_REQUEST_LIMIT] for i in range (0, len(market_ids), KALSHI_REQUEST_LIMIT)]:
+            tickers_str = ",".join(batch)
+            response = kalshi_api.market_api.get_markets(limit=KALSHI_REQUEST_LIMIT, tickers=tickers_str)
+            for x in response.markets:
+                out.append(
+                    BinaryMarket(
+                        self.platform_name,
+                        x.title,
+                        x.yes_ask,
+                        x.yes_bid,
+                        x.no_ask,
+                        x.no_bid,
+                        parser.parse(x.expiration_time)
+                    )
+                )
+        return out
+    
+    def kalshi_market_response_to_binary_market(self, kalshi_response_dict : dict) -> BinaryMarket:
+        market = kalshi_response_dict["market"]
         return BinaryMarket(
             platform=self.platform_name,
             market_name = market["title"],
@@ -146,27 +224,25 @@ class Kalshi(Market):
             no_bid=float(market["no_bid"])/100,
             end_date=parser.parse(market["expected_expiration_time"])
         )
+   
+    def get_market(self, market_id:str) -> BinaryMarket:
+        base_url = self.host
+        url = base_url + "/markets/" + market_id
+        headers = {"accept": "application/json"}
+        response = requests.get(url, headers=headers)
+        response_dict : dict = json.loads(response.text)
+        return self.kalshi_market_response_to_binary_market(response_dict)
     
-    def get_active_markets(self, n : int | None) -> List[List]:
-        load_dotenv()
-        questions = []
-        config = kalshi_python.Configuration()
-
-        #use non election endpoint to login
-        config.host = KALSHI_NON_ELECTION_ENDPOINT
-        kalshi_api = kalshi_python.ApiInstance(
-            email=os.getenv("KALSHI_EMAIL"),
-            password=os.getenv("KALSHI_PASSWORD"),
-            configuration=config,
-        )
-        kalshi_api.auto_login_if_possible()
+    def get_active_markets(self, n : int | None) -> List[BinaryMarketMetaData]:
+        
+        kalshi_api, config = self.login_to_kalshi()
+        questions : List[BinaryMarketMetaData] = []
         question_count = 0
-       
         config.host = self.host
         cursor = None
         cursors = set()
         while True:
-            response = kalshi_api.market_api.get_markets(limit=100, status = "open", cursor = cursor)
+            response = kalshi_api.market_api.get_markets(limit=KALSHI_REQUEST_LIMIT, status = "open", cursor = cursor)
             cursor = response.cursor
             markets = response.markets
             #stop if cursor encountered twice
@@ -175,7 +251,14 @@ class Kalshi(Market):
             else:
                 cursors.add(cursor)
             for market in markets:
-                questions.append([market.title, market.ticker])
+                q : BinaryMarketMetaData = {
+                    "platform" : self.platform_name,
+                    "question" : market.title,
+                    "id" : market.ticker,
+                    "yes_id" : None,
+                    "no_id" : None
+                }
+                questions.append(q)
                 question_count += 1
                 if question_count == n:
                     return questions
@@ -237,5 +320,4 @@ if __name__ == "__main__":
     # print("Pulling Kalshi markets...")
     # kalshi = Kalshi()
     # kalshi.save_active_markets("question_data/kalshi_questions.json", None)
-    
     pass

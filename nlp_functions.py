@@ -1,5 +1,5 @@
-from sentence_transformers import SentenceTransformer, util
-import torch
+from sentence_transformers import SentenceTransformer, util # type: ignore
+import torch # type: ignore
 from typing import List, Tuple
 
 # Load the Sentence-BERT model
@@ -10,7 +10,7 @@ def encode_questions(question_list : List[str]) -> torch.Tensor:
     question_list_embeddings = model.encode(question_list, convert_to_tensor=True)
     return question_list_embeddings
 
-def get_k_similar_questions(question: str, question_list : List[str],question_list_embeddings: torch.Tensor, k: int, question_ids : List[str]= None) -> List[List[Tuple[str, float]]]:
+def get_k_similar_questions(question: str, question_list : List[str],question_list_embeddings: torch.Tensor, k: int, question_ids : (List[str] | None) = None) -> List[List[Tuple[str, float]]]:
     """
     Get the top-k semantically similar questions from a list of existing questions.
     

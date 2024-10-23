@@ -1,9 +1,9 @@
 from typing import List, TypedDict, Literal
 import json
-from find_overlapping_markets import map_questions_across_platforms, QuestionEntry, QuestionMap, get_best_match_by_platform
+from find_overlapping_markets import map_questions_across_platforms, QuestionMap, get_best_match_by_platform
 import pandas as pd
 from pprint import pprint
-from betting_markets import Polymarket, Kalshi, MarketData, BetOpportunity, BinaryMarket, KALSHI_ELECTION_ENDPOINT, KALSHI_NON_ELECTION_ENDPOINT
+from betting_markets import Polymarket, Kalshi, BinaryMarketMetaData, MarketData, BetOpportunity, BinaryMarket, KALSHI_ELECTION_ENDPOINT, KALSHI_NON_ELECTION_ENDPOINT
 
 class QuestionData:
 
@@ -40,14 +40,14 @@ class QuestionData:
             market = marketdata["market"]
             market.save_active_markets(marketdata["questions_filepath"], None)
 
-    def build_multiplatform_question_dataset(self, filepaths : List[str], platform_names : List[str], output_file : str):
+    def build_multiplatform_question_dataset(self, filepaths : List[str], output_file : str):
 
-        questions_by_platform = []
+        questions_by_platform : List[List[BinaryMarketMetaData]] = []
         for i in range(len(filepaths)):
             with open(filepaths[i], "r") as f:
                 platform_questions = json.load(f)
                 questions_by_platform.append(
-                    [platform_names[i], platform_questions]
+                    platform_questions
                 )
         cross_platform_matches = map_questions_across_platforms(questions_by_platform)
         print("Mapping all questions across platforms to a semantically unique question...")
@@ -64,7 +64,7 @@ class QuestionData:
     # Function to save the list of BetOpportunity objects to JSON
     def save_bet_opportunities_to_json(self, bet_opportunities: List[BetOpportunity], file_name: str) -> None:
         with open(file_name, 'w') as f:
-            json.dump(bet_opportunities, f, indent=4)
+            json.dump([i.to_dict() for i in bet_opportunities], f, indent=4)
             print(f"Bet opportunities saved to {file_name}")
     
     def read_bet_opportunities_from_json(self, json_file: str) -> List[BetOpportunity]:
@@ -99,11 +99,11 @@ class QuestionData:
             if len(question_entries) > 1:
                 for i in range(len(question_entries)):
                     for j in range(i+1, len(question_entries)):
-                        market_1_entry : QuestionEntry = question_entries[i]
-                        market_2_entry : QuestionEntry = question_entries[j]
+                        market_1_entry = question_entries[i]
+                        market_2_entry  = question_entries[j]
                         try:
-                            market_1 = self.get_market(market_1_entry["platform_name"], market_1_entry["question_id"])
-                            market_2 = self.get_market(market_2_entry["platform_name"], market_2_entry["question_id"])
+                            market_1 = self.get_market(market_1_entry["platform"], market_1_entry["id"])
+                            market_2 = self.get_market(market_2_entry["platform"], market_2_entry["id"])
                             if market_1 and market_2:
                                 bet_opportunity = BetOpportunity(question, market_1, market_2)
                                 bet_opportunities.append(bet_opportunity)
@@ -137,9 +137,9 @@ class QuestionData:
             for entry in mappings:
                 rows.append({
                     'Question': question,
-                    'Platform': entry['platform_name'],
+                    'Platform': entry['platform'],
                     'Mapped Question': entry['question'],
-                    'Question ID': entry['question_id'],
+                    'Question ID': entry['id'],
                     'Multi-platform?' : 1 if len(mappings) > 1 else 0
                 })
 
@@ -170,14 +170,7 @@ if __name__ == "__main__":
     bet_opportunities_output_excel_file = "bet_opportunities_data/bet_opportunities_10-22-24.xlsx"
 
     qdata = QuestionData()
-    # qdata.save_active_markets_to_json()
-    # qdata.build_multiplatform_question_dataset(filepaths, platform_names, json_output_file)
-    # qdata.question_map_json_to_excel(json_output_file, excel_output_file)
-    print("opening question map...")
-    question_map = qdata.open_question_map_json(json_output_file)
-    print("retrieving bet opportunities...")
-    bet_opportunities = qdata.get_bet_opportunities(question_map)
-    print("saving bet opportunities as json...")
-    qdata.save_bet_opportunities_to_json(bet_opportunities, bet_opportunities_output_file)
-    # qdata.save_bet_opportunities_to_excel(bet_opportunities, bet_opportunities_output_excel_file)
-    # pprint(bet_opportunities)
+    qdata.save_active_markets_to_json()
+    qdata.build_multiplatform_question_dataset(filepaths, json_output_file)
+    qdata.question_map_json_to_excel(json_output_file, excel_output_file)
+    

@@ -1,2 +1,53 @@
 [
-    
+    {
+        "Question": "will above 150000 jobs be added in october 2024?",
+        "Market 1 Platform": "Kalshi",
+        "Market 1 Name": "Will above 150000 jobs be added in October 2024?",
+        "Market 1 Yes Ask": 0.47,
+        "Market 1 Yes Bid": 0.34,
+        "Market 1 No Ask": 0.66,
+        "Market 1 No Bid": 0.53,
+        "Market 1 End Date": "2024-11-01 12:25:00",
+        "Market 2 Platform": "Polymarket",
+        "Market 2 Name": "Will the US add 200-250k jobs in October?",
+        "Market 2 Yes Ask": 0.14,
+        "Market 2 Yes Bid": 0.12,
+        "Market 2 No Ask": 0.88,
+        "Market 2 No Bid": 0.86,
+        "Market 2 End Date": "2024-11-01 00:00:00"
+    },
+    {
+        "Question": "will above 100000 jobs be added in october 2024?",
+        "Market 1 Platform": "Kalshi",
+        "Market 1 Name": "Will above 100000 jobs be added in October 2024?",
+        "Market 1 Yes Ask": 0.69,
+        "Market 1 Yes Bid": 0.65,
+        "Market 1 No Ask": 0.35,
+        "Market 1 No Bid": 0.31,
+        "Market 1 End Date": "2024-11-01 12:25:00",
+        "Market 2 Platform": "Polymarket",
+        "Market 2 Name": "Will the US add 100-150k jobs in October?",
+        "Market 2 Yes Ask": 0.29,
+        "Market 2 Yes Bid": 0.26,
+        "Market 2 No Ask": 0.74,
+        "Market 2 No Bid": 0.71,
+        "Market 2 End Date": "2024-11-01 00:00:00"
+    },
+    {
+        "Question": "will the unemployment rate (u-3) be above 4.1% in october?",
+        "Market 1 Platform": "Kalshi",
+        "Market 1 Name": "Will the unemployment rate (U-3) be above 4.1% in October?",
+        "Market 1 Yes Ask": 0.81,
+        "Market 1 Yes Bid": 0.25,
+        "Market 1 No Ask": 0.75,
+        "Market 1 No Bid": 0.19,
+        "Market 1 End Date": "2024-11-01 14:00:00",
+        "Market 2 Platform": "Polymarket",
+        "Market 2 Name": "Unemployment rate over 4.1% in October?",
+        "Market 2 Yes Ask": 0.45,
+        "Market 2 Yes Bid": 0.39,
+        "Market 2 No Ask": 0.61,
+        "Market 2 No Bid": 0.55,
+        "Market 2 End Date": "2024-11-01 00:00:00"
+    }
+]
