@@ -4,6 +4,7 @@ from find_overlapping_markets import map_questions_across_platforms, QuestionMap
 import pandas as pd
 from pprint import pprint
 from betting_markets import Polymarket, Kalshi, Market, BinaryMarket, BinaryMarketMetadata, BetOpportunity, KALSHI_ELECTION_ENDPOINT, KALSHI_NON_ELECTION_ENDPOINT
+import datetime
 
 class MarketData(TypedDict):
     market: Market
@@ -81,18 +82,34 @@ class QuestionData:
                 else:
                     question_metadata_by_platform[platform]= [market]
         
-        question_data_by_platform : Dict[str , List[BinaryMarketMetadata]] = {}
-
+        question_data_by_platform : Dict[str , List[BinaryMarket]] = {}
         for platform , question_data in question_metadata_by_platform.items():
             market = self.markets[platform]["market"]
-            binary_markets = market.get_batch_markets_by_ids(
-                [i["id"] for i in question_data], 
-                [i["yes_id"] for i in question_data],
-                [i["no_id"] for i in question_data],
-            )
-        # then match each to it's respective pairs using the question map
+            binary_markets = market.get_batch_market_data(question_data)
+            question_data_by_platform[platform] = binary_markets
 
-        return []
+        # convert to unique ids mapping to object to optimize
+        id_to_question_map : Dict[str, BinaryMarket] = {}
+        for _, question_data in question_data_by_platform.items():
+            for q in question_data: 
+                id_to_question_map[q.id] = q
+
+        # then match each to its respective pairs using the question map
+        out : List[BetOpportunity] = []
+        for q, similar_questions in question_map.items():
+            if len(similar_questions) > 1:
+                for i in range(len(similar_questions)):
+                    for j in range(i+1, len(similar_questions)):           
+                        mdata1 = similar_questions[i]
+                        mdata2 = similar_questions[j]
+                        out.append(
+                            BetOpportunity(
+                                q,
+                                id_to_question_map[mdata1["id"]],
+                                id_to_question_map[mdata2["id"]],
+                            )
+                        )
+        return out
 
     def question_map_json_to_excel(self, json_file: str, excel_file: str):
         """
@@ -128,6 +145,32 @@ class QuestionData:
         df.to_excel(excel_file, index=False)
         print("Successful mapping count: " + str(count))
         print(f"Data successfully written to {excel_file}")
+     # Function to save the list of BetOpportunity objects to Excel
+    
+    def save_bet_opportunities_to_excel(self, bet_opportunities: List[BetOpportunity], excel_file: (str | None) = None) -> None:
+        
+        def format_excel_filename():
+            # Get today's date
+            today = datetime.datetime.today()
+            # Format the date in the required format
+            formatted_date = today.strftime("%m-%d-%y")
+            # Construct the file path and name
+            filename = f"bet_opportunities_data/bet_opportunities_{formatted_date}.xlsx"
+            return filename
+        
+        if excel_file == None:
+            excel_file = format_excel_filename()
+
+        rows = []
+
+        # Flatten the BetOpportunity objects into rows for Excel
+        for bet in bet_opportunities:
+            rows.append(bet.to_dict())
+
+        # Convert to DataFrame and save to Excel
+        df = pd.DataFrame(rows)
+        df.to_excel(excel_file, index=False)
+        print(f"Bet opportunities saved to {excel_file}")
 
 if __name__ == "__main__":
     filepaths = [
@@ -152,5 +195,5 @@ if __name__ == "__main__":
     # qdata.build_multiplatform_question_dataset(filepaths, json_output_file)
     # qdata.question_map_json_to_excel(json_output_file, excel_output_file)
     data = qdata.open_question_map_json(json_output_file)
-    qdata.get_bet_opportunities(data)
-    
+    bet_opportunities = qdata.get_bet_opportunities(data)
+    qdata.save_bet_opportunities_to_excel(bet_opportunities)

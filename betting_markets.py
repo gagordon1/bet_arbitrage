@@ -1,6 +1,6 @@
 import requests
 import json
-from typing import TypedDict, Literal, List, Any
+from typing import TypedDict, Tuple, List, Any
 from dateutil import parser
 from datetime import datetime, timezone
 from dotenv import load_dotenv # type: ignore
@@ -17,7 +17,7 @@ KALSHI_ELECTION_ENDPOINT = "https://api.elections.kalshi.com/trade-api/v2"
 
 KALSHI_REQUEST_LIMIT = 100
 
-POLYMARKET_REQUEST_LIMIT = 100
+POLYMARKET_REQUEST_LIMIT = 500
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -43,10 +43,10 @@ class BinaryMarket:
             id : str, 
             yes_id : str | None,
             no_id : str | None,
-            yes_ask : float,
-            no_ask : float,
-            yes_bid : float,
-            no_bid : float,
+            yes_ask : float | None,
+            no_ask : float | None,
+            yes_bid : float | None,
+            no_bid : float | None,
         ):
         self.platform = platform
         self.question = question
@@ -57,14 +57,16 @@ class BinaryMarket:
         self.no_ask = no_ask
         self.yes_bid = yes_bid
         self.no_bid = no_bid
+    
+    def __str__(self) -> str:
+        return (f"Platform: {self.platform}, Market: {self.platform}\n"
+                f"  Yes Bid: {self.yes_bid}, Yes Ask: {self.yes_ask}\n"
+                f"  No Bid: {self.no_bid}, No Ask: {self.no_ask}\n")
+                # f"  End Date: {self.end_date}")
         
     
 class Market:
-    
-    def get_batch_markets_by_ids(self, 
-                                ids : List[str], 
-                                 yes_ids : List[str | None],
-                                 no_ids : List[str | None]) -> List[BinaryMarket]:
+    def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
         raise NotImplementedError("Subclasses must implement this method")
 
     def get_active_markets(self, n: (int | None)) -> List[BinaryMarketMetadata]:
@@ -75,13 +77,61 @@ class Market:
         with open(filename, 'w') as json_file:
             json.dump(all_markets, json_file, indent = 4)
 
+class BookParams(TypedDict):
+    token_id : str
+    side : str # BUY | SELL
+
 class Polymarket(Market):
 
-    def get_batch_markets_by_ids(self, 
-                                 ids : List[str], 
-                                 yes_ids : List[str | None],
-                                 no_ids : List[str | None]) -> List[BinaryMarket]:
-        raise NotImplementedError("TBU")
+    def generate_book_params(self, token_ids : List[str]) -> List[BookParams]:
+        out : List[BookParams] = []
+        for t in token_ids:
+            for side in ["BUY", "SELL"]:
+                out.append({"token_id" : t, "side" : side})
+        return out
+
+    def get_prices(self, token_ids : List[str]) -> List[Tuple[float | None,float | None]]:
+        out : List[Tuple[float | None, float | None]] = []
+        token_batch_size = POLYMARKET_REQUEST_LIMIT // 2
+        for i in range(0,len(token_ids), token_batch_size):
+            ts = token_ids[i:i+token_batch_size]
+            bp = self.generate_book_params(ts)
+            response = requests.post(POLYMARKET_ENDPOINT + "prices", json = bp) 
+            response_dict = json.loads(response.text)
+            for t in ts:
+                if t in response_dict:
+                    out.append((response_dict[t]["BUY"], response_dict[t]["SELL"]))
+                else:
+                    out.append((None, None))
+        return out
+
+    def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
+        yes_ids : List[str] = [x["yes_id"] for x in data] #type: ignore
+        no_ids : List[str] = [x["no_id"] for x in data] #type: ignore
+        yes_prices = []
+        for i in range(0,len(yes_ids), POLYMARKET_REQUEST_LIMIT):
+            ids = yes_ids[i:i+POLYMARKET_REQUEST_LIMIT]
+            yes_prices.extend(self.get_prices(ids))
+
+        no_prices = []
+        for i in range(0,len(no_ids), POLYMARKET_REQUEST_LIMIT):
+            ids = no_ids[i:i+POLYMARKET_REQUEST_LIMIT]
+            no_prices.extend(self.get_prices(ids))
+        
+        out : List[BinaryMarket] = []
+        for i in range(len(data)):
+            out.append(BinaryMarket(
+                "Polymarket",
+                data[i]["question"],
+                data[i]["id"],
+                data[i]["yes_id"],
+                data[i]["no_id"],
+                yes_prices[i][1],
+                no_prices[i][1],
+                yes_prices[i][0],
+                yes_prices[i][0]
+            ))
+        return out
     
     def make_get_markets_request(self, cursor: str) -> PolymarketGetMarketsResponse:
         params = {
@@ -129,11 +179,30 @@ class Kalshi(Market):
         self.host = host # election endpoint is different
         self.platform_name = platform_name
 
-    def get_batch_markets_by_ids(self, 
-                                 ids : List[str], 
-                                 yes_ids : List[str | None],
-                                 no_ids : List[str | None]) -> List[BinaryMarket]:
-        raise NotImplementedError("TBU")
+    def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
+        api, config = self.login_to_kalshi()
+        config.host = self.host
+        out : List[BinaryMarket] = []
+        ids = [x["id"] for x in data]
+        for i in range(0, len(ids), KALSHI_REQUEST_LIMIT):
+            batch = ids[i:i+KALSHI_REQUEST_LIMIT]
+            response = api.get_markets(limit = KALSHI_REQUEST_LIMIT, tickers = ",".join(batch))
+            markets = response.markets
+            for m in markets:
+                out.append(
+                    BinaryMarket(
+                        self.platform_name,
+                        m.title,
+                        m.ticker,
+                        None,
+                        None,
+                        float(m.yes_ask)/100,
+                        float(m.no_ask)/100,
+                        float(m.yes_bid)/100,
+                        float(m.no_bid)/100
+                    )
+                )
+        return out
     
     def login_to_kalshi(self):
         load_dotenv()
@@ -188,15 +257,30 @@ class BetOpportunity:
     def __str__(self) -> str:
         return (f"Bet Opportunity on Question: {self.question}\n"
                 f"Market 1:\n{self.market_1}\n\n"
-                f"Market 2:\n{self.market_2}\n\n"
-                f"Est. Return: {self.calculate_return()}")
+                f"Market 2:\n{self.market_2}\n\n")
     
-    def calculate_return(self) -> float:
-        best_yes_price = min(self.market_1.yes_ask, self.market_2.yes_ask)
-        best_no_price = min(self.market_1.no_ask, self.market_2.no_ask)
-        # assumes buys 1 yes contract and 1 no contract
-        investment = best_yes_price + best_no_price
-        return 1 / investment - 1
+    # def calculate_return(self) -> float:
+    #     best_yes_price = min(self.market_1.yes_ask, self.market_2.yes_ask)
+    #     best_no_price = min(self.market_1.no_ask, self.market_2.no_ask)
+    #     # assumes buys 1 yes contract and 1 no contract
+    #     investment = best_yes_price + best_no_price
+    #     return 1 / investment - 1
+    def to_dict(self) -> dict[str, str | float | None]:
+        return {
+            "Question": self.question,
+            "Market 1 Platform": self.market_1.platform,
+            "Market 1 Name": self.market_1.question,
+            "Market 1 Yes Ask": self.market_1.yes_ask,
+            "Market 1 Yes Bid": self.market_1.yes_bid,
+            "Market 1 No Ask": self.market_1.no_ask,
+            "Market 1 No Bid": self.market_1.no_bid,
+            "Market 2 Platform": self.market_2.platform,
+            "Market 2 Name": self.market_2.question,
+            "Market 2 Yes Ask": self.market_2.yes_ask,
+            "Market 2 Yes Bid": self.market_2.yes_bid,
+            "Market 2 No Ask": self.market_2.no_ask,
+            "Market 2 No Bid": self.market_2.no_bid,
+        }
     
     def calculate_orderbook_aware_return(self, investment : float) -> float:
         #TBU
