@@ -1,7 +1,7 @@
-import requests
+import requests #type: ignore
 import json
 from typing import TypedDict, Tuple, List, Any
-from dateutil import parser
+from dateutil import parser #type: ignore
 from datetime import datetime, timezone
 from dotenv import load_dotenv # type: ignore
 import os
@@ -28,12 +28,39 @@ class PolymarketGetMarketsResponse(TypedDict):
 def is_timezone_aware(dt: datetime) -> bool:
     return dt.tzinfo is not None and dt.tzinfo.utcoffset(dt) is not None
 
-class BinaryMarketMetadata(TypedDict):
-    platform : str
-    question : str
-    id : str
-    yes_id : str | None
-    no_id : str | None
+class BinaryMarketMetadata:
+    def __init__(self,
+        platform : str,
+        question : str,
+        id : str,
+        yes_id : str | None,
+        no_id : str | None,
+    ): 
+        self.platform = platform
+        self.question = question
+        self.id = id
+        self.yes_id = yes_id
+        self.no_id = no_id
+    # Method to convert the object to a JSON-compatible dictionary
+    def to_json(self) -> dict:
+        return {
+            'platform': self.platform,
+            'question': self.question,
+            'id': self.id,
+            'yes_id': self.yes_id,
+            'no_id': self.no_id,
+        }
+
+    # Method to instantiate a BinaryMarket object from a dictionary
+    @classmethod
+    def from_json(cls, data):
+        return cls(
+            platform=data['platform'],
+            question=data['question'],
+            id=data['id'],
+            yes_id=data.get('yes_id'),
+            no_id=data.get('no_id'),
+        )
 
 class BinaryMarket:
     def __init__(
@@ -59,29 +86,74 @@ class BinaryMarket:
         self.no_bid = no_bid
     
     def __str__(self) -> str:
-        return (f"Platform: {self.platform}, Market: {self.platform}\n"
+        return (f"Platform: {self.platform}, BettingPlatform: {self.platform}\n"
                 f"  Yes Bid: {self.yes_bid}, Yes Ask: {self.yes_ask}\n"
                 f"  No Bid: {self.no_bid}, No Ask: {self.no_ask}\n")
                 # f"  End Date: {self.end_date}")
+   
+    # Method to convert the object to a JSON-compatible dictionary
+    def to_json(self) -> dict:
+        return {
+            'platform': self.platform,
+            'question': self.question,
+            'id': self.id,
+            'yes_id': self.yes_id,
+            'no_id': self.no_id,
+            'yes_ask': self.yes_ask,
+            'no_ask': self.no_ask,
+            'yes_bid': self.yes_bid,
+            'no_bid': self.no_bid
+        }
+
+    # Method to instantiate a BinaryMarket object from a dictionary
+    @classmethod
+    def from_json(cls, data):
+        return cls(
+            platform=data['platform'],
+            question=data['question'],
+            id=data['id'],
+            yes_id=data.get('yes_id'),
+            no_id=data.get('no_id'),
+            yes_ask=data.get('yes_ask'),
+            no_ask=data.get('no_ask'),
+            yes_bid=data.get('yes_bid'),
+            no_bid=data.get('no_bid')
+        )
         
     
-class Market:
-    def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
+class BettingPlatform:
+    def get_batch_market_data(self, data : (List[BinaryMarketMetadata] | List[BinaryMarket]) ) -> List[BinaryMarket]:
+        """Given a list of binary market metadata objects, returns a list of binary market data objects containing the metadata plus latest market data
+
+        Args:
+            data (List[BinaryMarketMetadata]): array of metadata binary markets
+
+        Returns:
+            List[BinaryMarket]: array of binary market data containing latest market data
+        """
         raise NotImplementedError("Subclasses must implement this method")
 
     def get_active_markets(self, n: (int | None)) -> List[BinaryMarketMetadata]:
+        """Gets active markets for a betting platform
+
+        Args:
+            n (int  |  None): optional limit for testing purposes
+
+        Returns:
+            List[BinaryMarketMetadata]: active markets in a list
+        """
         raise NotImplementedError("Subclasses must implement this method")
     
     def save_active_markets(self, filename:str, n: int | None) -> None:
         all_markets = self.get_active_markets(n)
         with open(filename, 'w') as json_file:
-            json.dump(all_markets, json_file, indent = 4)
+            json.dump([a.to_json() for a in all_markets], json_file, indent = 4)
 
 class BookParams(TypedDict):
     token_id : str
     side : str # BUY | SELL
 
-class Polymarket(Market):
+class Polymarket(BettingPlatform):
 
     def generate_book_params(self, token_ids : List[str]) -> List[BookParams]:
         out : List[BookParams] = []
@@ -106,8 +178,8 @@ class Polymarket(Market):
         return out
 
     def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
-        yes_ids : List[str] = [x["yes_id"] for x in data] #type: ignore
-        no_ids : List[str] = [x["no_id"] for x in data] #type: ignore
+        yes_ids : List[str] = [x.yes_id for x in data] #type: ignore 
+        no_ids : List[str] = [x.no_id for x in data] #type: ignore
         yes_prices = []
         for i in range(0,len(yes_ids), POLYMARKET_REQUEST_LIMIT):
             ids = yes_ids[i:i+POLYMARKET_REQUEST_LIMIT]
@@ -122,10 +194,10 @@ class Polymarket(Market):
         for i in range(len(data)):
             out.append(BinaryMarket(
                 "Polymarket",
-                data[i]["question"],
-                data[i]["id"],
-                data[i]["yes_id"],
-                data[i]["no_id"],
+                data[i].question,
+                data[i].id,
+                data[i].yes_id,
+                data[i].no_id,
                 yes_prices[i][1],
                 no_prices[i][1],
                 yes_prices[i][0],
@@ -160,20 +232,20 @@ class Polymarket(Market):
                         #check if end date is after now
                         elif end_date > datetime.now(timezone.utc) and market["condition_id"] != "":
                             tokens = market["tokens"]
-                            entry : BinaryMarketMetadata = {
-                                "platform" : "Polymarket",
-                                "question" : market["question"],
-                                "id" : market["condition_id"],
-                                "yes_id" : next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
-                                "no_id" : next((t["token_id"] for t in tokens if t["outcome"] == "No"),None)
-                            } 
+                            entry = BinaryMarketMetadata(
+                                "Polymarket",
+                                market["question"],
+                                market["condition_id"],
+                                next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
+                                next((t["token_id"] for t in tokens if t["outcome"] == "No"),None)
+                            )
                             questions.append(entry)
                             question_count += 1
             except KeyError:
                 break
         return questions
     
-class Kalshi(Market):
+class Kalshi(BettingPlatform):
 
     def __init__(self, host : str, platform_name : str):
         self.host = host # election endpoint is different
@@ -183,7 +255,7 @@ class Kalshi(Market):
         api, config = self.login_to_kalshi()
         config.host = self.host
         out : List[BinaryMarket] = []
-        ids = [x["id"] for x in data]
+        ids = [x.id for x in data]
         for i in range(0, len(ids), KALSHI_REQUEST_LIMIT):
             batch = ids[i:i+KALSHI_REQUEST_LIMIT]
             response = api.get_markets(limit = KALSHI_REQUEST_LIMIT, tickers = ",".join(batch))
@@ -234,13 +306,13 @@ class Kalshi(Market):
             else:
                 cursors.add(cursor)
             for market in markets:
-                q : BinaryMarketMetadata = {
-                    "platform" : self.platform_name,
-                    "question" : market.title,
-                    "id" : market.ticker,
-                    "yes_id" : None,
-                    "no_id" : None
-                }
+                q = BinaryMarketMetadata(
+                    self.platform_name,
+                    market.title,
+                    market.ticker,
+                    None,
+                    None
+                )
                 questions.append(q)
                 question_count += 1
                 if question_count == n:
@@ -249,38 +321,63 @@ class Kalshi(Market):
 
 class BetOpportunity:
 
-    def __init__(self, question : str, market_1 : BinaryMarket, market_2 : BinaryMarket):
+    def __init__(self, question : str, market_1 : BinaryMarket, market_2 : BinaryMarket, last_update : datetime):
         self.question = question
         self.market_1 = market_1
         self.market_2 = market_2
+        self.last_update = last_update
 
     def __str__(self) -> str:
         return (f"Bet Opportunity on Question: {self.question}\n"
-                f"Market 1:\n{self.market_1}\n\n"
-                f"Market 2:\n{self.market_2}\n\n")
+                f"BettingPlatform 1:\n{self.market_1}\n\n"
+                f"BettingPlatform 2:\n{self.market_2}\n\n")
     
-    # def calculate_return(self) -> float:
-    #     best_yes_price = min(self.market_1.yes_ask, self.market_2.yes_ask)
-    #     best_no_price = min(self.market_1.no_ask, self.market_2.no_ask)
-    #     # assumes buys 1 yes contract and 1 no contract
-    #     investment = best_yes_price + best_no_price
-    #     return 1 / investment - 1
-    def to_dict(self) -> dict[str, str | float | None]:
+    def calculate_absolute_return(self, yes_contracts : int, no_contracts : int) -> Tuple[float, float]:
+        """calculates the absolute return for the binary market bet opportunity
+
+        Args:
+            yes_contracts (int): number of yes contracts to purchase
+            no_contracts (int): number of no contracts to purchase
+
+        Raises:
+            ValueError: if incomplete data
+
+        Returns:
+            Tuple[float, float]: absolute return if market resolves to yes, absolute return if market resolves to no   
+        """
+        market_1_yes_ask = self.market_1.yes_ask
+        market_2_yes_ask = self.market_2.yes_ask
+        market_1_no_ask = self.market_1.no_ask
+        market_2_no_ask = self.market_2.no_ask
+        if market_1_yes_ask and market_2_no_ask and market_1_no_ask and market_2_yes_ask:
+            best_yes_price = min(market_1_yes_ask, market_2_yes_ask)
+            best_no_price = min(market_1_no_ask, market_2_no_ask)
+            investment = best_yes_price*yes_contracts + best_no_price*no_contracts
+            return  no_contracts / investment - 1, no_contracts / investment - 1
+        else:
+            raise ValueError("One or more price data missing")
+        
+    def to_json(self):
         return {
-            "Question": self.question,
-            "Market 1 Platform": self.market_1.platform,
-            "Market 1 Name": self.market_1.question,
-            "Market 1 Yes Ask": self.market_1.yes_ask,
-            "Market 1 Yes Bid": self.market_1.yes_bid,
-            "Market 1 No Ask": self.market_1.no_ask,
-            "Market 1 No Bid": self.market_1.no_bid,
-            "Market 2 Platform": self.market_2.platform,
-            "Market 2 Name": self.market_2.question,
-            "Market 2 Yes Ask": self.market_2.yes_ask,
-            "Market 2 Yes Bid": self.market_2.yes_bid,
-            "Market 2 No Ask": self.market_2.no_ask,
-            "Market 2 No Bid": self.market_2.no_bid,
+            'question': self.question,
+            'market_1': self.market_1.to_json(),
+            'market_2': self.market_2.to_json(),
+            'last_update': self.last_update.isoformat()  # Convert datetime to ISO 8601 string
         }
+
+    # Method to instantiate a BetOpportunity object from a dictionary
+    @classmethod
+    def from_json(cls, data):
+        market_1 = BinaryMarket.from_json(data['market_1'])
+        market_2 = BinaryMarket.from_json(data['market_2'])
+        last_update = datetime.fromisoformat(data['last_update'])  # Convert back to datetime
+        return cls(
+            question=data['question'],
+            market_1=market_1,
+            market_2=market_2,
+            last_update=last_update
+        )
+
     
     def calculate_orderbook_aware_return(self, investment : float) -> float:
         #TBU
