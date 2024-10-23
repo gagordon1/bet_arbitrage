@@ -2,9 +2,9 @@ from typing import List, TypedDict, Dict
 import json
 from QuestionMap import QuestionMap
 import pandas as pd #type: ignore
-from pprint import pprint
-from BettingPlatform import Polymarket, Kalshi, BettingPlatform, BinaryMarket, BinaryMarketMetadata, BetOpportunity, KALSHI_ELECTION_ENDPOINT, KALSHI_NON_ELECTION_ENDPOINT
+from BettingPlatform import Polymarket, Kalshi, BettingPlatform, BinaryMarket, BinaryMarketMetadata, BetOpportunity
 from datetime import datetime
+from constants import *
 
 class MarketData(TypedDict):
     betting_platform: BettingPlatform
@@ -14,21 +14,21 @@ class MarketData(TypedDict):
 class QuestionData:
 
     def __init__(self):
-        self.kalshi = Kalshi(host = KALSHI_NON_ELECTION_ENDPOINT, platform_name="Kalshi")
-        self.kalshi_election = Kalshi(host = KALSHI_ELECTION_ENDPOINT, platform_name= "Kalshi-Election")
-        self.polymarket = Polymarket()
+        kalshi = Kalshi(host = KALSHI_NON_ELECTION_ENDPOINT, platform_name="Kalshi")
+        kalshi_election = Kalshi(host = KALSHI_ELECTION_ENDPOINT, platform_name= "Kalshi-Election")
+        polymarket = Polymarket()
         self.betting_platforms : Dict[str , MarketData] = {
             "Kalshi": {
-                "betting_platform" : self.kalshi,
-                "questions_filepath" : "question_data/kalshi.json"
+                "betting_platform" : kalshi,
+                "questions_filepath" : BETTING_PLATFORM_DATA["Kalshi"]["question_filepath"]
             },
             "Kalshi-Election":{
-                "betting_platform" : self.kalshi_election,
-                "questions_filepath" : "question_data/kalshi_election.json"
+                "betting_platform" : kalshi_election,
+                "questions_filepath" : BETTING_PLATFORM_DATA["Kalshi-Election"]["question_filepath"]
             },
             "Polymarket" :{
-                "betting_platform" : self.polymarket,
-                "questions_filepath" : "question_data/polymarket.json"
+                "betting_platform" : polymarket,
+                "questions_filepath" : BETTING_PLATFORM_DATA["Polymarket"]["question_filepath"]
             }
         }
 
@@ -38,6 +38,8 @@ class QuestionData:
             return QuestionMap.from_json(question_map_json)
 
     def save_active_markets_to_json(self):
+        """For each platform in the data set, gets all active markets and saves them lists of binary market metadata
+        """
         for market_name in self.betting_platforms:
             print("collecting data for "+ market_name + " ...")
             market = self.betting_platforms[market_name]["betting_platform"]
@@ -249,31 +251,4 @@ class QuestionData:
         print(f"Bet opportunities saved to {excel_file}")
 
 if __name__ == "__main__":
-    filepaths = [
-        "question_data/kalshi.json", 
-        "question_data/kalshi_election.json", 
-        "question_data/polymarket.json"
-        ]
-    platform_names = [
-        "Kalshi", 
-        "Kalshi-Election",
-        "Polymarket"
-    ]
-    
-    json_output_file = "overlapping_market_data/overlapping_market_data.json"
-    excel_output_file = "overlapping_market_data/overlapping_market_data.xlsx"
-
-    bet_opportunities_output_file = "bet_opportunities_data/bet_opportunities_10-22-24.json"
-    bet_opportunities_output_file_2 = "bet_opportunities_data/bet_opportunities_10-22-24-2.json"
-    bet_opportunities_output_excel_file = "bet_opportunities_data/bet_opportunities_10-22-24.xlsx"
-
-    qdata = QuestionData()
-    # qdata.save_active_markets_to_json()
-    # question_map = qdata.build_question_map(filepaths)
-    # qdata.save_question_map_to_json(question_map, json_output_file)
-    # qdata.question_map_json_to_excel(json_output_file, excel_output_file)
-    data = qdata.open_question_map_json(json_output_file)
-    bet_opportunities = qdata.get_bet_opportunities_from_question_map(data)
-    qdata.save_bet_opportunities_to_json(bet_opportunities, bet_opportunities_output_file)
-    updated  = qdata.get_updated_bet_opportunity_data(bet_opportunities_output_file)
-    qdata.save_bet_opportunities_to_json(updated, bet_opportunities_output_file_2)
+    pass

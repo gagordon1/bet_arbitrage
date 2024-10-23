@@ -8,16 +8,7 @@ import os
 import kalshi_python # type: ignore
 from kalshi_python.models import * # type: ignore
 from pprint import pprint
-
-POLYMARKET_ENDPOINT = "https://clob.polymarket.com/"
-
-KALSHI_NON_ELECTION_ENDPOINT = "https://trading-api.kalshi.com/trade-api/v2"
-
-KALSHI_ELECTION_ENDPOINT = "https://api.elections.kalshi.com/trade-api/v2"
-
-KALSHI_REQUEST_LIMIT = 100
-
-POLYMARKET_REQUEST_LIMIT = 500
+from constants import *
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -70,20 +61,28 @@ class BinaryMarket:
             id : str, 
             yes_id : str | None,
             no_id : str | None,
-            yes_ask : float | None,
-            no_ask : float | None,
-            yes_bid : float | None,
-            no_bid : float | None,
+            yes_ask : float | None | str,
+            no_ask : float | None | str,
+            yes_bid : float | None | str,
+            no_bid : float | None | str,
         ):
         self.platform = platform
         self.question = question
         self.id = id
         self.yes_id = yes_id
         self.no_id = no_id
-        self.yes_ask = yes_ask
-        self.no_ask = no_ask
-        self.yes_bid = yes_bid
-        self.no_bid = no_bid
+        self.yes_ask = None
+        self.no_ask = None
+        self.yes_bid = None
+        self.no_bid = None
+        if yes_ask != None:
+            self.yes_ask = float(yes_ask)
+        if no_ask != None:
+            self.no_ask = float(no_ask)
+        if yes_bid != None:
+            self.yes_bid = float(yes_bid)
+        if no_bid != None:
+            self.no_bid = float(no_bid)
     
     def __str__(self) -> str:
         return (f"Platform: {self.platform}, BettingPlatform: {self.platform}\n"
@@ -332,7 +331,7 @@ class BetOpportunity:
                 f"BettingPlatform 1:\n{self.market_1}\n\n"
                 f"BettingPlatform 2:\n{self.market_2}\n\n")
     
-    def calculate_absolute_return(self, yes_contracts : int, no_contracts : int) -> Tuple[float, float]:
+    def calculate_absolute_return(self, yes_contracts : int, no_contracts : int) -> list[float]:
         """calculates the absolute return for the binary market bet opportunity
 
         Args:
@@ -343,7 +342,7 @@ class BetOpportunity:
             ValueError: if incomplete data
 
         Returns:
-            Tuple[float, float]: absolute return if market resolves to yes, absolute return if market resolves to no   
+            List[float, float]: absolute return if market resolves to yes, absolute return if market resolves to no   
         """
         market_1_yes_ask = self.market_1.yes_ask
         market_2_yes_ask = self.market_2.yes_ask
@@ -353,15 +352,16 @@ class BetOpportunity:
             best_yes_price = min(market_1_yes_ask, market_2_yes_ask)
             best_no_price = min(market_1_no_ask, market_2_no_ask)
             investment = best_yes_price*yes_contracts + best_no_price*no_contracts
-            return  no_contracts / investment - 1, no_contracts / investment - 1
+            return  [no_contracts / investment - 1, no_contracts / investment - 1]
         else:
-            raise ValueError("One or more price data missing")
+            return [None, None]
         
     def to_json(self):
         return {
             'question': self.question,
             'market_1': self.market_1.to_json(),
             'market_2': self.market_2.to_json(),
+            'absolute_return' : self.calculate_absolute_return(1,1),
             'last_update': self.last_update.isoformat()  # Convert datetime to ISO 8601 string
         }
 

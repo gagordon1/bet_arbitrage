@@ -1,4 +1,13 @@
 {
+    "venom: the last dance rotten tomatoes score?": [
+        {
+            "platform": "Kalshi",
+            "question": "Venom: The Last Dance Rotten Tomatoes score?",
+            "id": "RTVENOM3-45",
+            "yes_id": null,
+            "no_id": null
+        }
+    ],
     "will the eur/usd open price be above 1.09199 at oct 24, 2024 at 10am edt?": [
         {
             "platform": "Kalshi",
@@ -485,1230 +494,6 @@
             "no_id": null
         }
     ],
-    "will the yield of 10-year u.s. treasury notes be above 4.39 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be above 4.39 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-T4.39",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.37 and 4.39 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.37 and 4.39 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.38",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.34 and 4.36 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.34 and 4.36 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.35",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.31 and 4.33 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.31 and 4.33 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.32",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.28 and 4.30 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.28 and 4.30 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.29",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.25 and 4.27 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.25 and 4.27 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.26",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.22 and 4.24 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.22 and 4.24 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.23",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.19 and 4.21 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.19 and 4.21 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.20",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.16 and 4.18 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.16 and 4.18 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.17",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.13 and 4.15 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.13 and 4.15 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.14",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.10 and 4.12 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.10 and 4.12 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.11",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.07 and 4.09 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.07 and 4.09 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.08",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.04 and 4.06 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.04 and 4.06 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.05",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be between 4.01 and 4.03 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be between 4.01 and 4.03 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-B4.02",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the yield of 10-year u.s. treasury notes be below 4.01 on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the yield of 10-year U.S. treasury notes be below 4.01 on Oct 23, 2024?",
-            "id": "TNOTED-24OCT23-T4.01",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 21699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 21699.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T21699.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 21600 and 21699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 21600 and 21699.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B21650",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 21500 and 21599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 21500 and 21599.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B21550",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 21400 and 21499.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 21400 and 21499.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B21450",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 21300 and 21399.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 21300 and 21399.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B21350",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 21200 and 21299.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 21200 and 21299.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B21250",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 21100 and 21199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 21100 and 21199.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B21150",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 21000 and 21099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 21000 and 21099.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B21050",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20900 and 20999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20900 and 20999.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20950",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20800 and 20899.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20800 and 20899.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20850",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20700 and 20799.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20700 and 20799.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20750",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20600 and 20699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20600 and 20699.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20650",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20500 and 20599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20500 and 20599.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20550",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20400 and 20499.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20400 and 20499.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20450",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20300 and 20399.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20300 and 20399.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20350",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20200 and 20299.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20200 and 20299.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20250",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20100 and 20199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20100 and 20199.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20150",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 20000 and 20099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 20000 and 20099.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B20050",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19900 and 19999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19900 and 19999.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19950",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19800 and 19899.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19800 and 19899.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19850",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19700 and 19799.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19700 and 19799.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19750",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19600 and 19699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19600 and 19699.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19650",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19500 and 19599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19500 and 19599.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19550",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19400 and 19499.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19400 and 19499.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19450",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19300 and 19399.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19300 and 19399.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19350",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19200 and 19299.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19200 and 19299.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19250",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19100 and 19199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19100 and 19199.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19150",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 19000 and 19099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 19000 and 19099.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B19050",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be between 18900 and 18999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be between 18900 and 18999.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-B18950",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be below 18900 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be below 18900 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100-24OCT23-T18900",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 21599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 21599.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T21599.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 21499.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 21499.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T21499.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 21399.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 21399.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T21399.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 21299.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 21299.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T21299.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 21199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 21199.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T21199.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 21099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 21099.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T21099.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20999.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20999.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20899.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20899.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20899.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20799.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20799.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20799.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20699.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20699.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20599.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20599.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20499.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20499.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20499.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20399.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20399.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20399.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20299.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20299.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20299.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20199.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20199.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 20099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 20099.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T20099.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19999.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19999.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19899.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19899.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19899.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19799.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19799.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19799.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19699.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19699.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19599.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19599.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19499.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19499.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19499.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19399.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19399.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19399.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19299.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19299.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19299.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19199.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19199.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 19099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 19099.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T19099.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 18999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 18999.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T18999.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 18899.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 18899.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T18899.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the nasdaq-100 be above 18799.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the Nasdaq-100 be above 18799.99 at the end of Oct 23, 2024?",
-            "id": "NASDAQ100U-24OCT23-T18799.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6199.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-T6199.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6174.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6174.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T6174.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6149.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6149.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T6149.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6124.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6124.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T6124.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6099.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T6099.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6074.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6074.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T6074.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6049.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6049.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T6049.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 6024.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 6024.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T6024.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5999.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5999.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5974.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5974.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5974.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5949.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5949.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5949.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5924.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5924.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5924.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5899.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5899.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5899.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5874.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5874.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5874.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5849.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5849.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5849.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5824.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5824.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5824.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5799.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5799.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5799.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5774.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5774.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5774.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5749.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5749.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5749.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5724.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5724.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5724.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5699.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5699.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5674.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5674.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5674.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5649.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5649.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5649.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5624.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5624.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5624.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5599.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5599.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5574.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5574.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5574.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5549.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5549.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5549.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5524.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5524.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5524.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5499.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5499.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5499.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be above 5474.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be above 5474.99 at the end of Oct 23, 2024?",
-            "id": "INXU-24OCT23-T5474.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6175 and 6199.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6175 and 6199.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6187",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6150 and 6174.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6150 and 6174.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6162",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6125 and 6149.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6125 and 6149.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6137",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6100 and 6124.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6100 and 6124.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6112",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6075 and 6099.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6075 and 6099.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6087",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6050 and 6074.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6050 and 6074.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6062",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6025 and 6049.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6025 and 6049.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6037",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 6000 and 6024.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 6000 and 6024.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B6012",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5975 and 5999.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5975 and 5999.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5987",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5950 and 5974.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5950 and 5974.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5962",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5925 and 5949.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5925 and 5949.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5937",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5900 and 5924.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5900 and 5924.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5912",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5875 and 5899.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5875 and 5899.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5887",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5850 and 5874.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5850 and 5874.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5862",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5825 and 5849.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5825 and 5849.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5837",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5800 and 5824.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5800 and 5824.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5812",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5775 and 5799.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5775 and 5799.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5787",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5750 and 5774.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5750 and 5774.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5762",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5725 and 5749.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5725 and 5749.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5737",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5700 and 5724.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5700 and 5724.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5712",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5675 and 5699.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5675 and 5699.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5687",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5650 and 5674.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5650 and 5674.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5662",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5625 and 5649.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5625 and 5649.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5637",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5600 and 5624.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5600 and 5624.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5612",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5575 and 5599.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5575 and 5599.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5587",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be below 5500 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be below 5500 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-T5500",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5550 and 5574.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5550 and 5574.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5562",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5525 and 5549.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5525 and 5549.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5537",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "will the s&p 500 be between 5500 and 5524.99 at the end of oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Will the S&P 500 be between 5500 and 5524.99 at the end of Oct 23, 2024?",
-            "id": "INX-24OCT23-B5512",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "bitcoin price  on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Bitcoin price  on Oct 23, 2024?",
-            "id": "BTCD-24OCT2317-T56749.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "bitcoin price range  on oct 23, 2024?": [
-        {
-            "platform": "Kalshi",
-            "question": "Bitcoin price range  on Oct 23, 2024?",
-            "id": "BTC-24OCT2317-T57250",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "ethereum price at oct 23, 2024 at 5pm edt?": [
-        {
-            "platform": "Kalshi",
-            "question": "Ethereum price at Oct 23, 2024 at 5pm EDT?",
-            "id": "ETHD-24OCT2317-T1879.99",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
     "blitz rotten tomatoes score?": [
         {
             "platform": "Kalshi",
@@ -1795,15 +580,6 @@
             "platform": "Kalshi",
             "question": "Will the President's approval rating on 538 be between 37.5 and 37.9?",
             "id": "538APPROVE-24OCT23-B37.7",
-            "yes_id": null,
-            "no_id": null
-        }
-    ],
-    "venom: the last dance rotten tomatoes score?": [
-        {
-            "platform": "Kalshi",
-            "question": "Venom: The Last Dance Rotten Tomatoes score?",
-            "id": "RTVENOM3-45",
             "yes_id": null,
             "no_id": null
         }
@@ -2442,6 +1218,13 @@
         }
     ],
     "oct 2024 temperature increase?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will the October 2024 temperature increase be between 1.23-1.28\u00b0C?",
+            "id": "0xc7220901f4240c463dc30055759c5b986a47180cc8a1d2512f54606b7fe8fbca",
+            "yes_id": "4243900511604099635779683209085261669256545149731612818965476220756051662366",
+            "no_id": "57472411669918633225910659021652386701751203398923884489907043416757312786628"
+        },
         {
             "platform": "Kalshi",
             "question": "Oct 2024 temperature increase?",
@@ -27005,6 +25788,15 @@
             "no_id": null
         }
     ],
+    "will trump do better in florida or alaska?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Trump do better in Florida or Alaska?",
+            "id": "0x67749947d4e6a3041b36a90504c81545710fe044e0b1ce4de513d43b243357ed",
+            "yes_id": null,
+            "no_id": null
+        }
+    ],
     "who will win men?": [
         {
             "platform": "Polymarket",
@@ -27741,6 +26533,15 @@
             "id": "0x2f328fb1f2c9f927ae84c4c8455afe85cec11a984ac341a73bfb1811a87f5be2",
             "yes_id": "84703999102994747142726824842120583249924704308084557115483053788937634986897",
             "no_id": "93229365993061273091724939825200643587543315743349013814568618798326327224871"
+        }
+    ],
+    "will kamala do better in georgia or wisconsin?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Kamala do better in Georgia or Wisconsin?",
+            "id": "0x922936e2b64f67d254128bbe01f50b5e81709bc4f2af357fd66ccc0abfa23ed6",
+            "yes_id": null,
+            "no_id": null
         }
     ],
     "u.s. military action against iran in 2024?": [
@@ -29156,6 +27957,87 @@
             "no_id": "86395483446652840770006557128286893509226209916990570302213925401037066546976"
         }
     ],
+    "will mibr win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will MIBR win ESL Challenger Katowice 2024?",
+            "id": "0x5ef146e1fb09079f4848c475ce1155c5c70b85783dc660279e049b10b296ea96",
+            "yes_id": "18684043528582997472999684746406482789041983896366844839956586265974198486373",
+            "no_id": "45387939706047629317441887484320922998676872186616800589144469390135371654387"
+        }
+    ],
+    "will eternal fire win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Eternal Fire win ESL Challenger Katowice 2024?",
+            "id": "0x28f5b0aeb5764adb81ed57301ecef5ddd9ab4fc38e463e47795c313b4829f3d9",
+            "yes_id": "31505858296470432958050582759016045282554272577942525446054069139777266989222",
+            "no_id": "82811775752618054074700904513311918713065954034096626915111990699700299726698"
+        }
+    ],
+    "will falcons win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Falcons win ESL Challenger Katowice 2024?",
+            "id": "0xe085c88904237d58717956e54bf3d8ecac5b1a29212fd8d3a3f1441afb93ed04",
+            "yes_id": "18372402092877162721811101154361679764227176659102866688628968033460967570922",
+            "no_id": "86316967417696613724696330983600555248689093584285020118713169588916675411706"
+        }
+    ],
+    "will monte win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Monte win ESL Challenger Katowice 2024?",
+            "id": "0x50cd64b31a64a8d1fa09abd5a9dc1c37796490cca2c00fe444f5b374a9cb1266",
+            "yes_id": "5439358021111905596959729834189072178958997914561933717184310795079982317710",
+            "no_id": "62026156220381445228989809546102233856227862472343104311300258944985874231722"
+        }
+    ],
+    "will b8 win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will B8 win ESL Challenger Katowice 2024?",
+            "id": "0x28524124f345a3dc716f1bd158b0722339c4606eecaca7ce1fc1dd5b47a78409",
+            "yes_id": "58543035095566724044079911359109624037149407881903170494775685676427462844390",
+            "no_id": "93320000787658258175110619748497105573457369140580423326091508167325354944426"
+        }
+    ],
+    "will saw win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will SAW win ESL Challenger Katowice 2024?",
+            "id": "0x839354ea9ebc2d17b3e01354cb3585df4aa41b66b81e30540fd820621bc5bfdb",
+            "yes_id": "8200503884509826420216823451140123431745993959743180020658084098744862687858",
+            "no_id": "58895202952860962847177922740910030171171929596980179408432378871518211195500"
+        }
+    ],
+    "will pain gaming win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will PAIN Gaming win ESL Challenger Katowice 2024?",
+            "id": "0x6ed44c38acf9201dcd5bbd3ced769cb1d2b57d728ae5a8b4c6934fd6daed3c32",
+            "yes_id": "2393943611164104699739691066785924839228198040688178391314906326161199341559",
+            "no_id": "1085157406746562368995114271588270989101391518967541343900342989702101057779"
+        }
+    ],
+    "will another team win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will another team win ESL Challenger Katowice 2024?",
+            "id": "0x44daa42630bdc6a1bb08f660ab5916911998968cbb7939d168bd5e69fb8c0b2b",
+            "yes_id": "48577557433973338121831353130490587943211247227036111058834873774771576611778",
+            "no_id": "24479413818563149061940839643352404706795624479907978399323778031187934250230"
+        }
+    ],
+    "will legacy win esl challenger katowice 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Legacy win ESL Challenger Katowice 2024?",
+            "id": "0xce2f32fb381011a3aa2bafebf9b2f34b98e30b2e9503a9a3f3b8ffc8fe9562fe",
+            "yes_id": "77054870680434622152306157462602942852845151382730532736235405115313843167853",
+            "no_id": "16761922100589513928195305843823971289621703162882662189693289058051439714005"
+        }
+    ],
     "will trump say \"hitler\" on the joe rogan experience?": [
         {
             "platform": "Polymarket",
@@ -29163,6 +28045,69 @@
             "id": "0x589d101402414b7bf1c254d3fcf2bbed990eb022f29c154abdd37e501ad053a7",
             "yes_id": "109212003161063238297972246543614248940979045129132578006146535055568479733624",
             "no_id": "80315021248260863881475814355194354520002421453136281325324673389277675389785"
+        }
+    ],
+    "$wif listed on coinbase in 2024?": [
+        {
+            "platform": "Polymarket",
+            "question": "$WIF listed on Coinbase in 2024?",
+            "id": "0xbca8e27fb0d7110160670005cd63d2713406604bb79946f726a7cec94f78b173",
+            "yes_id": "84743434918997027737025350383529130555016233871597904537142596714893957457708",
+            "no_id": "72564396505144590075743425306769809007026449541625031362139870395828737036095"
+        }
+    ],
+    "will trump x rogan interview be under 1 hour?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Trump x Rogan interview be under 1 hour?",
+            "id": "0xd7b62a653ab89322d80b4583cbc50f3c737bd2434c2ad975cc209afd7cf21cd6",
+            "yes_id": "29260810114917354959875301461412896286478307013794742101136377627382923097959",
+            "no_id": "41490619287956114920600736506526983745938308586871759038277184990286744946466"
+        }
+    ],
+    "will trump x rogan interview last 60-90 min?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Trump x Rogan interview last 60-90 min?",
+            "id": "0xb6993872057ddca3e8ca95c570ba836507c6f2129ebce63f8793769a06f2fd26",
+            "yes_id": "62895987919652065296117944378893005340618996924119019010588320874528478646350",
+            "no_id": "22135761695965600533700795631746693715931215694455988841932438649214928437879"
+        }
+    ],
+    "will trump x rogan interview last 90-120 min?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Trump x Rogan interview last 90-120 min?",
+            "id": "0xebc084052a8c63671ea555938663b59f1a9bc21dfc2ab4423d77531306480ddd",
+            "yes_id": "101597874026822996842265634365233843822690560086458377926432903848884077377219",
+            "no_id": "14561218140234166415354663122209570365578057059660171400667830157737135155185"
+        }
+    ],
+    "will trump x rogan interview last 120-150 min?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Trump x Rogan interview last 120-150 min?",
+            "id": "0x9b5bfa9292e43303e5f7ddf88f02ed9ef8c08d2e248aa7bcb73c54f58c2822dc",
+            "yes_id": "29682171867093156487380648599379236236440706215302865576169343911902603807012",
+            "no_id": "64047229830084851182022833330183519342719378523348584915832073295549320628264"
+        }
+    ],
+    "will trump x rogan interview last 150-180 min?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Trump x Rogan interview last 150-180 min?",
+            "id": "0xa608d565e6f533a6b2b61c6de07c37c2d00d4b326cab194da4b7e5b7fa6c641d",
+            "yes_id": "8268429593574857680823389878786974584677955744548151088713828950888180581926",
+            "no_id": "33880656299303610242586071728509644073157214288227594938910095875305917409748"
+        }
+    ],
+    "will trump x rogan interview last 180 min or more?": [
+        {
+            "platform": "Polymarket",
+            "question": "Will Trump x Rogan interview last 180 min or more?",
+            "id": "0x88e093db8bc1852e3504f92af1ed93e7c7d3fdb04b6d4c0678225cb109d7fa92",
+            "yes_id": "23680838883411634110405188127258061046698590839131803695311896977633684648271",
+            "no_id": "1366269625293531092651195937582723544380946451850903608730750468009337817543"
         }
     ]
 }

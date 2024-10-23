@@ -2,8 +2,7 @@ from typing import TypedDict, List, Tuple, Dict
 from NLPFunctions import NLPFunctions
 from BettingPlatform import BinaryMarketMetadata
 import torch # type: ignore
-
-SIMILARITY_CUTOFF = .8
+from constants import SIMILARITY_CUTOFF
 
 class QuestionMap:
     def __init__(self):
@@ -15,7 +14,6 @@ class QuestionMap:
         for question, entry in data.items():
             out_map[question] = [BinaryMarketMetadata.from_json(e) for e in entry]
         return out_map
-
     
     def to_json(self) -> dict:
         out : dict = {}
@@ -99,9 +97,6 @@ class QuestionMap:
                 entry = new_entry
             new_map[question] = entry
         self.map = new_map
-        
-
-
 
 if __name__ == "__main__":
     pass
