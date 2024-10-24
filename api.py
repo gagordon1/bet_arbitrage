@@ -38,9 +38,9 @@ def bet_opportunities():
 # Endpoint to delete a bet opportunity by id
 @app.route('/bet_opportunities/<string:bet_id>', methods=['DELETE'])
 def delete_bet_opportunities(bet_id):
-    
+
     Found, bet_opportunities = delete_bet_opportunity(bet_id)
-    
+    print(Found)
     if not Found:
         return jsonify({"message": "Bet opportunity not found"}), 404
 

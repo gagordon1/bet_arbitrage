@@ -3,7 +3,7 @@ import json
 from QuestionMap import QuestionMap
 import pandas as pd #type: ignore
 from BettingPlatform import Polymarket, Kalshi, BettingPlatform, BinaryMarket, BinaryMarketMetadata, BetOpportunity
-from datetime import datetime
+from datetime import datetime, timezone
 from constants import *
 
 class MarketData(TypedDict):
@@ -40,13 +40,15 @@ class QuestionData:
 
     def delete_bet_opportunity(self, id : str) -> tuple[bool, list[BetOpportunity]]:
         bet_opportunities = self.get_bet_opportunities()
+        to_delete_index = None
         for i in range(len(bet_opportunities)):
             if bet_opportunities[i].id == id:
                 to_delete_index = i
                 break
-
-        if to_delete_index:
+        
+        if to_delete_index != None:
             bet_opportunities.pop(to_delete_index)
+            self.save_bet_opportunities(bet_opportunities)
             return True, bet_opportunities
         else:
             return False, bet_opportunities
@@ -145,7 +147,7 @@ class QuestionData:
                                     q,
                                     updated_market_1,
                                     updated_market_2,
-                                    datetime.utcnow()
+                                    datetime.now(timezone.utc)
                                 )
                             )
         return out
@@ -191,7 +193,7 @@ class QuestionData:
             if market_id_1 in updated_market_map and market_id_2 in updated_market_map:
                 bo.market_1 = updated_market_map[market_id_1]
                 bo.market_2 = updated_market_map[market_id_2]
-                bo.last_update = datetime.utcnow()
+                bo.last_update = datetime.now(timezone.utc)
                 bo.refresh_return_calculations()
                 out.append(bo)
             elif market_id_1 in updated_market_map:

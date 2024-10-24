@@ -337,9 +337,9 @@ class Kalshi(BettingPlatform):
 
 class BetOpportunity:
 
-    def __init__(self, question : str, market_1 : BinaryMarket, market_2 : BinaryMarket, last_update : datetime):
+    def __init__(self, question : str, market_1 : BinaryMarket, market_2 : BinaryMarket, last_update : datetime, id :str = str(uuid.uuid4())):
         self.question = question
-        self.id = str(uuid.uuid4())
+        self.id = id
         self.market_1 = market_1
         self.market_2 = market_2
         self.last_update = last_update
@@ -395,7 +395,8 @@ class BetOpportunity:
             question=data['question'],
             market_1=market_1,
             market_2=market_2,
-            last_update=last_update
+            last_update=last_update,
+            id = data["id"]
         )
 
     

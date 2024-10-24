@@ -6,15 +6,13 @@ from datetime import datetime
 def sort_bet_opportunities(sort_key : str, ops : list[BetOpportunity]) -> list[BetOpportunity]:
 
     def lambda_func(x : BetOpportunity):
-        if x.absolute_return == None:
-            return float('-inf') 
-        else:
-            return sum(x.absolute_return)
+        return sum(x.absolute_return)
         
     if sort_key in BET_OPPORTUNITIES_SORT:
         if sort_key == PARITY_RETURN_SORT:
             ops.sort( 
-                key=lambda_func
+                key=lambda_func,
+                reverse = True
             )
     return ops
 
@@ -71,6 +69,14 @@ def build_bet_opportunities() -> list[BetOpportunity]:
     return bet_opportunities
 
 def delete_bet_opportunity(id : str) -> tuple[bool, list[BetOpportunity]]:
+    """Given an id for a bet opportunity, attempts to delete it
+
+    Args:
+        id (str): unique id of the bet opportunity
+
+    Returns:
+        tuple[bool, list[BetOpportunity]]: flag for if deleted, list of updated bet opportunities
+    """
     qdata = QuestionData()
     return qdata.delete_bet_opportunity(id)
 

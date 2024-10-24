@@ -1,79 +1,17 @@
 [
     {
-        "question": "will above 150000 jobs be added in october 2024?",
-        "id": "8f8f1e59-5ec6-4512-8636-6e5e64d640f0",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Will the US add 200-250k jobs in October?",
-            "id": "0x0644b8969ea752fb1434d720f968832fd51cb4485771ed6fa18029e9972491bc",
-            "yes_id": "28363190229152756510148151833189732573155696042258296162468257358505267129935",
-            "no_id": "96225219949840641284189600332793230207146531223176872707248417732162767696707",
-            "yes_ask": 0.14,
-            "no_ask": 0.88,
-            "yes_bid": 0.12,
-            "no_bid": 0.86
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will above 150000 jobs be added in October 2024?",
-            "id": "PAYROLLS-24OCT-T150000",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.45,
-            "no_ask": 0.66,
-            "yes_bid": 0.34,
-            "no_bid": 0.55
-        },
-        "absolute_return": [
-            0.25,
-            0.25
-        ],
-        "last_update": "2024-10-24T20:33:59.868068"
-    },
-    {
-        "question": "will above 100000 jobs be added in october 2024?",
-        "id": "bf4eb8aa-43e8-40e4-8685-3474d5304017",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Will the US add 100-150k jobs in October?",
-            "id": "0xa7c57a45150462c955a1845cd8b42c3da1234a839546db09eed7e72217c5b9f6",
-            "yes_id": "35510583517678148668707457320750824368783454491637309063030185186845603073401",
-            "no_id": "55300969367705103786555691288611938186465793380514655582359706812247869856821",
-            "yes_ask": 0.24,
-            "no_ask": 0.77,
-            "yes_bid": 0.23,
-            "no_bid": 0.76
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will above 100000 jobs be added in October 2024?",
-            "id": "PAYROLLS-24OCT-T100000",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.68,
-            "no_ask": 0.34,
-            "yes_bid": 0.66,
-            "no_bid": 0.32
-        },
-        "absolute_return": [
-            0.7241379310344827,
-            0.7241379310344827
-        ],
-        "last_update": "2024-10-24T20:33:59.868096"
-    },
-    {
         "question": "will the unemployment rate (u-3) be above 4.1% in october?",
-        "id": "7142483f-6b23-44ca-a4b3-6fbabefee324",
+        "id": "4f47fc01-4843-41af-bed2-e7b4c5a5f84d",
         "market_1": {
             "platform": "Polymarket",
             "question": "Unemployment rate over 4.1% in October?",
             "id": "0x9279e0735a365ab5fe94c671e172b9dc68e402fa9dab36db4d8e171785fcf40e",
             "yes_id": "33452350288513549254914757033264389754893259553323655636201453811665248668148",
             "no_id": "3983050688356593768308511514049251063007099207298260480646025406180068050827",
-            "yes_ask": 0.41,
-            "no_ask": 0.63,
-            "yes_bid": 0.37,
-            "no_bid": 0.59
+            "yes_ask": 0.51,
+            "no_ask": 0.65,
+            "yes_bid": 0.35,
+            "no_bid": 0.49
         },
         "market_2": {
             "platform": "Kalshi",
@@ -81,30 +19,30 @@
             "id": "U3-24OCT-T4.1",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.68,
+            "yes_ask": 0.81,
             "no_ask": 0.49,
             "yes_bid": 0.51,
-            "no_bid": 0.32
+            "no_bid": 0.19
         },
         "absolute_return": [
-            0.11111111111111116,
-            0.11111111111111116
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868100"
+        "last_update": "2024-10-24T21:34:03.858497+00:00"
     },
     {
         "question": "oct 2024 temperature increase?",
-        "id": "81e333d4-d078-4a71-bc26-b8fe1a634573",
+        "id": "8378922a-cba8-4f13-ab6f-5610cf3f1389",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will the October 2024 temperature increase be between 1.23-1.28\u00b0C?",
             "id": "0xc7220901f4240c463dc30055759c5b986a47180cc8a1d2512f54606b7fe8fbca",
             "yes_id": "4243900511604099635779683209085261669256545149731612818965476220756051662366",
             "no_id": "57472411669918633225910659021652386701751203398923884489907043416757312786628",
-            "yes_ask": 0.35,
-            "no_ask": 0.86,
-            "yes_bid": 0.14,
-            "no_bid": 0.65
+            "yes_ask": 0.16,
+            "no_ask": 0.89,
+            "yes_bid": 0.11,
+            "no_bid": 0.84
         },
         "market_2": {
             "platform": "Kalshi",
@@ -118,24 +56,24 @@
             "no_bid": 0.8
         },
         "absolute_return": [
-            -0.05660377358490576,
-            -0.05660377358490576
+            -0.04761904761904767,
+            -0.04761904761904767
         ],
-        "last_update": "2024-10-24T20:33:59.868103"
+        "last_update": "2024-10-24T21:34:03.858510+00:00"
     },
     {
         "question": "will  oct 2024 be the hottest oct ever?",
-        "id": "6533cbfc-0b10-44dd-9dbc-3ffedb0d2c24",
+        "id": "1935a267-aef6-47ed-886a-1c7fcb797915",
         "market_1": {
             "platform": "Polymarket",
             "question": "2024 October hottest on record?",
             "id": "0x2cc32ede706a85ec4056aa91df09f962ab11c1c2cac92b3a7befd5fe0832e738",
             "yes_id": "80936913420747128890011361987105681192801836812431706299492454694159162606508",
             "no_id": "54178592256003262503298016236837818342433248881427367300523192157316722316184",
-            "yes_ask": 0.64,
-            "no_ask": 0.4,
-            "yes_bid": 0.6,
-            "no_bid": 0.36
+            "yes_ask": 0.6,
+            "no_ask": 0.46,
+            "yes_bid": 0.54,
+            "no_bid": 0.4
         },
         "market_2": {
             "platform": "Kalshi",
@@ -149,14 +87,14 @@
             "no_bid": 0.41
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            -0.04761904761904767,
+            -0.04761904761904767
         ],
-        "last_update": "2024-10-24T20:33:59.868105"
+        "last_update": "2024-10-24T21:34:03.858515+00:00"
     },
     {
         "question": "will cpi rise more than 3% in october 2024?",
-        "id": "dc8c6b00-e2d1-48a1-8558-d62dbfd7579b",
+        "id": "d8e1ba89-6eca-48be-95e7-ea7a713ac8b3",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will CPI rise more than 3% in November 2024?",
@@ -183,11 +121,11 @@
             -0.4565217391304347,
             -0.4565217391304347
         ],
-        "last_update": "2024-10-24T20:33:59.868108"
+        "last_update": "2024-10-24T21:34:03.858518+00:00"
     },
     {
         "question": "will cpi rise more than 1.5% in october 2024?",
-        "id": "52418fe9-2eb0-47fa-b027-51b32b905ddd",
+        "id": "cc93e4df-ccbc-4667-aabc-1884c7c449a4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will CPI rise more than 1.5% in November 2024?",
@@ -205,20 +143,20 @@
             "id": "CPIUSEDCAR-24OCT-T1.5",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.97,
+            "yes_ask": 0.96,
             "no_ask": 1.0,
             "yes_bid": 0.0,
-            "no_bid": 0.03
+            "no_bid": 0.04
         },
         "absolute_return": [
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868111"
+        "last_update": "2024-10-24T21:34:03.858522+00:00"
     },
     {
         "question": "will cpi rise more than -3% in october 2024?",
-        "id": "065c6d28-744f-446a-a497-7d46cca6bdf1",
+        "id": "640d8e07-a0ce-4256-a2f8-1d506bc7b3d6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will CPI rise more than -3% in November 2024?",
@@ -245,11 +183,11 @@
             -0.45355191256830607,
             -0.45355191256830607
         ],
-        "last_update": "2024-10-24T20:33:59.868113"
+        "last_update": "2024-10-24T21:34:03.858525+00:00"
     },
     {
         "question": "will cpi rise more than -1.5% in october 2024?",
-        "id": "86b10065-3a32-4914-9297-2ae6056d6abe",
+        "id": "de8787d4-1e5e-4d29-a39e-5d17641e2a65",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will CPI rise more than -1.5% in November 2024?",
@@ -276,11 +214,11 @@
             -0.4923857868020305,
             -0.4923857868020305
         ],
-        "last_update": "2024-10-24T20:33:59.868116"
+        "last_update": "2024-10-24T21:34:03.858528+00:00"
     },
     {
         "question": "will cpi rise more than 0% in october 2024?",
-        "id": "2740e314-e9d1-4db7-a0ac-e0cc2cff7e45",
+        "id": "40d79a3e-3601-4169-a88d-730fa8fdf9b4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will CPI rise more than 0% in November 2024?",
@@ -307,21 +245,21 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868119"
+        "last_update": "2024-10-24T21:34:03.858531+00:00"
     },
     {
         "question": "will the rate of cpi inflation be above 2.4% for the year ending in october 2024?",
-        "id": "eeca5e48-a8d8-4c32-b5ad-c3531b243dd0",
+        "id": "67c15976-80a3-4859-8491-4e5dd79737d2",
         "market_1": {
             "platform": "Polymarket",
             "question": "Annual inflation above 2.4% in October?",
             "id": "0xe839ee0a5564adf3b76685d9a29e15aa6271c357a25c99064488c35e37a6086a",
             "yes_id": "77857096756740393672415249457335263941719799019623202832331443651051368336385",
             "no_id": "80838095026711268660622694145689403986165214264885490781406699175652068740716",
-            "yes_ask": 0.6,
+            "yes_ask": 0.61,
             "no_ask": 0.45,
             "yes_bid": 0.55,
-            "no_bid": 0.4
+            "no_bid": 0.39
         },
         "market_2": {
             "platform": "Kalshi",
@@ -329,20 +267,20 @@
             "id": "CPIYOY-24OCT-T2.4",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.91,
-            "no_ask": 0.4,
-            "yes_bid": 0.6,
-            "no_bid": 0.09
+            "yes_ask": 0.89,
+            "no_ask": 0.44,
+            "yes_bid": 0.56,
+            "no_bid": 0.11
         },
         "absolute_return": [
-            0.0,
-            0.0
+            -0.04761904761904767,
+            -0.04761904761904767
         ],
-        "last_update": "2024-10-24T20:33:59.868123"
+        "last_update": "2024-10-24T21:34:03.858534+00:00"
     },
     {
         "question": "new pandemic by 2024?",
-        "id": "5cf526eb-1c9c-4e46-a3cf-812db465f157",
+        "id": "3851a988-4406-4261-b700-4be46c846b7a",
         "market_1": {
             "platform": "Polymarket",
             "question": "Monkeypox pandemic in 2024?",
@@ -369,73 +307,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868126"
-    },
-    {
-        "question": "will there be a recession in 2025?",
-        "id": "41015c5b-05ac-4dd4-a9f1-a4abbc7a5cf3",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "U.S. recession announced by NBER before May 2025?",
-            "id": "0x669cfac096cbeeb6e07a8b7d6371552120ee6ba5bae1c4c209654068d35169d7",
-            "yes_id": "66162925847062993847093299904135100773674926133677495679668058080120084361082",
-            "no_id": "8670775459677814640425355711557639721713043820182964940507930624207044595369",
-            "yes_ask": 0.22,
-            "no_ask": 0.8,
-            "yes_bid": 0.2,
-            "no_bid": 0.78
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will there be a recession in 2025?",
-            "id": "RECSSNBER-25",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.43,
-            "no_ask": 0.58,
-            "yes_bid": 0.42,
-            "no_bid": 0.57
-        },
-        "absolute_return": [
-            0.25,
-            0.25
-        ],
-        "last_update": "2024-10-24T20:33:59.868130"
-    },
-    {
-        "question": "will tiktok be banned by june 30, 2026?",
-        "id": "54f9a3c3-1acb-4a19-aff7-9d50b0b0705f",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "TikTok banned in the US in 2024?",
-            "id": "0xd3328f8684b20c8b4be97ef06d55d9543e2669b0c6d9d9187ea4996c8ac03864",
-            "yes_id": "92183702303563122069416277238283804483148544865270859128510579897460690048203",
-            "no_id": "56146919834196908404256110241417464069562619059315782848423172398245672612969",
-            "yes_ask": 0.058,
-            "no_ask": 0.969,
-            "yes_bid": 0.031,
-            "no_bid": 0.942
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will TikTok be banned by June 30, 2026?",
-            "id": "TIKTOKBAN-26JUN30",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.47,
-            "no_ask": 0.57,
-            "yes_bid": 0.43,
-            "no_bid": 0.53
-        },
-        "absolute_return": [
-            0.5923566878980893,
-            0.5923566878980893
-        ],
-        "last_update": "2024-10-24T20:33:59.868133"
+        "last_update": "2024-10-24T21:34:03.858538+00:00"
     },
     {
         "question": "will there be more than 1000 bird flu cases in 2024?",
-        "id": "215b966c-b98e-4de0-a07f-32c8f0f664d1",
+        "id": "ff0559a5-b64c-4650-ac23-d6cf5e2d97df",
         "market_1": {
             "platform": "Polymarket",
             "question": "Bird flu pandemic in 2024?",
@@ -462,11 +338,11 @@
             0.020408163265305923,
             0.020408163265305923
         ],
-        "last_update": "2024-10-24T20:33:59.868136"
+        "last_update": "2024-10-24T21:34:03.858541+00:00"
     },
     {
         "question": "will playboi carti release a new album by dec 31, 2024?",
-        "id": "6a71c0b2-2cd0-4d26-80df-159847c2f82e",
+        "id": "e77b83b1-a81c-4a4c-a7ae-ffd60622cae0",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Playboi Carti release new album in 2024?",
@@ -493,11 +369,11 @@
             -0.05660377358490576,
             -0.05660377358490576
         ],
-        "last_update": "2024-10-24T20:33:59.868139"
+        "last_update": "2024-10-24T21:34:03.858544+00:00"
     },
     {
         "question": "will tiktok be banned by april 30, 2025?",
-        "id": "1afcdab1-5eb7-499b-9aa7-2c254c856522",
+        "id": "37aac116-133a-46f9-be06-7022fc14e88b",
         "market_1": {
             "platform": "Polymarket",
             "question": "TikTok banned in the US before May 2025?",
@@ -505,8 +381,8 @@
             "yes_id": "24635636911615866092589652362670811323984202357282728474473612545495782013438",
             "no_id": "77833150719418088778043805955239482801946237829699651267940477301583416794868",
             "yes_ask": 0.25,
-            "no_ask": 0.77,
-            "yes_bid": 0.23,
+            "no_ask": 0.76,
+            "yes_bid": 0.24,
             "no_bid": 0.75
         },
         "market_2": {
@@ -521,45 +397,14 @@
             "no_bid": 0.78
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.020408163265306145,
+            0.020408163265306145
         ],
-        "last_update": "2024-10-24T20:33:59.868142"
-    },
-    {
-        "question": "how high will ethereum get this year?",
-        "id": "af4fa89a-2d6f-48be-b7f1-9422fd41a9f5",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Ethereum all time high in 2024?",
-            "id": "0x5401278f7f9c9df79552148e2b280dea9ea91431a77c2c46686b8bec598970e7",
-            "yes_id": "104384626333890484417631221426453974917579250857486058586575825503557175219318",
-            "no_id": "21141504331828146088416065151083242350756843661701373107647465798821590056635",
-            "yes_ask": 0.08,
-            "no_ask": 0.93,
-            "yes_bid": 0.07,
-            "no_bid": 0.92
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "How high will Ethereum get this year?",
-            "id": "ETHMAXY-24DEC31-4500",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.19,
-            "no_ask": 0.83,
-            "yes_bid": 0.17,
-            "no_bid": 0.81
-        },
-        "absolute_return": [
-            0.098901098901099,
-            0.098901098901099
-        ],
-        "last_update": "2024-10-24T20:33:59.868146"
+        "last_update": "2024-10-24T21:34:03.858547+00:00"
     },
     {
         "question": "will openai announce the creation of agi?",
-        "id": "94f04cd8-71f0-455c-b35a-39003d25b319",
+        "id": "215a55cc-4f01-4dc4-8f37-d8803020dc5e",
         "market_1": {
             "platform": "Polymarket",
             "question": "OpenAI announces it has achieved AGI in 2024?",
@@ -567,8 +412,8 @@
             "yes_id": "105850438828614884452197310938430279698886324164735312931762902384271674871323",
             "no_id": "45451545361154916635080440981880000143792802921129924090307596584908056846964",
             "yes_ask": 0.066,
-            "no_ask": 0.943,
-            "yes_bid": 0.057,
+            "no_ask": 0.948,
+            "yes_bid": 0.052,
             "no_bid": 0.934
         },
         "market_2": {
@@ -583,45 +428,14 @@
             "no_bid": 0.94
         },
         "absolute_return": [
-            -0.0029910269192421346,
-            -0.0029910269192421346
+            -0.007936507936507908,
+            -0.007936507936507908
         ],
-        "last_update": "2024-10-24T20:33:59.868150"
-    },
-    {
-        "question": "will there be more than 5 major atlantic hurricanes in 2024?",
-        "id": "12266f4c-84c2-4d93-b4ee-b7172c73e447",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Will there be more than 25 named storms during Atlantic Hurricane Season?",
-            "id": "0x31a5dcf98ab184ef2c167c7daaca2155242d61f841cb9ac9615f1e03c77b7732",
-            "yes_id": "20665246231182136490547525101133693884486253989327514274079174830319865320396",
-            "no_id": "65216413915849427211862663344610280370339897207578538054327012357684245740535",
-            "yes_ask": 0.007,
-            "no_ask": 0.998,
-            "yes_bid": 0.002,
-            "no_bid": 0.993
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will there be more than 5 major Atlantic hurricanes in 2024?",
-            "id": "HURCTOTMAJ-24DEC01-T5",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.16,
-            "no_ask": 0.9,
-            "yes_bid": 0.1,
-            "no_bid": 0.84
-        },
-        "absolute_return": [
-            0.10253583241455333,
-            0.10253583241455333
-        ],
-        "last_update": "2024-10-24T20:33:59.868153"
+        "last_update": "2024-10-24T21:34:03.858550+00:00"
     },
     {
         "question": "when will bitcoin hit $100k?",
-        "id": "732ad084-4c57-4398-8ca7-3db00fa9898b",
+        "id": "4c87450f-f120-4f40-a866-76454e023404",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Bitcoin hit $100k in 2024?",
@@ -648,11 +462,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868157"
+        "last_update": "2024-10-24T21:34:03.858554+00:00"
     },
     {
         "question": "government shutdown in 2024?",
-        "id": "426bce41-2739-4f17-99ff-8bf8403fc058",
+        "id": "31ac3ea4-a1a1-4898-8afc-0070f9b554e4",
         "market_1": {
             "platform": "Polymarket",
             "question": "U.S. Government shutdown before 2025?",
@@ -679,11 +493,11 @@
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T20:33:59.868160"
+        "last_update": "2024-10-24T21:34:03.858557+00:00"
     },
     {
         "question": "adam neumann returns as wework ceo before dec 2024?",
-        "id": "b7767607-5347-4c99-8a85-fd0cb8ae305e",
+        "id": "da298488-9c4f-4229-a8ed-cb2ffeb45874",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Adam Neumann buy back WeWork in 2024?",
@@ -710,21 +524,21 @@
             0.002004008016031955,
             0.002004008016031955
         ],
-        "last_update": "2024-10-24T20:33:59.868163"
+        "last_update": "2024-10-24T21:34:03.858560+00:00"
     },
     {
         "question": "will there be more than 24  atlantic hurricanes in 2024?",
-        "id": "d23f2b33-8358-4a45-a56d-e668107fe4a3",
+        "id": "4110424e-1692-45ba-866e-a062c68fc80d",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will there be between 21 and 25 named storms during Atlantic Hurricane Season?",
             "id": "0xa4855d0b28960be4824c31c280d274572e176313d8efda21446cabe6bdc32efc",
             "yes_id": "102409325111577706513195431028950284047924939247341803509193905610113501728229",
             "no_id": "68644935658003709038049834019612140031920902930735728857820942648518742019664",
-            "yes_ask": 0.041,
-            "no_ask": 0.966,
-            "yes_bid": 0.034,
-            "no_bid": 0.959
+            "yes_ask": 0.04,
+            "no_ask": 0.967,
+            "yes_bid": 0.033,
+            "no_bid": 0.96
         },
         "market_2": {
             "platform": "Kalshi",
@@ -738,45 +552,14 @@
             "no_bid": 0.98
         },
         "absolute_return": [
-            0.014198782961460488,
-            0.014198782961460488
+            0.01317122593718345,
+            0.01317122593718345
         ],
-        "last_update": "2024-10-24T20:33:59.868167"
-    },
-    {
-        "question": "will there be more than 15  atlantic hurricanes in 2024?",
-        "id": "0672e26c-1872-476f-9fd6-853b2292c446",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Will there be between 16 and 20 named storms during Atlantic Hurricane Season?",
-            "id": "0x573dfc705c8f4250064b3ad30d2cc43397f16c9fc5b343473c860bbd04d7a3ca",
-            "yes_id": "15715009308040091279234147981975044809191123158647719661751577744637158945686",
-            "no_id": "106168765828645630794975020073445790881900274472378518915631299984436794320862",
-            "yes_ask": 0.89,
-            "no_ask": 0.12,
-            "yes_bid": 0.88,
-            "no_bid": 0.11
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will there be more than 15  Atlantic hurricanes in 2024?",
-            "id": "HURCTOT-24DEC01-T15",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.09,
-            "no_ask": 0.98,
-            "yes_bid": 0.02,
-            "no_bid": 0.91
-        },
-        "absolute_return": [
-            3.761904761904762,
-            3.761904761904762
-        ],
-        "last_update": "2024-10-24T20:33:59.868169"
+        "last_update": "2024-10-24T21:34:03.858563+00:00"
     },
     {
         "question": "zyn banned in the united states in 2024",
-        "id": "cb18a88e-eb5c-4859-af57-8169edfccd3f",
+        "id": "b28ae403-d6af-4d72-a0d3-68393a31cdad",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will America ban Zyn in 2024?",
@@ -803,11 +586,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868172"
+        "last_update": "2024-10-24T21:34:03.858566+00:00"
     },
     {
         "question": "sundar pichai leaves google in 2024?",
-        "id": "c3e15f35-0371-41ae-ac0f-1fa1a6ac7f6b",
+        "id": "ecb05250-db5e-4d1b-8f44-82a49b988de5",
         "market_1": {
             "platform": "Polymarket",
             "question": "Sundar Pichai out as Google CEO in 2024?",
@@ -834,42 +617,11 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T20:33:59.868175"
-    },
-    {
-        "question": "will openai end its for-profit division?",
-        "id": "13f91945-7553-419a-bf35-8e20dcb78635",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "OpenAI becomes a for-profit before April 2025?",
-            "id": "0xfa02778570805dfba88f6868614e4498bbdb41615e25d8e226e002427b33715a",
-            "yes_id": "6977354929648586646907497463084475085446337315504063400107556288706947900639",
-            "no_id": "95786396912497588240458633291577282911911104171276843678319000715227791448796",
-            "yes_ask": 0.65,
-            "no_ask": 0.55,
-            "yes_bid": 0.45,
-            "no_bid": 0.35
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will OpenAI end its for-profit division?",
-            "id": "OPENAIPROFIT-24",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.1,
-            "no_ask": 0.96,
-            "yes_bid": 0.04,
-            "no_bid": 0.9
-        },
-        "absolute_return": [
-            0.5384615384615383,
-            0.5384615384615383
-        ],
-        "last_update": "2024-10-24T20:33:59.868177"
+        "last_update": "2024-10-24T21:34:03.858569+00:00"
     },
     {
         "question": "will the fed cut rates 6 times?",
-        "id": "2a302824-4fea-4abe-8ef8-064d6be58153",
+        "id": "e2593b71-432a-4fda-a9c9-76c3bc9a84be",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Fed cut interest rates 6+ times in 2024?",
@@ -877,8 +629,8 @@
             "yes_id": "84643183405420394202022228902561826740846808356501215227161666889870223731025",
             "no_id": "58554034321367267952114748479751883364578049339591712689184773821576920660326",
             "yes_ask": 0.022,
-            "no_ask": 0.984,
-            "yes_bid": 0.016,
+            "no_ask": 0.983,
+            "yes_bid": 0.017,
             "no_bid": 0.978
         },
         "market_2": {
@@ -893,24 +645,24 @@
             "no_bid": 0.98
         },
         "absolute_return": [
-            -0.003984063745019917,
-            -0.003984063745019917
+            -0.0029910269192421346,
+            -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868180"
+        "last_update": "2024-10-24T21:34:03.858572+00:00"
     },
     {
         "question": "will the fed cut rates 5 times?",
-        "id": "28809719-eeef-4c46-bda4-9accb8f33082",
+        "id": "772c6daf-6b78-4d91-88a8-b83cbc36d1c5",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Fed cut interest rates 5 times in 2024?",
             "id": "0x13d3e3531ecc4d6096ffe53c9a34f73ea56ed9b4404f87366e708d3d3a7be699",
             "yes_id": "47297524982498421283461933358535593734005022410217129184450501581717779411296",
             "no_id": "59078630628332761069867151549679577601661122300168805150493001088287567354081",
-            "yes_ask": 0.058,
-            "no_ask": 0.946,
-            "yes_bid": 0.054,
-            "no_bid": 0.942
+            "yes_ask": 0.059,
+            "no_ask": 0.949,
+            "yes_bid": 0.051,
+            "no_bid": 0.941
         },
         "market_2": {
             "platform": "Kalshi",
@@ -924,24 +676,24 @@
             "no_bid": 0.93
         },
         "absolute_return": [
-            -0.003984063745019917,
-            -0.003984063745019917
+            -0.007936507936507908,
+            -0.007936507936507908
         ],
-        "last_update": "2024-10-24T20:33:59.868183"
+        "last_update": "2024-10-24T21:34:03.858574+00:00"
     },
     {
         "question": "will the fed cut rates 4 times?",
-        "id": "04b86a13-8ee9-474a-85fe-8b3105e498d2",
+        "id": "0f5e58e4-5894-4137-9760-30cc8d61035c",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Fed cut interest rates 4 times in 2024?",
             "id": "0x9d1f0296f3a016727193d2b45704e0debc3b8048fe0715f8bb1e91550d321872",
             "yes_id": "101669189743438912873361127612589311253202068943959811456820079057046819967115",
             "no_id": "113332423559050930347591987511234765387649957428761857688151517507261414072694",
-            "yes_ask": 0.629,
-            "no_ask": 0.378,
-            "yes_bid": 0.622,
-            "no_bid": 0.371
+            "yes_ask": 0.648,
+            "no_ask": 0.382,
+            "yes_bid": 0.618,
+            "no_bid": 0.352
         },
         "market_2": {
             "platform": "Kalshi",
@@ -950,29 +702,29 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.61,
-            "no_ask": 0.42,
-            "yes_bid": 0.58,
+            "no_ask": 0.44,
+            "yes_bid": 0.56,
             "no_bid": 0.39
         },
         "absolute_return": [
-            0.012145748987854255,
-            0.012145748987854255
+            0.008064516129032251,
+            0.008064516129032251
         ],
-        "last_update": "2024-10-24T20:33:59.868187"
+        "last_update": "2024-10-24T21:34:03.858577+00:00"
     },
     {
         "question": "will the fed cut rates 3 times?",
-        "id": "97dffccb-91e8-4ffb-89e1-f726f4604763",
+        "id": "8bf32f73-e8d8-45c2-bccc-d8096b2ae7c8",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Fed cut interest rates 3 times in 2024?",
             "id": "0x260fd9d6b10746909a26c2af7a68b409f757c95a07dc57ddd480774a36c8399b",
             "yes_id": "35768725149562192699070006303662567010406472338668143689111965491738000793190",
             "no_id": "83892466078931422939390853849139934691334210073755987430603016034195037277387",
-            "yes_ask": 0.222,
-            "no_ask": 0.787,
-            "yes_bid": 0.213,
-            "no_bid": 0.778
+            "yes_ask": 0.221,
+            "no_ask": 0.786,
+            "yes_bid": 0.214,
+            "no_bid": 0.779
         },
         "market_2": {
             "platform": "Kalshi",
@@ -980,20 +732,20 @@
             "id": "RATECUTCOUNT-24DEC31-T3",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.25,
+            "yes_ask": 0.26,
             "no_ask": 0.8,
             "yes_bid": 0.2,
-            "no_bid": 0.75
+            "no_bid": 0.74
         },
         "absolute_return": [
-            -0.008919722497522375,
-            -0.008919722497522375
+            -0.006951340615690249,
+            -0.006951340615690249
         ],
-        "last_update": "2024-10-24T20:33:59.868191"
+        "last_update": "2024-10-24T21:34:03.858580+00:00"
     },
     {
         "question": "will the fed cut rates 2 times?",
-        "id": "f84a0032-43f6-4911-9022-be858c41f9c4",
+        "id": "a627558f-6433-4099-ba3f-1ec405bd4ec9",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Fed cut interest rates 2 times in 2024?",
@@ -1001,8 +753,8 @@
             "yes_id": "3871927428485769761941293093301936346966585290331404922187519259041214679155",
             "no_id": "110973344135995149785112705399269170498135973278560074168823250862703105635177",
             "yes_ask": 0.068,
-            "no_ask": 0.937,
-            "yes_bid": 0.063,
+            "no_ask": 0.938,
+            "yes_bid": 0.062,
             "no_bid": 0.932
         },
         "market_2": {
@@ -1017,24 +769,24 @@
             "no_bid": 0.94
         },
         "absolute_return": [
-            0.0030090270812437314,
-            0.0030090270812437314
+            0.002004008016031955,
+            0.002004008016031955
         ],
-        "last_update": "2024-10-24T20:33:59.868194"
+        "last_update": "2024-10-24T21:34:03.858583+00:00"
     },
     {
         "question": "will the federal reserve hike rates by december 31, 2024?",
-        "id": "95a5ac1e-37af-48f2-b546-98573380d4f7",
+        "id": "e1433a33-15f8-463f-9af3-d6814b78e534",
         "market_1": {
             "platform": "Polymarket",
             "question": "Fed rate hike in 2024?",
             "id": "0x4a5b5f52c6e7f2af6b06462c92d12ea7bd1662c87be11828da0722ff32373b36",
             "yes_id": "107044217179204375007391423171836736778333001654526073500109948457363605716489",
             "no_id": "75720675422795543641636191288540431264439476250943172051324895003754638060199",
-            "yes_ask": 0.037,
-            "no_ask": 0.969,
-            "yes_bid": 0.031,
-            "no_bid": 0.963
+            "yes_ask": 0.038,
+            "no_ask": 0.967,
+            "yes_bid": 0.033,
+            "no_bid": 0.962
         },
         "market_2": {
             "platform": "Kalshi",
@@ -1048,14 +800,14 @@
             "no_bid": 0.92
         },
         "absolute_return": [
-            -0.005964214711729587,
-            -0.005964214711729587
+            -0.004975124378109319,
+            -0.004975124378109319
         ],
-        "last_update": "2024-10-24T20:33:59.868196"
+        "last_update": "2024-10-24T21:34:03.858586+00:00"
     },
     {
         "question": "will gpt-5 be released by december 31, 2024?",
-        "id": "0863c272-26b5-4f9b-ad47-63d6b40c9ad4",
+        "id": "b42ea4ed-86f2-42af-b0f5-e491d99c94e8",
         "market_1": {
             "platform": "Polymarket",
             "question": "GPT-5 released in 2024?",
@@ -1082,42 +834,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868199"
-    },
-    {
-        "question": "will taylor swift be time person of the year in 2024?",
-        "id": "b6ea2664-440b-4417-9cca-f6bf5e24950b",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Taylor Swift engaged in 2024?",
-            "id": "0x7b33d1d34b1b9414cb9d60d27ac20548b9065f33e61ff3a92ee904c3912b8bc9",
-            "yes_id": "104977311341950082544244554472948857994049468225917867533198571053459055078880",
-            "no_id": "55740902249579920579781315415467871508326779253952475846289648525221441730233",
-            "yes_ask": 0.19,
-            "no_ask": 0.82,
-            "yes_bid": 0.18,
-            "no_bid": 0.81
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will Taylor Swift be Time Person of the Year in 2024?",
-            "id": "TIME-24-TS",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.06,
-            "no_ask": 0.96,
-            "yes_bid": 0.04,
-            "no_bid": 0.94
-        },
-        "absolute_return": [
-            0.13636363636363646,
-            0.13636363636363646
-        ],
-        "last_update": "2024-10-24T20:33:59.868204"
+        "last_update": "2024-10-24T21:34:03.858589+00:00"
     },
     {
         "question": "will argentina dollarize its economy by dec 31, 2024?",
-        "id": "27c96a95-36be-485b-aa8c-47f69cb9e734",
+        "id": "0e7068bf-f55e-46ed-8143-32aeae556b35",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will Argentina dollarize in 2024?",
@@ -1144,11 +865,11 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T20:33:59.868206"
+        "last_update": "2024-10-24T21:34:03.858592+00:00"
     },
     {
         "question": "will 2024 be the hottest year on record?",
-        "id": "23559e14-2c35-4e4c-9994-cdda2f1a027d",
+        "id": "c34c4497-38cd-4d68-ad9a-87332a65ec1a",
         "market_1": {
             "platform": "Polymarket",
             "question": "Will 2024 be the hottest year on record?",
@@ -1175,11 +896,11 @@
             0.018329938900203624,
             0.018329938900203624
         ],
-        "last_update": "2024-10-24T20:33:59.868209"
+        "last_update": "2024-10-24T21:34:03.858594+00:00"
     },
     {
         "question": "will there be a recession by the end of 2024?",
-        "id": "c7100a97-f7b0-4247-86c9-329c9ccf0ac8",
+        "id": "0c654115-517f-4586-993b-dbc2c44352b2",
         "market_1": {
             "platform": "Polymarket",
             "question": "U.S. Recession in 2024?",
@@ -1206,21 +927,21 @@
             -0.005964214711729587,
             -0.005964214711729587
         ],
-        "last_update": "2024-10-24T20:33:59.868211"
+        "last_update": "2024-10-24T21:34:03.858597+00:00"
     },
     {
         "question": "will kamala harris go on the joe rogan experience before nov 5, 2024",
-        "id": "d1d9e871-86cd-441f-888e-16ad4c54e3e3",
+        "id": "04bd3a36-440e-45cb-a6b4-8473c952d1e9",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Kamala Harris go on the Joe Rogan Experience before Nov 5, 2024",
             "id": "KXROGANKH-24-NOV05",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.17,
-            "no_ask": 0.99,
-            "yes_bid": 0.01,
-            "no_bid": 0.83
+            "yes_ask": 0.26,
+            "no_ask": 0.97,
+            "yes_bid": 0.03,
+            "no_bid": 0.74
         },
         "market_2": {
             "platform": "Polymarket",
@@ -1228,20 +949,20 @@
             "id": "0x55f8995a52478c39481ebb7b9c9cb78c2ca69871c226e9404f55aa0b59a1e920",
             "yes_id": "15660815820924217908090409700847718952286327471630553559698266134410064622109",
             "no_id": "27948197752909632733803271493109389361574351476791969080542695194338931202835",
-            "yes_ask": 0.12,
-            "no_ask": 0.89,
-            "yes_bid": 0.11,
-            "no_bid": 0.88
+            "yes_ask": 0.14,
+            "no_ask": 0.88,
+            "yes_bid": 0.12,
+            "no_bid": 0.86
         },
         "absolute_return": [
-            -0.00990099009900991,
-            -0.00990099009900991
+            -0.019607843137254943,
+            -0.019607843137254943
         ],
-        "last_update": "2024-10-24T20:33:59.868214"
+        "last_update": "2024-10-24T21:34:03.858600+00:00"
     },
     {
         "question": "will donald trump go on the joe rogan experience before nov 5, 2024",
-        "id": "019f2da7-967d-4224-8bed-c47b5b4b65cc",
+        "id": "537eecc3-6a36-497b-98d3-e3819ed04c51",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Donald Trump go on the Joe Rogan Experience before Nov 5, 2024",
@@ -1249,8 +970,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.97,
-            "no_ask": 0.04,
-            "yes_bid": 0.96,
+            "no_ask": 0.09,
+            "yes_bid": 0.91,
             "no_bid": 0.03
         },
         "market_2": {
@@ -1259,20 +980,20 @@
             "id": "0x6689c157a7c57f0ee8ab7feace215061cbb8828191854fe81f17976ef33b023e",
             "yes_id": "69957535606554334051493849773365565085200343213780884418403974246481158278196",
             "no_id": "55619052770411727287900353498060599339427684346964111421507451823240669029631",
-            "yes_ask": 0.968,
-            "no_ask": 0.037,
-            "yes_bid": 0.963,
-            "no_bid": 0.032
+            "yes_ask": 0.967,
+            "no_ask": 0.048,
+            "yes_bid": 0.952,
+            "no_bid": 0.033
         },
         "absolute_return": [
-            -0.004975124378109319,
-            -0.004975124378109319
+            -0.01477832512315258,
+            -0.01477832512315258
         ],
-        "last_update": "2024-10-24T20:33:59.868218"
+        "last_update": "2024-10-24T21:34:03.858603+00:00"
     },
     {
         "question": "will republicans have 56 seats or more in 119th congress?",
-        "id": "b8ad9d03-7cfd-4670-9c84-4ba53875d402",
+        "id": "bb3a9d77-7013-411c-b777-33e1bb84fb0c",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 56 seats or more in 119th Congress?",
@@ -1299,11 +1020,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868221"
+        "last_update": "2024-10-24T21:34:03.858606+00:00"
     },
     {
         "question": "will republicans have 55 seats in 119th congress?",
-        "id": "03aff71c-2b44-42db-9b16-95d74dca3928",
+        "id": "e595c716-9db1-405e-8665-6086a953c1d5",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 55 seats in 119th Congress?",
@@ -1321,20 +1042,20 @@
             "id": "0x3fbebb49ab61b4cc904734399d431326d5d5cd22b0bf985ab73a1d691483301e",
             "yes_id": "20997923443157238057314792262127288326422203506234479919644854685825478421945",
             "no_id": "105935219412550207811439738365969398253342763891248841798004324656748895118425",
-            "yes_ask": 0.087,
-            "no_ask": 0.917,
-            "yes_bid": 0.083,
-            "no_bid": 0.913
+            "yes_ask": 0.086,
+            "no_ask": 0.925,
+            "yes_bid": 0.075,
+            "no_bid": 0.914
         },
         "absolute_return": [
-            0.0030090270812437314,
-            0.0030090270812437314
+            -0.004975124378109541,
+            -0.004975124378109541
         ],
-        "last_update": "2024-10-24T20:33:59.868224"
+        "last_update": "2024-10-24T21:34:03.858609+00:00"
     },
     {
         "question": "will republicans have 54 seats in 119th congress?",
-        "id": "72bfcf9b-d09f-4558-8e71-232c62b92b5f",
+        "id": "4c60f8cf-3b5a-4a6c-9487-bed5d2b1e1ff",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 54 seats in 119th Congress?",
@@ -1361,11 +1082,11 @@
             0.026694045174538106,
             0.026694045174538106
         ],
-        "last_update": "2024-10-24T20:33:59.868226"
+        "last_update": "2024-10-24T21:34:03.858612+00:00"
     },
     {
         "question": "will republicans have 53 seats in 119th congress?",
-        "id": "ecd7f428-6611-49ab-8845-ed0eaf728db3",
+        "id": "5c59b81c-8b17-4936-ae68-5c3a02df6d29",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 53 seats in 119th Congress?",
@@ -1392,11 +1113,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868231"
+        "last_update": "2024-10-24T21:34:03.858614+00:00"
     },
     {
         "question": "will republicans have 52 seats in 119th congress?",
-        "id": "3dd5d70b-7ba2-470f-add9-98946a3120e9",
+        "id": "444f1ccc-17ee-4b98-be62-299cf3d25849",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 52 seats in 119th Congress?",
@@ -1423,11 +1144,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868233"
+        "last_update": "2024-10-24T21:34:03.858617+00:00"
     },
     {
         "question": "will republicans have 51 seats in 119th congress?",
-        "id": "593fa7ae-b994-44dd-b890-e7c689c2de75",
+        "id": "3767204f-16e9-4058-8f0a-6ac8e6a5aec3",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 51 seats in 119th Congress?",
@@ -1454,11 +1175,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868236"
+        "last_update": "2024-10-24T21:34:03.858620+00:00"
     },
     {
         "question": "will republicans have 50 seats in 119th congress?",
-        "id": "8873c741-0b8b-480f-ad6f-262779cd5dd7",
+        "id": "d08c1350-73fe-416d-b443-d8bb32b40f36",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 50 seats in 119th Congress?",
@@ -1485,11 +1206,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868240"
+        "last_update": "2024-10-24T21:34:03.858623+00:00"
     },
     {
         "question": "will republicans have 49 seats or fewer in 119th congress?",
-        "id": "f0a263b9-5cfe-4d9e-b15e-65effab8c042",
+        "id": "47aa9964-da02-4a02-add8-42c799755063",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans have 49 seats or fewer in 119th Congress?",
@@ -1516,11 +1237,11 @@
             0.020408163265305923,
             0.020408163265305923
         ],
-        "last_update": "2024-10-24T20:33:59.868242"
+        "last_update": "2024-10-24T21:34:03.858625+00:00"
     },
     {
         "question": "will the republican party win ne-3 (nebraska's third congressional district) in the presidential election?",
-        "id": "a56cbde0-ebcc-4688-8eab-d184e80a13e5",
+        "id": "6a19290c-73b4-4e94-a08c-2c83e352d71b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win NE-3 (Nebraska's third Congressional district) in the presidential election?",
@@ -1547,11 +1268,11 @@
             -0.017681728880157177,
             -0.017681728880157177
         ],
-        "last_update": "2024-10-24T20:33:59.868246"
+        "last_update": "2024-10-24T21:34:03.858628+00:00"
     },
     {
         "question": "will the democratic party win ne-3 (nebraska's third congressional district) in the presidential election?",
-        "id": "da11d848-8346-4b03-a50e-06416e634b50",
+        "id": "3b26cb6a-eb39-45f8-8122-8a40e27ee625",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win NE-3 (Nebraska's third Congressional district) in the presidential election?",
@@ -1578,11 +1299,11 @@
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T20:33:59.868249"
+        "last_update": "2024-10-24T21:34:03.858632+00:00"
     },
     {
         "question": "will the republican party win ne-2 (nebraska's second congressional district) in the presidential election?",
-        "id": "659111ad-0564-4569-b1ce-c58bb8af594a",
+        "id": "6743a9f3-9fb9-4d7b-9ac2-a12bfbb8f6d8",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win NE-2 (Nebraska's second Congressional district) in the presidential election?",
@@ -1601,19 +1322,19 @@
             "yes_id": "89935828926691594744835894208229135375117246058109787048758748507442022267421",
             "no_id": "73016602351549806570154178056127526088291646024319219227321763809599562817674",
             "yes_ask": 0.18,
-            "no_ask": 0.852,
-            "yes_bid": 0.148,
+            "no_ask": 0.847,
+            "yes_bid": 0.153,
             "no_bid": 0.82
         },
         "absolute_return": [
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868252"
+        "last_update": "2024-10-24T21:34:03.858634+00:00"
     },
     {
         "question": "will the democratic party win ne-2 (nebraska's second congressional district) in the presidential election?",
-        "id": "afd456bc-f2a2-42ae-a390-71eab2c0180e",
+        "id": "2c5bdbd3-da9e-4db7-93c0-06c32dc64623",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win NE-2 (Nebraska's second Congressional district) in the presidential election?",
@@ -1640,11 +1361,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868256"
+        "last_update": "2024-10-24T21:34:03.858637+00:00"
     },
     {
         "question": "will the republican party win ne-1 (nebraska's first congressional district) in the presidential election?",
-        "id": "07bc67ea-b354-4e16-8b88-0c2821146d9f",
+        "id": "591165f9-de12-4b0f-9455-b109c545a17b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win NE-1 (Nebraska's first Congressional district) in the presidential election?",
@@ -1671,11 +1392,11 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T20:33:59.868260"
+        "last_update": "2024-10-24T21:34:03.858639+00:00"
     },
     {
         "question": "will the democratic party win ne-1 (nebraska's first congressional district) in the presidential election?",
-        "id": "d317ccc3-e9e3-4417-92f2-e6345953ac79",
+        "id": "0b72afb6-2543-4b0e-bfa7-bad20a9badeb",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win NE-1 (Nebraska's first Congressional district) in the presidential election?",
@@ -1702,11 +1423,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868262"
+        "last_update": "2024-10-24T21:34:03.858642+00:00"
     },
     {
         "question": "will the republican party win me-2 (maine's second congressional district) in the presidential election?",
-        "id": "95c47953-26e8-407a-aaa0-21ee13524230",
+        "id": "6b46ba9e-8e73-4a9d-a953-54104e6813db",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win ME-2 (Maine's second Congressional district) in the presidential election?",
@@ -1725,19 +1446,19 @@
             "yes_id": "2872651121220554529285723801145572379379397933248271845993671013752850311873",
             "no_id": "113471463680872164947649683746867589520357533668591939134051665992096026713790",
             "yes_ask": 0.94,
-            "no_ask": 0.08,
-            "yes_bid": 0.92,
+            "no_ask": 0.07,
+            "yes_bid": 0.93,
             "no_bid": 0.06
         },
         "absolute_return": [
-            -0.019607843137254943,
-            -0.019607843137254943
+            -0.00990099009900991,
+            -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868264"
+        "last_update": "2024-10-24T21:34:03.858645+00:00"
     },
     {
         "question": "will the democratic party win me-2 (maine's second congressional district) in the presidential election?",
-        "id": "6ed3edab-a061-4e76-9af4-8516ea3b022b",
+        "id": "74dd5a5a-4470-4266-b4b5-b88c07dfc322",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win ME-2 (Maine's second Congressional district) in the presidential election?",
@@ -1755,20 +1476,20 @@
             "id": "0xa7b4202e7b52aed7a7427e592d41618f7f8dcd66875842caf197d8e5b9f47d72",
             "yes_id": "44654349958461050053406728973079846715045626572694293369547984435775623589312",
             "no_id": "35146497898416205827043529558767688423973661575262750615714111340634784642427",
-            "yes_ask": 0.08,
+            "yes_ask": 0.07,
             "no_ask": 0.94,
             "yes_bid": 0.06,
-            "no_bid": 0.92
+            "no_bid": 0.93
         },
         "absolute_return": [
-            -0.019607843137254943,
-            -0.019607843137254943
+            -0.00990099009900991,
+            -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868267"
+        "last_update": "2024-10-24T21:34:03.858648+00:00"
     },
     {
         "question": "will the democratic party win me-1 (maine's first congressional district) in the presidential election?",
-        "id": "48e42b4b-2d7f-418a-9206-fd52f521de09",
+        "id": "029d360d-c742-4b33-a814-f84d93f065d0",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win ME-1 (Maine's first Congressional district) in the presidential election?",
@@ -1795,21 +1516,21 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868269"
+        "last_update": "2024-10-24T21:34:03.858650+00:00"
     },
     {
         "question": "will the republican party win me-1 (maine's first congressional district) in the presidential election?",
-        "id": "8b6b0729-c3f4-4bf8-887a-17f5819f350e",
+        "id": "8ad4e1fe-331d-4609-9e52-4ae2e3fd396c",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win ME-1 (Maine's first Congressional district) in the presidential election?",
             "id": "PRESPARTYME1-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.03,
+            "yes_ask": 0.04,
             "no_ask": 0.98,
             "yes_bid": 0.02,
-            "no_bid": 0.97
+            "no_bid": 0.96
         },
         "market_2": {
             "platform": "Polymarket",
@@ -1826,11 +1547,11 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T20:33:59.868272"
+        "last_update": "2024-10-24T21:34:03.858653+00:00"
     },
     {
         "question": "tulsi gabbard nominated to the cabinet before feb 1, 2025?",
-        "id": "098b2544-2e25-4109-a2bd-95e1648d05d5",
+        "id": "b7215207-687e-46f1-b8ed-5496175254b6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Tulsi Gabbard nominated to the Cabinet before Feb 1, 2025?",
@@ -1848,20 +1569,20 @@
             "id": "0x6b642d364ac780ac5afe241cdb28af3d8fe576cbb163475f56ee3f099c520dc0",
             "yes_id": "60583707785258417517828736037344436560306741051148122339444796241891792695934",
             "no_id": "44173215934600696194775437225031783531347151423896444044144183340001221863158",
-            "yes_ask": 0.36,
-            "no_ask": 0.76,
-            "yes_bid": 0.24,
-            "no_bid": 0.64
+            "yes_ask": 0.34,
+            "no_ask": 0.75,
+            "yes_bid": 0.25,
+            "no_bid": 0.66
         },
         "absolute_return": [
-            0.04166666666666674,
-            0.04166666666666674
+            0.06382978723404253,
+            0.06382978723404253
         ],
-        "last_update": "2024-10-24T20:33:59.868277"
+        "last_update": "2024-10-24T21:34:03.858656+00:00"
     },
     {
         "question": "elon musk nominated to the cabinet before feb 1, 2025?",
-        "id": "5ab8d31a-bc3e-4a91-bfb9-63387c29e168",
+        "id": "f7efc80e-f33c-4e5e-b60f-fb7039aa1d2a",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Elon Musk nominated to the Cabinet before Feb 1, 2025?",
@@ -1888,11 +1609,11 @@
             0.12359550561797761,
             0.12359550561797761
         ],
-        "last_update": "2024-10-24T20:33:59.868279"
+        "last_update": "2024-10-24T21:34:03.858659+00:00"
     },
     {
         "question": "will the republican party win wyoming in the presidential election?",
-        "id": "d1c453dd-2bd2-458b-bc22-2dfcc7fc71b0",
+        "id": "6a273e78-cfbb-4846-bd96-079c1b8b587a",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Wyoming in the presidential election?",
@@ -1911,19 +1632,19 @@
             "yes_id": "5342322558879135113719590672336545201290330534347169248566656938864331545571",
             "no_id": "85609195379550704478189619591546878697047406538585515787949960554457829881601",
             "yes_ask": 0.993,
-            "no_ask": 0.011,
-            "yes_bid": 0.989,
+            "no_ask": 0.01,
+            "yes_bid": 0.99,
             "no_bid": 0.007
         },
         "absolute_return": [
-            -0.003984063745019917,
-            -0.003984063745019917
+            -0.0029910269192421346,
+            -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868281"
+        "last_update": "2024-10-24T21:34:03.858661+00:00"
     },
     {
         "question": "will the democratic party win wyoming in the presidential election?",
-        "id": "b449b8a8-7a13-4576-a276-4d2c7006f879",
+        "id": "cde690f4-aff4-411d-b394-68654bf2f864",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Wyoming in the presidential election?",
@@ -1950,11 +1671,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868286"
+        "last_update": "2024-10-24T21:34:03.858665+00:00"
     },
     {
         "question": "will the republican party win vermont in the presidential election?",
-        "id": "e686ca61-c1e9-4d50-9a07-cb5ea872d4df",
+        "id": "88346b99-ae8b-4f74-8f40-19a075a472b3",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Vermont in the presidential election?",
@@ -1981,11 +1702,11 @@
             0.002004008016031955,
             0.002004008016031955
         ],
-        "last_update": "2024-10-24T20:33:59.868288"
+        "last_update": "2024-10-24T21:34:03.858667+00:00"
     },
     {
         "question": "will the democratic party win vermont in the presidential election?",
-        "id": "8c26aa10-c512-4f55-8b7b-3e2f726b9f61",
+        "id": "9bf5ae17-231c-4790-8cac-f09e9e8d6203",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Vermont in the presidential election?",
@@ -2012,11 +1733,11 @@
             0.004016064257028162,
             0.004016064257028162
         ],
-        "last_update": "2024-10-24T20:33:59.868291"
+        "last_update": "2024-10-24T21:34:03.858670+00:00"
     },
     {
         "question": "will the democratic party win alaska in the presidential election?",
-        "id": "40ba1f9c-740e-49a1-a22c-ec15c651f2e6",
+        "id": "41c84fdf-fbd8-45b1-8ff5-d8a6267902ce",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Alaska in the presidential election?",
@@ -2034,20 +1755,20 @@
             "id": "0xc68fce919a7f2836e607b4775777f7bbd9e995d1e6d764408ed0350802abb3db",
             "yes_id": "66103355869922553341380243400213960081849885416074046575913026966107722127944",
             "no_id": "54422555799962570850229848955046654052416536680626489257857951455280125883378",
-            "yes_ask": 0.07,
+            "yes_ask": 0.069,
             "no_ask": 0.94,
             "yes_bid": 0.06,
-            "no_bid": 0.93
+            "no_bid": 0.931
         },
         "absolute_return": [
-            -0.00990099009900991,
-            -0.00990099009900991
+            -0.008919722497522153,
+            -0.008919722497522153
         ],
-        "last_update": "2024-10-24T20:33:59.868299"
+        "last_update": "2024-10-24T21:34:03.858673+00:00"
     },
     {
         "question": "will the republican party win alaska in the presidential election?",
-        "id": "7ac18d20-7089-4345-a2f9-94626fe973e7",
+        "id": "30fb2db4-2f86-4553-845e-991befb4cc47",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Alaska in the presidential election?",
@@ -2074,11 +1795,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868306"
+        "last_update": "2024-10-24T21:34:03.858676+00:00"
     },
     {
         "question": "will the democratic party win north dakota in the presidential election?",
-        "id": "c62656f4-dfb9-4852-bad4-68ab15310d6c",
+        "id": "7e1c37ef-d5e1-42cf-a736-fd704d0c501f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win North Dakota in the presidential election?",
@@ -2105,11 +1826,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868309"
+        "last_update": "2024-10-24T21:34:03.858678+00:00"
     },
     {
         "question": "will the republican party win north dakota in the presidential election?",
-        "id": "ad9dfe1c-dfd5-4829-a300-5e7c2d0737e2",
+        "id": "5269df8a-1e5e-4ff1-b7f8-a381d1aa169a",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win North Dakota in the presidential election?",
@@ -2136,11 +1857,11 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T20:33:59.868312"
+        "last_update": "2024-10-24T21:34:03.858681+00:00"
     },
     {
         "question": "will the republicn party win south dakota in the presidential election?",
-        "id": "11fbe875-324d-4963-9053-33866c1b63fc",
+        "id": "525cc107-3af1-4605-90c2-c0ef104ee90a",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republicn party win South Dakota in the presidential election?",
@@ -2167,11 +1888,11 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T20:33:59.868316"
+        "last_update": "2024-10-24T21:34:03.858684+00:00"
     },
     {
         "question": "will the democratic party win south dakota in the presidential election?",
-        "id": "72d7d991-6547-489e-af25-bd303950a9e3",
+        "id": "0f539e2e-8cdc-4a2a-b1f9-b41ddf28b882",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win South Dakota in the presidential election?",
@@ -2198,11 +1919,11 @@
             0.006036217303822866,
             0.006036217303822866
         ],
-        "last_update": "2024-10-24T20:33:59.868320"
+        "last_update": "2024-10-24T21:34:03.858687+00:00"
     },
     {
         "question": "will the democratic party win delaware in the presidential election?",
-        "id": "820796d8-ffcc-4ce6-8e5e-ca7fb0161eea",
+        "id": "f7555703-d719-43be-a15a-613a2263989f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Delaware in the presidential election?",
@@ -2229,11 +1950,11 @@
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T20:33:59.868322"
+        "last_update": "2024-10-24T21:34:03.858689+00:00"
     },
     {
         "question": "will the republican party win delaware in the presidential election?",
-        "id": "03bf26dc-7617-4d50-8543-37cd5403b657",
+        "id": "e4a095da-8f3b-4b00-997a-4f2663d440c2",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Delaware in the presidential election?",
@@ -2260,11 +1981,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868325"
+        "last_update": "2024-10-24T21:34:03.858692+00:00"
     },
     {
         "question": "will the democratic party win rhode island in the presidential election?",
-        "id": "ace2bfaa-de72-4048-b249-7fd6438fa805",
+        "id": "9f5e2394-95e2-4c79-a9a8-856edfcb7609",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Rhode Island in the presidential election?",
@@ -2283,19 +2004,19 @@
             "yes_id": "38273270592450956239176036564824184931613225780569936002941441819457082444101",
             "no_id": "85653997064360317011047136984390214724059069701211996897560907185797100519567",
             "yes_ask": 0.98,
-            "no_ask": 0.025,
-            "yes_bid": 0.975,
+            "no_ask": 0.026,
+            "yes_bid": 0.974,
             "no_bid": 0.02
         },
         "absolute_return": [
-            -0.004975124378109319,
-            -0.004975124378109319
+            -0.005964214711729587,
+            -0.005964214711729587
         ],
-        "last_update": "2024-10-24T20:33:59.868329"
+        "last_update": "2024-10-24T21:34:03.858695+00:00"
     },
     {
         "question": "will the republican party win rhode island in the presidential election?",
-        "id": "25970c44-45c1-4bd0-bd19-1b9da359e09c",
+        "id": "84c4991b-f86d-43f9-9027-01ad975d4c18",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Rhode Island in the presidential election?",
@@ -2322,11 +2043,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868331"
+        "last_update": "2024-10-24T21:34:03.858698+00:00"
     },
     {
         "question": "will the democratic party win montana in the presidential election?",
-        "id": "ba524a27-412e-483a-a3f4-a3ab0582e12f",
+        "id": "72e699cf-8d10-4704-833b-d9a1bf1328c6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Montana in the presidential election?",
@@ -2353,11 +2074,11 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868334"
+        "last_update": "2024-10-24T21:34:03.858702+00:00"
     },
     {
         "question": "will the republican party win montana in the presidential election?",
-        "id": "4643694c-ccef-4b7d-b358-0a3e7d7e268c",
+        "id": "26d809ea-98b7-49a7-b4dd-16abea7f4ab4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Montana in the presidential election?",
@@ -2375,20 +2096,20 @@
             "id": "0x015f277ff86323fb0cc3045f6444c5188d9fb491231b644aecd9a08cab9da792",
             "yes_id": "84439837773164457721562938989476144514221691118767622414917017467498968008300",
             "no_id": "13310920505912195795685878817959980798587941390838176717288739704026908151901",
-            "yes_ask": 0.985,
+            "yes_ask": 0.984,
             "no_ask": 0.025,
             "yes_bid": 0.975,
-            "no_bid": 0.015
+            "no_bid": 0.016
         },
         "absolute_return": [
-            -0.004975124378109319,
-            -0.004975124378109319
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868336"
+        "last_update": "2024-10-24T21:34:03.858704+00:00"
     },
     {
         "question": "will the democratic party win maine in the presidential election?",
-        "id": "42c70a86-5fac-4e91-b241-1612d11f0243",
+        "id": "b49c11b4-61d4-48df-a5c4-edf2449756f9",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Maine in the presidential election?",
@@ -2415,11 +2136,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868341"
+        "last_update": "2024-10-24T21:34:03.858707+00:00"
     },
     {
         "question": "will the republican party win maine in the presidential election?",
-        "id": "bfaec2e6-dba4-4d7c-9295-4cbbe200c815",
+        "id": "bf44381a-0259-4170-a8da-480a786f8f8b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Maine in the presidential election?",
@@ -2446,11 +2167,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868343"
+        "last_update": "2024-10-24T21:34:03.858710+00:00"
     },
     {
         "question": "will the democratic party win new hampshire in the presidential election?",
-        "id": "6eb619bb-f5b0-4091-aefe-4bcbb29f4cdc",
+        "id": "9db3e11e-1c5f-4184-83f5-93ecca6125cf",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win New Hampshire in the presidential election?",
@@ -2477,11 +2198,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868352"
+        "last_update": "2024-10-24T21:34:03.858713+00:00"
     },
     {
         "question": "will the republican party win new hampshire in the presidential election?",
-        "id": "5431e808-432d-4eed-8035-3d821ba29592",
+        "id": "daaadae1-18ab-47af-89fd-bb81b636704d",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win New Hampshire in the presidential election?",
@@ -2508,11 +2229,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868354"
+        "last_update": "2024-10-24T21:34:03.858716+00:00"
     },
     {
         "question": "will the republican party win hawaii in the presidential election?",
-        "id": "f1787935-d0b8-4748-9c5c-7422dea953da",
+        "id": "94a9a7ca-6f1e-42f9-8336-2f5ef34af6e6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Hawaii in the presidential election?",
@@ -2539,11 +2260,11 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T20:33:59.868357"
+        "last_update": "2024-10-24T21:34:03.858719+00:00"
     },
     {
         "question": "will the democratic party win hawaii in the presidential election?",
-        "id": "5645c704-d50c-4136-bee5-494b2275debd",
+        "id": "fee70e02-d043-4a57-bb34-2965135d185c",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Hawaii in the presidential election?",
@@ -2570,11 +2291,11 @@
             0.002004008016031955,
             0.002004008016031955
         ],
-        "last_update": "2024-10-24T20:33:59.868359"
+        "last_update": "2024-10-24T21:34:03.858721+00:00"
     },
     {
         "question": "will the democratic party win west virginia in the presidential election?",
-        "id": "2e773452-2005-4300-96d7-8f275f39c78b",
+        "id": "f9b2d57a-61b4-41c8-b0bd-f70a0c5946c3",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win West Virginia in the presidential election?",
@@ -2601,11 +2322,11 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868362"
+        "last_update": "2024-10-24T21:34:03.858724+00:00"
     },
     {
         "question": "will the republican party win west virginia in the presidential election?",
-        "id": "532b5071-4597-48a9-953f-53eb47e5804a",
+        "id": "461ff136-dad1-477c-afa1-d4dd8ecb2ee5",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win West Virginia in the presidential election?",
@@ -2632,11 +2353,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868364"
+        "last_update": "2024-10-24T21:34:03.858727+00:00"
     },
     {
         "question": "will the democratic party win idaho in the presidential election?",
-        "id": "6f2f3f4b-f3a1-411b-84bb-0c339e2eb114",
+        "id": "97439cb8-a588-480c-9467-e39fbc3493d9",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Idaho in the presidential election?",
@@ -2663,11 +2384,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868369"
+        "last_update": "2024-10-24T21:34:03.858730+00:00"
     },
     {
         "question": "will the republican party win idaho in the presidential election?",
-        "id": "9891864e-1a55-4324-9815-8198b8bb1afc",
+        "id": "7e806bff-d929-4ded-b287-87b7e91b3642",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Idaho in the presidential election?",
@@ -2694,11 +2415,11 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868373"
+        "last_update": "2024-10-24T21:34:03.858734+00:00"
     },
     {
         "question": "will the democratic party win nebraska in the presidential election?",
-        "id": "713c1b77-900c-4484-9f77-fc2e80a1b532",
+        "id": "6d56a304-62d8-47a1-9b80-2eb8aa899f1b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Nebraska in the presidential election?",
@@ -2716,20 +2437,20 @@
             "id": "0x5450fdfa7f5d9198c8bb06894478ab983dcf181c7796a84980fd7fd13d364e7b",
             "yes_id": "6511320115012073314258114900202512333073214818740802888332361452934837274686",
             "no_id": "35770901684551795669491368577279542243430622770277005790758177182695013574212",
-            "yes_ask": 0.007,
+            "yes_ask": 0.006,
             "no_ask": 0.996,
             "yes_bid": 0.004,
-            "no_bid": 0.993
+            "no_bid": 0.994
         },
         "absolute_return": [
-            0.0030090270812437314,
-            0.0030090270812437314
+            0.004016064257028162,
+            0.004016064257028162
         ],
-        "last_update": "2024-10-24T20:33:59.868375"
+        "last_update": "2024-10-24T21:34:03.858737+00:00"
     },
     {
         "question": "will the republican party win nebraska in the presidential election?",
-        "id": "a49f08f9-a7e0-4a8f-ada9-5e5ae8e5df35",
+        "id": "2bb23df0-7ded-458f-b574-b0567ae97c57",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Nebraska in the presidential election?",
@@ -2756,11 +2477,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868379"
+        "last_update": "2024-10-24T21:34:03.858739+00:00"
     },
     {
         "question": "will the republican party win new mexico in the presidential election?",
-        "id": "cee8eece-930f-4e0a-a594-36056d751197",
+        "id": "a181c53d-62c0-4f9e-9bed-b470d9423381",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win New Mexico in the presidential election?",
@@ -2787,11 +2508,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868381"
+        "last_update": "2024-10-24T21:34:03.858742+00:00"
     },
     {
         "question": "will the democratic party win new mexico in the presidential election?",
-        "id": "696b5906-9823-4f63-8283-7099d7169b5d",
+        "id": "6fae3474-a523-4e72-a482-3751ce823d44",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win New Mexico in the presidential election?",
@@ -2810,19 +2531,19 @@
             "yes_id": "107398595209864103976140659304436413092229730249009840752863422164742727107773",
             "no_id": "36894631291256613251821682384394172987455984176119765022678920079152356397626",
             "yes_ask": 0.9,
-            "no_ask": 0.12,
-            "yes_bid": 0.88,
+            "no_ask": 0.13,
+            "yes_bid": 0.87,
             "no_bid": 0.1
         },
         "absolute_return": [
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868384"
+        "last_update": "2024-10-24T21:34:03.858745+00:00"
     },
     {
         "question": "will the democratic party win minnesota in the presidential election?",
-        "id": "a122800e-df31-427f-933f-0d4339b2fbc6",
+        "id": "e7e6ea6a-8ba0-45fa-83e9-eb3bc9fb04fe",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Minnesota in the presidential election?",
@@ -2849,11 +2570,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868388"
+        "last_update": "2024-10-24T21:34:03.858748+00:00"
     },
     {
         "question": "will the republican party win minnesota in the presidential election?",
-        "id": "8798d5e1-638b-4ce5-b5d9-4f6368969880",
+        "id": "48f8af85-d9d1-4a9b-8eac-30bd294689e6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Minnesota in the presidential election?",
@@ -2880,11 +2601,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868390"
+        "last_update": "2024-10-24T21:34:03.858750+00:00"
     },
     {
         "question": "will the democratic party win mississippi in the presidential election?",
-        "id": "41fbd20c-625e-41e0-8197-cd1b1293195b",
+        "id": "dabe217b-a042-4308-a774-2be42cc8c3d6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Mississippi in the presidential election?",
@@ -2911,11 +2632,11 @@
             -0.005964214711729587,
             -0.005964214711729587
         ],
-        "last_update": "2024-10-24T20:33:59.868393"
+        "last_update": "2024-10-24T21:34:03.858753+00:00"
     },
     {
         "question": "will the republican party win mississippi in the presidential election?",
-        "id": "c8b214e3-07d8-4735-a18e-2fb5ee748fcf",
+        "id": "631be0fd-691e-4b55-81ce-7373c40af2ac",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Mississippi in the presidential election?",
@@ -2942,11 +2663,11 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868396"
+        "last_update": "2024-10-24T21:34:03.858756+00:00"
     },
     {
         "question": "will the republican party win kansas in the presidential election?",
-        "id": "968769ff-0556-451f-bfbc-3981892cdc7b",
+        "id": "2bcffb91-8846-4ce2-a91a-eb1830dc8309",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Kansas in the presidential election?",
@@ -2964,20 +2685,20 @@
             "id": "0xe0673ab015b7cee314e91600e7bfc7f5b45b9c8096279937a65027a228efb35b",
             "yes_id": "87703008426605519925208336988527903011804436242232096541848554921475590263455",
             "no_id": "87049674204216145729068768761496085994688578839173268808822686330990667812094",
-            "yes_ask": 0.981,
+            "yes_ask": 0.983,
             "no_ask": 0.023,
             "yes_bid": 0.977,
-            "no_bid": 0.019
+            "no_bid": 0.017
         },
         "absolute_return": [
-            -0.0009990009990008542,
-            -0.0009990009990008542
+            -0.0029910269192421346,
+            -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868399"
+        "last_update": "2024-10-24T21:34:03.858758+00:00"
     },
     {
         "question": "will the democratic party win kansas in the presidential election?",
-        "id": "ffc2a95e-4280-4910-9ca0-d25d02d35bef",
+        "id": "caa26cde-d713-4571-a368-8e51910d304f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Kansas in the presidential election?",
@@ -2996,19 +2717,19 @@
             "yes_id": "107582894676452497590504393081021510710751459674916104240126796676771313886921",
             "no_id": "104017383362435939431810466305320872397597820532031281945017145397482082549414",
             "yes_ask": 0.012,
-            "no_ask": 0.992,
-            "yes_bid": 0.008,
+            "no_ask": 0.994,
+            "yes_bid": 0.006,
             "no_bid": 0.988
         },
         "absolute_return": [
-            -0.003984063745019917,
-            -0.003984063745019917
+            -0.005964214711729587,
+            -0.005964214711729587
         ],
-        "last_update": "2024-10-24T20:33:59.868402"
+        "last_update": "2024-10-24T21:34:03.858761+00:00"
     },
     {
         "question": "will the democratic party win arkansas in the presidential election?",
-        "id": "2b1b1be0-eb9e-46d5-af72-b7db47457a8b",
+        "id": "274b7eba-efc6-4fe8-8b37-51096834b8db",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Arkansas in the presidential election?",
@@ -3035,11 +2756,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868406"
+        "last_update": "2024-10-24T21:34:03.858764+00:00"
     },
     {
         "question": "will the republican party win arkansas in the presidential election?",
-        "id": "8ff742f5-b88a-48c4-abbb-addbb77c3fc3",
+        "id": "2f90ef55-b9e3-4dab-928f-d674fcad22b8",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Arkansas in the presidential election?",
@@ -3066,11 +2787,11 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868409"
+        "last_update": "2024-10-24T21:34:03.858766+00:00"
     },
     {
         "question": "will the republican party win iowa in the presidential election?",
-        "id": "c609ec50-d75b-4800-88b6-07b5c24069cd",
+        "id": "440c9166-4293-46d1-a7de-727986a48ea2",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Iowa in the presidential election?",
@@ -3097,11 +2818,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868411"
+        "last_update": "2024-10-24T21:34:03.858769+00:00"
     },
     {
         "question": "will the democratic party win iowa in the presidential election?",
-        "id": "8d1d1339-f958-410d-8008-d3f0f960d2f3",
+        "id": "dd17a18a-dbbb-4447-9ed4-c29a03deb3a4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Iowa in the presidential election?",
@@ -3128,11 +2849,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868414"
+        "last_update": "2024-10-24T21:34:03.858772+00:00"
     },
     {
         "question": "will the republican party win utah in the presidential election?",
-        "id": "5963c8c0-41d3-4551-b32a-2fa476508a2f",
+        "id": "cf36cb4a-702b-4c40-83b9-2f596fd4160d",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Utah in the presidential election?",
@@ -3151,19 +2872,19 @@
             "yes_id": "48952778114812305855011039621750327379121824029996306523202429232292910423319",
             "no_id": "31051715593409855279555117261170492630314968504456880579367476144382090736419",
             "yes_ask": 0.979,
-            "no_ask": 0.025,
-            "yes_bid": 0.975,
+            "no_ask": 0.024,
+            "yes_bid": 0.976,
             "no_bid": 0.021
         },
         "absolute_return": [
-            -0.003984063745019917,
-            -0.003984063745019917
+            -0.0029910269192421346,
+            -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868416"
+        "last_update": "2024-10-24T21:34:03.858774+00:00"
     },
     {
         "question": "will the democratic party win utah in the presidential election?",
-        "id": "14ea2c56-3108-46e4-9c64-0d6fed5b4a37",
+        "id": "f469207f-eaa6-4ed3-819d-0aa77aa9b3fb",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Utah in the presidential election?",
@@ -3190,11 +2911,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868419"
+        "last_update": "2024-10-24T21:34:03.858777+00:00"
     },
     {
         "question": "will the republican party win connecticut in the presidential election?",
-        "id": "93b67972-fe80-459b-affd-466ba509d731",
+        "id": "bc536408-b94b-4f34-b8bf-3be378236fe4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Connecticut in the presidential election?",
@@ -3221,11 +2942,11 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T20:33:59.868424"
+        "last_update": "2024-10-24T21:34:03.858780+00:00"
     },
     {
         "question": "will the democratic party win connecticut in the presidential election?",
-        "id": "9a5d7c17-f140-44f2-a888-89cb2178d22c",
+        "id": "a189b182-7852-43ce-b294-81c3bb4c6459",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Connecticut in the presidential election?",
@@ -3252,11 +2973,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868426"
+        "last_update": "2024-10-24T21:34:03.858783+00:00"
     },
     {
         "question": "will the republican party win oklahoma in the presidential election?",
-        "id": "7df2dbde-1ac7-4d30-81ca-758d50a7931f",
+        "id": "693a593b-d602-4e14-a752-30b1c877bac9",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Oklahoma in the presidential election?",
@@ -3283,11 +3004,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868430"
+        "last_update": "2024-10-24T21:34:03.858785+00:00"
     },
     {
         "question": "will the democratic party win oklahoma in the presidential election?",
-        "id": "9d415478-4e06-4a1d-a267-e465bbbff29d",
+        "id": "fc907492-e8bc-4c31-a5a8-cc3c64125526",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Oklahoma in the presidential election?",
@@ -3314,11 +3035,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868433"
+        "last_update": "2024-10-24T21:34:03.858788+00:00"
     },
     {
         "question": "will the democratic party win oregon in the presidential election?",
-        "id": "5cfa31dd-49fc-4709-97e1-d083673503a2",
+        "id": "450f9fb9-393f-4ac7-af69-28c8833aa937",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Oregon in the presidential election?",
@@ -3345,11 +3066,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868435"
+        "last_update": "2024-10-24T21:34:03.858791+00:00"
     },
     {
         "question": "will the republican party win oregon in the presidential election?",
-        "id": "81b414fd-4f63-4237-ac4d-7566c3a6af8f",
+        "id": "8fde06d9-46a0-4905-ad45-5c023d007463",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Oregon in the presidential election?",
@@ -3376,11 +3097,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868438"
+        "last_update": "2024-10-24T21:34:03.858793+00:00"
     },
     {
         "question": "will the democratic party win kentucky in the presidential election?",
-        "id": "6f836ea1-2f50-4e62-8aed-2cac0a3037bb",
+        "id": "702b6be0-5d0c-482b-b825-e4f93f9510e4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Kentucky in the presidential election?",
@@ -3407,11 +3128,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868441"
+        "last_update": "2024-10-24T21:34:03.858796+00:00"
     },
     {
         "question": "will the republican party win kentucky in the presidential election?",
-        "id": "51f2e97d-6af7-485b-b5e9-54bf7481f64f",
+        "id": "a98289c5-c835-40c8-8540-58d53ddcfa57",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Kentucky in the presidential election?",
@@ -3438,11 +3159,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868445"
+        "last_update": "2024-10-24T21:34:03.858799+00:00"
     },
     {
         "question": "will the republican party win louisiana in the presidential election?",
-        "id": "6274de5b-5d7f-4fb1-8bf2-d0a553a73a7d",
+        "id": "5cc0889c-18ec-4e58-bfbf-9e81c0698660",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Louisiana in the presidential election?",
@@ -3469,11 +3190,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868449"
+        "last_update": "2024-10-24T21:34:03.858801+00:00"
     },
     {
         "question": "will the democratic party win louisiana in the presidential election?",
-        "id": "8a687fc0-7a52-4e52-9147-f6108a29b389",
+        "id": "3d2ac028-8441-4a35-aaab-479dc059da43",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Louisiana in the presidential election?",
@@ -3500,11 +3221,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868452"
+        "last_update": "2024-10-24T21:34:03.858804+00:00"
     },
     {
         "question": "will the democratic party win alabama in the presidential election?",
-        "id": "749a4e97-85d1-4a44-9701-aecd74bfda28",
+        "id": "0817a1d5-4b9d-493b-b82d-b1052a3d7406",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Alabama in the presidential election?",
@@ -3531,11 +3252,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868455"
+        "last_update": "2024-10-24T21:34:03.858807+00:00"
     },
     {
         "question": "will the republican party win alabama in the presidential election?",
-        "id": "8b556913-5edf-4fcd-9437-95df00e63b1d",
+        "id": "82f3c885-5f19-424d-851d-2437f63d6d14",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Alabama in the presidential election?",
@@ -3562,11 +3283,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868458"
+        "last_update": "2024-10-24T21:34:03.858810+00:00"
     },
     {
         "question": "will the republican party win south carolina in the presidential election?",
-        "id": "9c26fe74-de7e-4f0c-98ad-7ab9da2693dd",
+        "id": "1866177e-a793-45a2-bd65-0f9b8053a6a8",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win South Carolina in the presidential election?",
@@ -3593,11 +3314,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868460"
+        "last_update": "2024-10-24T21:34:03.858813+00:00"
     },
     {
         "question": "will the democratic party win south carolina in the presidential election?",
-        "id": "b05a9850-d1fa-4a46-81a8-6cf7bfea984f",
+        "id": "35e8252b-1e81-4a09-b0e1-df2022b42337",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win South Carolina in the presidential election?",
@@ -3624,21 +3345,21 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868464"
+        "last_update": "2024-10-24T21:34:03.858815+00:00"
     },
     {
         "question": "will the republican party win colorado in the presidential election?",
-        "id": "e601a499-1c58-4aa6-9c03-ec20f8b99682",
+        "id": "1c90ffb6-8aec-4905-a118-a1c08a53b2c2",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Colorado in the presidential election?",
             "id": "PRESPARTYCO-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.06,
+            "yes_ask": 0.07,
             "no_ask": 0.95,
             "yes_bid": 0.05,
-            "no_bid": 0.94
+            "no_bid": 0.93
         },
         "market_2": {
             "platform": "Polymarket",
@@ -3655,11 +3376,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868466"
+        "last_update": "2024-10-24T21:34:03.858818+00:00"
     },
     {
         "question": "will the democratic party win colorado in the presidential election?",
-        "id": "d49be470-1219-4535-8755-504333baed75",
+        "id": "1fcaf03d-0de6-41b6-b83a-8f39ddeec0b6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Colorado in the presidential election?",
@@ -3686,11 +3407,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868469"
+        "last_update": "2024-10-24T21:34:03.858821+00:00"
     },
     {
         "question": "will the republican party win maryland in the presidential election?",
-        "id": "762282a5-90b2-4954-b798-b9687438ef0b",
+        "id": "feee7520-3b7b-46b9-ac8d-4c76ed020914",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Maryland in the presidential election?",
@@ -3717,11 +3438,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868472"
+        "last_update": "2024-10-24T21:34:03.858824+00:00"
     },
     {
         "question": "will the democratic party win maryland in the presidential election?",
-        "id": "43f08651-3e8f-44d1-9923-7c517de8d3ac",
+        "id": "0b05caaa-8584-41e8-9477-885716a5faa2",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Maryland in the presidential election?",
@@ -3740,19 +3461,19 @@
             "yes_id": "97556102754708830900964862779720201295236623485186716498735902254901074761894",
             "no_id": "37318936962458234381559059916139272987734918651258427396890073364183287441333",
             "yes_ask": 0.988,
-            "no_ask": 0.014,
-            "yes_bid": 0.986,
+            "no_ask": 0.015,
+            "yes_bid": 0.985,
             "no_bid": 0.012
         },
         "absolute_return": [
-            -0.001996007984031989,
-            -0.001996007984031989
+            -0.0029910269192421346,
+            -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868476"
+        "last_update": "2024-10-24T21:34:03.858826+00:00"
     },
     {
         "question": "will the democratic party win missouri in the presidential election?",
-        "id": "17f02c2f-5df4-4782-aef9-07cc0c55821f",
+        "id": "dfd38c42-2dce-43a1-941d-44c9c5072475",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Missouri in the presidential election?",
@@ -3779,11 +3500,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868478"
+        "last_update": "2024-10-24T21:34:03.858829+00:00"
     },
     {
         "question": "will the republican party win missouri in the presidential election?",
-        "id": "e8258afa-e41e-4a7e-91a2-dc7800cfeb7a",
+        "id": "0dbb0699-d131-4da1-9233-730217c61d5c",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Missouri in the presidential election?",
@@ -3810,11 +3531,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868482"
+        "last_update": "2024-10-24T21:34:03.858832+00:00"
     },
     {
         "question": "will the democratic party win indiana in the presidential election?",
-        "id": "2d6be767-065a-4e95-9c1a-cc85f08f41da",
+        "id": "78df43a6-01ed-4ceb-9c0e-e7edf85724b7",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Indiana in the presidential election?",
@@ -3833,19 +3554,19 @@
             "yes_id": "62726474501330952673975964063198467443204335271354371758722889168638240132125",
             "no_id": "38026789641184820237550301175405502894015275677675111757835059046702298653689",
             "yes_ask": 0.019,
-            "no_ask": 0.987,
-            "yes_bid": 0.013,
+            "no_ask": 0.989,
+            "yes_bid": 0.011,
             "no_bid": 0.981
         },
         "absolute_return": [
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T20:33:59.868486"
+        "last_update": "2024-10-24T21:34:03.858835+00:00"
     },
     {
         "question": "will the republican party win indiana in the presidential election?",
-        "id": "4e08e1b2-a83d-4d65-ad45-b9be2dc40033",
+        "id": "da82b494-3815-4599-a6e3-dacc582122a0",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Indiana in the presidential election?",
@@ -3872,11 +3593,11 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868488"
+        "last_update": "2024-10-24T21:34:03.858837+00:00"
     },
     {
         "question": "will the democratic party win massachusetts in the presidential election?",
-        "id": "01bea3bd-bda0-47de-9dfe-9317b20854a1",
+        "id": "30e2313d-9139-4bfe-a3ef-d55765e259b9",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Massachusetts in the presidential election?",
@@ -3895,19 +3616,19 @@
             "yes_id": "35718673949429296742313952015159188391888764570436588920545168473977619637738",
             "no_id": "27543841511771722857014630577766927130593763892619565653358787257780176938394",
             "yes_ask": 0.99,
-            "no_ask": 0.013,
-            "yes_bid": 0.987,
+            "no_ask": 0.014,
+            "yes_bid": 0.986,
             "no_bid": 0.01
         },
         "absolute_return": [
-            0.007049345417925457,
-            0.007049345417925457
+            0.006036217303822866,
+            0.006036217303822866
         ],
-        "last_update": "2024-10-24T20:33:59.868491"
+        "last_update": "2024-10-24T21:34:03.858839+00:00"
     },
     {
         "question": "will the republican party win massachusetts in the presidential election?",
-        "id": "7ff909a0-dc14-4ea8-a33b-819583be0deb",
+        "id": "ab8f64c0-906f-4488-bfa9-5558302c6163",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Massachusetts in the presidential election?",
@@ -3934,11 +3655,11 @@
             0.002004008016031955,
             0.002004008016031955
         ],
-        "last_update": "2024-10-24T20:33:59.868493"
+        "last_update": "2024-10-24T21:34:03.858842+00:00"
     },
     {
         "question": "will the democratic party win tennessee in the presidential election?",
-        "id": "840e57ef-2812-4297-816f-89bb000a2285",
+        "id": "424e2276-3d3e-40af-a087-0806921a3305",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Tennessee in the presidential election?",
@@ -3965,11 +3686,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868496"
+        "last_update": "2024-10-24T21:34:03.858845+00:00"
     },
     {
         "question": "will the republican party win tennessee in the presidential election?",
-        "id": "9cf2ac82-35ea-4d29-94c0-6320c138c9d5",
+        "id": "3510855f-724e-4f01-99d0-26134b63a4c4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Tennessee in the presidential election?",
@@ -3996,11 +3717,11 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T20:33:59.868499"
+        "last_update": "2024-10-24T21:34:03.858847+00:00"
     },
     {
         "question": "will the republican party win washington in the presidential election?",
-        "id": "e3d5b9ab-8f70-490f-9171-35669d45e928",
+        "id": "f35e38f0-a056-4e72-82f6-7b075f328fee",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Washington in the presidential election?",
@@ -4027,11 +3748,11 @@
             0.0030090270812437314,
             0.0030090270812437314
         ],
-        "last_update": "2024-10-24T20:33:59.868504"
+        "last_update": "2024-10-24T21:34:03.858850+00:00"
     },
     {
         "question": "will the democratic party win washington in the presidential election?",
-        "id": "4d0e4ea2-f945-4f02-ab57-cfb0b8a56504",
+        "id": "3ba6c4e6-0ab7-44fe-925f-164264a47a33",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Washington in the presidential election?",
@@ -4058,11 +3779,11 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T20:33:59.868506"
+        "last_update": "2024-10-24T21:34:03.858852+00:00"
     },
     {
         "question": "will the democratic party win virginia in the presidential election?",
-        "id": "2066b83d-f11a-4c7c-b101-7889af02629a",
+        "id": "c43b43cb-f54e-4b86-b2bd-f3a06a599109",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Virginia in the presidential election?",
@@ -4089,11 +3810,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868510"
+        "last_update": "2024-10-24T21:34:03.858855+00:00"
     },
     {
         "question": "will the republican party win virginia in the presidential election?",
-        "id": "fe7d64fe-5a6a-45d8-ac2c-c62d0ef6c64b",
+        "id": "46458c09-180f-4a01-9ca9-05ec9abf161a",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Virginia in the presidential election?",
@@ -4111,20 +3832,20 @@
             "id": "0xfefbd6fa16a276839af9d87e7e649b0ccc90a2b36e63b5e48f50fb8da76bcb33",
             "yes_id": "12492345628750728733117864804710670673000799233202537945402703429199967167327",
             "no_id": "98655764136912778102383796145657646896499703812579130341823339710060217043232",
-            "yes_ask": 0.2,
-            "no_ask": 0.82,
-            "yes_bid": 0.18,
-            "no_bid": 0.8
+            "yes_ask": 0.19,
+            "no_ask": 0.83,
+            "yes_bid": 0.17,
+            "no_bid": 0.81
         },
         "absolute_return": [
-            0.030927835051546504,
-            0.030927835051546504
+            0.020408163265306145,
+            0.020408163265306145
         ],
-        "last_update": "2024-10-24T20:33:59.868513"
+        "last_update": "2024-10-24T21:34:03.858857+00:00"
     },
     {
         "question": "will the republican party win new jersey in the presidential election?",
-        "id": "3d6d49c8-98c3-4642-8571-3228c860f528",
+        "id": "18b7ff92-486b-4ed5-a731-8ff3a20ae03f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win New Jersey in the presidential election?",
@@ -4151,11 +3872,11 @@
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T20:33:59.868516"
+        "last_update": "2024-10-24T21:34:03.858860+00:00"
     },
     {
         "question": "will the democratic party win new jersey in the presidential election?",
-        "id": "e4122d08-7d0e-4ff9-a3e0-b89146fa5ce9",
+        "id": "213eb980-6298-4f53-8bb6-75eb7e1058e6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win New Jersey in the presidential election?",
@@ -4174,19 +3895,19 @@
             "yes_id": "70057563029181740383351302880667691057440355307732969897975148615486334142598",
             "no_id": "110805789859401345827682663334455346292645375845669493011828952941116366110892",
             "yes_ask": 0.949,
-            "no_ask": 0.054,
-            "yes_bid": 0.946,
+            "no_ask": 0.055,
+            "yes_bid": 0.945,
             "no_bid": 0.051
         },
         "absolute_return": [
-            -0.0029910269192421346,
-            -0.0029910269192421346
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868518"
+        "last_update": "2024-10-24T21:34:03.858863+00:00"
     },
     {
         "question": "will the republican party win new york in the presidential election?",
-        "id": "4cdaa6e7-f24c-4c83-aacf-321ff29ca3c1",
+        "id": "9a41d6a9-95fa-4648-a49d-1ff4675261db",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win New York in the presidential election?",
@@ -4205,19 +3926,19 @@
             "yes_id": "14074899245279883968821293264759723333204074453646392727272579405506036984241",
             "no_id": "68303508318422415197110180721803122878521366793211275338322543690618184693765",
             "yes_ask": 0.032,
-            "no_ask": 0.977,
-            "yes_bid": 0.023,
+            "no_ask": 0.97,
+            "yes_bid": 0.03,
             "no_bid": 0.968
         },
         "absolute_return": [
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868522"
+        "last_update": "2024-10-24T21:34:03.858865+00:00"
     },
     {
         "question": "will the democratic party win new york in the presidential election?",
-        "id": "59f5bd31-cf0f-4359-8c01-e6aca6117e60",
+        "id": "08570fc0-7276-4469-8db6-2ed35bf550d0",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win New York in the presidential election?",
@@ -4236,19 +3957,19 @@
             "yes_id": "108711841359369601103922875524621912623305832251098427700855120981942788049747",
             "no_id": "67705827770889304420546865402744280596054360089147050357831717707009152062069",
             "yes_ask": 0.973,
-            "no_ask": 0.031,
-            "yes_bid": 0.969,
+            "no_ask": 0.032,
+            "yes_bid": 0.968,
             "no_bid": 0.027
         },
         "absolute_return": [
-            -0.0009990009990008542,
-            -0.0009990009990008542
+            -0.001996007984031989,
+            -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868525"
+        "last_update": "2024-10-24T21:34:03.858868+00:00"
     },
     {
         "question": "will the republican party win california in the presidential election?",
-        "id": "9882c58b-1dff-456a-b508-c297789556c0",
+        "id": "65aa4256-59c7-496e-aae3-d3958e3cc4f4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win California in the presidential election?",
@@ -4275,11 +3996,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868529"
+        "last_update": "2024-10-24T21:34:03.858870+00:00"
     },
     {
         "question": "will the democratic party win california in the presidential election?",
-        "id": "706b79a6-0409-4db6-9329-ab154cf335ec",
+        "id": "2014cbe0-f1af-4ad1-95e2-43e3fd69ac36",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win California in the presidential election?",
@@ -4297,20 +4018,20 @@
             "id": "0x24ace0c29dc2c801992ea6b7c795d3e7c4f2ad40343bc9f0becef694b2ef197f",
             "yes_id": "19824947305676488713724709426195605644465067988509119211870826829613338135053",
             "no_id": "22750747772792850145433661113062275303697931797163760555325946896857846743570",
-            "yes_ask": 0.98,
+            "yes_ask": 0.979,
             "no_ask": 0.022,
             "yes_bid": 0.978,
-            "no_bid": 0.02
+            "no_bid": 0.021
         },
         "absolute_return": [
-            -0.001996007984031989,
-            -0.001996007984031989
+            -0.0009990009990008542,
+            -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868532"
+        "last_update": "2024-10-24T21:34:03.858874+00:00"
     },
     {
         "question": "will the democratic party win illinois in the presidential election?",
-        "id": "c4839361-84a2-4837-9fb0-dd80220636e1",
+        "id": "677043a1-dee2-4246-8c74-48d62ae8182e",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Illinois in the presidential election?",
@@ -4337,11 +4058,11 @@
             0.005025125628140614,
             0.005025125628140614
         ],
-        "last_update": "2024-10-24T20:33:59.868534"
+        "last_update": "2024-10-24T21:34:03.858877+00:00"
     },
     {
         "question": "will the republican party win illinois in the presidential election?",
-        "id": "9a59e813-0603-411e-b63a-69d01dec0022",
+        "id": "96065d52-d052-4a4c-8cd4-2cdf1e2e0066",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Illinois in the presidential election?",
@@ -4368,11 +4089,11 @@
             0.004016064257028162,
             0.004016064257028162
         ],
-        "last_update": "2024-10-24T20:33:59.868538"
+        "last_update": "2024-10-24T21:34:03.858879+00:00"
     },
     {
         "question": "will the democratic party win ohio in the presidential election?",
-        "id": "54969aaa-2f3d-4e63-8ec1-f58280cda62b",
+        "id": "a0995c57-aeb1-4238-b905-d40c464aa7be",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Ohio in the presidential election?",
@@ -4399,11 +4120,11 @@
             -0.019607843137254943,
             -0.019607843137254943
         ],
-        "last_update": "2024-10-24T20:33:59.868541"
+        "last_update": "2024-10-24T21:34:03.858881+00:00"
     },
     {
         "question": "will the republican party win ohio in the presidential election?",
-        "id": "d5d6da43-dfbc-4db5-9c95-df1800cd5037",
+        "id": "11f8342e-0c50-4e58-90c0-c5bfa8a21855",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Ohio in the presidential election?",
@@ -4430,11 +4151,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868544"
+        "last_update": "2024-10-24T21:34:03.858884+00:00"
     },
     {
         "question": "will the republican party win texas in the presidential election?",
-        "id": "9cde61ee-d65c-4b0b-af13-826373d5408a",
+        "id": "4a0f5102-ffe4-4614-9855-c15d8f14e2c2",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Texas in the presidential election?",
@@ -4461,11 +4182,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868547"
+        "last_update": "2024-10-24T21:34:03.858887+00:00"
     },
     {
         "question": "will the democratic party win texas in the presidential election?",
-        "id": "aa56392a-60d3-4a8d-be98-f819f0263399",
+        "id": "ef47c596-d4cc-408f-8737-b3b01d30a8fc",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Texas in the presidential election?",
@@ -4492,11 +4213,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868549"
+        "last_update": "2024-10-24T21:34:03.858889+00:00"
     },
     {
         "question": "will the democratic party win florida in the presidential election?",
-        "id": "7b0e92f6-662b-46c2-97f0-53ca6414e040",
+        "id": "87a133a0-3be1-4d04-b4bd-f347db871778",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Florida in the presidential election?",
@@ -4523,11 +4244,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868551"
+        "last_update": "2024-10-24T21:34:03.858891+00:00"
     },
     {
         "question": "will the republican party win florida in the presidential election?",
-        "id": "49a67e10-8a56-467c-b7d2-11c1b1743128",
+        "id": "27675f2b-44f2-4097-93e4-75ff0907e63f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Florida in the presidential election?",
@@ -4554,11 +4275,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868554"
+        "last_update": "2024-10-24T21:34:03.858894+00:00"
     },
     {
         "question": "eric adams out as nyc mayor in 2024?",
-        "id": "8e775ea2-b7f7-4661-8651-322bc4355baf",
+        "id": "c158f687-c016-4cb5-9aaf-e14a9051df9b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Eric Adams out as NYC Mayor in 2024?",
@@ -4566,8 +4287,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.34,
-            "no_ask": 0.72,
-            "yes_bid": 0.28,
+            "no_ask": 0.71,
+            "yes_bid": 0.29,
             "no_bid": 0.66
         },
         "market_2": {
@@ -4582,14 +4303,14 @@
             "no_bid": 0.78
         },
         "absolute_return": [
-            0.06382978723404253,
-            0.06382978723404253
+            0.07526881720430123,
+            0.07526881720430123
         ],
-        "last_update": "2024-10-24T20:33:59.868557"
+        "last_update": "2024-10-24T21:34:03.858897+00:00"
     },
     {
         "question": "will the popular vote margin of victory for kamala harris in nevada be 6.00% or more?",
-        "id": "6b54cc88-0eec-47ef-b633-62d9340cd959",
+        "id": "76489ef9-da8a-40c3-bd4b-53c48d7dbdba",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the popular vote margin of victory for Kamala Harris in Nevada be 6.00% or more?",
@@ -4616,11 +4337,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868561"
+        "last_update": "2024-10-24T21:34:03.858900+00:00"
     },
     {
         "question": "will the popular vote margin of victory for kamala harris in north carolina be 3.00-3.99%?",
-        "id": "fcdbab6d-9ee4-4cbb-8ab3-493b8e4e825f",
+        "id": "ec4ce4a0-da5b-42b1-bc4f-6efbb28b0713",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the popular vote margin of victory for Kamala Harris in North Carolina be 3.00-3.99%?",
@@ -4647,11 +4368,11 @@
             0.05263157894736836,
             0.05263157894736836
         ],
-        "last_update": "2024-10-24T20:33:59.868565"
+        "last_update": "2024-10-24T21:34:03.858902+00:00"
     },
     {
         "question": "will the popular vote margin of victory for kamala harris in michigan be 6.00% or more?",
-        "id": "1c39cf3a-e051-4aa0-a71c-d54653d579a6",
+        "id": "d19af546-de4d-4769-a0f8-5e60cbf347ec",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the popular vote margin of victory for Kamala Harris in Michigan be 6.00% or more?",
@@ -4678,42 +4399,11 @@
             0.04166666666666674,
             0.04166666666666674
         ],
-        "last_update": "2024-10-24T20:33:59.868568"
-    },
-    {
-        "question": "will alaska be the closest state in the presidential election?",
-        "id": "8c625311-ca71-44cd-9980-f0f084b5030d",
-        "market_1": {
-            "platform": "Kalshi-Election",
-            "question": "Will Alaska be the closest state in the Presidential election?",
-            "id": "CLOSESTSTATE-24-AK",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.01,
-            "no_ask": 1.0,
-            "yes_bid": 0.0,
-            "no_bid": 0.99
-        },
-        "market_2": {
-            "platform": "Polymarket",
-            "question": "Will Alaska move right in the 2024 U.S. Presidential Election?",
-            "id": "0xce0f41fad2d245e8c04fd208efa46654320d3180fde0fe1d92cef4f90380f559",
-            "yes_id": "30690807957924175972573328466221405469798683581765634047596193623368635390312",
-            "no_id": "44776620373217189887785752973115023712581768985313768225739442358813283808888",
-            "yes_ask": 0.49,
-            "no_ask": 0.6,
-            "yes_bid": 0.4,
-            "no_bid": 0.51
-        },
-        "absolute_return": [
-            0.639344262295082,
-            0.639344262295082
-        ],
-        "last_update": "2024-10-24T20:33:59.868570"
+        "last_update": "2024-10-24T21:34:03.858905+00:00"
     },
     {
         "question": "will wisconsin be the closest state in the presidential election?",
-        "id": "20e414e9-6517-40d6-97ea-8fd3ffdced74",
+        "id": "b105760f-2d61-414d-a463-82804caff86b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Wisconsin be the closest state in the Presidential election?",
@@ -4721,8 +4411,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.2,
-            "no_ask": 0.82,
-            "yes_bid": 0.18,
+            "no_ask": 0.81,
+            "yes_bid": 0.19,
             "no_bid": 0.8
         },
         "market_2": {
@@ -4737,14 +4427,14 @@
             "no_bid": 0.76
         },
         "absolute_return": [
-            -0.019607843137254943,
-            -0.019607843137254943
+            -0.00990099009900991,
+            -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868573"
+        "last_update": "2024-10-24T21:34:03.858907+00:00"
     },
     {
         "question": "will texas be the closest state in the presidential election?",
-        "id": "30b6424d-60b1-4029-b0d9-94d96c0b9982",
+        "id": "5a6d450c-73b1-4366-ae14-12d537e205e7",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Texas be the closest state in the Presidential election?",
@@ -4771,11 +4461,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868575"
+        "last_update": "2024-10-24T21:34:03.858910+00:00"
     },
     {
         "question": "will pennsylvania be the closest state in the presidential election?",
-        "id": "1450ff4f-2fdd-4c6d-8feb-5ab588b24bd2",
+        "id": "bc9a98e9-4afb-49d7-88d2-a69416463bc1",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Pennsylvania be the closest state in the Presidential election?",
@@ -4802,11 +4492,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868579"
+        "last_update": "2024-10-24T21:34:03.858912+00:00"
     },
     {
         "question": "will nevada be the closest state in the presidential election?",
-        "id": "4ddbd6c7-237f-45df-9171-e4afafb4254e",
+        "id": "a59957ab-3c1b-437a-ab88-45020b5d46df",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Nevada be the closest state in the Presidential election?",
@@ -4833,11 +4523,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868582"
+        "last_update": "2024-10-24T21:34:03.858915+00:00"
     },
     {
         "question": "will new hampshire be the closest state in the presidential election?",
-        "id": "894b38c2-958f-4146-83bf-8e0996a05472",
+        "id": "b715fdc2-0668-4e49-a782-9bd30c8eef58",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will New Hampshire be the closest state in the Presidential election?",
@@ -4856,19 +4546,19 @@
             "yes_id": "1790876689554456040824385207424157901513338825780531393850057166618772830227",
             "no_id": "54142987617824298343509211168489119074654867017409182541120315300960224090266",
             "yes_ask": 0.097,
-            "no_ask": 0.917,
-            "yes_bid": 0.083,
+            "no_ask": 0.919,
+            "yes_bid": 0.081,
             "no_bid": 0.903
         },
         "absolute_return": [
-            0.03412616339193364,
-            0.03412616339193364
+            0.03199174406604732,
+            0.03199174406604732
         ],
-        "last_update": "2024-10-24T20:33:59.868586"
+        "last_update": "2024-10-24T21:34:03.858918+00:00"
     },
     {
         "question": "will north carolina be the closest state in the presidential election?",
-        "id": "0e58d3c9-d868-4404-9048-5cbb4ccbef13",
+        "id": "140a17ec-c01a-46cc-90a5-277466d3d9d6",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will North Carolina be the closest state in the Presidential election?",
@@ -4895,11 +4585,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868588"
+        "last_update": "2024-10-24T21:34:03.858920+00:00"
     },
     {
         "question": "will minnesota be the closest state in the presidential election?",
-        "id": "2d8bcc13-e995-4d9d-b7ed-6624087762ef",
+        "id": "995a7854-2249-4b1e-871f-127ca4f568df",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Minnesota be the closest state in the Presidential election?",
@@ -4917,20 +4607,20 @@
             "id": "0x57013fd52a3b754711535398cde9a28516cefbf0a2215675234df55d17eabd6e",
             "yes_id": "48304191301133456776268463520807183772249456481446994740284482110865727289883",
             "no_id": "70674572464453648445549671624516226825718298715708844397247999789446947905962",
-            "yes_ask": 0.064,
+            "yes_ask": 0.063,
             "no_ask": 0.945,
             "yes_bid": 0.055,
-            "no_bid": 0.936
+            "no_bid": 0.937
         },
         "absolute_return": [
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T20:33:59.868591"
+        "last_update": "2024-10-24T21:34:03.858923+00:00"
     },
     {
         "question": "will georgia be the closest state in the presidential election?",
-        "id": "a119b251-e26b-460e-b351-53370c5c58c2",
+        "id": "5789e860-60f1-46a9-8f6f-37e9cc2c5a6b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Georgia be the closest state in the Presidential election?",
@@ -4957,11 +4647,11 @@
             0.030927835051546282,
             0.030927835051546282
         ],
-        "last_update": "2024-10-24T20:33:59.868597"
+        "last_update": "2024-10-24T21:34:03.858926+00:00"
     },
     {
         "question": "will florida be the closest state in the presidential election?",
-        "id": "4cea6fe9-033d-47ae-9b92-1399ed08e669",
+        "id": "4bc9509f-bd74-40c9-9105-eb77c3409b46",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Florida be the closest state in the Presidential election?",
@@ -4979,20 +4669,20 @@
             "id": "0x2e317c0dceb7b4ab2abe7c43f302b0253321f92a941709f871975799fd5a168b",
             "yes_id": "107164877289726208873265593791635991007670983240609815001121576596900011072866",
             "no_id": "105928077861615303886303173080841770343593195599767638878319739085837681539093",
-            "yes_ask": 0.023,
+            "yes_ask": 0.022,
             "no_ask": 0.981,
             "yes_bid": 0.019,
-            "no_bid": 0.977
+            "no_bid": 0.978
         },
         "absolute_return": [
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868600"
+        "last_update": "2024-10-24T21:34:03.858929+00:00"
     },
     {
         "question": "will arizona be the closest state in the presidential election?",
-        "id": "20206737-bc2d-4f7e-9c33-7bed8a13e47b",
+        "id": "98d4ffe5-b6f4-4c05-b60a-2962c7cd05be",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Arizona be the closest state in the Presidential election?",
@@ -5019,11 +4709,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868603"
+        "last_update": "2024-10-24T21:34:03.858931+00:00"
     },
     {
         "question": "will michigan be the closest state in the presidential election?",
-        "id": "35be9b0e-f957-48a0-85ab-e2ffe8107b28",
+        "id": "9b93c51f-661c-4e6e-bc8f-8aac85aa085d",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Michigan be the closest state in the Presidential election?",
@@ -5041,20 +4731,20 @@
             "id": "0x132db61627e8d2b95f27dc9a6f64714db55e3bc2706a074c959984d535828cdd",
             "yes_id": "100912984481430001031718535041447475057252284603064782849138427079271088364391",
             "no_id": "41695170133021894104850896677324410034690661519153725642275868809830795744894",
-            "yes_ask": 0.117,
-            "no_ask": 0.887,
-            "yes_bid": 0.113,
-            "no_bid": 0.883
+            "yes_ask": 0.123,
+            "no_ask": 0.885,
+            "yes_bid": 0.115,
+            "no_bid": 0.877
         },
         "absolute_return": [
-            0.0030090270812437314,
-            0.0030090270812437314
+            -0.0029910269192423566,
+            -0.0029910269192423566
         ],
-        "last_update": "2024-10-24T20:33:59.868605"
+        "last_update": "2024-10-24T21:34:03.858934+00:00"
     },
     {
         "question": "will wisconsin be the tipping point in the presidential election?",
-        "id": "618cac56-a828-4617-a2e7-8180b9e475d8",
+        "id": "ff83fc81-a22c-43e9-b985-5b5431aa9c76",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Wisconsin be the tipping point in the Presidential election?",
@@ -5081,11 +4771,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868608"
+        "last_update": "2024-10-24T21:34:03.858936+00:00"
     },
     {
         "question": "will virginia be the tipping point in the presidential election?",
-        "id": "7535fe48-735f-471c-ac7c-1be3f106fdee",
+        "id": "3c00ba95-7cbb-48d0-891c-4e8b72891391",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Virginia be the tipping point in the Presidential election?",
@@ -5112,11 +4802,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868612"
+        "last_update": "2024-10-24T21:34:03.858939+00:00"
     },
     {
         "question": "will nevada be the tipping point in the presidential election?",
-        "id": "6d341414-4ca7-4319-9b02-0710401fc558",
+        "id": "46eec5f1-6dab-4026-b55d-0f63c4780092",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Nevada be the tipping point in the Presidential election?",
@@ -5143,11 +4833,11 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T20:33:59.868615"
+        "last_update": "2024-10-24T21:34:03.858942+00:00"
     },
     {
         "question": "will new mexico be the tipping point in the presidential election?",
-        "id": "60f94608-e609-419d-b289-458118a0d778",
+        "id": "77242523-7ced-4047-9266-f05abd955eea",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will New Mexico be the tipping point in the Presidential election?",
@@ -5174,11 +4864,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868617"
+        "last_update": "2024-10-24T21:34:03.858945+00:00"
     },
     {
         "question": "will new hampshire be the tipping point in the presidential election?",
-        "id": "0ad213dd-3f5b-4818-8f76-322cfe4b2763",
+        "id": "ef150cc8-1957-46ac-8115-ca6572ccf5f9",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will New Hampshire be the tipping point in the Presidential election?",
@@ -5196,20 +4886,20 @@
             "id": "0x76a0a87c2636a9428fac314b248efe7d31c6f042acccaed9e714f7ddbf6fb83e",
             "yes_id": "66066379485288400932839585638304895155726200324243998640721576168136495114006",
             "no_id": "48670610843561447264056446446006131958499862463929355743336858621533815478166",
-            "yes_ask": 0.01,
+            "yes_ask": 0.009,
             "no_ask": 0.993,
             "yes_bid": 0.007,
-            "no_bid": 0.99
+            "no_bid": 0.991
         },
         "absolute_return": [
-            -0.0029910269192421346,
-            -0.0029910269192421346
+            -0.001996007984031989,
+            -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868619"
+        "last_update": "2024-10-24T21:34:03.858947+00:00"
     },
     {
         "question": "will north carolina be the tipping point in the presidential election?",
-        "id": "6d11cf7f-9de8-4a89-ba3f-3463ad9c4dde",
+        "id": "55acb471-306f-48e3-aeff-410f3269d681",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will North Carolina be the tipping point in the Presidential election?",
@@ -5236,11 +4926,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868622"
+        "last_update": "2024-10-24T21:34:03.858950+00:00"
     },
     {
         "question": "will minnesota be the tipping point in the presidential election?",
-        "id": "f4707d9e-9f6a-4ca0-b42b-2aa8d0ea7d3d",
+        "id": "7997f715-36f2-446b-9fc9-281e797e74e0",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Minnesota be the tipping point in the Presidential election?",
@@ -5267,11 +4957,11 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T20:33:59.868624"
+        "last_update": "2024-10-24T21:34:03.858953+00:00"
     },
     {
         "question": "will michigan be the tipping point in the presidential election?",
-        "id": "7aab6350-ceec-43d5-bdd5-d9d1dfeccfda",
+        "id": "74e5883d-062a-4a37-8678-32ecba83b4c0",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Michigan be the tipping point in the Presidential election?",
@@ -5298,11 +4988,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868629"
+        "last_update": "2024-10-24T21:34:03.858956+00:00"
     },
     {
         "question": "will maine be the tipping point in the presidential election?",
-        "id": "bc785eb1-401c-4fc9-a0b8-e198d81523c1",
+        "id": "9a3be473-a113-4017-b223-21b1143f3d2d",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Maine be the tipping point in the Presidential election?",
@@ -5329,11 +5019,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868634"
+        "last_update": "2024-10-24T21:34:03.858959+00:00"
     },
     {
         "question": "will georgia be the tipping point in the presidential election?",
-        "id": "0b1dcaa2-87ef-4f19-a8dd-504d9c9cda9e",
+        "id": "f910778d-15f3-421d-8fb3-843e1a1e6ca4",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Georgia be the tipping point in the Presidential election?",
@@ -5360,11 +5050,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868636"
+        "last_update": "2024-10-24T21:34:03.858961+00:00"
     },
     {
         "question": "will florida be the tipping point in the presidential election?",
-        "id": "9c0a0d28-14d2-484e-8320-79cfb1970329",
+        "id": "c1cc35fb-b428-4b7a-8017-dc95615d80a1",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Florida be the tipping point in the Presidential election?",
@@ -5391,11 +5081,11 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868639"
+        "last_update": "2024-10-24T21:34:03.858964+00:00"
     },
     {
         "question": "will arizona be the tipping point in the presidential election?",
-        "id": "b3ffe655-f809-439e-a26a-44d17d8ada8d",
+        "id": "fe779888-a40f-4fc4-9434-267d1707f0fe",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Arizona be the tipping point in the Presidential election?",
@@ -5422,21 +5112,21 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T20:33:59.868651"
+        "last_update": "2024-10-24T21:34:03.858966+00:00"
     },
     {
         "question": "will pennsylvania be the tipping point in the presidential election?",
-        "id": "b0842945-200d-4ba1-8a43-53d8af76af2a",
+        "id": "f1cb093d-9c66-4867-86ed-e46aabb896ca",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Pennsylvania be the tipping point in the Presidential election?",
             "id": "TIPPINGPOINT-24-PA",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.3,
+            "yes_ask": 0.29,
             "no_ask": 0.72,
             "yes_bid": 0.28,
-            "no_bid": 0.7
+            "no_bid": 0.71
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5445,19 +5135,19 @@
             "yes_id": "61117867245992005853582565921588844568802748610716296099606527267215907175115",
             "no_id": "51457489142797367359910450178205727685697690007375232452968327589804914261554",
             "yes_ask": 0.28,
-            "no_ask": 0.73,
-            "yes_bid": 0.27,
+            "no_ask": 0.74,
+            "yes_bid": 0.26,
             "no_bid": 0.72
         },
         "absolute_return": [
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868654"
+        "last_update": "2024-10-24T21:34:03.858969+00:00"
     },
     {
         "question": "will the republican party win nevada in the presidential election?",
-        "id": "e4f6a174-ef11-4459-8323-b1376c0f627a",
+        "id": "408592d8-3843-409e-aa85-55604e4b54d2",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Nevada in the presidential election?",
@@ -5484,11 +5174,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868656"
+        "last_update": "2024-10-24T21:34:03.858971+00:00"
     },
     {
         "question": "will the democratic party win nevada in the presidential election?",
-        "id": "c4243676-bee3-4ae8-b0f6-2784f87eca3d",
+        "id": "a4389136-c1f6-4784-8363-aa198f9e7988",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Nevada in the presidential election?",
@@ -5506,20 +5196,20 @@
             "id": "0x8f20ff6ed2ba1e234f35e701a50c274ffb64fdd8d621254d017db0445486ab79",
             "yes_id": "23452090462928163585257733383879365528898800849298930788345778676568194082451",
             "no_id": "18451662766052921550337197202319358927639757816615225507586069380328523693166",
-            "yes_ask": 0.38,
-            "no_ask": 0.65,
-            "yes_bid": 0.35,
-            "no_bid": 0.62
+            "yes_ask": 0.37,
+            "no_ask": 0.64,
+            "yes_bid": 0.36,
+            "no_bid": 0.63
         },
         "absolute_return": [
-            0.0,
-            0.0
+            0.010101010101010166,
+            0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868659"
+        "last_update": "2024-10-24T21:34:03.858974+00:00"
     },
     {
         "question": "will the republican party win georgia in the presidential election?",
-        "id": "fd87796e-1ff9-485d-a249-7961115d50cd",
+        "id": "0a1880ae-1859-433b-8a13-748bd45f4e62",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Georgia in the presidential election?",
@@ -5537,30 +5227,30 @@
             "id": "0x7606802127355512c8f8ff9c70ef27a2717a8554374d84452de4c7d28147338d",
             "yes_id": "10874846387975190407444713373765853114527145924436779240006871443341352408992",
             "no_id": "6181401096199368004324244642874162057010167408218412244771664244595886623212",
-            "yes_ask": 0.71,
+            "yes_ask": 0.72,
             "no_ask": 0.3,
             "yes_bid": 0.7,
-            "no_bid": 0.29
+            "no_bid": 0.28
         },
         "absolute_return": [
             0.04166666666666674,
             0.04166666666666674
         ],
-        "last_update": "2024-10-24T20:33:59.868661"
+        "last_update": "2024-10-24T21:34:03.858976+00:00"
     },
     {
         "question": "will the democratic party win georgia in the presidential election?",
-        "id": "0e45a6ef-d5bd-43b9-a941-9a7cd5b32fc9",
+        "id": "522b987e-0c4b-45b8-8387-834326a42b20",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Georgia in the presidential election?",
             "id": "PRESPARTYGA-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.35,
+            "yes_ask": 0.36,
             "no_ask": 0.66,
             "yes_bid": 0.34,
-            "no_bid": 0.65
+            "no_bid": 0.64
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5568,20 +5258,20 @@
             "id": "0xe2a9262148bec59cde1581988431069d083faeee3361779c4b0aa265138f7c44",
             "yes_id": "71266923597682191255015907302921683041435419763570474059916757401212183782544",
             "no_id": "108978442313549362504454361386679252793404126602822126829816109429393785765883",
-            "yes_ask": 0.31,
+            "yes_ask": 0.3,
             "no_ask": 0.71,
             "yes_bid": 0.29,
-            "no_bid": 0.69
+            "no_bid": 0.7
         },
         "absolute_return": [
-            0.030927835051546504,
-            0.030927835051546504
+            0.04166666666666674,
+            0.04166666666666674
         ],
-        "last_update": "2024-10-24T20:33:59.868667"
+        "last_update": "2024-10-24T21:34:03.858979+00:00"
     },
     {
         "question": "will the republican party win wisconsin in the presidential election?",
-        "id": "b67e0bb5-314b-4c85-9b56-31650eb25a0d",
+        "id": "51480993-59e9-4f6e-947d-431324194490",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Wisconsin in the presidential election?",
@@ -5608,11 +5298,11 @@
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T20:33:59.868670"
+        "last_update": "2024-10-24T21:34:03.858981+00:00"
     },
     {
         "question": "will the democratic party win wisconsin in the presidential election?",
-        "id": "c0a42901-c53a-441e-8999-40996d487929",
+        "id": "89d3c34f-8813-4f53-8cc3-34b68fe70a5c",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Wisconsin in the presidential election?",
@@ -5630,30 +5320,30 @@
             "id": "0x34b5567e4f9a1b9561fba0f39c60b4da1f33052c8918dedc954401494d947cee",
             "yes_id": "7374237615890526880478224649885278725219793468355446734533315746155037370158",
             "no_id": "9957028331163987805873971753654507302936617692682833719706803039129302643823",
-            "yes_ask": 0.45,
-            "no_ask": 0.56,
-            "yes_bid": 0.44,
-            "no_bid": 0.55
+            "yes_ask": 0.44,
+            "no_ask": 0.57,
+            "yes_bid": 0.43,
+            "no_bid": 0.56
         },
         "absolute_return": [
-            0.020408163265306145,
-            0.020408163265306145
+            0.030927835051546504,
+            0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868672"
+        "last_update": "2024-10-24T21:34:03.858984+00:00"
     },
     {
         "question": "will the republican party win pennsylvania in the presidential election?",
-        "id": "af729046-fd3a-4c41-9261-3ccad0d6d67f",
+        "id": "e410561f-9aa3-4ee4-a4ee-272eb4d341b5",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Pennsylvania in the presidential election?",
             "id": "PRESPARTYPA-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.55,
-            "no_ask": 0.46,
-            "yes_bid": 0.54,
-            "no_bid": 0.45
+            "yes_ask": 0.56,
+            "no_ask": 0.45,
+            "yes_bid": 0.55,
+            "no_bid": 0.44
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5661,20 +5351,20 @@
             "id": "0xa923afcb8297e3ade170f2f8c088f3c277557fadef2c67054d72cc59f8504b2b",
             "yes_id": "75951511934878014812323289513632732239356274541965522720897159608390126393735",
             "no_id": "80692267952118231579739078214722079301718527753004959099480302005191158711065",
-            "yes_ask": 0.58,
+            "yes_ask": 0.59,
             "no_ask": 0.43,
             "yes_bid": 0.57,
-            "no_bid": 0.42
+            "no_bid": 0.41
         },
         "absolute_return": [
-            0.020408163265306145,
-            0.020408163265306145
+            0.010101010101010166,
+            0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868674"
+        "last_update": "2024-10-24T21:34:03.858986+00:00"
     },
     {
         "question": "will the democratic party win pennsylvania in the presidential election?",
-        "id": "99c62202-1b83-4215-8dab-454a1f0c5d40",
+        "id": "99f16c7d-cda3-4f93-b395-7e31d5c01b52",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Pennsylvania in the presidential election?",
@@ -5701,21 +5391,21 @@
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T20:33:59.868677"
+        "last_update": "2024-10-24T21:34:03.858989+00:00"
     },
     {
         "question": "will the republican party win michigan in the presidential election?",
-        "id": "0140941a-8e08-41b7-908a-71163f223800",
+        "id": "84b839e6-d0f7-4db1-a141-d288383f0891",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Michigan in the presidential election?",
             "id": "PRESPARTYMI-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.52,
-            "no_ask": 0.49,
-            "yes_bid": 0.51,
-            "no_bid": 0.48
+            "yes_ask": 0.51,
+            "no_ask": 0.5,
+            "yes_bid": 0.5,
+            "no_bid": 0.49
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5723,30 +5413,30 @@
             "id": "0xbb01eefb24a38a9aa1921ec168d3049e7374b28a2540937d06b3ff2524d66627",
             "yes_id": "105184348976114274990683066782141725521410345945023353024053078695238621958578",
             "no_id": "15594057843994379010830396426972640810046245426525810058698162482005241757000",
-            "yes_ask": 0.55,
+            "yes_ask": 0.56,
             "no_ask": 0.47,
             "yes_bid": 0.53,
-            "no_bid": 0.45
+            "no_bid": 0.44
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.020408163265306145,
+            0.020408163265306145
         ],
-        "last_update": "2024-10-24T20:33:59.868680"
+        "last_update": "2024-10-24T21:34:03.858992+00:00"
     },
     {
         "question": "will the democratic party win michigan in the presidential election?",
-        "id": "1d60a985-ec68-4ae9-8569-4ef567008669",
+        "id": "707c5090-132e-4df7-b4a9-19ca3e8f333a",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Michigan in the presidential election?",
             "id": "PRESPARTYMI-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.49,
-            "no_ask": 0.52,
-            "yes_bid": 0.48,
-            "no_bid": 0.51
+            "yes_ask": 0.5,
+            "no_ask": 0.51,
+            "yes_bid": 0.49,
+            "no_bid": 0.5
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5755,19 +5445,19 @@
             "yes_id": "67987395510317512691808452556846479650140447681921231570668523107587946046381",
             "no_id": "85882747446059283518997350779572616984413802718247398490010754008042064685948",
             "yes_ask": 0.47,
-            "no_ask": 0.55,
-            "yes_bid": 0.45,
+            "no_ask": 0.54,
+            "yes_bid": 0.46,
             "no_bid": 0.53
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.020408163265306145,
+            0.020408163265306145
         ],
-        "last_update": "2024-10-24T20:33:59.868682"
+        "last_update": "2024-10-24T21:34:03.858994+00:00"
     },
     {
         "question": "will republicans win the senate race in nevada?",
-        "id": "cfcc27d8-7580-4c33-b206-51bebe473bb3",
+        "id": "8ce1046a-880f-4b51-b8d4-46905cd33927",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Nevada?",
@@ -5794,11 +5484,11 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868685"
+        "last_update": "2024-10-24T21:34:03.858997+00:00"
     },
     {
         "question": "will democratics win the senate race in nevada?",
-        "id": "c1161d2b-674a-4feb-9229-b101d7bc4bb5",
+        "id": "88f3f1f5-0778-46f4-8433-fc6dbd8b5b57",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Nevada?",
@@ -5816,20 +5506,20 @@
             "id": "0x05904e19533e1babd563de24a3da89d87d00741b98b6dc692025f21ef6c52319",
             "yes_id": "67907845702606698787174525606026822541237125710080743620205634926727922648427",
             "no_id": "60437469074426612146004093758614067956847429214050183299113821422453717571562",
-            "yes_ask": 0.8,
+            "yes_ask": 0.81,
             "no_ask": 0.22,
             "yes_bid": 0.78,
-            "no_bid": 0.2
+            "no_bid": 0.19
         },
         "absolute_return": [
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868687"
+        "last_update": "2024-10-24T21:34:03.858999+00:00"
     },
     {
         "question": "will the republican party win north carolina in the presidential election?",
-        "id": "2a6de5e4-b2a9-4d4e-a9bc-0073414571cd",
+        "id": "0d3f26b6-d85d-44ad-a04f-25a924bc8f5b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win North Carolina in the presidential election?",
@@ -5856,21 +5546,21 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868691"
+        "last_update": "2024-10-24T21:34:03.859002+00:00"
     },
     {
         "question": "will the democratic party win north carolina in the presidential election?",
-        "id": "05defb51-4253-4f81-94cd-d68e937b1a3a",
+        "id": "fbe764b7-1afc-47b9-aa89-a2710ff2524d",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win North Carolina in the presidential election?",
             "id": "PRESPARTYNC-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.39,
+            "yes_ask": 0.38,
             "no_ask": 0.63,
             "yes_bid": 0.37,
-            "no_bid": 0.61
+            "no_bid": 0.62
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5878,20 +5568,20 @@
             "id": "0x8f97d034bbf01cd874af524cefc6d83deaa25373c1ab4545a81589a4d3d2b2a8",
             "yes_id": "100038420537482572525556691531865148324318723289388392794253042393988283565188",
             "no_id": "101272812948536211258847407959163788635306115033157032235160475699617990849525",
-            "yes_ask": 0.35,
+            "yes_ask": 0.34,
             "no_ask": 0.68,
             "yes_bid": 0.32,
-            "no_bid": 0.65
+            "no_bid": 0.66
         },
         "absolute_return": [
-            0.020408163265306145,
-            0.020408163265306145
+            0.030927835051546504,
+            0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868694"
+        "last_update": "2024-10-24T21:34:03.859004+00:00"
     },
     {
         "question": "will republicans win the senate race in arizona?",
-        "id": "e3b6df02-829e-45ba-b74b-9325867e6f5e",
+        "id": "b89bf1b6-d067-4852-b699-ad5e0d587ab0",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Arizona?",
@@ -5910,19 +5600,19 @@
             "yes_id": "46691825198205945656026007456894335541255549782914167592137952460021454784449",
             "no_id": "79276436359828295026049170967517943932138990338843874789225895410237452024",
             "yes_ask": 0.2,
-            "no_ask": 0.81,
-            "yes_bid": 0.19,
+            "no_ask": 0.82,
+            "yes_bid": 0.18,
             "no_bid": 0.8
         },
         "absolute_return": [
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868696"
+        "last_update": "2024-10-24T21:34:03.859007+00:00"
     },
     {
         "question": "will democratics win the senate race in arizona?",
-        "id": "e7338901-f7d6-4ec7-b87c-8f5ce8e8cbaf",
+        "id": "7955e1f4-0230-45e8-9588-2c5b9e1ec679",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Arizona?",
@@ -5949,11 +5639,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868698"
+        "last_update": "2024-10-24T21:34:03.859009+00:00"
     },
     {
         "question": "will the republican party win arizona in the presidential election?",
-        "id": "e65e3644-c338-4196-b2be-07f338572d23",
+        "id": "cc78c345-ba8b-414c-af93-000a05ad984b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win Arizona in the presidential election?",
@@ -5980,11 +5670,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868701"
+        "last_update": "2024-10-24T21:34:03.859012+00:00"
     },
     {
         "question": "will the democratic party win arizona in the presidential election?",
-        "id": "739a9ed7-25f7-4a55-a502-103a14cf1634",
+        "id": "e79419b7-c82b-4c7c-8cbe-66200f1a1a72",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win Arizona in the presidential election?",
@@ -6011,11 +5701,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868705"
+        "last_update": "2024-10-24T21:34:03.859014+00:00"
     },
     {
         "question": "will the popular vote margin of victory for kamala harris in pennsylvania be above 4.49?",
-        "id": "6ef41c47-789d-4db8-9ff0-3aa8c7871283",
+        "id": "7dfad489-6f69-4a0d-85ee-b45b2b2d4a1c",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be above 4.49?",
@@ -6042,11 +5732,11 @@
             0.05485232067510548,
             0.05485232067510548
         ],
-        "last_update": "2024-10-24T20:33:59.868707"
+        "last_update": "2024-10-24T21:34:03.859016+00:00"
     },
     {
         "question": "will the republican party win the popular vote?",
-        "id": "ed01cb30-f0a3-41d5-9635-38483db9f909",
+        "id": "6080d5bb-4e64-442a-925c-e0e2fa6502cf",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win the popular vote?",
@@ -6064,51 +5754,20 @@
             "id": "0x2010ff3939e8e664dd57369aa907bbaa6d03ae18be27fe3ab2f4cdcb95a8b2ab",
             "yes_id": "67648321332889562720702742465853245863647268672651902649177972067583993370930",
             "no_id": "92848768921367210485187039202894189254214421377536495082521089096497548879926",
-            "yes_ask": 0.38,
-            "no_ask": 0.63,
-            "yes_bid": 0.37,
-            "no_bid": 0.62
+            "yes_ask": 0.4,
+            "no_ask": 0.61,
+            "yes_bid": 0.39,
+            "no_bid": 0.6
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.030927835051546504,
+            0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868710"
-    },
-    {
-        "question": "will the democratic party win the popular vote?",
-        "id": "1143a600-9a6b-4a3c-9969-1768ed48952d",
-        "market_1": {
-            "platform": "Kalshi-Election",
-            "question": "Will the Democratic party win the popular vote?",
-            "id": "POPVOTE-24-D",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.66,
-            "no_ask": 0.35,
-            "yes_bid": 0.65,
-            "no_bid": 0.34
-        },
-        "market_2": {
-            "platform": "Polymarket",
-            "question": "Will a Democrat win the popular vote and the Presidency?",
-            "id": "0xafde9e890a2db339b6515cd75c2d09574dcaf731b483a1ef6ea0a3abc5ec8abd",
-            "yes_id": "33573631646975967490303296373773410479817269960942179527425708594960263761938",
-            "no_id": "1245455071836736418858894114937610717733912531531312145552158827133486397267",
-            "yes_ask": 0.37,
-            "no_ask": 0.64,
-            "yes_bid": 0.36,
-            "no_bid": 0.63
-        },
-        "absolute_return": [
-            0.38888888888888884,
-            0.38888888888888884
-        ],
-        "last_update": "2024-10-24T20:33:59.868712"
+        "last_update": "2024-10-24T21:34:03.859019+00:00"
     },
     {
         "question": "will republicans win the senate race in texas?",
-        "id": "a7dfe7ed-66b2-4a57-a722-87d36a62ed13",
+        "id": "146f1da0-6b63-444e-80c0-9e39bc110d77",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Texas?",
@@ -6135,11 +5794,11 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868715"
+        "last_update": "2024-10-24T21:34:03.859021+00:00"
     },
     {
         "question": "will democratics win the senate race in texas?",
-        "id": "c0a78207-05dc-4d31-be5b-484be5a15c1b",
+        "id": "a1829546-0d47-4632-adc7-1621994a6aa1",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Texas?",
@@ -6166,11 +5825,11 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868717"
+        "last_update": "2024-10-24T21:34:03.859024+00:00"
     },
     {
         "question": "will republicans win the senate race in michigan?",
-        "id": "8cbd8e46-0196-41d9-8aa2-f15a470ee883",
+        "id": "4dde7788-c3cd-4563-9384-795625067128",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Michigan?",
@@ -6197,11 +5856,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868720"
+        "last_update": "2024-10-24T21:34:03.859026+00:00"
     },
     {
         "question": "will democratics win the senate race in michigan?",
-        "id": "4bce1eff-9ef0-4dfa-8670-48ef1e3bd19d",
+        "id": "ecdb0549-06bd-451b-ba6d-5ac5cb0f869a",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Michigan?",
@@ -6228,11 +5887,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868722"
+        "last_update": "2024-10-24T21:34:03.859029+00:00"
     },
     {
         "question": "will republicans win the senate race in montana?",
-        "id": "b3dcda7e-c7d6-42bf-a0ca-8377c7a5aebe",
+        "id": "bcd34cb2-a562-4e25-966c-ce6106025822",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Montana?",
@@ -6259,11 +5918,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868725"
+        "last_update": "2024-10-24T21:34:03.859031+00:00"
     },
     {
         "question": "will democratics win the senate race in montana?",
-        "id": "00c6eada-8b22-48d3-8a0b-2ca14d3d9fc1",
+        "id": "866d13e1-56ee-49f2-b826-68642b60db0f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Montana?",
@@ -6282,19 +5941,19 @@
             "yes_id": "12429576220930741859504926277561309508700114925441068446729319962294959756552",
             "no_id": "101910604517605722362415807995921397667394071190268900439423677124225074836809",
             "yes_ask": 0.2,
-            "no_ask": 0.83,
-            "yes_bid": 0.17,
+            "no_ask": 0.82,
+            "yes_bid": 0.18,
             "no_bid": 0.8
         },
         "absolute_return": [
-            -0.00990099009900991,
-            -0.00990099009900991
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868727"
+        "last_update": "2024-10-24T21:34:03.859033+00:00"
     },
     {
         "question": "will republicans win the senate race in wisconsin?",
-        "id": "e83fbab0-1a3a-49ce-acd9-f09954bc59eb",
+        "id": "7fce9a6a-5a58-4f2f-8251-156d9c50420b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Wisconsin?",
@@ -6321,11 +5980,11 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868731"
+        "last_update": "2024-10-24T21:34:03.859035+00:00"
     },
     {
         "question": "will democratics win the senate race in wisconsin?",
-        "id": "8b22dc87-e51b-4f8c-8db1-3c8fe190a169",
+        "id": "1fe38f19-4752-4e6b-9228-0e22dd9cfb89",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Wisconsin?",
@@ -6343,20 +6002,20 @@
             "id": "0x98bafdb1a843ad1ee3f10222f43c8b675940922b119c0e0364a219281306098f",
             "yes_id": "34417037318407696118324868181831117887837055169659388676740258202149607125510",
             "no_id": "38149112055141292235761581658396500069455723852291915501368170246733892497553",
-            "yes_ask": 0.68,
+            "yes_ask": 0.67,
             "no_ask": 0.34,
             "yes_bid": 0.66,
-            "no_bid": 0.32
+            "no_bid": 0.33
         },
         "absolute_return": [
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868734"
+        "last_update": "2024-10-24T21:34:03.859038+00:00"
     },
     {
         "question": "will republicans win the senate race in florida?",
-        "id": "5111a0aa-4f72-47c7-837e-4a79b0c48158",
+        "id": "b10cfecf-e6af-47ee-80df-82fafa246c50",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Florida?",
@@ -6383,11 +6042,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868737"
+        "last_update": "2024-10-24T21:34:03.859040+00:00"
     },
     {
         "question": "will democratics win the senate race in florida?",
-        "id": "9ce18b27-6942-4ff1-a791-66d8564c503e",
+        "id": "7e1c99b5-5fac-48bb-b4a3-c362d4a03442",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Florida?",
@@ -6414,11 +6073,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868740"
+        "last_update": "2024-10-24T21:34:03.859043+00:00"
     },
     {
         "question": "will republican win the senate race in maryland?",
-        "id": "b511fd7a-ee61-440b-9cf1-bbe44005996e",
+        "id": "f1001fca-f79b-4758-a6eb-88613c4c978b",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republican win the Senate race in Maryland?",
@@ -6445,11 +6104,11 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T20:33:59.868742"
+        "last_update": "2024-10-24T21:34:03.859045+00:00"
     },
     {
         "question": "will democratic win the senate race in maryland?",
-        "id": "c0973a8c-fddc-4e89-abf9-dcbe8024f8d3",
+        "id": "e5ea2bee-9b5d-4b13-82f7-9428c364e263",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratic win the Senate race in Maryland?",
@@ -6476,11 +6135,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868744"
+        "last_update": "2024-10-24T21:34:03.859047+00:00"
     },
     {
         "question": "will republicans win the senate race in nebraska?",
-        "id": "2fcf9284-8a3a-42b3-b77c-274b412076cd",
+        "id": "ae3c9745-23cc-4c64-8e6a-c23e8d6d2967",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Nebraska?",
@@ -6507,11 +6166,11 @@
             0.03199174406604732,
             0.03199174406604732
         ],
-        "last_update": "2024-10-24T20:33:59.868747"
+        "last_update": "2024-10-24T21:34:03.859050+00:00"
     },
     {
         "question": "will republicans win the senate race in ohio?",
-        "id": "c9b56ddf-ba44-4f27-bf59-2150343dafa3",
+        "id": "d9f97b7c-9568-4ba9-8a42-e4ae92c7ae51",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Ohio?",
@@ -6538,11 +6197,11 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868749"
+        "last_update": "2024-10-24T21:34:03.859052+00:00"
     },
     {
         "question": "will democratics win the senate race in ohio?",
-        "id": "a7100aa7-6881-470d-b609-28f39b7fb5db",
+        "id": "590406dc-435c-425b-8e84-7bad216b848f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Ohio?",
@@ -6569,11 +6228,11 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868751"
+        "last_update": "2024-10-24T21:34:03.859054+00:00"
     },
     {
         "question": "will republicans win the senate race in pennsylvania?",
-        "id": "c15b7794-db9a-4c4f-8603-45b122644633",
+        "id": "ef75d648-670d-4cda-88bf-853b148bd0c2",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Republicans win the Senate race in Pennsylvania?",
@@ -6600,11 +6259,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868753"
+        "last_update": "2024-10-24T21:34:03.859056+00:00"
     },
     {
         "question": "will democratics win the senate race in pennsylvania?",
-        "id": "77df6d5f-a2d2-4dd8-b5d2-601b154547c8",
+        "id": "e2600a27-d1bd-4c97-900d-a702668288bd",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Democratics win the Senate race in Pennsylvania?",
@@ -6631,11 +6290,11 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868756"
+        "last_update": "2024-10-24T21:34:03.859059+00:00"
     },
     {
         "question": "will the democratic party win the governorship in new hampshire",
-        "id": "02e0564d-cd1a-4a5c-90d4-34b32cb79fb4",
+        "id": "4b70d760-9187-4e37-9ffa-82d0ebb6205f",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Democratic party win the governorship in New Hampshire",
@@ -6654,19 +6313,19 @@
             "yes_id": "24806263960523756372181711280853846291326999573915560749113978559494200335410",
             "no_id": "60960501241695278976033033820660845474136215556968277359986579038297711668795",
             "yes_ask": 0.46,
-            "no_ask": 0.55,
-            "yes_bid": 0.45,
+            "no_ask": 0.56,
+            "yes_bid": 0.44,
             "no_bid": 0.54
         },
         "absolute_return": [
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T20:33:59.868758"
+        "last_update": "2024-10-24T21:34:03.859061+00:00"
     },
     {
         "question": "will the republican party win the governorship in new hampshire",
-        "id": "01b589b0-04bb-449f-87e1-2bff494863a3",
+        "id": "07a87353-b088-4e4a-9f73-bd0e9d407557",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will the Republican party win the governorship in New Hampshire",
@@ -6693,11 +6352,11 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T20:33:59.868761"
+        "last_update": "2024-10-24T21:34:03.859063+00:00"
     },
     {
         "question": "will robert f. kennedy jr. or another we the people nominee win the presidency?",
-        "id": "ca2dbff8-e204-45bf-96a2-62a005d77a73",
+        "id": "984f8487-b6d3-4907-bfcc-658949e69644",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Robert F. Kennedy Jr. or another We the People nominee win the Presidency?",
@@ -6724,21 +6383,21 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T20:33:59.868763"
+        "last_update": "2024-10-24T21:34:03.859066+00:00"
     },
     {
         "question": "will kamala harris or another democrat win the presidency?",
-        "id": "645ddf24-d647-41c7-b2ba-8cc5a47e7b15",
+        "id": "dd22d0bd-9535-46c0-a447-4bb894c93e13",
         "market_1": {
             "platform": "Kalshi-Election",
             "question": "Will Kamala Harris or another Democrat win the Presidency?",
             "id": "PRES-2024-KH",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.41,
-            "no_ask": 0.6,
-            "yes_bid": 0.4,
-            "no_bid": 0.59
+            "yes_ask": 0.4,
+            "no_ask": 0.61,
+            "yes_bid": 0.39,
+            "no_bid": 0.6
         },
         "market_2": {
             "platform": "Polymarket",
@@ -6746,46 +6405,15 @@
             "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638",
             "yes_id": "69236923620077691027083946871148646972011131466059644796654161903044970987404",
             "no_id": "87584955359245246404952128082451897287778571240979823316620093987046202296181",
-            "yes_ask": 0.368,
-            "no_ask": 0.633,
-            "yes_bid": 0.367,
-            "no_bid": 0.632
+            "yes_ask": 0.36,
+            "no_ask": 0.644,
+            "yes_bid": 0.356,
+            "no_bid": 0.64
         },
         "absolute_return": [
-            0.03305785123966953,
-            0.03305785123966953
+            0.030927835051546504,
+            0.030927835051546504
         ],
-        "last_update": "2024-10-24T20:33:59.868766"
-    },
-    {
-        "question": "will democrats win the senate?",
-        "id": "675e5c39-2bf3-43e5-b0c1-4ddefb885200",
-        "market_1": {
-            "platform": "Kalshi-Election",
-            "question": "Will Democrats win the Senate?",
-            "id": "CONTROLS-2024-D",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.16,
-            "no_ask": 0.85,
-            "yes_bid": 0.15,
-            "no_bid": 0.84
-        },
-        "market_2": {
-            "platform": "Polymarket",
-            "question": "Will a Democrat win Washington US Senate Election?",
-            "id": "0x2b56ba9f29601cbd226521a3081b150232f10e7e46591e4e33826aa406c3dbcc",
-            "yes_id": "24414464454129144915623788317075430155100806501086537607795410752000196176355",
-            "no_id": "50413147787280691995733930007014060556608190018434160318554943122162439157538",
-            "yes_ask": 0.978,
-            "no_ask": 0.029,
-            "yes_bid": 0.971,
-            "no_bid": 0.022
-        },
-        "absolute_return": [
-            4.291005291005291,
-            4.291005291005291
-        ],
-        "last_update": "2024-10-24T20:33:59.868768"
+        "last_update": "2024-10-24T21:34:03.859068+00:00"
     }
 ]
