@@ -9,6 +9,7 @@ import kalshi_python # type: ignore
 from kalshi_python.models import * # type: ignore
 from pprint import pprint
 from constants import *
+import uuid
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -18,6 +19,25 @@ class PolymarketGetMarketsResponse(TypedDict):
 
 def is_timezone_aware(dt: datetime) -> bool:
     return dt.tzinfo is not None and dt.tzinfo.utcoffset(dt) is not None
+
+def valid_prices(yes_ask : float,
+            no_ask : float,
+            yes_bid : float,
+            no_bid : float) -> bool:
+    def convertible_to_float(value : Any) -> bool:
+        try:
+            float(value)
+            return True
+        except:
+            return False
+    
+    valid_prices = True
+    for price in [yes_ask, no_ask, yes_bid, no_bid]:
+        if not convertible_to_float(price):
+            valid_prices = False
+            break
+    return valid_prices
+    
 
 class BinaryMarketMetadata:
     def __init__(self,
@@ -61,28 +81,20 @@ class BinaryMarket:
             id : str, 
             yes_id : str | None,
             no_id : str | None,
-            yes_ask : float | None | str,
-            no_ask : float | None | str,
-            yes_bid : float | None | str,
-            no_bid : float | None | str,
+            yes_ask : float,
+            no_ask : float,
+            yes_bid : float,
+            no_bid : float,
         ):
         self.platform = platform
         self.question = question
         self.id = id
         self.yes_id = yes_id
         self.no_id = no_id
-        self.yes_ask = None
-        self.no_ask = None
-        self.yes_bid = None
-        self.no_bid = None
-        if yes_ask != None:
-            self.yes_ask = float(yes_ask)
-        if no_ask != None:
-            self.no_ask = float(no_ask)
-        if yes_bid != None:
-            self.yes_bid = float(yes_bid)
-        if no_bid != None:
-            self.no_bid = float(no_bid)
+        self.yes_ask = float(yes_ask)
+        self.no_ask = float(no_ask)
+        self.yes_bid = float(yes_bid)
+        self.no_bid = float(no_bid)
     
     def __str__(self) -> str:
         return (f"Platform: {self.platform}, BettingPlatform: {self.platform}\n"
@@ -119,7 +131,6 @@ class BinaryMarket:
             no_bid=data.get('no_bid')
         )
         
-    
 class BettingPlatform:
     def get_batch_market_data(self, data : (List[BinaryMarketMetadata] | List[BinaryMarket]) ) -> List[BinaryMarket]:
         """Given a list of binary market metadata objects, returns a list of binary market data objects containing the metadata plus latest market data
@@ -191,17 +202,22 @@ class Polymarket(BettingPlatform):
         
         out : List[BinaryMarket] = []
         for i in range(len(data)):
-            out.append(BinaryMarket(
-                "Polymarket",
-                data[i].question,
-                data[i].id,
-                data[i].yes_id,
-                data[i].no_id,
-                yes_prices[i][1],
-                no_prices[i][1],
-                yes_prices[i][0],
-                yes_prices[i][0]
-            ))
+            yes_ask = yes_prices[i][1]
+            no_ask = no_prices[i][1]
+            yes_bid = yes_prices[i][0]
+            no_bid = no_prices[i][0]
+            if valid_prices(yes_ask, no_ask, yes_bid, no_bid):
+                out.append(BinaryMarket(
+                    "Polymarket",
+                    data[i].question,
+                    data[i].id,
+                    data[i].yes_id,
+                    data[i].no_id,
+                    float(yes_ask),
+                    float(no_ask),
+                    float(yes_bid),
+                    float(no_bid)
+                ))
         return out
     
     def make_get_markets_request(self, cursor: str) -> PolymarketGetMarketsResponse:
@@ -258,21 +274,22 @@ class Kalshi(BettingPlatform):
         for i in range(0, len(ids), KALSHI_REQUEST_LIMIT):
             batch = ids[i:i+KALSHI_REQUEST_LIMIT]
             response = api.get_markets(limit = KALSHI_REQUEST_LIMIT, tickers = ",".join(batch))
-            markets = response.markets
+            markets = response.markets #type: ignore
             for m in markets:
-                out.append(
-                    BinaryMarket(
-                        self.platform_name,
-                        m.title,
-                        m.ticker,
-                        None,
-                        None,
-                        float(m.yes_ask)/100,
-                        float(m.no_ask)/100,
-                        float(m.yes_bid)/100,
-                        float(m.no_bid)/100
+                if valid_prices(m.yes_ask, m.no_ask, m.yes_bid, m.no_bid):
+                    out.append(
+                        BinaryMarket(
+                            self.platform_name,
+                            m.title,
+                            m.ticker,
+                            None,
+                            None,
+                            float(m.yes_ask)/100,
+                            float(m.no_ask)/100,
+                            float(m.yes_bid)/100,
+                            float(m.no_bid)/100
+                        )
                     )
-                )
         return out
     
     def login_to_kalshi(self):
@@ -297,8 +314,8 @@ class Kalshi(BettingPlatform):
         cursors = set()
         while True:
             response = kalshi_api.market_api.get_markets(limit=KALSHI_REQUEST_LIMIT, status = "open", cursor = cursor)
-            cursor = response.cursor
-            markets = response.markets
+            cursor = response.cursor #type: ignore
+            markets = response.markets #type: ignore
             #stop if cursor encountered twice
             if cursor in cursors:
                 break
@@ -322,14 +339,19 @@ class BetOpportunity:
 
     def __init__(self, question : str, market_1 : BinaryMarket, market_2 : BinaryMarket, last_update : datetime):
         self.question = question
+        self.id = str(uuid.uuid4())
         self.market_1 = market_1
         self.market_2 = market_2
         self.last_update = last_update
+        self.refresh_return_calculations()
 
     def __str__(self) -> str:
         return (f"Bet Opportunity on Question: {self.question}\n"
                 f"BettingPlatform 1:\n{self.market_1}\n\n"
                 f"BettingPlatform 2:\n{self.market_2}\n\n")
+    
+    def refresh_return_calculations(self):
+        self.absolute_return = self.calculate_absolute_return(1,1)
     
     def calculate_absolute_return(self, yes_contracts : int, no_contracts : int) -> list[float]:
         """calculates the absolute return for the binary market bet opportunity
@@ -348,20 +370,18 @@ class BetOpportunity:
         market_2_yes_ask = self.market_2.yes_ask
         market_1_no_ask = self.market_1.no_ask
         market_2_no_ask = self.market_2.no_ask
-        if market_1_yes_ask and market_2_no_ask and market_1_no_ask and market_2_yes_ask:
-            best_yes_price = min(market_1_yes_ask, market_2_yes_ask)
-            best_no_price = min(market_1_no_ask, market_2_no_ask)
-            investment = best_yes_price*yes_contracts + best_no_price*no_contracts
-            return  [no_contracts / investment - 1, no_contracts / investment - 1]
-        else:
-            return [None, None]
-        
+        best_yes_price = min(market_1_yes_ask, market_2_yes_ask)
+        best_no_price = min(market_1_no_ask, market_2_no_ask)
+        investment = best_yes_price*yes_contracts + best_no_price*no_contracts
+        return  [no_contracts / investment - 1, no_contracts / investment - 1]
+  
     def to_json(self):
         return {
             'question': self.question,
+            'id' : self.id,
             'market_1': self.market_1.to_json(),
             'market_2': self.market_2.to_json(),
-            'absolute_return' : self.calculate_absolute_return(1,1),
+            'absolute_return' : self.absolute_return,
             'last_update': self.last_update.isoformat()  # Convert datetime to ISO 8601 string
         }
 
