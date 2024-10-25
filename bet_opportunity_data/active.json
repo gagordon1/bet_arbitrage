@@ -8,10 +8,10 @@
             "id": "0x9279e0735a365ab5fe94c671e172b9dc68e402fa9dab36db4d8e171785fcf40e",
             "yes_id": "33452350288513549254914757033264389754893259553323655636201453811665248668148",
             "no_id": "3983050688356593768308511514049251063007099207298260480646025406180068050827",
-            "yes_ask": 0.51,
+            "yes_ask": 0.49,
             "no_ask": 0.65,
             "yes_bid": 0.35,
-            "no_bid": 0.49
+            "no_bid": 0.51
         },
         "market_2": {
             "platform": "Kalshi",
@@ -19,16 +19,16 @@
             "id": "U3-24OCT-T4.1",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.81,
-            "no_ask": 0.49,
-            "yes_bid": 0.51,
-            "no_bid": 0.19
+            "yes_ask": 0.86,
+            "no_ask": 0.53,
+            "yes_bid": 0.47,
+            "no_bid": 0.14
         },
         "absolute_return": [
-            0.0,
-            0.0
+            -0.019607843137254943,
+            -0.019607843137254943
         ],
-        "last_update": "2024-10-24T21:34:03.858497+00:00"
+        "last_update": "2024-10-24T23:55:22.457477+00:00"
     },
     {
         "question": "oct 2024 temperature increase?",
@@ -39,10 +39,10 @@
             "id": "0xc7220901f4240c463dc30055759c5b986a47180cc8a1d2512f54606b7fe8fbca",
             "yes_id": "4243900511604099635779683209085261669256545149731612818965476220756051662366",
             "no_id": "57472411669918633225910659021652386701751203398923884489907043416757312786628",
-            "yes_ask": 0.16,
+            "yes_ask": 0.13,
             "no_ask": 0.89,
             "yes_bid": 0.11,
-            "no_bid": 0.84
+            "no_bid": 0.87
         },
         "market_2": {
             "platform": "Kalshi",
@@ -56,10 +56,10 @@
             "no_bid": 0.8
         },
         "absolute_return": [
-            -0.04761904761904767,
-            -0.04761904761904767
+            -0.019607843137254943,
+            -0.019607843137254943
         ],
-        "last_update": "2024-10-24T21:34:03.858510+00:00"
+        "last_update": "2024-10-24T23:55:22.457494+00:00"
     },
     {
         "question": "will  oct 2024 be the hottest oct ever?",
@@ -70,10 +70,10 @@
             "id": "0x2cc32ede706a85ec4056aa91df09f962ab11c1c2cac92b3a7befd5fe0832e738",
             "yes_id": "80936913420747128890011361987105681192801836812431706299492454694159162606508",
             "no_id": "54178592256003262503298016236837818342433248881427367300523192157316722316184",
-            "yes_ask": 0.6,
-            "no_ask": 0.46,
-            "yes_bid": 0.54,
-            "no_bid": 0.4
+            "yes_ask": 0.57,
+            "no_ask": 0.49,
+            "yes_bid": 0.51,
+            "no_bid": 0.43
         },
         "market_2": {
             "platform": "Kalshi",
@@ -81,16 +81,16 @@
             "id": "HMONTH-24OCT",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.59,
+            "yes_ask": 0.58,
             "no_ask": 0.83,
             "yes_bid": 0.17,
-            "no_bid": 0.41
+            "no_bid": 0.42
         },
         "absolute_return": [
-            -0.04761904761904767,
-            -0.04761904761904767
+            -0.05660377358490576,
+            -0.05660377358490576
         ],
-        "last_update": "2024-10-24T21:34:03.858515+00:00"
+        "last_update": "2024-10-24T23:55:22.457499+00:00"
     },
     {
         "question": "will cpi rise more than 3% in october 2024?",
@@ -101,10 +101,10 @@
             "id": "KXCPIUSEDCAR-24NOV-T3",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.85,
+            "yes_ask": 0.13,
             "no_ask": 1.0,
             "yes_bid": 0.0,
-            "no_bid": 0.15
+            "no_bid": 0.87
         },
         "market_2": {
             "platform": "Kalshi",
@@ -118,10 +118,10 @@
             "no_bid": 0.02
         },
         "absolute_return": [
-            -0.4565217391304347,
-            -0.4565217391304347
+            -0.1071428571428572,
+            -0.1071428571428572
         ],
-        "last_update": "2024-10-24T21:34:03.858518+00:00"
+        "last_update": "2024-10-24T23:55:22.457502+00:00"
     },
     {
         "question": "will cpi rise more than 1.5% in october 2024?",
@@ -132,10 +132,10 @@
             "id": "KXCPIUSEDCAR-24NOV-T1.5",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.0,
-            "no_ask": 1.0,
-            "yes_bid": 0.0,
-            "no_bid": 1.0
+            "yes_ask": 0.18,
+            "no_ask": 0.98,
+            "yes_bid": 0.02,
+            "no_bid": 0.82
         },
         "market_2": {
             "platform": "Kalshi",
@@ -143,16 +143,16 @@
             "id": "CPIUSEDCAR-24OCT-T1.5",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.96,
+            "yes_ask": 0.94,
             "no_ask": 1.0,
             "yes_bid": 0.0,
-            "no_bid": 0.04
+            "no_bid": 0.06
         },
         "absolute_return": [
-            0.0,
-            0.0
+            -0.13793103448275856,
+            -0.13793103448275856
         ],
-        "last_update": "2024-10-24T21:34:03.858522+00:00"
+        "last_update": "2024-10-24T23:55:22.457506+00:00"
     },
     {
         "question": "will cpi rise more than -3% in october 2024?",
@@ -164,8 +164,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 1.0,
-            "no_ask": 0.85,
-            "yes_bid": 0.15,
+            "no_ask": 0.13,
+            "yes_bid": 0.87,
             "no_bid": 0.0
         },
         "market_2": {
@@ -180,10 +180,10 @@
             "no_bid": 0.02
         },
         "absolute_return": [
-            -0.45355191256830607,
-            -0.45355191256830607
+            -0.09909909909909898,
+            -0.09909909909909898
         ],
-        "last_update": "2024-10-24T21:34:03.858525+00:00"
+        "last_update": "2024-10-24T23:55:22.457509+00:00"
     },
     {
         "question": "will cpi rise more than -1.5% in october 2024?",
@@ -194,10 +194,10 @@
             "id": "KXCPIUSEDCAR-24NOV-T-1.5",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 1.0,
-            "no_ask": 1.0,
-            "yes_bid": 0.0,
-            "no_bid": 0.0
+            "yes_ask": 0.78,
+            "no_ask": 0.38,
+            "yes_bid": 0.62,
+            "no_bid": 0.22
         },
         "market_2": {
             "platform": "Kalshi",
@@ -211,10 +211,10 @@
             "no_bid": 0.02
         },
         "absolute_return": [
-            -0.4923857868020305,
-            -0.4923857868020305
+            -0.13793103448275867,
+            -0.13793103448275867
         ],
-        "last_update": "2024-10-24T21:34:03.858528+00:00"
+        "last_update": "2024-10-24T23:55:22.457513+00:00"
     },
     {
         "question": "will cpi rise more than 0% in october 2024?",
@@ -225,10 +225,10 @@
             "id": "KXCPIUSEDCAR-24NOV-T0",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.0,
-            "no_ask": 1.0,
-            "yes_bid": 0.0,
-            "no_bid": 1.0
+            "yes_ask": 0.48,
+            "no_ask": 0.68,
+            "yes_bid": 0.32,
+            "no_bid": 0.52
         },
         "market_2": {
             "platform": "Kalshi",
@@ -242,10 +242,10 @@
             "no_bid": 0.02
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            -0.13793103448275867,
+            -0.13793103448275867
         ],
-        "last_update": "2024-10-24T21:34:03.858531+00:00"
+        "last_update": "2024-10-24T23:55:22.457516+00:00"
     },
     {
         "question": "will the rate of cpi inflation be above 2.4% for the year ending in october 2024?",
@@ -256,10 +256,10 @@
             "id": "0xe839ee0a5564adf3b76685d9a29e15aa6271c357a25c99064488c35e37a6086a",
             "yes_id": "77857096756740393672415249457335263941719799019623202832331443651051368336385",
             "no_id": "80838095026711268660622694145689403986165214264885490781406699175652068740716",
-            "yes_ask": 0.61,
-            "no_ask": 0.45,
-            "yes_bid": 0.55,
-            "no_bid": 0.39
+            "yes_ask": 0.71,
+            "no_ask": 0.41,
+            "yes_bid": 0.59,
+            "no_bid": 0.29
         },
         "market_2": {
             "platform": "Kalshi",
@@ -268,15 +268,15 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.89,
-            "no_ask": 0.44,
-            "yes_bid": 0.56,
+            "no_ask": 0.47,
+            "yes_bid": 0.53,
             "no_bid": 0.11
         },
         "absolute_return": [
-            -0.04761904761904767,
-            -0.04761904761904767
+            -0.1071428571428571,
+            -0.1071428571428571
         ],
-        "last_update": "2024-10-24T21:34:03.858534+00:00"
+        "last_update": "2024-10-24T23:55:22.457519+00:00"
     },
     {
         "question": "new pandemic by 2024?",
@@ -307,7 +307,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858538+00:00"
+        "last_update": "2024-10-24T23:55:22.457523+00:00"
     },
     {
         "question": "will there be more than 1000 bird flu cases in 2024?",
@@ -338,7 +338,7 @@
             0.020408163265305923,
             0.020408163265305923
         ],
-        "last_update": "2024-10-24T21:34:03.858541+00:00"
+        "last_update": "2024-10-24T23:55:22.457526+00:00"
     },
     {
         "question": "will playboi carti release a new album by dec 31, 2024?",
@@ -349,10 +349,10 @@
             "id": "0x1945ddcae20951cf32dbc1663deb2b395ce6951d0c8b3429284007489d0c941c",
             "yes_id": "63468792278173632708976435794474493891189965112369672396364040804711486813630",
             "no_id": "55930826195971702719968039848128186107042569348503749544810546098278203472240",
-            "yes_ask": 0.73,
-            "no_ask": 0.33,
-            "yes_bid": 0.67,
-            "no_bid": 0.27
+            "yes_ask": 0.77,
+            "no_ask": 0.37,
+            "yes_bid": 0.63,
+            "no_bid": 0.23
         },
         "market_2": {
             "platform": "Kalshi",
@@ -366,10 +366,10 @@
             "no_bid": 0.0
         },
         "absolute_return": [
-            -0.05660377358490576,
-            -0.05660377358490576
+            -0.1228070175438597,
+            -0.1228070175438597
         ],
-        "last_update": "2024-10-24T21:34:03.858544+00:00"
+        "last_update": "2024-10-24T23:55:22.457529+00:00"
     },
     {
         "question": "will tiktok be banned by april 30, 2025?",
@@ -400,7 +400,7 @@
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T21:34:03.858547+00:00"
+        "last_update": "2024-10-24T23:55:22.457531+00:00"
     },
     {
         "question": "will openai announce the creation of agi?",
@@ -412,8 +412,8 @@
             "yes_id": "105850438828614884452197310938430279698886324164735312931762902384271674871323",
             "no_id": "45451545361154916635080440981880000143792802921129924090307596584908056846964",
             "yes_ask": 0.066,
-            "no_ask": 0.948,
-            "yes_bid": 0.052,
+            "no_ask": 0.945,
+            "yes_bid": 0.055,
             "no_bid": 0.934
         },
         "market_2": {
@@ -428,41 +428,10 @@
             "no_bid": 0.94
         },
         "absolute_return": [
-            -0.007936507936507908,
-            -0.007936507936507908
+            -0.004975124378109319,
+            -0.004975124378109319
         ],
-        "last_update": "2024-10-24T21:34:03.858550+00:00"
-    },
-    {
-        "question": "when will bitcoin hit $100k?",
-        "id": "4c87450f-f120-4f40-a866-76454e023404",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Will Bitcoin hit $100k in 2024?",
-            "id": "0x9c66114d2dfe2139325cc7a408a5cd5d2e73b55d919e2141b3a0ed83fc15895d",
-            "yes_id": "64903093311385616430821497488306433314807585397286521531639186532059591846310",
-            "no_id": "81337566243073271746608276915310766292424419662449021769243514448183489065187",
-            "yes_ask": 0.17,
-            "no_ask": 0.84,
-            "yes_bid": 0.16,
-            "no_bid": 0.83
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "When will Bitcoin hit $100k?",
-            "id": "BTCMAX100-24-DEC31-100000",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.16,
-            "no_ask": 0.87,
-            "yes_bid": 0.13,
-            "no_bid": 0.84
-        },
-        "absolute_return": [
-            0.0,
-            0.0
-        ],
-        "last_update": "2024-10-24T21:34:03.858554+00:00"
+        "last_update": "2024-10-24T23:55:22.457535+00:00"
     },
     {
         "question": "government shutdown in 2024?",
@@ -493,7 +462,7 @@
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T21:34:03.858557+00:00"
+        "last_update": "2024-10-24T23:55:22.457541+00:00"
     },
     {
         "question": "adam neumann returns as wework ceo before dec 2024?",
@@ -524,38 +493,7 @@
             0.002004008016031955,
             0.002004008016031955
         ],
-        "last_update": "2024-10-24T21:34:03.858560+00:00"
-    },
-    {
-        "question": "will there be more than 24  atlantic hurricanes in 2024?",
-        "id": "4110424e-1692-45ba-866e-a062c68fc80d",
-        "market_1": {
-            "platform": "Polymarket",
-            "question": "Will there be between 21 and 25 named storms during Atlantic Hurricane Season?",
-            "id": "0xa4855d0b28960be4824c31c280d274572e176313d8efda21446cabe6bdc32efc",
-            "yes_id": "102409325111577706513195431028950284047924939247341803509193905610113501728229",
-            "no_id": "68644935658003709038049834019612140031920902930735728857820942648518742019664",
-            "yes_ask": 0.04,
-            "no_ask": 0.967,
-            "yes_bid": 0.033,
-            "no_bid": 0.96
-        },
-        "market_2": {
-            "platform": "Kalshi",
-            "question": "Will there be more than 24  Atlantic hurricanes in 2024?",
-            "id": "HURCTOT-24DEC01-T24",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.02,
-            "no_ask": 1.0,
-            "yes_bid": 0.0,
-            "no_bid": 0.98
-        },
-        "absolute_return": [
-            0.01317122593718345,
-            0.01317122593718345
-        ],
-        "last_update": "2024-10-24T21:34:03.858563+00:00"
+        "last_update": "2024-10-24T23:55:22.457545+00:00"
     },
     {
         "question": "zyn banned in the united states in 2024",
@@ -586,7 +524,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858566+00:00"
+        "last_update": "2024-10-24T23:55:22.457552+00:00"
     },
     {
         "question": "sundar pichai leaves google in 2024?",
@@ -617,7 +555,7 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T21:34:03.858569+00:00"
+        "last_update": "2024-10-24T23:55:22.457555+00:00"
     },
     {
         "question": "will the fed cut rates 6 times?",
@@ -648,7 +586,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858572+00:00"
+        "last_update": "2024-10-24T23:55:22.457558+00:00"
     },
     {
         "question": "will the fed cut rates 5 times?",
@@ -670,16 +608,16 @@
             "id": "RATECUTCOUNT-24DEC31-T5",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.07,
+            "yes_ask": 0.08,
             "no_ask": 0.95,
             "yes_bid": 0.05,
-            "no_bid": 0.93
+            "no_bid": 0.92
         },
         "absolute_return": [
             -0.007936507936507908,
             -0.007936507936507908
         ],
-        "last_update": "2024-10-24T21:34:03.858574+00:00"
+        "last_update": "2024-10-24T23:55:22.457561+00:00"
     },
     {
         "question": "will the fed cut rates 4 times?",
@@ -690,10 +628,10 @@
             "id": "0x9d1f0296f3a016727193d2b45704e0debc3b8048fe0715f8bb1e91550d321872",
             "yes_id": "101669189743438912873361127612589311253202068943959811456820079057046819967115",
             "no_id": "113332423559050930347591987511234765387649957428761857688151517507261414072694",
-            "yes_ask": 0.648,
-            "no_ask": 0.382,
-            "yes_bid": 0.618,
-            "no_bid": 0.352
+            "yes_ask": 0.629,
+            "no_ask": 0.381,
+            "yes_bid": 0.619,
+            "no_bid": 0.371
         },
         "market_2": {
             "platform": "Kalshi",
@@ -702,15 +640,15 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.61,
-            "no_ask": 0.44,
-            "yes_bid": 0.56,
+            "no_ask": 0.42,
+            "yes_bid": 0.58,
             "no_bid": 0.39
         },
         "absolute_return": [
-            0.008064516129032251,
-            0.008064516129032251
+            0.00908173562058523,
+            0.00908173562058523
         ],
-        "last_update": "2024-10-24T21:34:03.858577+00:00"
+        "last_update": "2024-10-24T23:55:22.457564+00:00"
     },
     {
         "question": "will the fed cut rates 3 times?",
@@ -721,10 +659,10 @@
             "id": "0x260fd9d6b10746909a26c2af7a68b409f757c95a07dc57ddd480774a36c8399b",
             "yes_id": "35768725149562192699070006303662567010406472338668143689111965491738000793190",
             "no_id": "83892466078931422939390853849139934691334210073755987430603016034195037277387",
-            "yes_ask": 0.221,
-            "no_ask": 0.786,
-            "yes_bid": 0.214,
-            "no_bid": 0.779
+            "yes_ask": 0.217,
+            "no_ask": 0.787,
+            "yes_bid": 0.213,
+            "no_bid": 0.783
         },
         "market_2": {
             "platform": "Kalshi",
@@ -732,16 +670,16 @@
             "id": "RATECUTCOUNT-24DEC31-T3",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.26,
-            "no_ask": 0.8,
-            "yes_bid": 0.2,
-            "no_bid": 0.74
+            "yes_ask": 0.27,
+            "no_ask": 0.79,
+            "yes_bid": 0.21,
+            "no_bid": 0.73
         },
         "absolute_return": [
-            -0.006951340615690249,
-            -0.006951340615690249
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858580+00:00"
+        "last_update": "2024-10-24T23:55:22.457567+00:00"
     },
     {
         "question": "will the fed cut rates 2 times?",
@@ -752,10 +690,10 @@
             "id": "0x42e7fa3bd683a276dae0292f0ab910ac18eb76ce7cf014ec9203f6539768735a",
             "yes_id": "3871927428485769761941293093301936346966585290331404922187519259041214679155",
             "no_id": "110973344135995149785112705399269170498135973278560074168823250862703105635177",
-            "yes_ask": 0.068,
+            "yes_ask": 0.07,
             "no_ask": 0.938,
             "yes_bid": 0.062,
-            "no_bid": 0.932
+            "no_bid": 0.93
         },
         "market_2": {
             "platform": "Kalshi",
@@ -763,16 +701,16 @@
             "id": "RATECUTCOUNT-24DEC31-T2",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.06,
-            "no_ask": 0.95,
-            "yes_bid": 0.05,
-            "no_bid": 0.94
+            "yes_ask": 0.05,
+            "no_ask": 0.96,
+            "yes_bid": 0.04,
+            "no_bid": 0.95
         },
         "absolute_return": [
-            0.002004008016031955,
-            0.002004008016031955
+            0.012145748987854255,
+            0.012145748987854255
         ],
-        "last_update": "2024-10-24T21:34:03.858583+00:00"
+        "last_update": "2024-10-24T23:55:22.457570+00:00"
     },
     {
         "question": "will the federal reserve hike rates by december 31, 2024?",
@@ -794,16 +732,16 @@
             "id": "FEDHIKE-24DEC31",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.08,
+            "yes_ask": 0.06,
             "no_ask": 0.98,
             "yes_bid": 0.02,
-            "no_bid": 0.92
+            "no_bid": 0.94
         },
         "absolute_return": [
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T21:34:03.858586+00:00"
+        "last_update": "2024-10-24T23:55:22.457574+00:00"
     },
     {
         "question": "will gpt-5 be released by december 31, 2024?",
@@ -834,7 +772,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858589+00:00"
+        "last_update": "2024-10-24T23:55:22.457577+00:00"
     },
     {
         "question": "will argentina dollarize its economy by dec 31, 2024?",
@@ -865,7 +803,7 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T21:34:03.858592+00:00"
+        "last_update": "2024-10-24T23:55:22.457580+00:00"
     },
     {
         "question": "will 2024 be the hottest year on record?",
@@ -877,8 +815,8 @@
             "yes_id": "38800456697763297130479339855820439548713919346301130688802017237582222978897",
             "no_id": "66833090096949683703031028629400871823516661810994324969952055428112191258218",
             "yes_ask": 0.95,
-            "no_ask": 0.052,
-            "yes_bid": 0.948,
+            "no_ask": 0.053,
+            "yes_bid": 0.947,
             "no_bid": 0.05
         },
         "market_2": {
@@ -893,10 +831,10 @@
             "no_bid": 0.07
         },
         "absolute_return": [
-            0.018329938900203624,
-            0.018329938900203624
+            0.017293997965411867,
+            0.017293997965411867
         ],
-        "last_update": "2024-10-24T21:34:03.858594+00:00"
+        "last_update": "2024-10-24T23:55:22.457582+00:00"
     },
     {
         "question": "will there be a recession by the end of 2024?",
@@ -927,7 +865,7 @@
             -0.005964214711729587,
             -0.005964214711729587
         ],
-        "last_update": "2024-10-24T21:34:03.858597+00:00"
+        "last_update": "2024-10-24T23:55:22.457585+00:00"
     },
     {
         "question": "will kamala harris go on the joe rogan experience before nov 5, 2024",
@@ -938,10 +876,10 @@
             "id": "KXROGANKH-24-NOV05",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.26,
-            "no_ask": 0.97,
-            "yes_bid": 0.03,
-            "no_bid": 0.74
+            "yes_ask": 0.1,
+            "no_ask": 0.95,
+            "yes_bid": 0.05,
+            "no_bid": 0.9
         },
         "market_2": {
             "platform": "Polymarket",
@@ -950,15 +888,15 @@
             "yes_id": "15660815820924217908090409700847718952286327471630553559698266134410064622109",
             "no_id": "27948197752909632733803271493109389361574351476791969080542695194338931202835",
             "yes_ask": 0.14,
-            "no_ask": 0.88,
-            "yes_bid": 0.12,
+            "no_ask": 0.87,
+            "yes_bid": 0.13,
             "no_bid": 0.86
         },
         "absolute_return": [
-            -0.019607843137254943,
-            -0.019607843137254943
+            0.030927835051546504,
+            0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.858600+00:00"
+        "last_update": "2024-10-24T23:55:22.457588+00:00"
     },
     {
         "question": "will donald trump go on the joe rogan experience before nov 5, 2024",
@@ -969,10 +907,10 @@
             "id": "KXROGANDJT-24-NOV05",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.97,
-            "no_ask": 0.09,
-            "yes_bid": 0.91,
-            "no_bid": 0.03
+            "yes_ask": 0.98,
+            "no_ask": 0.04,
+            "yes_bid": 0.96,
+            "no_bid": 0.02
         },
         "market_2": {
             "platform": "Polymarket",
@@ -980,16 +918,16 @@
             "id": "0x6689c157a7c57f0ee8ab7feace215061cbb8828191854fe81f17976ef33b023e",
             "yes_id": "69957535606554334051493849773365565085200343213780884418403974246481158278196",
             "no_id": "55619052770411727287900353498060599339427684346964111421507451823240669029631",
-            "yes_ask": 0.967,
-            "no_ask": 0.048,
-            "yes_bid": 0.952,
-            "no_bid": 0.033
+            "yes_ask": 0.969,
+            "no_ask": 0.035,
+            "yes_bid": 0.965,
+            "no_bid": 0.031
         },
         "absolute_return": [
-            -0.01477832512315258,
-            -0.01477832512315258
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858603+00:00"
+        "last_update": "2024-10-24T23:55:22.457591+00:00"
     },
     {
         "question": "will republicans have 56 seats or more in 119th congress?",
@@ -1000,10 +938,10 @@
             "id": "RSENATESEATS-25-56",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.18,
-            "no_ask": 0.83,
-            "yes_bid": 0.17,
-            "no_bid": 0.82
+            "yes_ask": 0.19,
+            "no_ask": 0.82,
+            "yes_bid": 0.18,
+            "no_bid": 0.81
         },
         "market_2": {
             "platform": "Polymarket",
@@ -1017,10 +955,10 @@
             "no_bid": 0.81
         },
         "absolute_return": [
-            0.0,
-            0.0
+            -0.00990099009900991,
+            -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858606+00:00"
+        "last_update": "2024-10-24T23:55:22.457594+00:00"
     },
     {
         "question": "will republicans have 55 seats in 119th congress?",
@@ -1043,15 +981,15 @@
             "yes_id": "20997923443157238057314792262127288326422203506234479919644854685825478421945",
             "no_id": "105935219412550207811439738365969398253342763891248841798004324656748895118425",
             "yes_ask": 0.086,
-            "no_ask": 0.925,
-            "yes_bid": 0.075,
+            "no_ask": 0.924,
+            "yes_bid": 0.076,
             "no_bid": 0.914
         },
         "absolute_return": [
-            -0.004975124378109541,
-            -0.004975124378109541
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858609+00:00"
+        "last_update": "2024-10-24T23:55:22.457598+00:00"
     },
     {
         "question": "will republicans have 54 seats in 119th congress?",
@@ -1074,15 +1012,15 @@
             "yes_id": "55573915273048976912043031164180426606929087432651465078250508691902092851741",
             "no_id": "50112300339839618571347288818653242678457313172494688540794838130500888696429",
             "yes_ask": 0.12,
-            "no_ask": 0.884,
-            "yes_bid": 0.116,
+            "no_ask": 0.885,
+            "yes_bid": 0.115,
             "no_bid": 0.88
         },
         "absolute_return": [
-            0.026694045174538106,
-            0.026694045174538106
+            0.025641025641025772,
+            0.025641025641025772
         ],
-        "last_update": "2024-10-24T21:34:03.858612+00:00"
+        "last_update": "2024-10-24T23:55:22.457601+00:00"
     },
     {
         "question": "will republicans have 53 seats in 119th congress?",
@@ -1104,16 +1042,16 @@
             "id": "0x5edae953388817d1a949fedf1da005a86bc17aa2158a1af254902f06c9d2f5d4",
             "yes_id": "108228132311061777077163724282056329483592970520260720318113253145287688971179",
             "no_id": "83788506789876451072763852769571017456321272358795325771079479741114820183761",
-            "yes_ask": 0.1,
-            "no_ask": 0.91,
-            "yes_bid": 0.09,
-            "no_bid": 0.9
+            "yes_ask": 0.11,
+            "no_ask": 0.9,
+            "yes_bid": 0.1,
+            "no_bid": 0.89
         },
         "absolute_return": [
-            -0.00990099009900991,
-            -0.00990099009900991
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858614+00:00"
+        "last_update": "2024-10-24T23:55:22.457604+00:00"
     },
     {
         "question": "will republicans have 52 seats in 119th congress?",
@@ -1135,16 +1073,16 @@
             "id": "0x83ef4a16f2efdd4b269d1eeeaa2c5b53d62c1691875cefe24ab2409ee48de0df",
             "yes_id": "49941867878444794797809505121406114600850670475722696400664308370782749613520",
             "no_id": "70510034414778582892389247170656166510132213944895067838429885693817202701210",
-            "yes_ask": 0.27,
+            "yes_ask": 0.28,
             "no_ask": 0.74,
             "yes_bid": 0.26,
-            "no_bid": 0.73
+            "no_bid": 0.72
         },
         "absolute_return": [
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858617+00:00"
+        "last_update": "2024-10-24T23:55:22.457607+00:00"
     },
     {
         "question": "will republicans have 51 seats in 119th congress?",
@@ -1155,10 +1093,10 @@
             "id": "RSENATESEATS-25-51",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.19,
+            "yes_ask": 0.18,
             "no_ask": 0.83,
             "yes_bid": 0.17,
-            "no_bid": 0.81
+            "no_bid": 0.82
         },
         "market_2": {
             "platform": "Polymarket",
@@ -1172,10 +1110,10 @@
             "no_bid": 0.81
         },
         "absolute_return": [
-            -0.00990099009900991,
-            -0.00990099009900991
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858620+00:00"
+        "last_update": "2024-10-24T23:55:22.457610+00:00"
     },
     {
         "question": "will republicans have 50 seats in 119th congress?",
@@ -1206,7 +1144,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858623+00:00"
+        "last_update": "2024-10-24T23:55:22.457613+00:00"
     },
     {
         "question": "will republicans have 49 seats or fewer in 119th congress?",
@@ -1237,7 +1175,7 @@
             0.020408163265305923,
             0.020408163265305923
         ],
-        "last_update": "2024-10-24T21:34:03.858625+00:00"
+        "last_update": "2024-10-24T23:55:22.457616+00:00"
     },
     {
         "question": "will the republican party win ne-3 (nebraska's third congressional district) in the presidential election?",
@@ -1268,7 +1206,7 @@
             -0.017681728880157177,
             -0.017681728880157177
         ],
-        "last_update": "2024-10-24T21:34:03.858628+00:00"
+        "last_update": "2024-10-24T23:55:22.457618+00:00"
     },
     {
         "question": "will the democratic party win ne-3 (nebraska's third congressional district) in the presidential election?",
@@ -1299,7 +1237,7 @@
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T21:34:03.858632+00:00"
+        "last_update": "2024-10-24T23:55:22.457621+00:00"
     },
     {
         "question": "will the republican party win ne-2 (nebraska's second congressional district) in the presidential election?",
@@ -1321,16 +1259,16 @@
             "id": "0x4430403d54a2a79a2b3043294f943a4f2717dff024629cf4a3e73f0151fa0df5",
             "yes_id": "89935828926691594744835894208229135375117246058109787048758748507442022267421",
             "no_id": "73016602351549806570154178056127526088291646024319219227321763809599562817674",
-            "yes_ask": 0.18,
-            "no_ask": 0.847,
-            "yes_bid": 0.153,
-            "no_bid": 0.82
+            "yes_ask": 0.17,
+            "no_ask": 0.846,
+            "yes_bid": 0.154,
+            "no_bid": 0.83
         },
         "absolute_return": [
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858634+00:00"
+        "last_update": "2024-10-24T23:55:22.457624+00:00"
     },
     {
         "question": "will the democratic party win ne-2 (nebraska's second congressional district) in the presidential election?",
@@ -1361,7 +1299,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858637+00:00"
+        "last_update": "2024-10-24T23:55:22.457627+00:00"
     },
     {
         "question": "will the republican party win ne-1 (nebraska's first congressional district) in the presidential election?",
@@ -1392,7 +1330,7 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T21:34:03.858639+00:00"
+        "last_update": "2024-10-24T23:55:22.457630+00:00"
     },
     {
         "question": "will the democratic party win ne-1 (nebraska's first congressional district) in the presidential election?",
@@ -1404,8 +1342,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.02,
-            "no_ask": 0.99,
-            "yes_bid": 0.01,
+            "no_ask": 1.0,
+            "yes_bid": 0.0,
             "no_bid": 0.98
         },
         "market_2": {
@@ -1414,16 +1352,16 @@
             "id": "0xa0de93ceb5e777e92f1d0f2ce78fdf0ef14989f09b36d53736a01591a616c0ce",
             "yes_id": "86706347053852986217200281474745423066430904592475963352369903314013050662775",
             "no_id": "95160657925090467287722104068592939348394065390450609789134372291774507059641",
-            "yes_ask": 0.011,
+            "yes_ask": 0.012,
             "no_ask": 0.996,
             "yes_bid": 0.004,
-            "no_bid": 0.989
+            "no_bid": 0.988
         },
         "absolute_return": [
-            -0.0009990009990008542,
-            -0.0009990009990008542
+            -0.007936507936507908,
+            -0.007936507936507908
         ],
-        "last_update": "2024-10-24T21:34:03.858642+00:00"
+        "last_update": "2024-10-24T23:55:22.457632+00:00"
     },
     {
         "question": "will the republican party win me-2 (maine's second congressional district) in the presidential election?",
@@ -1454,7 +1392,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858645+00:00"
+        "last_update": "2024-10-24T23:55:22.457635+00:00"
     },
     {
         "question": "will the democratic party win me-2 (maine's second congressional district) in the presidential election?",
@@ -1485,7 +1423,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858648+00:00"
+        "last_update": "2024-10-24T23:55:22.457638+00:00"
     },
     {
         "question": "will the democratic party win me-1 (maine's first congressional district) in the presidential election?",
@@ -1516,7 +1454,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858650+00:00"
+        "last_update": "2024-10-24T23:55:22.457641+00:00"
     },
     {
         "question": "will the republican party win me-1 (maine's first congressional district) in the presidential election?",
@@ -1547,7 +1485,7 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T21:34:03.858653+00:00"
+        "last_update": "2024-10-24T23:55:22.457643+00:00"
     },
     {
         "question": "tulsi gabbard nominated to the cabinet before feb 1, 2025?",
@@ -1559,8 +1497,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.43,
-            "no_ask": 0.6,
-            "yes_bid": 0.4,
+            "no_ask": 0.58,
+            "yes_bid": 0.42,
             "no_bid": 0.57
         },
         "market_2": {
@@ -1570,15 +1508,15 @@
             "yes_id": "60583707785258417517828736037344436560306741051148122339444796241891792695934",
             "no_id": "44173215934600696194775437225031783531347151423896444044144183340001221863158",
             "yes_ask": 0.34,
-            "no_ask": 0.75,
-            "yes_bid": 0.25,
+            "no_ask": 0.74,
+            "yes_bid": 0.26,
             "no_bid": 0.66
         },
         "absolute_return": [
-            0.06382978723404253,
-            0.06382978723404253
+            0.0869565217391306,
+            0.0869565217391306
         ],
-        "last_update": "2024-10-24T21:34:03.858656+00:00"
+        "last_update": "2024-10-24T23:55:22.457646+00:00"
     },
     {
         "question": "elon musk nominated to the cabinet before feb 1, 2025?",
@@ -1589,10 +1527,10 @@
             "id": "CABINETMUSK-25-FEB01",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.29,
-            "no_ask": 0.73,
-            "yes_bid": 0.27,
-            "no_bid": 0.71
+            "yes_ask": 0.31,
+            "no_ask": 0.71,
+            "yes_bid": 0.29,
+            "no_bid": 0.69
         },
         "market_2": {
             "platform": "Polymarket",
@@ -1606,10 +1544,10 @@
             "no_bid": 0.84
         },
         "absolute_return": [
-            0.12359550561797761,
-            0.12359550561797761
+            0.14942528735632177,
+            0.14942528735632177
         ],
-        "last_update": "2024-10-24T21:34:03.858659+00:00"
+        "last_update": "2024-10-24T23:55:22.457648+00:00"
     },
     {
         "question": "will the republican party win wyoming in the presidential election?",
@@ -1640,7 +1578,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858661+00:00"
+        "last_update": "2024-10-24T23:55:22.457651+00:00"
     },
     {
         "question": "will the democratic party win wyoming in the presidential election?",
@@ -1671,7 +1609,7 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858665+00:00"
+        "last_update": "2024-10-24T23:55:22.457654+00:00"
     },
     {
         "question": "will the republican party win vermont in the presidential election?",
@@ -1693,16 +1631,16 @@
             "id": "0x3acbd665f6918c5dd46f1b2d05073dc6b0247f5b9b67cd59c6ea89219111ff57",
             "yes_id": "76092596726198361963723953215831515429856423973929903397465402948022546314415",
             "no_id": "67472833264817491147966650326420021123413109747272536196035621197428430819408",
-            "yes_ask": 0.018,
+            "yes_ask": 0.015,
             "no_ask": 0.986,
             "yes_bid": 0.014,
-            "no_bid": 0.982
+            "no_bid": 0.985
         },
         "absolute_return": [
-            0.002004008016031955,
-            0.002004008016031955
+            0.005025125628140614,
+            0.005025125628140614
         ],
-        "last_update": "2024-10-24T21:34:03.858667+00:00"
+        "last_update": "2024-10-24T23:55:22.457657+00:00"
     },
     {
         "question": "will the democratic party win vermont in the presidential election?",
@@ -1733,7 +1671,7 @@
             0.004016064257028162,
             0.004016064257028162
         ],
-        "last_update": "2024-10-24T21:34:03.858670+00:00"
+        "last_update": "2024-10-24T23:55:22.457660+00:00"
     },
     {
         "question": "will the democratic party win alaska in the presidential election?",
@@ -1764,7 +1702,7 @@
             -0.008919722497522153,
             -0.008919722497522153
         ],
-        "last_update": "2024-10-24T21:34:03.858673+00:00"
+        "last_update": "2024-10-24T23:55:22.457662+00:00"
     },
     {
         "question": "will the republican party win alaska in the presidential election?",
@@ -1795,7 +1733,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858676+00:00"
+        "last_update": "2024-10-24T23:55:22.457665+00:00"
     },
     {
         "question": "will the democratic party win north dakota in the presidential election?",
@@ -1826,7 +1764,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858678+00:00"
+        "last_update": "2024-10-24T23:55:22.457668+00:00"
     },
     {
         "question": "will the republican party win north dakota in the presidential election?",
@@ -1857,7 +1795,7 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T21:34:03.858681+00:00"
+        "last_update": "2024-10-24T23:55:22.457670+00:00"
     },
     {
         "question": "will the republicn party win south dakota in the presidential election?",
@@ -1868,10 +1806,10 @@
             "id": "PRESPARTYSD-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.99,
+            "yes_ask": 1.0,
             "no_ask": 0.02,
             "yes_bid": 0.98,
-            "no_bid": 0.01
+            "no_bid": 0.0
         },
         "market_2": {
             "platform": "Polymarket",
@@ -1888,7 +1826,7 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T21:34:03.858684+00:00"
+        "last_update": "2024-10-24T23:55:22.457673+00:00"
     },
     {
         "question": "will the democratic party win south dakota in the presidential election?",
@@ -1900,8 +1838,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.02,
-            "no_ask": 0.99,
-            "yes_bid": 0.01,
+            "no_ask": 1.0,
+            "yes_bid": 0.0,
             "no_bid": 0.98
         },
         "market_2": {
@@ -1916,10 +1854,10 @@
             "no_bid": 0.996
         },
         "absolute_return": [
-            0.006036217303822866,
-            0.006036217303822866
+            -0.0009990009990008542,
+            -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858687+00:00"
+        "last_update": "2024-10-24T23:55:22.457676+00:00"
     },
     {
         "question": "will the democratic party win delaware in the presidential election?",
@@ -1950,7 +1888,7 @@
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T21:34:03.858689+00:00"
+        "last_update": "2024-10-24T23:55:22.457678+00:00"
     },
     {
         "question": "will the republican party win delaware in the presidential election?",
@@ -1981,7 +1919,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858692+00:00"
+        "last_update": "2024-10-24T23:55:22.457681+00:00"
     },
     {
         "question": "will the democratic party win rhode island in the presidential election?",
@@ -2012,7 +1950,7 @@
             -0.005964214711729587,
             -0.005964214711729587
         ],
-        "last_update": "2024-10-24T21:34:03.858695+00:00"
+        "last_update": "2024-10-24T23:55:22.457684+00:00"
     },
     {
         "question": "will the republican party win rhode island in the presidential election?",
@@ -2035,15 +1973,15 @@
             "yes_id": "99672409625841492897188894344846022664896122293787929829963546146137071761147",
             "no_id": "13789495019897325972132141891116611308334961501786542464870706199730148161946",
             "yes_ask": 0.025,
-            "no_ask": 0.976,
-            "yes_bid": 0.024,
+            "no_ask": 0.981,
+            "yes_bid": 0.019,
             "no_bid": 0.975
         },
         "absolute_return": [
-            -0.0009990009990008542,
-            -0.0009990009990008542
+            -0.004975124378109319,
+            -0.004975124378109319
         ],
-        "last_update": "2024-10-24T21:34:03.858698+00:00"
+        "last_update": "2024-10-24T23:55:22.457687+00:00"
     },
     {
         "question": "will the democratic party win montana in the presidential election?",
@@ -2074,7 +2012,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858702+00:00"
+        "last_update": "2024-10-24T23:55:22.457691+00:00"
     },
     {
         "question": "will the republican party win montana in the presidential election?",
@@ -2096,16 +2034,16 @@
             "id": "0x015f277ff86323fb0cc3045f6444c5188d9fb491231b644aecd9a08cab9da792",
             "yes_id": "84439837773164457721562938989476144514221691118767622414917017467498968008300",
             "no_id": "13310920505912195795685878817959980798587941390838176717288739704026908151901",
-            "yes_ask": 0.984,
-            "no_ask": 0.025,
-            "yes_bid": 0.975,
-            "no_bid": 0.016
+            "yes_ask": 0.981,
+            "no_ask": 0.023,
+            "yes_bid": 0.977,
+            "no_bid": 0.019
         },
         "absolute_return": [
-            -0.003984063745019917,
-            -0.003984063745019917
+            -0.0009990009990008542,
+            -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858704+00:00"
+        "last_update": "2024-10-24T23:55:22.457694+00:00"
     },
     {
         "question": "will the democratic party win maine in the presidential election?",
@@ -2136,7 +2074,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858707+00:00"
+        "last_update": "2024-10-24T23:55:22.457697+00:00"
     },
     {
         "question": "will the republican party win maine in the presidential election?",
@@ -2167,7 +2105,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858710+00:00"
+        "last_update": "2024-10-24T23:55:22.457700+00:00"
     },
     {
         "question": "will the democratic party win new hampshire in the presidential election?",
@@ -2178,10 +2116,10 @@
             "id": "PRESPARTYNH-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.85,
+            "yes_ask": 0.86,
             "no_ask": 0.16,
             "yes_bid": 0.84,
-            "no_bid": 0.15
+            "no_bid": 0.14
         },
         "market_2": {
             "platform": "Polymarket",
@@ -2198,7 +2136,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858713+00:00"
+        "last_update": "2024-10-24T23:55:22.457703+00:00"
     },
     {
         "question": "will the republican party win new hampshire in the presidential election?",
@@ -2210,8 +2148,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.16,
-            "no_ask": 0.85,
-            "yes_bid": 0.15,
+            "no_ask": 0.86,
+            "yes_bid": 0.14,
             "no_bid": 0.84
         },
         "market_2": {
@@ -2220,16 +2158,16 @@
             "id": "0x9be6760eca88434624ecb3e9dbf3b1ff161c630559c52d80b2b23b8efbcd43bf",
             "yes_id": "75196359692989187018411418870859031296447545562973355617507233505746713995861",
             "no_id": "91757041354278041432691402724684158729072796258871845153634877058427655210476",
-            "yes_ask": 0.18,
+            "yes_ask": 0.17,
             "no_ask": 0.84,
             "yes_bid": 0.16,
-            "no_bid": 0.82
+            "no_bid": 0.83
         },
         "absolute_return": [
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858716+00:00"
+        "last_update": "2024-10-24T23:55:22.457705+00:00"
     },
     {
         "question": "will the republican party win hawaii in the presidential election?",
@@ -2251,16 +2189,16 @@
             "id": "0xf7fb94eb08c13612869e9854a9e57e589c21abea7f7cfc53ab01292844e10c71",
             "yes_id": "64479810606534107694084898926680187260422516353477452671996847232472736282123",
             "no_id": "4084260736796711048617425139193115220786212249978496695054293774337849298174",
-            "yes_ask": 0.029,
+            "yes_ask": 0.028,
             "no_ask": 0.981,
             "yes_bid": 0.019,
-            "no_bid": 0.971
+            "no_bid": 0.972
         },
         "absolute_return": [
-            0.0010010010010010895,
-            0.0010010010010010895
+            0.002004008016031955,
+            0.002004008016031955
         ],
-        "last_update": "2024-10-24T21:34:03.858719+00:00"
+        "last_update": "2024-10-24T23:55:22.457709+00:00"
     },
     {
         "question": "will the democratic party win hawaii in the presidential election?",
@@ -2291,7 +2229,7 @@
             0.002004008016031955,
             0.002004008016031955
         ],
-        "last_update": "2024-10-24T21:34:03.858721+00:00"
+        "last_update": "2024-10-24T23:55:22.457711+00:00"
     },
     {
         "question": "will the democratic party win west virginia in the presidential election?",
@@ -2322,7 +2260,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858724+00:00"
+        "last_update": "2024-10-24T23:55:22.457714+00:00"
     },
     {
         "question": "will the republican party win west virginia in the presidential election?",
@@ -2353,7 +2291,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858727+00:00"
+        "last_update": "2024-10-24T23:55:22.457717+00:00"
     },
     {
         "question": "will the democratic party win idaho in the presidential election?",
@@ -2384,7 +2322,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858730+00:00"
+        "last_update": "2024-10-24T23:55:22.457720+00:00"
     },
     {
         "question": "will the republican party win idaho in the presidential election?",
@@ -2415,7 +2353,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858734+00:00"
+        "last_update": "2024-10-24T23:55:22.457724+00:00"
     },
     {
         "question": "will the democratic party win nebraska in the presidential election?",
@@ -2446,7 +2384,7 @@
             0.004016064257028162,
             0.004016064257028162
         ],
-        "last_update": "2024-10-24T21:34:03.858737+00:00"
+        "last_update": "2024-10-24T23:55:22.457726+00:00"
     },
     {
         "question": "will the republican party win nebraska in the presidential election?",
@@ -2468,16 +2406,16 @@
             "id": "0xe3cc8e738278608ba439c84bcab682ac9bb41563f8a82f6c0914f51b5cd40d29",
             "yes_id": "27990839500202049476514858749305910536498010660866937295741954749190470575043",
             "no_id": "63888975184749552231640525912348801001579124306027712781891928174831925950982",
-            "yes_ask": 0.984,
+            "yes_ask": 0.985,
             "no_ask": 0.019,
             "yes_bid": 0.981,
-            "no_bid": 0.016
+            "no_bid": 0.015
         },
         "absolute_return": [
-            -0.0029910269192421346,
-            -0.0029910269192421346
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858739+00:00"
+        "last_update": "2024-10-24T23:55:22.457729+00:00"
     },
     {
         "question": "will the republican party win new mexico in the presidential election?",
@@ -2508,7 +2446,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858742+00:00"
+        "last_update": "2024-10-24T23:55:22.457732+00:00"
     },
     {
         "question": "will the democratic party win new mexico in the presidential election?",
@@ -2539,7 +2477,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858745+00:00"
+        "last_update": "2024-10-24T23:55:22.457735+00:00"
     },
     {
         "question": "will the democratic party win minnesota in the presidential election?",
@@ -2561,16 +2499,16 @@
             "id": "0x294fd2771d72317ab0888137193aac7dc90decd924cfcd69923edbc28d23d581",
             "yes_id": "39623200091471028374712577912012365791011393912709672986570615201117585363982",
             "no_id": "87101865252657325677629328884631461236040235936833379556612713444068570212093",
-            "yes_ask": 0.89,
+            "yes_ask": 0.88,
             "no_ask": 0.13,
             "yes_bid": 0.87,
-            "no_bid": 0.11
+            "no_bid": 0.12
         },
         "absolute_return": [
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858748+00:00"
+        "last_update": "2024-10-24T23:55:22.457737+00:00"
     },
     {
         "question": "will the republican party win minnesota in the presidential election?",
@@ -2593,15 +2531,15 @@
             "yes_id": "92117185710429643911455104199091166119411848668357581614617019864951532204911",
             "no_id": "45540997455710174974640396763138403465407130981686659549560595912224589386355",
             "yes_ask": 0.13,
-            "no_ask": 0.89,
-            "yes_bid": 0.11,
+            "no_ask": 0.88,
+            "yes_bid": 0.12,
             "no_bid": 0.87
         },
         "absolute_return": [
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858750+00:00"
+        "last_update": "2024-10-24T23:55:22.457740+00:00"
     },
     {
         "question": "will the democratic party win mississippi in the presidential election?",
@@ -2632,7 +2570,7 @@
             -0.005964214711729587,
             -0.005964214711729587
         ],
-        "last_update": "2024-10-24T21:34:03.858753+00:00"
+        "last_update": "2024-10-24T23:55:22.457743+00:00"
     },
     {
         "question": "will the republican party win mississippi in the presidential election?",
@@ -2663,7 +2601,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858756+00:00"
+        "last_update": "2024-10-24T23:55:22.457746+00:00"
     },
     {
         "question": "will the republican party win kansas in the presidential election?",
@@ -2694,7 +2632,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858758+00:00"
+        "last_update": "2024-10-24T23:55:22.457749+00:00"
     },
     {
         "question": "will the democratic party win kansas in the presidential election?",
@@ -2725,7 +2663,7 @@
             -0.005964214711729587,
             -0.005964214711729587
         ],
-        "last_update": "2024-10-24T21:34:03.858761+00:00"
+        "last_update": "2024-10-24T23:55:22.457752+00:00"
     },
     {
         "question": "will the democratic party win arkansas in the presidential election?",
@@ -2756,7 +2694,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858764+00:00"
+        "last_update": "2024-10-24T23:55:22.457755+00:00"
     },
     {
         "question": "will the republican party win arkansas in the presidential election?",
@@ -2787,7 +2725,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858766+00:00"
+        "last_update": "2024-10-24T23:55:22.457758+00:00"
     },
     {
         "question": "will the republican party win iowa in the presidential election?",
@@ -2818,7 +2756,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858769+00:00"
+        "last_update": "2024-10-24T23:55:22.457760+00:00"
     },
     {
         "question": "will the democratic party win iowa in the presidential election?",
@@ -2849,7 +2787,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858772+00:00"
+        "last_update": "2024-10-24T23:55:22.457763+00:00"
     },
     {
         "question": "will the republican party win utah in the presidential election?",
@@ -2860,10 +2798,10 @@
             "id": "PRESPARTYUT-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.99,
+            "yes_ask": 0.98,
             "no_ask": 0.03,
             "yes_bid": 0.97,
-            "no_bid": 0.01
+            "no_bid": 0.02
         },
         "market_2": {
             "platform": "Polymarket",
@@ -2872,15 +2810,15 @@
             "yes_id": "48952778114812305855011039621750327379121824029996306523202429232292910423319",
             "no_id": "31051715593409855279555117261170492630314968504456880579367476144382090736419",
             "yes_ask": 0.979,
-            "no_ask": 0.024,
-            "yes_bid": 0.976,
+            "no_ask": 0.025,
+            "yes_bid": 0.975,
             "no_bid": 0.021
         },
         "absolute_return": [
-            -0.0029910269192421346,
-            -0.0029910269192421346
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858774+00:00"
+        "last_update": "2024-10-24T23:55:22.457766+00:00"
     },
     {
         "question": "will the democratic party win utah in the presidential election?",
@@ -2911,7 +2849,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.858777+00:00"
+        "last_update": "2024-10-24T23:55:22.457769+00:00"
     },
     {
         "question": "will the republican party win connecticut in the presidential election?",
@@ -2942,7 +2880,7 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T21:34:03.858780+00:00"
+        "last_update": "2024-10-24T23:55:22.457771+00:00"
     },
     {
         "question": "will the democratic party win connecticut in the presidential election?",
@@ -2973,7 +2911,7 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858783+00:00"
+        "last_update": "2024-10-24T23:55:22.457774+00:00"
     },
     {
         "question": "will the republican party win oklahoma in the presidential election?",
@@ -3004,7 +2942,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858785+00:00"
+        "last_update": "2024-10-24T23:55:22.457777+00:00"
     },
     {
         "question": "will the democratic party win oklahoma in the presidential election?",
@@ -3035,7 +2973,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858788+00:00"
+        "last_update": "2024-10-24T23:55:22.457780+00:00"
     },
     {
         "question": "will the democratic party win oregon in the presidential election?",
@@ -3066,7 +3004,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858791+00:00"
+        "last_update": "2024-10-24T23:55:22.457782+00:00"
     },
     {
         "question": "will the republican party win oregon in the presidential election?",
@@ -3077,10 +3015,10 @@
             "id": "PRESPARTYOR-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.05,
+            "yes_ask": 0.04,
             "no_ask": 0.97,
             "yes_bid": 0.03,
-            "no_bid": 0.95
+            "no_bid": 0.96
         },
         "market_2": {
             "platform": "Polymarket",
@@ -3097,7 +3035,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858793+00:00"
+        "last_update": "2024-10-24T23:55:22.457785+00:00"
     },
     {
         "question": "will the democratic party win kentucky in the presidential election?",
@@ -3128,7 +3066,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858796+00:00"
+        "last_update": "2024-10-24T23:55:22.457788+00:00"
     },
     {
         "question": "will the republican party win kentucky in the presidential election?",
@@ -3159,7 +3097,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858799+00:00"
+        "last_update": "2024-10-24T23:55:22.457790+00:00"
     },
     {
         "question": "will the republican party win louisiana in the presidential election?",
@@ -3190,7 +3128,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858801+00:00"
+        "last_update": "2024-10-24T23:55:22.457793+00:00"
     },
     {
         "question": "will the democratic party win louisiana in the presidential election?",
@@ -3221,7 +3159,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858804+00:00"
+        "last_update": "2024-10-24T23:55:22.457796+00:00"
     },
     {
         "question": "will the democratic party win alabama in the presidential election?",
@@ -3252,7 +3190,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858807+00:00"
+        "last_update": "2024-10-24T23:55:22.457812+00:00"
     },
     {
         "question": "will the republican party win alabama in the presidential election?",
@@ -3283,7 +3221,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858810+00:00"
+        "last_update": "2024-10-24T23:55:22.457830+00:00"
     },
     {
         "question": "will the republican party win south carolina in the presidential election?",
@@ -3305,16 +3243,16 @@
             "id": "0xff7cd573927f01a491608361461bed7cfe60b86278ba4cc3c7b19eebde2a8c9e",
             "yes_id": "111664753297433262576637731200944487188659019486371805508841487238252606157505",
             "no_id": "82028066649330229584200995736401068025546035525872820670153390037178808685989",
-            "yes_ask": 0.982,
+            "yes_ask": 0.983,
             "no_ask": 0.026,
             "yes_bid": 0.974,
-            "no_bid": 0.018
+            "no_bid": 0.017
         },
         "absolute_return": [
-            -0.001996007984031989,
-            -0.001996007984031989
+            -0.0029910269192421346,
+            -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858813+00:00"
+        "last_update": "2024-10-24T23:55:22.457835+00:00"
     },
     {
         "question": "will the democratic party win south carolina in the presidential election?",
@@ -3345,7 +3283,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858815+00:00"
+        "last_update": "2024-10-24T23:55:22.457839+00:00"
     },
     {
         "question": "will the republican party win colorado in the presidential election?",
@@ -3367,16 +3305,16 @@
             "id": "0x436b731d219f6da8caf7147d02d2a18e31ca770154225aef63c52f632e36e564",
             "yes_id": "106556635471772911586614313989151393945990110659335310095262547110240967181207",
             "no_id": "65712577596037191659259105059530732608157176793818712777860844651657435769510",
-            "yes_ask": 0.056,
-            "no_ask": 0.947,
-            "yes_bid": 0.053,
-            "no_bid": 0.944
+            "yes_ask": 0.055,
+            "no_ask": 0.948,
+            "yes_bid": 0.052,
+            "no_bid": 0.945
         },
         "absolute_return": [
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858818+00:00"
+        "last_update": "2024-10-24T23:55:22.457857+00:00"
     },
     {
         "question": "will the democratic party win colorado in the presidential election?",
@@ -3398,16 +3336,16 @@
             "id": "0x846be8b2fc96f1033d715aeedcbcb7459945abef9b87599a9e02c27ee1c66b7f",
             "yes_id": "12612446154658818790820869162690045426530309786415017500871410258353330100431",
             "no_id": "115585506504919629828748149243208762665622178843190396017785483141688679055806",
-            "yes_ask": 0.949,
-            "no_ask": 0.054,
-            "yes_bid": 0.946,
-            "no_bid": 0.051
+            "yes_ask": 0.948,
+            "no_ask": 0.055,
+            "yes_bid": 0.945,
+            "no_bid": 0.052
         },
         "absolute_return": [
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858821+00:00"
+        "last_update": "2024-10-24T23:55:22.457862+00:00"
     },
     {
         "question": "will the republican party win maryland in the presidential election?",
@@ -3429,16 +3367,16 @@
             "id": "0x67d2bcb7a91e89e038fd81dd724622e7aba4c8db28e18133fc75ba02db1a05a0",
             "yes_id": "47435795361523306068669390191001721952451719478004164497881465650348674823190",
             "no_id": "19121719258788038444734209085269288771252269686058733426568181068452193926114",
-            "yes_ask": 0.017,
+            "yes_ask": 0.015,
             "no_ask": 0.986,
             "yes_bid": 0.014,
-            "no_bid": 0.983
+            "no_bid": 0.985
         },
         "absolute_return": [
-            -0.0029910269192421346,
-            -0.0029910269192421346
+            -0.0009990009990008542,
+            -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858824+00:00"
+        "last_update": "2024-10-24T23:55:22.457864+00:00"
     },
     {
         "question": "will the democratic party win maryland in the presidential election?",
@@ -3460,16 +3398,16 @@
             "id": "0xfdbfcaa8f6ace709a0a5078eb5932d8600edcba6f91fc878eb4d3923980ed2f1",
             "yes_id": "97556102754708830900964862779720201295236623485186716498735902254901074761894",
             "no_id": "37318936962458234381559059916139272987734918651258427396890073364183287441333",
-            "yes_ask": 0.988,
+            "yes_ask": 0.987,
             "no_ask": 0.015,
             "yes_bid": 0.985,
-            "no_bid": 0.012
+            "no_bid": 0.013
         },
         "absolute_return": [
-            -0.0029910269192421346,
-            -0.0029910269192421346
+            -0.001996007984031989,
+            -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858826+00:00"
+        "last_update": "2024-10-24T23:55:22.457867+00:00"
     },
     {
         "question": "will the democratic party win missouri in the presidential election?",
@@ -3500,7 +3438,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858829+00:00"
+        "last_update": "2024-10-24T23:55:22.457870+00:00"
     },
     {
         "question": "will the republican party win missouri in the presidential election?",
@@ -3531,7 +3469,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858832+00:00"
+        "last_update": "2024-10-24T23:55:22.457890+00:00"
     },
     {
         "question": "will the democratic party win indiana in the presidential election?",
@@ -3554,15 +3492,15 @@
             "yes_id": "62726474501330952673975964063198467443204335271354371758722889168638240132125",
             "no_id": "38026789641184820237550301175405502894015275677675111757835059046702298653689",
             "yes_ask": 0.019,
-            "no_ask": 0.989,
-            "yes_bid": 0.011,
+            "no_ask": 0.985,
+            "yes_bid": 0.015,
             "no_bid": 0.981
         },
         "absolute_return": [
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T21:34:03.858835+00:00"
+        "last_update": "2024-10-24T23:55:22.457895+00:00"
     },
     {
         "question": "will the republican party win indiana in the presidential election?",
@@ -3593,7 +3531,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858837+00:00"
+        "last_update": "2024-10-24T23:55:22.457898+00:00"
     },
     {
         "question": "will the democratic party win massachusetts in the presidential election?",
@@ -3615,16 +3553,16 @@
             "id": "0xa93ffdf20f163f8968e73d9bafd9e95ee9759d74eaf073a7868693a17dfec9fe",
             "yes_id": "35718673949429296742313952015159188391888764570436588920545168473977619637738",
             "no_id": "27543841511771722857014630577766927130593763892619565653358787257780176938394",
-            "yes_ask": 0.99,
+            "yes_ask": 0.989,
             "no_ask": 0.014,
             "yes_bid": 0.986,
-            "no_bid": 0.01
+            "no_bid": 0.011
         },
         "absolute_return": [
             0.006036217303822866,
             0.006036217303822866
         ],
-        "last_update": "2024-10-24T21:34:03.858839+00:00"
+        "last_update": "2024-10-24T23:55:22.457901+00:00"
     },
     {
         "question": "will the republican party win massachusetts in the presidential election?",
@@ -3646,16 +3584,16 @@
             "id": "0xc3514ac8b4b9f772360803badb2fce1927e42d02ea5f8f278d7dd240e8f5ac5b",
             "yes_id": "81287956216563635927089249852534199175096977768261698630182071522729126591231",
             "no_id": "72439803812483022770655705957934750519596996190826092355115226571578814062989",
-            "yes_ask": 0.018,
+            "yes_ask": 0.014,
             "no_ask": 0.989,
             "yes_bid": 0.011,
-            "no_bid": 0.982
+            "no_bid": 0.986
         },
         "absolute_return": [
-            0.002004008016031955,
-            0.002004008016031955
+            0.006036217303822866,
+            0.006036217303822866
         ],
-        "last_update": "2024-10-24T21:34:03.858842+00:00"
+        "last_update": "2024-10-24T23:55:22.457904+00:00"
     },
     {
         "question": "will the democratic party win tennessee in the presidential election?",
@@ -3686,7 +3624,7 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858845+00:00"
+        "last_update": "2024-10-24T23:55:22.457907+00:00"
     },
     {
         "question": "will the republican party win tennessee in the presidential election?",
@@ -3717,7 +3655,7 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T21:34:03.858847+00:00"
+        "last_update": "2024-10-24T23:55:22.457910+00:00"
     },
     {
         "question": "will the republican party win washington in the presidential election?",
@@ -3748,7 +3686,7 @@
             0.0030090270812437314,
             0.0030090270812437314
         ],
-        "last_update": "2024-10-24T21:34:03.858850+00:00"
+        "last_update": "2024-10-24T23:55:22.457913+00:00"
     },
     {
         "question": "will the democratic party win washington in the presidential election?",
@@ -3779,7 +3717,7 @@
             0.0010010010010010895,
             0.0010010010010010895
         ],
-        "last_update": "2024-10-24T21:34:03.858852+00:00"
+        "last_update": "2024-10-24T23:55:22.457916+00:00"
     },
     {
         "question": "will the democratic party win virginia in the presidential election?",
@@ -3802,15 +3740,15 @@
             "yes_id": "27523375682021765390588187766633015068126055655405967473976256668819938305564",
             "no_id": "100012098696512710839019980186408856624583838884974450954169454065204180810679",
             "yes_ask": 0.84,
-            "no_ask": 0.18,
-            "yes_bid": 0.82,
+            "no_ask": 0.17,
+            "yes_bid": 0.83,
             "no_bid": 0.16
         },
         "absolute_return": [
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.858855+00:00"
+        "last_update": "2024-10-24T23:55:22.457918+00:00"
     },
     {
         "question": "will the republican party win virginia in the presidential election?",
@@ -3832,16 +3770,16 @@
             "id": "0xfefbd6fa16a276839af9d87e7e649b0ccc90a2b36e63b5e48f50fb8da76bcb33",
             "yes_id": "12492345628750728733117864804710670673000799233202537945402703429199967167327",
             "no_id": "98655764136912778102383796145657646896499703812579130341823339710060217043232",
-            "yes_ask": 0.19,
+            "yes_ask": 0.18,
             "no_ask": 0.83,
             "yes_bid": 0.17,
-            "no_bid": 0.81
+            "no_bid": 0.82
         },
         "absolute_return": [
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T21:34:03.858857+00:00"
+        "last_update": "2024-10-24T23:55:22.457921+00:00"
     },
     {
         "question": "will the republican party win new jersey in the presidential election?",
@@ -3852,10 +3790,10 @@
             "id": "PRESPARTYNJ-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.07,
+            "yes_ask": 0.06,
             "no_ask": 0.95,
             "yes_bid": 0.05,
-            "no_bid": 0.93
+            "no_bid": 0.94
         },
         "market_2": {
             "platform": "Polymarket",
@@ -3872,7 +3810,7 @@
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T21:34:03.858860+00:00"
+        "last_update": "2024-10-24T23:55:22.457923+00:00"
     },
     {
         "question": "will the democratic party win new jersey in the presidential election?",
@@ -3903,7 +3841,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858863+00:00"
+        "last_update": "2024-10-24T23:55:22.457926+00:00"
     },
     {
         "question": "will the republican party win new york in the presidential election?",
@@ -3934,7 +3872,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858865+00:00"
+        "last_update": "2024-10-24T23:55:22.457929+00:00"
     },
     {
         "question": "will the democratic party win new york in the presidential election?",
@@ -3965,7 +3903,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858868+00:00"
+        "last_update": "2024-10-24T23:55:22.457932+00:00"
     },
     {
         "question": "will the republican party win california in the presidential election?",
@@ -3996,7 +3934,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858870+00:00"
+        "last_update": "2024-10-24T23:55:22.457934+00:00"
     },
     {
         "question": "will the democratic party win california in the presidential election?",
@@ -4019,15 +3957,15 @@
             "yes_id": "19824947305676488713724709426195605644465067988509119211870826829613338135053",
             "no_id": "22750747772792850145433661113062275303697931797163760555325946896857846743570",
             "yes_ask": 0.979,
-            "no_ask": 0.022,
-            "yes_bid": 0.978,
+            "no_ask": 0.023,
+            "yes_bid": 0.977,
             "no_bid": 0.021
         },
         "absolute_return": [
-            -0.0009990009990008542,
-            -0.0009990009990008542
+            -0.001996007984031989,
+            -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858874+00:00"
+        "last_update": "2024-10-24T23:55:22.457939+00:00"
     },
     {
         "question": "will the democratic party win illinois in the presidential election?",
@@ -4058,7 +3996,7 @@
             0.005025125628140614,
             0.005025125628140614
         ],
-        "last_update": "2024-10-24T21:34:03.858877+00:00"
+        "last_update": "2024-10-24T23:55:22.457942+00:00"
     },
     {
         "question": "will the republican party win illinois in the presidential election?",
@@ -4069,10 +4007,10 @@
             "id": "PRESPARTYIL-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.05,
+            "yes_ask": 0.04,
             "no_ask": 0.97,
             "yes_bid": 0.03,
-            "no_bid": 0.95
+            "no_bid": 0.96
         },
         "market_2": {
             "platform": "Polymarket",
@@ -4080,16 +4018,16 @@
             "id": "0xdce82e4e00b4b158b255af3f176dbf67130f1910381857b9ce882b0a4f4788f2",
             "yes_id": "101750528828230644663458312609422438541903878295251862307920265464444659682236",
             "no_id": "40648444297793805897906298748893239519653166513164883629967739376851672620436",
-            "yes_ask": 0.026,
+            "yes_ask": 0.025,
             "no_ask": 0.978,
             "yes_bid": 0.022,
-            "no_bid": 0.974
+            "no_bid": 0.975
         },
         "absolute_return": [
-            0.004016064257028162,
-            0.004016064257028162
+            0.005025125628140614,
+            0.005025125628140614
         ],
-        "last_update": "2024-10-24T21:34:03.858879+00:00"
+        "last_update": "2024-10-24T23:55:22.457944+00:00"
     },
     {
         "question": "will the democratic party win ohio in the presidential election?",
@@ -4120,7 +4058,7 @@
             -0.019607843137254943,
             -0.019607843137254943
         ],
-        "last_update": "2024-10-24T21:34:03.858881+00:00"
+        "last_update": "2024-10-24T23:55:22.457948+00:00"
     },
     {
         "question": "will the republican party win ohio in the presidential election?",
@@ -4151,7 +4089,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858884+00:00"
+        "last_update": "2024-10-24T23:55:22.457951+00:00"
     },
     {
         "question": "will the republican party win texas in the presidential election?",
@@ -4173,16 +4111,16 @@
             "id": "0x883f6ac0468d3449161454db37acb951bad5b55a7752bc2dd007e40356cee353",
             "yes_id": "22954390469393761478435587094271162660864811978634802609696033004592606875337",
             "no_id": "16817565019464583717511071731800480367663993730008741692944155572569973582421",
-            "yes_ask": 0.93,
-            "no_ask": 0.08,
-            "yes_bid": 0.92,
-            "no_bid": 0.07
+            "yes_ask": 0.94,
+            "no_ask": 0.07,
+            "yes_bid": 0.93,
+            "no_bid": 0.06
         },
         "absolute_return": [
-            0.0,
-            0.0
+            0.010101010101010166,
+            0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.858887+00:00"
+        "last_update": "2024-10-24T23:55:22.457953+00:00"
     },
     {
         "question": "will the democratic party win texas in the presidential election?",
@@ -4213,7 +4151,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858889+00:00"
+        "last_update": "2024-10-24T23:55:22.457956+00:00"
     },
     {
         "question": "will the democratic party win florida in the presidential election?",
@@ -4236,15 +4174,15 @@
             "yes_id": "12114007747517340384640770826667371719468965613575901863343538277669045189268",
             "no_id": "42931484859503950946156195721873929060179594500552644597117140385769630841228",
             "yes_ask": 0.07,
-            "no_ask": 0.95,
-            "yes_bid": 0.05,
+            "no_ask": 0.94,
+            "yes_bid": 0.06,
             "no_bid": 0.93
         },
         "absolute_return": [
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.858891+00:00"
+        "last_update": "2024-10-24T23:55:22.457958+00:00"
     },
     {
         "question": "will the republican party win florida in the presidential election?",
@@ -4266,16 +4204,16 @@
             "id": "0x5a06bb8f86198aac8ae8b9a2610f1bdcf8954123dc51d51a3e6c492f88821ba8",
             "yes_id": "98021166935117039411751630581502824091054448039251810280365647472625878604011",
             "no_id": "24428179421778642925238549045985174108302551459497422477934158540719687045975",
-            "yes_ask": 0.94,
+            "yes_ask": 0.95,
             "no_ask": 0.07,
             "yes_bid": 0.93,
-            "no_bid": 0.06
+            "no_bid": 0.05
         },
         "absolute_return": [
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.858894+00:00"
+        "last_update": "2024-10-24T23:55:22.457961+00:00"
     },
     {
         "question": "eric adams out as nyc mayor in 2024?",
@@ -4286,10 +4224,10 @@
             "id": "ADAMS-24-DEC31",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.34,
-            "no_ask": 0.71,
-            "yes_bid": 0.29,
-            "no_bid": 0.66
+            "yes_ask": 0.4,
+            "no_ask": 0.65,
+            "yes_bid": 0.35,
+            "no_bid": 0.6
         },
         "market_2": {
             "platform": "Polymarket",
@@ -4297,16 +4235,16 @@
             "id": "0x2daa46e920f98ed95cdd31e5674ac135ef3164bb18341bbc4094ec3b624d4eab",
             "yes_id": "26795058994594980338479473682704967273550133405661998311819267491662873325413",
             "no_id": "57952581065338052709149063732697412111192166170473721190973384050181379570153",
-            "yes_ask": 0.22,
+            "yes_ask": 0.29,
             "no_ask": 0.82,
             "yes_bid": 0.18,
-            "no_bid": 0.78
+            "no_bid": 0.71
         },
         "absolute_return": [
-            0.07526881720430123,
-            0.07526881720430123
+            0.06382978723404253,
+            0.06382978723404253
         ],
-        "last_update": "2024-10-24T21:34:03.858897+00:00"
+        "last_update": "2024-10-24T23:55:22.457964+00:00"
     },
     {
         "question": "will the popular vote margin of victory for kamala harris in nevada be 6.00% or more?",
@@ -4337,69 +4275,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858900+00:00"
-    },
-    {
-        "question": "will the popular vote margin of victory for kamala harris in north carolina be 3.00-3.99%?",
-        "id": "ec4ce4a0-da5b-42b1-bc4f-6efbb28b0713",
-        "market_1": {
-            "platform": "Kalshi-Election",
-            "question": "Will the popular vote margin of victory for Kamala Harris in North Carolina be 3.00-3.99%?",
-            "id": "POPVOTEMOVNC-24-D-B3.495",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.03,
-            "no_ask": 0.98,
-            "yes_bid": 0.02,
-            "no_bid": 0.97
-        },
-        "market_2": {
-            "platform": "Polymarket",
-            "question": "Will Kamala Harris win Maryland by the largest margin?",
-            "id": "0x122fcee73f3f3a566a8b909af0917c6d972cccbad2277a76e0ae06297866ed13",
-            "yes_id": "75113545319122869934338969257752735163547113466558417577846113904193546981355",
-            "no_id": "600675874427149769894037612741756614119780176671936772194985166951586775453",
-            "yes_ask": 0.1,
-            "no_ask": 0.92,
-            "yes_bid": 0.08,
-            "no_bid": 0.9
-        },
-        "absolute_return": [
-            0.05263157894736836,
-            0.05263157894736836
-        ],
-        "last_update": "2024-10-24T21:34:03.858902+00:00"
-    },
-    {
-        "question": "will the popular vote margin of victory for kamala harris in michigan be 6.00% or more?",
-        "id": "d19af546-de4d-4769-a0f8-5e60cbf347ec",
-        "market_1": {
-            "platform": "Kalshi-Election",
-            "question": "Will the popular vote margin of victory for Kamala Harris in Michigan be 6.00% or more?",
-            "id": "POPVOTEMOVMI-24-D-T5.99",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.06,
-            "no_ask": 0.95,
-            "yes_bid": 0.05,
-            "no_bid": 0.94
-        },
-        "market_2": {
-            "platform": "Polymarket",
-            "question": "Will Kamala Harris win Massachusetts by the largest margin?",
-            "id": "0x2a1b9dbbe06dc0f6df7897c2154869a56bed24a2dc538b68b336e03b0c9625c6",
-            "yes_id": "111875293336290345111928225781896091631148192718898440763502511305728764672444",
-            "no_id": "58181420188878965230815400640299701570885716504016191237744936913253803330430",
-            "yes_ask": 0.12,
-            "no_ask": 0.9,
-            "yes_bid": 0.1,
-            "no_bid": 0.88
-        },
-        "absolute_return": [
-            0.04166666666666674,
-            0.04166666666666674
-        ],
-        "last_update": "2024-10-24T21:34:03.858905+00:00"
+        "last_update": "2024-10-24T23:55:22.457966+00:00"
     },
     {
         "question": "will wisconsin be the closest state in the presidential election?",
@@ -4421,16 +4297,16 @@
             "id": "0x77424e91e4933ba8319c514dea8c16a166b9fe40ff46414c830b2f37466db5cd",
             "yes_id": "58022934980858433798203941061801509116020035167250230616980119452782213401743",
             "no_id": "65957049787743722299367771976288574280610061816841687850147954811018229268145",
-            "yes_ask": 0.24,
+            "yes_ask": 0.23,
             "no_ask": 0.86,
             "yes_bid": 0.14,
-            "no_bid": 0.76
+            "no_bid": 0.77
         },
         "absolute_return": [
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858907+00:00"
+        "last_update": "2024-10-24T23:55:22.457969+00:00"
     },
     {
         "question": "will texas be the closest state in the presidential election?",
@@ -4452,16 +4328,16 @@
             "id": "0x56794d354dc82db1bd8c2e6695b21817fb3973b45caab12d63f31ce618915726",
             "yes_id": "78251616471242357958959106035801032913288896135744405180453689669779663422254",
             "no_id": "42469102652029455822713227559071213711545581403934845161718991113001995464927",
-            "yes_ask": 0.014,
+            "yes_ask": 0.013,
             "no_ask": 0.988,
             "yes_bid": 0.012,
-            "no_bid": 0.986
+            "no_bid": 0.987
         },
         "absolute_return": [
-            -0.001996007984031989,
-            -0.001996007984031989
+            -0.0009990009990008542,
+            -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858910+00:00"
+        "last_update": "2024-10-24T23:55:22.457971+00:00"
     },
     {
         "question": "will pennsylvania be the closest state in the presidential election?",
@@ -4472,10 +4348,10 @@
             "id": "CLOSESTSTATE-24-PA",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.15,
+            "yes_ask": 0.16,
             "no_ask": 0.86,
             "yes_bid": 0.14,
-            "no_bid": 0.85
+            "no_bid": 0.84
         },
         "market_2": {
             "platform": "Polymarket",
@@ -4492,7 +4368,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.858912+00:00"
+        "last_update": "2024-10-24T23:55:22.457974+00:00"
     },
     {
         "question": "will nevada be the closest state in the presidential election?",
@@ -4523,7 +4399,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858915+00:00"
+        "last_update": "2024-10-24T23:55:22.457977+00:00"
     },
     {
         "question": "will new hampshire be the closest state in the presidential election?",
@@ -4534,10 +4410,10 @@
             "id": "CLOSESTSTATE-24-NH",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.05,
+            "yes_ask": 0.04,
             "no_ask": 0.97,
             "yes_bid": 0.03,
-            "no_bid": 0.95
+            "no_bid": 0.96
         },
         "market_2": {
             "platform": "Polymarket",
@@ -4551,10 +4427,10 @@
             "no_bid": 0.903
         },
         "absolute_return": [
-            0.03199174406604732,
-            0.03199174406604732
+            0.042752867570385655,
+            0.042752867570385655
         ],
-        "last_update": "2024-10-24T21:34:03.858918+00:00"
+        "last_update": "2024-10-24T23:55:22.457979+00:00"
     },
     {
         "question": "will north carolina be the closest state in the presidential election?",
@@ -4585,7 +4461,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858920+00:00"
+        "last_update": "2024-10-24T23:55:22.457982+00:00"
     },
     {
         "question": "will minnesota be the closest state in the presidential election?",
@@ -4616,7 +4492,7 @@
             -0.004975124378109319,
             -0.004975124378109319
         ],
-        "last_update": "2024-10-24T21:34:03.858923+00:00"
+        "last_update": "2024-10-24T23:55:22.457984+00:00"
     },
     {
         "question": "will georgia be the closest state in the presidential election?",
@@ -4638,16 +4514,16 @@
             "id": "0xf05f23440ebb1b37ebaceb3767b0e98a7f6ae37b8b37da7b7214d0e8998d7fc6",
             "yes_id": "3352258689424401910040850522742482369685542641836108897185108931107221121824",
             "no_id": "89213338335396830730455915230019950971494563699255544860869051191614309459467",
-            "yes_ask": 0.05,
-            "no_ask": 0.98,
-            "yes_bid": 0.02,
-            "no_bid": 0.95
+            "yes_ask": 0.048,
+            "no_ask": 0.979,
+            "yes_bid": 0.021,
+            "no_bid": 0.952
         },
         "absolute_return": [
-            0.030927835051546282,
-            0.030927835051546282
+            0.03305785123966931,
+            0.03305785123966931
         ],
-        "last_update": "2024-10-24T21:34:03.858926+00:00"
+        "last_update": "2024-10-24T23:55:22.457987+00:00"
     },
     {
         "question": "will florida be the closest state in the presidential election?",
@@ -4670,15 +4546,15 @@
             "yes_id": "107164877289726208873265593791635991007670983240609815001121576596900011072866",
             "no_id": "105928077861615303886303173080841770343593195599767638878319739085837681539093",
             "yes_ask": 0.022,
-            "no_ask": 0.981,
-            "yes_bid": 0.019,
+            "no_ask": 0.98,
+            "yes_bid": 0.02,
             "no_bid": 0.978
         },
         "absolute_return": [
-            -0.0009990009990008542,
-            -0.0009990009990008542
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858929+00:00"
+        "last_update": "2024-10-24T23:55:22.457990+00:00"
     },
     {
         "question": "will arizona be the closest state in the presidential election?",
@@ -4709,7 +4585,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858931+00:00"
+        "last_update": "2024-10-24T23:55:22.457993+00:00"
     },
     {
         "question": "will michigan be the closest state in the presidential election?",
@@ -4731,16 +4607,16 @@
             "id": "0x132db61627e8d2b95f27dc9a6f64714db55e3bc2706a074c959984d535828cdd",
             "yes_id": "100912984481430001031718535041447475057252284603064782849138427079271088364391",
             "no_id": "41695170133021894104850896677324410034690661519153725642275868809830795744894",
-            "yes_ask": 0.123,
-            "no_ask": 0.885,
-            "yes_bid": 0.115,
-            "no_bid": 0.877
+            "yes_ask": 0.124,
+            "no_ask": 0.884,
+            "yes_bid": 0.116,
+            "no_bid": 0.876
         },
         "absolute_return": [
-            -0.0029910269192423566,
-            -0.0029910269192423566
+            -0.003984063745019917,
+            -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858934+00:00"
+        "last_update": "2024-10-24T23:55:22.457996+00:00"
     },
     {
         "question": "will wisconsin be the tipping point in the presidential election?",
@@ -4771,7 +4647,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858936+00:00"
+        "last_update": "2024-10-24T23:55:22.457998+00:00"
     },
     {
         "question": "will virginia be the tipping point in the presidential election?",
@@ -4802,7 +4678,7 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858939+00:00"
+        "last_update": "2024-10-24T23:55:22.458001+00:00"
     },
     {
         "question": "will nevada be the tipping point in the presidential election?",
@@ -4833,7 +4709,7 @@
             -0.0029910269192421346,
             -0.0029910269192421346
         ],
-        "last_update": "2024-10-24T21:34:03.858942+00:00"
+        "last_update": "2024-10-24T23:55:22.458004+00:00"
     },
     {
         "question": "will new mexico be the tipping point in the presidential election?",
@@ -4864,7 +4740,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858945+00:00"
+        "last_update": "2024-10-24T23:55:22.458007+00:00"
     },
     {
         "question": "will new hampshire be the tipping point in the presidential election?",
@@ -4895,7 +4771,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858947+00:00"
+        "last_update": "2024-10-24T23:55:22.458010+00:00"
     },
     {
         "question": "will north carolina be the tipping point in the presidential election?",
@@ -4906,10 +4782,10 @@
             "id": "TIPPINGPOINT-24-NC",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.13,
-            "no_ask": 0.88,
-            "yes_bid": 0.12,
-            "no_bid": 0.87
+            "yes_ask": 0.12,
+            "no_ask": 0.89,
+            "yes_bid": 0.11,
+            "no_bid": 0.88
         },
         "market_2": {
             "platform": "Polymarket",
@@ -4923,10 +4799,10 @@
             "no_bid": 0.87
         },
         "absolute_return": [
-            -0.00990099009900991,
-            -0.00990099009900991
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858950+00:00"
+        "last_update": "2024-10-24T23:55:22.458013+00:00"
     },
     {
         "question": "will minnesota be the tipping point in the presidential election?",
@@ -4957,7 +4833,7 @@
             -0.001996007984031989,
             -0.001996007984031989
         ],
-        "last_update": "2024-10-24T21:34:03.858953+00:00"
+        "last_update": "2024-10-24T23:55:22.458015+00:00"
     },
     {
         "question": "will michigan be the tipping point in the presidential election?",
@@ -4968,10 +4844,10 @@
             "id": "TIPPINGPOINT-24-MI",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.18,
+            "yes_ask": 0.17,
             "no_ask": 0.84,
             "yes_bid": 0.16,
-            "no_bid": 0.82
+            "no_bid": 0.83
         },
         "market_2": {
             "platform": "Polymarket",
@@ -4988,7 +4864,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858956+00:00"
+        "last_update": "2024-10-24T23:55:22.458018+00:00"
     },
     {
         "question": "will maine be the tipping point in the presidential election?",
@@ -5019,7 +4895,7 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858959+00:00"
+        "last_update": "2024-10-24T23:55:22.458021+00:00"
     },
     {
         "question": "will georgia be the tipping point in the presidential election?",
@@ -5050,7 +4926,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.858961+00:00"
+        "last_update": "2024-10-24T23:55:22.458023+00:00"
     },
     {
         "question": "will florida be the tipping point in the presidential election?",
@@ -5081,7 +4957,7 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.858964+00:00"
+        "last_update": "2024-10-24T23:55:22.458026+00:00"
     },
     {
         "question": "will arizona be the tipping point in the presidential election?",
@@ -5112,7 +4988,7 @@
             -0.003984063745019917,
             -0.003984063745019917
         ],
-        "last_update": "2024-10-24T21:34:03.858966+00:00"
+        "last_update": "2024-10-24T23:55:22.458029+00:00"
     },
     {
         "question": "will pennsylvania be the tipping point in the presidential election?",
@@ -5123,10 +4999,10 @@
             "id": "TIPPINGPOINT-24-PA",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.29,
+            "yes_ask": 0.3,
             "no_ask": 0.72,
             "yes_bid": 0.28,
-            "no_bid": 0.71
+            "no_bid": 0.7
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5143,7 +5019,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858969+00:00"
+        "last_update": "2024-10-24T23:55:22.458031+00:00"
     },
     {
         "question": "will the republican party win nevada in the presidential election?",
@@ -5154,10 +5030,10 @@
             "id": "PRESPARTYNV-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.62,
-            "no_ask": 0.39,
-            "yes_bid": 0.61,
-            "no_bid": 0.38
+            "yes_ask": 0.63,
+            "no_ask": 0.38,
+            "yes_bid": 0.62,
+            "no_bid": 0.37
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5165,16 +5041,16 @@
             "id": "0xdd2f4921a562fc4d18c0bde327d2a9315352a3ba4137656112b9b1770fd1f2a9",
             "yes_id": "22811156622772246927379314532791131581149105511872861362055243423465705837015",
             "no_id": "35352876327642053389894511282626265616296126212238181011612882932646625871390",
-            "yes_ask": 0.65,
+            "yes_ask": 0.64,
             "no_ask": 0.37,
             "yes_bid": 0.63,
-            "no_bid": 0.35
+            "no_bid": 0.36
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858971+00:00"
+        "last_update": "2024-10-24T23:55:22.458034+00:00"
     },
     {
         "question": "will the democratic party win nevada in the presidential election?",
@@ -5185,10 +5061,10 @@
             "id": "PRESPARTYNV-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.39,
-            "no_ask": 0.62,
-            "yes_bid": 0.38,
-            "no_bid": 0.61
+            "yes_ask": 0.38,
+            "no_ask": 0.63,
+            "yes_bid": 0.37,
+            "no_bid": 0.62
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5202,10 +5078,10 @@
             "no_bid": 0.63
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T21:34:03.858974+00:00"
+        "last_update": "2024-10-24T23:55:22.458037+00:00"
     },
     {
         "question": "will the republican party win georgia in the presidential election?",
@@ -5216,10 +5092,10 @@
             "id": "PRESPARTYGA-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.66,
+            "yes_ask": 0.67,
             "no_ask": 0.35,
             "yes_bid": 0.65,
-            "no_bid": 0.34
+            "no_bid": 0.33
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5227,16 +5103,16 @@
             "id": "0x7606802127355512c8f8ff9c70ef27a2717a8554374d84452de4c7d28147338d",
             "yes_id": "10874846387975190407444713373765853114527145924436779240006871443341352408992",
             "no_id": "6181401096199368004324244642874162057010167408218412244771664244595886623212",
-            "yes_ask": 0.72,
-            "no_ask": 0.3,
-            "yes_bid": 0.7,
-            "no_bid": 0.28
+            "yes_ask": 0.71,
+            "no_ask": 0.31,
+            "yes_bid": 0.69,
+            "no_bid": 0.29
         },
         "absolute_return": [
-            0.04166666666666674,
-            0.04166666666666674
+            0.020408163265306145,
+            0.020408163265306145
         ],
-        "last_update": "2024-10-24T21:34:03.858976+00:00"
+        "last_update": "2024-10-24T23:55:22.458039+00:00"
     },
     {
         "question": "will the democratic party win georgia in the presidential election?",
@@ -5247,10 +5123,10 @@
             "id": "PRESPARTYGA-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.36,
-            "no_ask": 0.66,
-            "yes_bid": 0.34,
-            "no_bid": 0.64
+            "yes_ask": 0.35,
+            "no_ask": 0.67,
+            "yes_bid": 0.33,
+            "no_bid": 0.65
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5264,10 +5140,10 @@
             "no_bid": 0.7
         },
         "absolute_return": [
-            0.04166666666666674,
-            0.04166666666666674
+            0.030927835051546504,
+            0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.858979+00:00"
+        "last_update": "2024-10-24T23:55:22.458042+00:00"
     },
     {
         "question": "will the republican party win wisconsin in the presidential election?",
@@ -5278,10 +5154,10 @@
             "id": "PRESPARTYWI-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.53,
+            "yes_ask": 0.54,
             "no_ask": 0.48,
             "yes_bid": 0.52,
-            "no_bid": 0.47
+            "no_bid": 0.46
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5295,10 +5171,10 @@
             "no_bid": 0.43
         },
         "absolute_return": [
-            0.020408163265306145,
-            0.020408163265306145
+            0.010101010101010166,
+            0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.858981+00:00"
+        "last_update": "2024-10-24T23:55:22.458044+00:00"
     },
     {
         "question": "will the democratic party win wisconsin in the presidential election?",
@@ -5321,15 +5197,15 @@
             "yes_id": "7374237615890526880478224649885278725219793468355446734533315746155037370158",
             "no_id": "9957028331163987805873971753654507302936617692682833719706803039129302643823",
             "yes_ask": 0.44,
-            "no_ask": 0.57,
-            "yes_bid": 0.43,
+            "no_ask": 0.58,
+            "yes_bid": 0.42,
             "no_bid": 0.56
         },
         "absolute_return": [
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.858984+00:00"
+        "last_update": "2024-10-24T23:55:22.458047+00:00"
     },
     {
         "question": "will the republican party win pennsylvania in the presidential election?",
@@ -5340,10 +5216,10 @@
             "id": "PRESPARTYPA-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.56,
-            "no_ask": 0.45,
-            "yes_bid": 0.55,
-            "no_bid": 0.44
+            "yes_ask": 0.55,
+            "no_ask": 0.46,
+            "yes_bid": 0.54,
+            "no_bid": 0.45
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5351,16 +5227,16 @@
             "id": "0xa923afcb8297e3ade170f2f8c088f3c277557fadef2c67054d72cc59f8504b2b",
             "yes_id": "75951511934878014812323289513632732239356274541965522720897159608390126393735",
             "no_id": "80692267952118231579739078214722079301718527753004959099480302005191158711065",
-            "yes_ask": 0.59,
-            "no_ask": 0.43,
-            "yes_bid": 0.57,
-            "no_bid": 0.41
+            "yes_ask": 0.6,
+            "no_ask": 0.41,
+            "yes_bid": 0.59,
+            "no_bid": 0.4
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.04166666666666674,
+            0.04166666666666674
         ],
-        "last_update": "2024-10-24T21:34:03.858986+00:00"
+        "last_update": "2024-10-24T23:55:22.458049+00:00"
     },
     {
         "question": "will the democratic party win pennsylvania in the presidential election?",
@@ -5382,16 +5258,16 @@
             "id": "0x02bc0bbff054877a08cdc4f9ccf4e7606804bc05c27f5faccf26c6e1666a5558",
             "yes_id": "96404870680531697292788145333705429762370661278621665925868256650124167091957",
             "no_id": "67089287271692871221799799486468743524636060540186332703509386944410510992981",
-            "yes_ask": 0.43,
-            "no_ask": 0.58,
-            "yes_bid": 0.42,
-            "no_bid": 0.57
+            "yes_ask": 0.42,
+            "no_ask": 0.6,
+            "yes_bid": 0.4,
+            "no_bid": 0.58
         },
         "absolute_return": [
-            0.020408163265306145,
-            0.020408163265306145
+            0.030927835051546504,
+            0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.858989+00:00"
+        "last_update": "2024-10-24T23:55:22.458052+00:00"
     },
     {
         "question": "will the republican party win michigan in the presidential election?",
@@ -5413,16 +5289,16 @@
             "id": "0xbb01eefb24a38a9aa1921ec168d3049e7374b28a2540937d06b3ff2524d66627",
             "yes_id": "105184348976114274990683066782141725521410345945023353024053078695238621958578",
             "no_id": "15594057843994379010830396426972640810046245426525810058698162482005241757000",
-            "yes_ask": 0.56,
+            "yes_ask": 0.55,
             "no_ask": 0.47,
             "yes_bid": 0.53,
-            "no_bid": 0.44
+            "no_bid": 0.45
         },
         "absolute_return": [
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T21:34:03.858992+00:00"
+        "last_update": "2024-10-24T23:55:22.458055+00:00"
     },
     {
         "question": "will the democratic party win michigan in the presidential election?",
@@ -5453,7 +5329,7 @@
             0.020408163265306145,
             0.020408163265306145
         ],
-        "last_update": "2024-10-24T21:34:03.858994+00:00"
+        "last_update": "2024-10-24T23:55:22.458058+00:00"
     },
     {
         "question": "will republicans win the senate race in nevada?",
@@ -5484,7 +5360,7 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.858997+00:00"
+        "last_update": "2024-10-24T23:55:22.458061+00:00"
     },
     {
         "question": "will democratics win the senate race in nevada?",
@@ -5506,16 +5382,16 @@
             "id": "0x05904e19533e1babd563de24a3da89d87d00741b98b6dc692025f21ef6c52319",
             "yes_id": "67907845702606698787174525606026822541237125710080743620205634926727922648427",
             "no_id": "60437469074426612146004093758614067956847429214050183299113821422453717571562",
-            "yes_ask": 0.81,
+            "yes_ask": 0.8,
             "no_ask": 0.22,
             "yes_bid": 0.78,
-            "no_bid": 0.19
+            "no_bid": 0.2
         },
         "absolute_return": [
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.858999+00:00"
+        "last_update": "2024-10-24T23:55:22.458064+00:00"
     },
     {
         "question": "will the republican party win north carolina in the presidential election?",
@@ -5546,7 +5422,7 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.859002+00:00"
+        "last_update": "2024-10-24T23:55:22.458066+00:00"
     },
     {
         "question": "will the democratic party win north carolina in the presidential election?",
@@ -5577,7 +5453,7 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.859004+00:00"
+        "last_update": "2024-10-24T23:55:22.458069+00:00"
     },
     {
         "question": "will republicans win the senate race in arizona?",
@@ -5608,7 +5484,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.859007+00:00"
+        "last_update": "2024-10-24T23:55:22.458071+00:00"
     },
     {
         "question": "will democratics win the senate race in arizona?",
@@ -5639,7 +5515,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.859009+00:00"
+        "last_update": "2024-10-24T23:55:22.458074+00:00"
     },
     {
         "question": "will the republican party win arizona in the presidential election?",
@@ -5651,8 +5527,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.7,
-            "no_ask": 0.31,
-            "yes_bid": 0.69,
+            "no_ask": 0.32,
+            "yes_bid": 0.68,
             "no_bid": 0.3
         },
         "market_2": {
@@ -5662,15 +5538,15 @@
             "yes_id": "64972410044896218211047269420581789917870192018252181026286744947120013986348",
             "no_id": "24620775411941217389377740965103998876434043106631115627739856378494039307644",
             "yes_ask": 0.72,
-            "no_ask": 0.29,
-            "yes_bid": 0.71,
+            "no_ask": 0.3,
+            "yes_bid": 0.7,
             "no_bid": 0.28
         },
         "absolute_return": [
-            0.010101010101010166,
-            0.010101010101010166
+            0.0,
+            0.0
         ],
-        "last_update": "2024-10-24T21:34:03.859012+00:00"
+        "last_update": "2024-10-24T23:55:22.458076+00:00"
     },
     {
         "question": "will the democratic party win arizona in the presidential election?",
@@ -5681,10 +5557,10 @@
             "id": "PRESPARTYAZ-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.31,
+            "yes_ask": 0.32,
             "no_ask": 0.7,
             "yes_bid": 0.3,
-            "no_bid": 0.69
+            "no_bid": 0.68
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5701,38 +5577,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.859014+00:00"
-    },
-    {
-        "question": "will the popular vote margin of victory for kamala harris in pennsylvania be above 4.49?",
-        "id": "7dfad489-6f69-4a0d-85ee-b45b2b2d4a1c",
-        "market_1": {
-            "platform": "Kalshi-Election",
-            "question": "Will the popular vote margin of victory for Kamala Harris in Pennsylvania be above 4.49?",
-            "id": "POPVOTEMOVPA-24-D-T4.49",
-            "yes_id": null,
-            "no_id": null,
-            "yes_ask": 0.07,
-            "no_ask": 0.94,
-            "yes_bid": 0.06,
-            "no_bid": 0.93
-        },
-        "market_2": {
-            "platform": "Polymarket",
-            "question": "Will Kamala Harris win Delaware by the largest margin?",
-            "id": "0x06a187a5ef1f113a9b4d0071a5ff44ddf6a38c29ed427d115acc71d96cf6e345",
-            "yes_id": "52017031985636400198068117427247902761337903463732952132645188073244678751589",
-            "no_id": "44626173327469790134160650892227397030995470492288616422747917277904668840886",
-            "yes_ask": 0.008,
-            "no_ask": 0.996,
-            "yes_bid": 0.004,
-            "no_bid": 0.992
-        },
-        "absolute_return": [
-            0.05485232067510548,
-            0.05485232067510548
-        ],
-        "last_update": "2024-10-24T21:34:03.859016+00:00"
+        "last_update": "2024-10-24T23:55:22.458079+00:00"
     },
     {
         "question": "will the republican party win the popular vote?",
@@ -5743,10 +5588,10 @@
             "id": "POPVOTE-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.36,
-            "no_ask": 0.65,
-            "yes_bid": 0.35,
-            "no_bid": 0.64
+            "yes_ask": 0.35,
+            "no_ask": 0.66,
+            "yes_bid": 0.34,
+            "no_bid": 0.65
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5760,10 +5605,10 @@
             "no_bid": 0.6
         },
         "absolute_return": [
-            0.030927835051546504,
-            0.030927835051546504
+            0.04166666666666674,
+            0.04166666666666674
         ],
-        "last_update": "2024-10-24T21:34:03.859019+00:00"
+        "last_update": "2024-10-24T23:55:22.458081+00:00"
     },
     {
         "question": "will republicans win the senate race in texas?",
@@ -5774,10 +5619,10 @@
             "id": "SENATETX-24-R",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.76,
-            "no_ask": 0.25,
-            "yes_bid": 0.75,
-            "no_bid": 0.24
+            "yes_ask": 0.75,
+            "no_ask": 0.26,
+            "yes_bid": 0.74,
+            "no_bid": 0.25
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5785,16 +5630,16 @@
             "id": "0x9f41292bea56c1a5671306d4285d1912af1a23e62bae6e58e6c0dc517cc98d46",
             "yes_id": "75616002261136116956781367343618913629713439405420843305033610719843074106916",
             "no_id": "38626083512410316523573599135111011627749404692983079263656074805681986958948",
-            "yes_ask": 0.8,
+            "yes_ask": 0.81,
             "no_ask": 0.21,
             "yes_bid": 0.79,
-            "no_bid": 0.2
+            "no_bid": 0.19
         },
         "absolute_return": [
-            0.030927835051546504,
-            0.030927835051546504
+            0.04166666666666674,
+            0.04166666666666674
         ],
-        "last_update": "2024-10-24T21:34:03.859021+00:00"
+        "last_update": "2024-10-24T23:55:22.458084+00:00"
     },
     {
         "question": "will democratics win the senate race in texas?",
@@ -5805,10 +5650,10 @@
             "id": "SENATETX-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.25,
-            "no_ask": 0.76,
-            "yes_bid": 0.24,
-            "no_bid": 0.75
+            "yes_ask": 0.26,
+            "no_ask": 0.75,
+            "yes_bid": 0.25,
+            "no_bid": 0.74
         },
         "market_2": {
             "platform": "Polymarket",
@@ -5822,10 +5667,10 @@
             "no_bid": 0.79
         },
         "absolute_return": [
-            0.030927835051546504,
-            0.030927835051546504
+            0.04166666666666674,
+            0.04166666666666674
         ],
-        "last_update": "2024-10-24T21:34:03.859024+00:00"
+        "last_update": "2024-10-24T23:55:22.458086+00:00"
     },
     {
         "question": "will republicans win the senate race in michigan?",
@@ -5856,7 +5701,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.859026+00:00"
+        "last_update": "2024-10-24T23:55:22.458089+00:00"
     },
     {
         "question": "will democratics win the senate race in michigan?",
@@ -5878,16 +5723,16 @@
             "id": "0x673bc2e3150161fc6dda2080d0a1c2ff095832b4b914d3d903b9a548666e6d38",
             "yes_id": "73509254372240515476139823732607455442580306972224926233018397621601981548880",
             "no_id": "61008351845739462099604851626936695064582063152354051282774689154435404413567",
-            "yes_ask": 0.68,
+            "yes_ask": 0.69,
             "no_ask": 0.33,
             "yes_bid": 0.67,
-            "no_bid": 0.32
+            "no_bid": 0.31
         },
         "absolute_return": [
-            0.0,
-            0.0
+            -0.00990099009900991,
+            -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.859029+00:00"
+        "last_update": "2024-10-24T23:55:22.458091+00:00"
     },
     {
         "question": "will republicans win the senate race in montana?",
@@ -5918,7 +5763,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.859031+00:00"
+        "last_update": "2024-10-24T23:55:22.458094+00:00"
     },
     {
         "question": "will democratics win the senate race in montana?",
@@ -5949,7 +5794,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.859033+00:00"
+        "last_update": "2024-10-24T23:55:22.458097+00:00"
     },
     {
         "question": "will republicans win the senate race in wisconsin?",
@@ -5980,7 +5825,7 @@
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.859035+00:00"
+        "last_update": "2024-10-24T23:55:22.458099+00:00"
     },
     {
         "question": "will democratics win the senate race in wisconsin?",
@@ -6011,7 +5856,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.859038+00:00"
+        "last_update": "2024-10-24T23:55:22.458102+00:00"
     },
     {
         "question": "will republicans win the senate race in florida?",
@@ -6042,7 +5887,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.859040+00:00"
+        "last_update": "2024-10-24T23:55:22.458104+00:00"
     },
     {
         "question": "will democratics win the senate race in florida?",
@@ -6073,7 +5918,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.859043+00:00"
+        "last_update": "2024-10-24T23:55:22.458107+00:00"
     },
     {
         "question": "will republican win the senate race in maryland?",
@@ -6104,7 +5949,7 @@
             -0.00990099009900991,
             -0.00990099009900991
         ],
-        "last_update": "2024-10-24T21:34:03.859045+00:00"
+        "last_update": "2024-10-24T23:55:22.458112+00:00"
     },
     {
         "question": "will democratic win the senate race in maryland?",
@@ -6135,7 +5980,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.859047+00:00"
+        "last_update": "2024-10-24T23:55:22.458115+00:00"
     },
     {
         "question": "will republicans win the senate race in nebraska?",
@@ -6157,16 +6002,16 @@
             "id": "0xc8ca6de72307c6640b479edd36c7fa2a72aface0ad576d923f3404e69c798fb9",
             "yes_id": "23586238624006695965133329643956093993631168744427774790408166725642208722059",
             "no_id": "29334951163282606223559381305158661706897660513799848262173252936082101619778",
-            "yes_ask": 0.82,
-            "no_ask": 0.199,
-            "yes_bid": 0.801,
-            "no_bid": 0.18
+            "yes_ask": 0.812,
+            "no_ask": 0.198,
+            "yes_bid": 0.802,
+            "no_bid": 0.188
         },
         "absolute_return": [
-            0.03199174406604732,
-            0.03199174406604732
+            0.03305785123966953,
+            0.03305785123966953
         ],
-        "last_update": "2024-10-24T21:34:03.859050+00:00"
+        "last_update": "2024-10-24T23:55:22.458117+00:00"
     },
     {
         "question": "will republicans win the senate race in ohio?",
@@ -6178,8 +6023,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.64,
-            "no_ask": 0.37,
-            "yes_bid": 0.63,
+            "no_ask": 0.38,
+            "yes_bid": 0.62,
             "no_bid": 0.36
         },
         "market_2": {
@@ -6188,16 +6033,16 @@
             "id": "0x57dc89d2f5803961a1c72add5969c2887f9591821d05421f2819fa17b664dd59",
             "yes_id": "3620306974437843745624106027075287847184755283592021115338359473870454935865",
             "no_id": "72410471378897134535199836205522458748724101484298185492234292835284261817717",
-            "yes_ask": 0.6,
+            "yes_ask": 0.59,
             "no_ask": 0.43,
             "yes_bid": 0.57,
-            "no_bid": 0.4
+            "no_bid": 0.41
         },
         "absolute_return": [
             0.030927835051546504,
             0.030927835051546504
         ],
-        "last_update": "2024-10-24T21:34:03.859052+00:00"
+        "last_update": "2024-10-24T23:55:22.458120+00:00"
     },
     {
         "question": "will democratics win the senate race in ohio?",
@@ -6208,10 +6053,10 @@
             "id": "SENATEOH-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.37,
+            "yes_ask": 0.38,
             "no_ask": 0.64,
             "yes_bid": 0.36,
-            "no_bid": 0.63
+            "no_bid": 0.62
         },
         "market_2": {
             "platform": "Polymarket",
@@ -6219,16 +6064,16 @@
             "id": "0x7eca3eee73a4d437797aeb9a1815aaf4484403bdb926791f7e5c435a7f05f0e3",
             "yes_id": "30022838802547927838224903337523363836986115360126820340769428661359593309876",
             "no_id": "114003047914657403087185633350140735612292482512881481308287726424342548326637",
-            "yes_ask": 0.42,
+            "yes_ask": 0.43,
             "no_ask": 0.6,
             "yes_bid": 0.4,
-            "no_bid": 0.58
+            "no_bid": 0.57
         },
         "absolute_return": [
-            0.030927835051546504,
-            0.030927835051546504
+            0.020408163265306145,
+            0.020408163265306145
         ],
-        "last_update": "2024-10-24T21:34:03.859054+00:00"
+        "last_update": "2024-10-24T23:55:22.458122+00:00"
     },
     {
         "question": "will republicans win the senate race in pennsylvania?",
@@ -6259,7 +6104,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.859056+00:00"
+        "last_update": "2024-10-24T23:55:22.458125+00:00"
     },
     {
         "question": "will democratics win the senate race in pennsylvania?",
@@ -6290,7 +6135,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.859059+00:00"
+        "last_update": "2024-10-24T23:55:22.458127+00:00"
     },
     {
         "question": "will the democratic party win the governorship in new hampshire",
@@ -6301,10 +6146,10 @@
             "id": "GOVPARTYNH-24-D",
             "yes_id": null,
             "no_id": null,
-            "yes_ask": 0.49,
+            "yes_ask": 0.48,
             "no_ask": 0.53,
             "yes_bid": 0.47,
-            "no_bid": 0.51
+            "no_bid": 0.52
         },
         "market_2": {
             "platform": "Polymarket",
@@ -6321,7 +6166,7 @@
             0.010101010101010166,
             0.010101010101010166
         ],
-        "last_update": "2024-10-24T21:34:03.859061+00:00"
+        "last_update": "2024-10-24T23:55:22.458130+00:00"
     },
     {
         "question": "will the republican party win the governorship in new hampshire",
@@ -6333,8 +6178,8 @@
             "yes_id": null,
             "no_id": null,
             "yes_ask": 0.52,
-            "no_ask": 0.49,
-            "yes_bid": 0.51,
+            "no_ask": 0.5,
+            "yes_bid": 0.5,
             "no_bid": 0.48
         },
         "market_2": {
@@ -6352,7 +6197,7 @@
             0.0,
             0.0
         ],
-        "last_update": "2024-10-24T21:34:03.859063+00:00"
+        "last_update": "2024-10-24T23:55:22.458133+00:00"
     },
     {
         "question": "will robert f. kennedy jr. or another we the people nominee win the presidency?",
@@ -6383,7 +6228,7 @@
             -0.0009990009990008542,
             -0.0009990009990008542
         ],
-        "last_update": "2024-10-24T21:34:03.859066+00:00"
+        "last_update": "2024-10-24T23:55:22.458135+00:00"
     },
     {
         "question": "will kamala harris or another democrat win the presidency?",
@@ -6405,15 +6250,15 @@
             "id": "0xc6485bb7ea46d7bb89beb9c91e7572ecfc72a6273789496f78bc5e989e4d1638",
             "yes_id": "69236923620077691027083946871148646972011131466059644796654161903044970987404",
             "no_id": "87584955359245246404952128082451897287778571240979823316620093987046202296181",
-            "yes_ask": 0.36,
-            "no_ask": 0.644,
-            "yes_bid": 0.356,
-            "no_bid": 0.64
+            "yes_ask": 0.363,
+            "no_ask": 0.639,
+            "yes_bid": 0.361,
+            "no_bid": 0.637
         },
         "absolute_return": [
-            0.030927835051546504,
-            0.030927835051546504
+            0.027749229188078095,
+            0.027749229188078095
         ],
-        "last_update": "2024-10-24T21:34:03.859068+00:00"
+        "last_update": "2024-10-24T23:55:22.458138+00:00"
     }
 ]

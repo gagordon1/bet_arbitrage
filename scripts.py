@@ -82,10 +82,10 @@ def delete_bet_opportunity(id : str) -> tuple[bool, list[BetOpportunity]]:
 
 
 if __name__ == "__main__":
-    # pull_latest_question_data_for_all_markets()
+    save_active_question_data_for_all_markets()
     # generate_and_save_question_map()
     # build_bet_opportunities()
-    refresh_bet_opportunities()
+    # refresh_bet_opportunities()
     # build_bet_opportunities()
     
     

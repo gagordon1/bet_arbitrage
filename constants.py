@@ -33,3 +33,5 @@ ACTIVE_BET_OPPORTUNITIES_JSON_FILENAME = "active.json"
 PARITY_RETURN_SORT = "parity_return"
 
 BET_OPPORTUNITIES_SORT = {PARITY_RETURN_SORT}
+
+PREDICTIT_HOST = "https://www.predictit.org/api/marketdata/"

@@ -46,12 +46,14 @@ class BinaryMarketMetadata:
         id : str,
         yes_id : str | None,
         no_id : str | None,
+        link: str
     ): 
         self.platform = platform
         self.question = question
         self.id = id
         self.yes_id = yes_id
         self.no_id = no_id
+        self.link = link
     # Method to convert the object to a JSON-compatible dictionary
     def to_json(self) -> dict:
         return {
@@ -60,6 +62,7 @@ class BinaryMarketMetadata:
             'id': self.id,
             'yes_id': self.yes_id,
             'no_id': self.no_id,
+            'link' : self.link
         }
 
     # Method to instantiate a BinaryMarket object from a dictionary
@@ -71,6 +74,7 @@ class BinaryMarketMetadata:
             id=data['id'],
             yes_id=data.get('yes_id'),
             no_id=data.get('no_id'),
+            link = data.get('link')
         )
 
 class BinaryMarket:
@@ -229,6 +233,9 @@ class Polymarket(BettingPlatform):
         response_dict : PolymarketGetMarketsResponse = json.loads(response.text)
         return response_dict
     
+    def get_link(self, condition_id : str) -> str | None:
+        return "" #TBU
+    
     def get_active_markets(self, n : int | None) -> List[BinaryMarketMetadata]:
         cursor = ""
         questions : List[BinaryMarketMetadata] = [] 
@@ -247,15 +254,19 @@ class Polymarket(BettingPlatform):
                         #check if end date is after now
                         elif end_date > datetime.now(timezone.utc) and market["condition_id"] != "":
                             tokens = market["tokens"]
-                            entry = BinaryMarketMetadata(
-                                "Polymarket",
-                                market["question"],
-                                market["condition_id"],
-                                next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
-                                next((t["token_id"] for t in tokens if t["outcome"] == "No"),None)
-                            )
-                            questions.append(entry)
-                            question_count += 1
+                            link = self.get_link(market["condition_id"])
+                            print(link)
+                            if link:
+                                entry = BinaryMarketMetadata(
+                                    "Polymarket",
+                                    market["question"],
+                                    market["condition_id"],
+                                    next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
+                                    next((t["token_id"] for t in tokens if t["outcome"] == "No"),None),
+                                    link
+                                )
+                                questions.append(entry)
+                                question_count += 1
             except KeyError:
                 break
         return questions
@@ -327,7 +338,8 @@ class Kalshi(BettingPlatform):
                     market.title,
                     market.ticker,
                     None,
-                    None
+                    None,
+                    "" #TBU
                 )
                 questions.append(q)
                 question_count += 1
@@ -412,4 +424,7 @@ if __name__ == "__main__":
     # print("Pulling Kalshi markets...")
     # kalshi = Kalshi()
     # kalshi.save_active_markets("question_data/kalshi_questions.json", None)
+    # pm = Polymarket()
+    # link = pm.get_link("0x9279e0735a365ab5fe94c671e172b9dc68e402fa9dab36db4d8e171785fcf40e")
+    # print(link)
     pass
