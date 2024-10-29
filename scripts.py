@@ -1,7 +1,8 @@
-from QuestionData import QuestionData
+from QuestionData import QuestionData, BetOpportunityOrderBooks
 from BettingPlatform import BetOpportunity
 from constants import *
 from datetime import datetime
+from pprint import pprint
 
 def sort_bet_opportunities(sort_key : str, ops : list[BetOpportunity]) -> list[BetOpportunity]:
 
@@ -80,12 +81,19 @@ def delete_bet_opportunity(id : str) -> tuple[bool, list[BetOpportunity]]:
     qdata = QuestionData()
     return qdata.delete_bet_opportunity(id)
 
+def get_bet_opportunity_orderbooks(id : str) -> tuple[BetOpportunity, BetOpportunityOrderBooks]:
+   qdata = QuestionData() 
+   bet_opportunity = qdata.get_bet_opportunity(id)
+   orderbooks = qdata.get_orderbooks(bet_opportunity)
+   return (bet_opportunity, orderbooks)
 
 if __name__ == "__main__":
-    save_active_question_data_for_all_markets()
+    # save_active_question_data_for_all_markets()
     # generate_and_save_question_map()
     # build_bet_opportunities()
     # refresh_bet_opportunities()
     # build_bet_opportunities()
+    pass
+
     
     

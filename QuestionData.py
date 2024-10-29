@@ -4,6 +4,7 @@ from QuestionMap import QuestionMap
 import pandas as pd #type: ignore
 from BettingPlatform import Polymarket, Kalshi, BettingPlatform, BinaryMarket, BinaryMarketMetadata, BetOpportunity
 from datetime import datetime, timezone
+from OrderBook import OrderBook
 from constants import *
 
 class MarketData(TypedDict):
@@ -11,6 +12,26 @@ class MarketData(TypedDict):
     questions_filepath : str
 
 BET_OPPORTUNITIES_FILE = BET_OPPORTUNITIES_JSON_PATH+ ACTIVE_BET_OPPORTUNITIES_JSON_FILENAME
+
+class BetOpportunityOrderBooks:
+    def __init__(self, 
+                market_1_yes_orderbook : OrderBook,
+                market_1_no_orderbook : OrderBook,
+                market_2_yes_orderbook : OrderBook,
+                market_2_no_orderbook : OrderBook):
+        self.m1_yes_ob = market_1_yes_orderbook
+        self.m1_no_ob = market_1_no_orderbook
+        self.m2_yes_ob = market_2_yes_orderbook
+        self.m2_no_ob = market_2_no_orderbook
+
+    def to_json(self):
+        return {
+            "market_1_yes_orderbook" : self.m1_yes_ob.to_json(),
+            "market_1_no_orderbook" : self.m1_no_ob.to_json(),
+            "market_2_yes_orderbook" : self.m2_yes_ob.to_json(),
+            "market_2_no_orderbook" : self.m2_no_ob.to_json()
+        }
+    
 
 class QuestionData:
 
@@ -210,6 +231,22 @@ class QuestionData:
         with open(filepath, "w") as json_file:
             json.dump(to_save, json_file, indent = 4)
         print(f"Bet opportunities saved to {filepath}")
+
+    def get_bet_opportunity(self, id : str) -> BetOpportunity:
+        return [x for x in self.get_bet_opportunities() if x.id == id].pop(0)
+    
+    def get_orderbooks(self, bet_opportunity : BetOpportunity) -> BetOpportunityOrderBooks:
+        m1_platform = bet_opportunity.market_1.platform
+        m2_platform = bet_opportunity.market_2.platform
+        m1_yes_orderbook, m1_no_orderbook = self.betting_platforms[m1_platform]["betting_platform"].get_orderbooks(bet_opportunity.market_1)
+        m2_yes_orderbook, m2_no_orderbook = self.betting_platforms[m2_platform]["betting_platform"].get_orderbooks(bet_opportunity.market_2)
+
+        return BetOpportunityOrderBooks(
+            m1_yes_orderbook,
+            m1_no_orderbook,
+            m2_yes_orderbook,
+            m2_no_orderbook,
+        )
 
 if __name__ == "__main__":
     pass

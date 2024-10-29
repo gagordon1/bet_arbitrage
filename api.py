@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from datetime import datetime
-from scripts import get_bet_opportunities, delete_bet_opportunity, refresh_bet_opportunities
+from scripts import get_bet_opportunities, delete_bet_opportunity, refresh_bet_opportunities, get_bet_opportunity_orderbooks
 
 
 app = Flask(__name__)
@@ -13,6 +13,17 @@ CORS(app)
 def refresh_bet_opportunity_data():
     bet_opportunities = refresh_bet_opportunities()
     return jsonify({"message": "Bet opportunities refreshed successfully", "total_opportunities": len(bet_opportunities)}), 201
+
+@app.route('/bet_opportunity/<string:bet_id>', methods=['GET'])
+def get_bet_opportunity(bet_id):
+    bo, obs = get_bet_opportunity_orderbooks(bet_id)
+
+    
+    return jsonify({
+        "bet_opportunity" : bo.to_json(),
+        "orderbooks" : obs.to_json()
+    }), 200
+
 
 
 # Endpoint to get the list of bet opportunities

@@ -7,6 +7,7 @@ from dotenv import load_dotenv # type: ignore
 import os
 import kalshi_python # type: ignore
 from kalshi_python.models import * # type: ignore
+from OrderBook import OrderBook, Order, OrderbookData
 from pprint import pprint
 from constants import *
 import uuid
@@ -37,7 +38,6 @@ def valid_prices(yes_ask : float,
             valid_prices = False
             break
     return valid_prices
-    
 
 class BinaryMarketMetadata:
     def __init__(self,
@@ -158,6 +158,17 @@ class BettingPlatform:
         """
         raise NotImplementedError("Subclasses must implement this method")
     
+    def get_orderbooks(self, data : (BinaryMarketMetadata | BinaryMarket)) -> list[OrderBook]:
+        """Gets the yes and no orderbooks for a market
+
+        Args:
+            data (BinaryMarketMetadata | BinaryMarket): a binary market
+
+        Returns:
+            tuple[OrderBook, OrderBook]: yes orderbook, no orderbook
+        """
+        raise NotImplementedError("Subclasses must implement this method")
+    
     def save_active_markets(self, filename:str, n: int | None) -> None:
         all_markets = self.get_active_markets(n)
         with open(filename, 'w') as json_file:
@@ -175,6 +186,28 @@ class Polymarket(BettingPlatform):
             for side in ["BUY", "SELL"]:
                 out.append({"token_id" : t, "side" : side})
         return out
+    
+    def get_orderbooks(self, data : (BinaryMarketMetadata | BinaryMarket)) -> list[OrderBook]:
+        #TBU
+        
+        out = []
+        for id in [data.yes_id, data.no_id]:
+            params = {
+                "token_id" : id
+            }
+            response = requests.get(POLYMARKET_ENDPOINT + "book", params = params)
+            print("POLYMARKET" + "--"*20)
+            response_dict = json.loads(response.text)
+            bids : list[Order] = [{"price" : float(x["price"]), "size" : float(x["size"])} for x in response_dict["bids"]]
+            asks  : list[Order] = [{"price" : float(x["price"]), "size" : float(x["size"])} for x in response_dict["asks"]]
+            orderbook_data : OrderbookData = {
+                "bids" : bids,
+                "asks" : asks
+            }
+            out.append(OrderBook(orderbook_data))
+
+        return out
+
 
     def get_prices(self, token_ids : List[str]) -> List[Tuple[float | None,float | None]]:
         out : List[Tuple[float | None, float | None]] = []
@@ -276,6 +309,23 @@ class Kalshi(BettingPlatform):
     def __init__(self, host : str, platform_name : str):
         self.host = host # election endpoint is different
         self.platform_name = platform_name
+    
+    def get_orderbooks(self, data : (BinaryMarketMetadata | BinaryMarket)) -> list[OrderBook]:
+        api, config = self.login_to_kalshi()
+        config.host = self.host
+        response = api.get_market_orderbook(ticker = data.id)
+        yes_bids = response.orderbook.yes # type: ignore
+        no_asks = response.orderbook.no # type: ignore
+        yes_orderbook : OrderbookData = {
+            "asks" : [{"price" : (100-float(x[0]))/100, "size" : float(x[1])} for x in no_asks],
+            "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in yes_bids]
+        }
+
+        no_orderbook : OrderbookData = {
+            "asks" : [{"price" : (100-float(x[0]))/100, "size" : float(x[1])} for x in yes_bids],
+            "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in no_asks]
+        }
+        return [OrderBook(yes_orderbook), OrderBook(no_orderbook)]
 
     def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
         api, config = self.login_to_kalshi()
@@ -385,8 +435,8 @@ class BetOpportunity:
         best_yes_price = min(market_1_yes_ask, market_2_yes_ask)
         best_no_price = min(market_1_no_ask, market_2_no_ask)
         investment = best_yes_price*yes_contracts + best_no_price*no_contracts
-        return  [no_contracts / investment - 1, no_contracts / investment - 1]
-  
+        return  [no_contracts / investment - 1, no_contracts / investment - 1]  
+    
     def to_json(self):
         return {
             'question': self.question,
