@@ -88,7 +88,8 @@ class BinaryMarket:
             no_ask : float,
             yes_bid : float,
             no_bid : float,
-            end_date : datetime
+            end_date : datetime,
+            can_close_early : bool | None = None
         ):
         self.platform = platform
         self.question = question
@@ -100,6 +101,7 @@ class BinaryMarket:
         self.yes_bid = float(yes_bid)
         self.no_bid = float(no_bid)
         self.end_date = end_date
+        self.can_close_early = can_close_early
     
     def __str__(self) -> str:
         return (f"Platform: {self.platform}, BettingPlatform: {self.platform}\n"
@@ -120,6 +122,7 @@ class BinaryMarket:
             'yes_bid': self.yes_bid,
             'no_bid': self.no_bid,
             'end_date' : self.end_date.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
+            'can_close_early' : self.can_close_early
         }
 
     # Method to instantiate a BinaryMarket object from a dictionary
@@ -135,7 +138,8 @@ class BinaryMarket:
             no_ask=data.get('no_ask'),
             yes_bid=data.get('yes_bid'),
             no_bid=data.get('no_bid'),
-            end_date = parser.parse(data.get("end_date")).astimezone(timezone.utc)
+            end_date = parser.parse(data.get("end_date")).astimezone(timezone.utc),
+            can_close_early = data.get('can_close_early')
         )
         
 class BettingPlatform:

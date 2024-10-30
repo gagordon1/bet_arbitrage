@@ -46,7 +46,7 @@ class BetOpportunity:
     
     def calculate_annualized_return(self, yes_contracts : int, no_contracts : int) -> list[float | None]:
         yes_return, no_return = self.calculate_absolute_return(yes_contracts, no_contracts)
-        latest_close_time = max(self.market_1.end_date, self.market_2.end_date)
+        latest_close_time = min(self.market_1.end_date, self.market_2.end_date)  #optimistically uses the earlier of the two markets
         now = datetime.now().astimezone(timezone.utc)
         
         difference = latest_close_time.timestamp() - now.timestamp()
