@@ -10,7 +10,6 @@ from kalshi_python.models import * # type: ignore
 from OrderBook import OrderBook, Order, OrderbookData
 from pprint import pprint
 from constants import *
-import uuid
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -348,7 +347,7 @@ class Kalshi(BettingPlatform):
                             float(m.no_ask)/100,
                             float(m.yes_bid)/100,
                             float(m.no_bid)/100,
-                            parser.parse(m.close_time).astimezone(timezone.utc)
+                            parser.parse(m.expiration_time).astimezone(timezone.utc)
                         )
                     )
         return out
@@ -383,13 +382,14 @@ class Kalshi(BettingPlatform):
             else:
                 cursors.add(cursor)
             for market in markets:
+                
                 q = BinaryMarketMetadata(
                     self.platform_name,
                     market.title,
                     market.ticker,
                     None,
                     None,
-                    parser.parse(market.close_time).astimezone(timezone.utc)
+                    parser.parse(market.expiration_time).astimezone(timezone.utc)
                 )
                 questions.append(q)
                 question_count += 1
@@ -397,74 +397,7 @@ class Kalshi(BettingPlatform):
                     return questions
         return questions
 
-class BetOpportunity:
 
-    def __init__(self, question : str, market_1 : BinaryMarket, market_2 : BinaryMarket, last_update : datetime, id :str = str(uuid.uuid4())):
-        self.question = question
-        self.id = id
-        self.market_1 = market_1
-        self.market_2 = market_2
-        self.last_update = last_update
-        self.refresh_return_calculations()
-
-    def __str__(self) -> str:
-        return (f"Bet Opportunity on Question: {self.question}\n"
-                f"BettingPlatform 1:\n{self.market_1}\n\n"
-                f"BettingPlatform 2:\n{self.market_2}\n\n")
-    
-    def refresh_return_calculations(self):
-        self.absolute_return = self.calculate_absolute_return(1,1)
-    
-    def calculate_absolute_return(self, yes_contracts : int, no_contracts : int) -> list[float]:
-        """calculates the absolute return for the binary market bet opportunity
-
-        Args:
-            yes_contracts (int): number of yes contracts to purchase
-            no_contracts (int): number of no contracts to purchase
-
-        Raises:
-            ValueError: if incomplete data
-
-        Returns:
-            List[float, float]: absolute return if market resolves to yes, absolute return if market resolves to no   
-        """
-        market_1_yes_ask = self.market_1.yes_ask
-        market_2_yes_ask = self.market_2.yes_ask
-        market_1_no_ask = self.market_1.no_ask
-        market_2_no_ask = self.market_2.no_ask
-        best_yes_price = min(market_1_yes_ask, market_2_yes_ask)
-        best_no_price = min(market_1_no_ask, market_2_no_ask)
-        investment = best_yes_price*yes_contracts + best_no_price*no_contracts
-        return  [no_contracts / investment - 1, no_contracts / investment - 1]  
-    
-    def to_json(self):
-        return {
-            'question': self.question,
-            'id' : self.id,
-            'market_1': self.market_1.to_json(),
-            'market_2': self.market_2.to_json(),
-            'absolute_return' : self.absolute_return,
-            'last_update': self.last_update.isoformat()  # Convert datetime to ISO 8601 string
-        }
-
-    # Method to instantiate a BetOpportunity object from a dictionary
-    @classmethod
-    def from_json(cls, data):
-        market_1 = BinaryMarket.from_json(data['market_1'])
-        market_2 = BinaryMarket.from_json(data['market_2'])
-        last_update = datetime.fromisoformat(data['last_update'])  # Convert back to datetime
-        return cls(
-            question=data['question'],
-            market_1=market_1,
-            market_2=market_2,
-            last_update=last_update,
-            id = data["id"]
-        )
-
-    
-    def calculate_orderbook_aware_return(self, investment : float) -> float:
-        #TBU
-        return 0.0
 
 if __name__ == "__main__":
     # polymarket = Polymarket()

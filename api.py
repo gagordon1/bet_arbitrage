@@ -17,8 +17,6 @@ def refresh_bet_opportunity_data():
 @app.route('/bet_opportunity/<string:bet_id>', methods=['GET'])
 def get_bet_opportunity(bet_id):
     bo, obs = get_bet_opportunity_orderbooks(bet_id)
-
-    
     return jsonify({
         "bet_opportunity" : bo.to_json(),
         "orderbooks" : obs.to_json()

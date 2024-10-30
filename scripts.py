@@ -1,5 +1,5 @@
 from QuestionData import QuestionData, BetOpportunityOrderBooks
-from BettingPlatform import BetOpportunity
+from BetOpportunity import BetOpportunity
 from constants import *
 from datetime import datetime
 from pprint import pprint
@@ -7,14 +7,22 @@ from pprint import pprint
 def sort_bet_opportunities(sort_key : str, ops : list[BetOpportunity]) -> list[BetOpportunity]:
 
     def lambda_func(x : BetOpportunity):
-        return sum(x.absolute_return)
+        if sort_key == "parity_return":
+            return sum(x.absolute_return)
+        elif sort_key == "parity_return_annualized":
+            if(type(x)==float for x in x.annualized_return):
+                return sum(x.annualized_return) #type: ignore
+            else:
+                return -1
+        else:
+            return -1
         
     if sort_key in BET_OPPORTUNITIES_SORT:
-        if sort_key == PARITY_RETURN_SORT:
-            ops.sort( 
-                key=lambda_func,
-                reverse = True
-            )
+        print(sort_key)
+        ops.sort( 
+            key=lambda_func,
+            reverse = True
+        )
     return ops
 
 def save_active_question_data_for_all_markets():
@@ -66,10 +74,6 @@ def build_bet_opportunities() -> list[BetOpportunity]:
     qdata = QuestionData()
     question_map = qdata.open_question_map_json(QUESTION_MAP_JSON_BASE_PATH + ACTIVE_MAP_JSON_FILENAME)
     bet_opportunities = qdata.get_bet_opportunities_from_question_map(question_map)
-    print(bet_opportunities[0].market_1.end_date)
-    print(type(bet_opportunities[0].market_1.end_date))
-    print(bet_opportunities[0].market_2.end_date)
-    print(type(bet_opportunities[0].market_2.end_date))
     qdata.save_bet_opportunities(bet_opportunities)
     return bet_opportunities
 
@@ -97,6 +101,7 @@ if __name__ == "__main__":
     build_bet_opportunities()
     # refresh_bet_opportunities()
     # build_bet_opportunities()
+    # pass
     
 
     

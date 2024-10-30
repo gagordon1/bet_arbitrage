@@ -2,10 +2,12 @@ from typing import TypedDict
 import json
 from QuestionMap import QuestionMap
 import pandas as pd #type: ignore
-from BettingPlatform import Polymarket, Kalshi, BettingPlatform, BinaryMarket, BinaryMarketMetadata, BetOpportunity
+from BettingPlatform import Polymarket, Kalshi, BettingPlatform, BinaryMarket, BinaryMarketMetadata
 from datetime import datetime, timezone
 from OrderBook import OrderBook
 from constants import *
+from BetOpportunity import BetOpportunity
+import uuid
 
 class MarketData(TypedDict):
     betting_platform: BettingPlatform
@@ -168,7 +170,8 @@ class QuestionData:
                                     q,
                                     updated_market_1,
                                     updated_market_2,
-                                    datetime.now(timezone.utc)
+                                    datetime.now(timezone.utc),
+                                    str(uuid.uuid4())
                                 )
                             )
         return out
