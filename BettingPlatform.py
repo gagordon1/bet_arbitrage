@@ -46,14 +46,14 @@ class BinaryMarketMetadata:
         id : str,
         yes_id : str | None,
         no_id : str | None,
-        link: str
+        end_date : datetime
     ): 
         self.platform = platform
         self.question = question
         self.id = id
         self.yes_id = yes_id
         self.no_id = no_id
-        self.link = link
+        self.end_date = end_date
     # Method to convert the object to a JSON-compatible dictionary
     def to_json(self) -> dict:
         return {
@@ -62,7 +62,7 @@ class BinaryMarketMetadata:
             'id': self.id,
             'yes_id': self.yes_id,
             'no_id': self.no_id,
-            'link' : self.link
+            'end_date' : self.end_date.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
         }
 
     # Method to instantiate a BinaryMarket object from a dictionary
@@ -74,7 +74,7 @@ class BinaryMarketMetadata:
             id=data['id'],
             yes_id=data.get('yes_id'),
             no_id=data.get('no_id'),
-            link = data.get('link')
+            end_date = parser.parse(data.get("end_date")).astimezone(timezone.utc)
         )
 
 class BinaryMarket:
@@ -89,6 +89,7 @@ class BinaryMarket:
             no_ask : float,
             yes_bid : float,
             no_bid : float,
+            end_date : datetime
         ):
         self.platform = platform
         self.question = question
@@ -99,6 +100,7 @@ class BinaryMarket:
         self.no_ask = float(no_ask)
         self.yes_bid = float(yes_bid)
         self.no_bid = float(no_bid)
+        self.end_date = end_date
     
     def __str__(self) -> str:
         return (f"Platform: {self.platform}, BettingPlatform: {self.platform}\n"
@@ -117,7 +119,8 @@ class BinaryMarket:
             'yes_ask': self.yes_ask,
             'no_ask': self.no_ask,
             'yes_bid': self.yes_bid,
-            'no_bid': self.no_bid
+            'no_bid': self.no_bid,
+            'end_date' : self.end_date.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
         }
 
     # Method to instantiate a BinaryMarket object from a dictionary
@@ -132,7 +135,8 @@ class BinaryMarket:
             yes_ask=data.get('yes_ask'),
             no_ask=data.get('no_ask'),
             yes_bid=data.get('yes_bid'),
-            no_bid=data.get('no_bid')
+            no_bid=data.get('no_bid'),
+            end_date = parser.parse(data.get("end_date")).astimezone(timezone.utc)
         )
         
 class BettingPlatform:
@@ -253,7 +257,8 @@ class Polymarket(BettingPlatform):
                     float(yes_ask),
                     float(no_ask),
                     float(yes_bid),
-                    float(no_bid)
+                    float(no_bid),
+                    data[i].end_date
                 ))
         return out
     
@@ -265,9 +270,6 @@ class Polymarket(BettingPlatform):
         response = requests.get(url, params = params)
         response_dict : PolymarketGetMarketsResponse = json.loads(response.text)
         return response_dict
-    
-    def get_link(self, condition_id : str) -> str | None:
-        return "" #TBU
     
     def get_active_markets(self, n : int | None) -> List[BinaryMarketMetadata]:
         cursor = ""
@@ -281,25 +283,22 @@ class Polymarket(BettingPlatform):
                 for market in response["data"]:
                     end_date = market["end_date_iso"]
                     if end_date != None:
-                        end_date = parser.parse(market["end_date_iso"]) 
+                        end_date = parser.parse(market["end_date_iso"]).astimezone(timezone.utc)
                         if question_count == n:
                             return questions
                         #check if end date is after now
                         elif end_date > datetime.now(timezone.utc) and market["condition_id"] != "":
                             tokens = market["tokens"]
-                            link = self.get_link(market["condition_id"])
-                            print(link)
-                            if link:
-                                entry = BinaryMarketMetadata(
-                                    "Polymarket",
-                                    market["question"],
-                                    market["condition_id"],
-                                    next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
-                                    next((t["token_id"] for t in tokens if t["outcome"] == "No"),None),
-                                    link
-                                )
-                                questions.append(entry)
-                                question_count += 1
+                            entry = BinaryMarketMetadata(
+                                "Polymarket",
+                                market["question"],
+                                market["condition_id"],
+                                next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
+                                next((t["token_id"] for t in tokens if t["outcome"] == "No"),None),
+                                end_date
+                            )
+                            questions.append(entry)
+                            question_count += 1
             except KeyError:
                 break
         return questions
@@ -348,7 +347,8 @@ class Kalshi(BettingPlatform):
                             float(m.yes_ask)/100,
                             float(m.no_ask)/100,
                             float(m.yes_bid)/100,
-                            float(m.no_bid)/100
+                            float(m.no_bid)/100,
+                            parser.parse(m.close_time).astimezone(timezone.utc)
                         )
                     )
         return out
@@ -389,7 +389,7 @@ class Kalshi(BettingPlatform):
                     market.ticker,
                     None,
                     None,
-                    "" #TBU
+                    parser.parse(market.close_time).astimezone(timezone.utc)
                 )
                 questions.append(q)
                 question_count += 1

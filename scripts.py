@@ -66,6 +66,10 @@ def build_bet_opportunities() -> list[BetOpportunity]:
     qdata = QuestionData()
     question_map = qdata.open_question_map_json(QUESTION_MAP_JSON_BASE_PATH + ACTIVE_MAP_JSON_FILENAME)
     bet_opportunities = qdata.get_bet_opportunities_from_question_map(question_map)
+    print(bet_opportunities[0].market_1.end_date)
+    print(type(bet_opportunities[0].market_1.end_date))
+    print(bet_opportunities[0].market_2.end_date)
+    print(type(bet_opportunities[0].market_2.end_date))
     qdata.save_bet_opportunities(bet_opportunities)
     return bet_opportunities
 
@@ -90,10 +94,10 @@ def get_bet_opportunity_orderbooks(id : str) -> tuple[BetOpportunity, BetOpportu
 if __name__ == "__main__":
     # save_active_question_data_for_all_markets()
     # generate_and_save_question_map()
-    # build_bet_opportunities()
+    build_bet_opportunities()
     # refresh_bet_opportunities()
     # build_bet_opportunities()
-    pass
+    
 
     
     
