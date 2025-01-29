@@ -54,7 +54,7 @@ class SemanticEquivalence:
         else:
             return [top_k_similar_questions, top_k_similar_question_ids]
         
-def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : list[BetOpportunityTitles], model : LLM  = LLM.deepseek_v2) -> set[str]:
+def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : list[BetOpportunityTitles], model : LLM  = LLM.deepseek_v2) -> tuple[set[str], float]:
     """given a list of bet opportunity metadata (id and question titles), returns a list of bet opportunity ids with valid semantic equivalence
 
     Args:
@@ -62,6 +62,7 @@ def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : l
 
     Returns:
         set[str]: set of bet opportunity ids that are semantically equivalent
+        float: cost of the llm operation
     """
     ENTRIES_PER_LLM_REQUEST = 50
     load_dotenv()
@@ -82,13 +83,14 @@ def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : l
      are no valid ids, just return "[]" \n"""
     
     out = set()
-    for batch in batches:
-        prompt = f"{prompt_prefix}{batch}"
-        print("PROMPT:\n" +"---"*10 + "\n" + prompt)
-        client = OpenAI(
+    cost = 0.0
+    client = OpenAI(
             api_key=os.environ.get(api_key_name),
             base_url= base_url
         )
+    for batch in batches:
+        prompt = f"{prompt_prefix}{batch}"
+        print("PROMPT:\n" +"---"*10 + "\n" + prompt)
         chat_completion = client.chat.completions.create(
             messages=[
                 {
@@ -99,7 +101,15 @@ def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : l
             model=model_name,
         )
         content = chat_completion.choices[0].message.content
+        usage = chat_completion.usage
         if content:
             print("RESPONSE:\n" + "---"*10 + "\n" + content)
             out.update(set(json.loads(content)))
-    return out
+        if usage:
+            prompt_tokens = usage.prompt_tokens
+            completion_tokens = usage.completion_tokens
+            print(f"Prompt tokens: {prompt_tokens}\n Completion tokens: {completion_tokens}")
+
+            cost += prompt_tokens * LLM_INFO[model]["cost_per_1m_input_tokens"] /10**6
+            cost += completion_tokens * LLM_INFO[model]["cost_per_1m_output_tokens"] /10**6
+    return out, cost

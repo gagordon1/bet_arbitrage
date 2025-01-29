@@ -50,16 +50,22 @@ class LLMInfoDict(TypedDict):
     base_url : str
     model_name : str
     api_key_name : str
+    cost_per_1m_input_tokens : float
+    cost_per_1m_output_tokens : float
 
 LLM_INFO : dict[Enum, LLMInfoDict] = {
     LLM.deepseek_r1 : {
         "base_url" : "https://api.deepseek.com",
         "model_name" : "deepseek-reasoner", 
-        "api_key_name" : "DEEPSEEK_API_KEY"
+        "api_key_name" : "DEEPSEEK_API_KEY",
+        "cost_per_1m_input_tokens" : .14,
+        "cost_per_1m_output_tokens" : .55
     },
     LLM.deepseek_v2 : {
         "base_url" : "https://api.deepseek.com",
         "model_name" : "deepseek-chat", 
-        "api_key_name" : "DEEPSEEK_API_KEY"
+        "api_key_name" : "DEEPSEEK_API_KEY",
+        "cost_per_1m_input_tokens" : .014,
+        "cost_per_1m_output_tokens" : .14
     }
 }

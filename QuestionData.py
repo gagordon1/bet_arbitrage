@@ -117,7 +117,7 @@ class QuestionData:
             bet_opportunities = json.load(f)
             return [BetOpportunity.from_json(bo) for bo in bet_opportunities]
 
-    def get_bet_opportunities_from_question_map(self, question_map: QuestionMap, n : (int | None) = None, llm_check = False) -> list[BetOpportunity]: 
+    def get_bet_opportunities_from_question_map(self, question_map: QuestionMap, n : (int | None) = None, llm_check = False) -> tuple[list[BetOpportunity], float]: 
         """Given a QuestionMap, gets a list of bet opportunities
 
         Args:
@@ -171,7 +171,6 @@ class QuestionData:
                                     bo_id
                                 )
                             )
-
         # check market title equivalence
         if llm_check:
             # further guarantee name semantic equivalence using an LLM
@@ -179,10 +178,9 @@ class QuestionData:
             titles : list[BetOpportunityTitles] = [{"id" : x.id, 
                     "market_1_question" : x.market_1.question, 
                     "market_2_question" : x.market_2.question} for x in out]
-            valid_ids = filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities=titles)
-            print(valid_ids)
-            return list(filter(lambda x: x.id in valid_ids, out))
-        return out
+            valid_ids, llm_cost = filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities=titles)
+            return list(filter(lambda x: x.id in valid_ids, out)), llm_cost
+        return out, 0.0
 
     def get_updated_bet_opportunity_data(self) -> list[BetOpportunity]:
         """Given the path to a bet opportunities json file, 
