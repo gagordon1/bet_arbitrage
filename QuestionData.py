@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from OrderBook import OrderBook
 from constants import *
 from BetOpportunity import BetOpportunity
+from SemanticEquivalence import filter_bet_opportunities_with_llm_semantic_equivalence, BetOpportunityTitles
 import uuid
 
 class MarketData(TypedDict):
@@ -116,7 +117,7 @@ class QuestionData:
             bet_opportunities = json.load(f)
             return [BetOpportunity.from_json(bo) for bo in bet_opportunities]
 
-    def get_bet_opportunities_from_question_map(self, question_map: QuestionMap, n : (int | None) = None) -> list[BetOpportunity]: 
+    def get_bet_opportunities_from_question_map(self, question_map: QuestionMap, n : (int | None) = None, llm_check = False) -> list[BetOpportunity]: 
         """Given a QuestionMap, gets a list of bet opportunities
 
         Args:
@@ -160,15 +161,27 @@ class QuestionData:
                         if mdata1.id in id_to_question_map and mdata2.id in id_to_question_map:
                             updated_market_1 = id_to_question_map[mdata1.id]
                             updated_market_2 = id_to_question_map[mdata2.id]
+                            bo_id = str(uuid.uuid4())
                             out.append(
                                 BetOpportunity(
                                     q,
                                     updated_market_1,
                                     updated_market_2,
                                     datetime.now(timezone.utc),
-                                    str(uuid.uuid4())
+                                    bo_id
                                 )
                             )
+
+        # check market title equivalence
+        if llm_check:
+            # further guarantee name semantic equivalence using an LLM
+            print("filtering for semantic equivalence via llm...")
+            titles : list[BetOpportunityTitles] = [{"id" : x.id, 
+                    "market_1_question" : x.market_1.question, 
+                    "market_2_question" : x.market_2.question} for x in out]
+            valid_ids = filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities=titles)
+            print(valid_ids)
+            return list(filter(lambda x: x.id in valid_ids, out))
         return out
 
     def get_updated_bet_opportunity_data(self) -> list[BetOpportunity]:

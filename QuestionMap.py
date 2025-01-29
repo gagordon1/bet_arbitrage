@@ -1,5 +1,5 @@
-from typing import TypedDict, List, Tuple, Dict
-from NLPFunctions import NLPFunctions
+from typing import List, Tuple, Dict
+from SemanticEquivalence import SemanticEquivalence
 from BettingPlatform import BinaryMarketMetadata
 import torch # type: ignore
 from constants import SIMILARITY_CUTOFF
@@ -46,7 +46,7 @@ class QuestionMap:
                 return similar_questions[0][0]
         return False
 
-    def question_exists(self, nlp : NLPFunctions, question :str, existing_questions : List[str], existing_questions_embedding : torch.Tensor, k : int = 5) -> str | bool:
+    def question_exists(self, nlp : SemanticEquivalence, question :str, existing_questions : List[str], existing_questions_embedding : torch.Tensor, k : int = 5) -> str | bool:
         """
         Checks whether a question exists in the question map, returning the unique question it maps to if so, false otherwise 
         """
@@ -62,7 +62,7 @@ class QuestionMap:
         """
         # Dictionary to store normalized questions as keys and list of platform/question IDs as values
         count = 0
-        nlp = NLPFunctions()
+        nlp = SemanticEquivalence()
         for platform_questions in questions_by_platform:
             print("Processing Platform Data for platform " + str(count) + "...")
             #only check questions from other platforms
@@ -83,7 +83,7 @@ class QuestionMap:
         Args:
             question_map (QuestionMap): maps questions to list of similar questions across platforms
         """
-        nlp = NLPFunctions()
+        nlp = SemanticEquivalence()
         new_map : Dict[str, List[BinaryMarketMetadata]] = {}
         for question, entry in self.items():
             unique_platforms = {i.platform for i in entry}

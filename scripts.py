@@ -63,7 +63,7 @@ def refresh_bet_opportunities(sort : (str | None) = None) -> list[BetOpportunity
     else:
         return updated_data
 
-def build_bet_opportunities() -> list[BetOpportunity]:
+def build_bet_opportunities(llm_check = False) -> list[BetOpportunity]:
     """Reads the latest question map data and generates bet opportunites, saving the updated and returning the data
 
     Returns:
@@ -71,7 +71,7 @@ def build_bet_opportunities() -> list[BetOpportunity]:
     """
     qdata = QuestionData()
     question_map = qdata.open_question_map_json(QUESTION_MAP_JSON_BASE_PATH + ACTIVE_MAP_JSON_FILENAME)
-    bet_opportunities = qdata.get_bet_opportunities_from_question_map(question_map)
+    bet_opportunities = qdata.get_bet_opportunities_from_question_map(question_map, llm_check=llm_check)
     qdata.save_bet_opportunities(bet_opportunities)
     return bet_opportunities
 
@@ -94,12 +94,12 @@ def get_bet_opportunity_orderbooks(id : str) -> tuple[BetOpportunity, BetOpportu
    return (bet_opportunity, orderbooks)
 
 if __name__ == "__main__":
-    save_active_question_data_for_all_markets()
-    generate_and_save_question_map()
-    build_bet_opportunities()
+    # save_active_question_data_for_all_markets()
+    # generate_and_save_question_map()
+    build_bet_opportunities(llm_check=True)
     # refresh_bet_opportunities()
     # build_bet_opportunities()
-    # pass
+    pass
     
 
     
