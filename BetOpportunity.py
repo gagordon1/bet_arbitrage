@@ -1,6 +1,6 @@
 from datetime import datetime, timezone, timedelta
 from BettingPlatform import BinaryMarket
-import uuid
+from constants import *
 
 
 class BetOpportunity:
@@ -50,10 +50,13 @@ class BetOpportunity:
         now = datetime.now().astimezone(timezone.utc)
         
         difference = latest_close_time.timestamp() - now.timestamp()
-        ms_in_one_year = 365*24*60*60
-        result = ms_in_one_year / difference
-        yes_return_annualized = (1+yes_return)**result - 1
-        no_return_annualized = (1+no_return)**result - 1
+        result = MS_IN_ONE_YEAR / difference
+        try:
+            yes_return_annualized = (1+yes_return)**result - 1
+            no_return_annualized = (1+no_return)**result - 1
+        except OverflowError:
+            print(f"Overflow error for yes / no return: {yes_return}/{no_return} and annualization exponent of {result}")
+            return [None, None]
         if isinstance(yes_return_annualized, complex) or isinstance(yes_return_annualized, complex):
             return [None, None]
         return [yes_return_annualized, no_return_annualized]

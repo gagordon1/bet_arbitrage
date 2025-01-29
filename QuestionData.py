@@ -38,17 +38,12 @@ class BetOpportunityOrderBooks:
 class QuestionData:
 
     def __init__(self):
-        kalshi = Kalshi(host = KALSHI_NON_ELECTION_ENDPOINT, platform_name="Kalshi")
-        kalshi_election = Kalshi(host = KALSHI_ELECTION_ENDPOINT, platform_name= "Kalshi-Election")
+        kalshi = Kalshi(host = KALSHI_ENDPOINT, platform_name= "Kalshi")
         polymarket = Polymarket()
         self.betting_platforms : dict[str , MarketData] = {
-            "Kalshi": {
+            "Kalshi":{
                 "betting_platform" : kalshi,
                 "questions_filepath" : BETTING_PLATFORM_DATA["Kalshi"]["question_filepath"]
-            },
-            "Kalshi-Election":{
-                "betting_platform" : kalshi_election,
-                "questions_filepath" : BETTING_PLATFORM_DATA["Kalshi-Election"]["question_filepath"]
             },
             "Polymarket" :{
                 "betting_platform" : polymarket,

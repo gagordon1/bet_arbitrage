@@ -1,21 +1,16 @@
 POLYMARKET_ENDPOINT = "https://clob.polymarket.com/"
 
-KALSHI_NON_ELECTION_ENDPOINT = "https://trading-api.kalshi.com/trade-api/v2"
-
-KALSHI_ELECTION_ENDPOINT = "https://api.elections.kalshi.com/trade-api/v2"
+KALSHI_ENDPOINT = "https://api.elections.kalshi.com/trade-api/v2"
 
 KALSHI_REQUEST_LIMIT = 100
 
 POLYMARKET_REQUEST_LIMIT = 500
 
-SIMILARITY_CUTOFF = 0.75
+SIMILARITY_CUTOFF = .85
 
 BETTING_PLATFORM_DATA = {
         "Kalshi" : {
-            "question_filepath" : "question_data/kalshi.json",
-        }, 
-        "Kalshi-Election" : {
-            "question_filepath" :  "question_data/kalshi_election.json",
+            "question_filepath" :  "question_data/kalshi.json",
         }, 
         "Polymarket" : {
             "question_filepath" : "question_data/polymarket.json",
@@ -37,3 +32,5 @@ PARITY_RETURN_ANNUALIZED_SORT ="parity_return_annualized"
 BET_OPPORTUNITIES_SORT = {PARITY_RETURN_SORT, PARITY_RETURN_ANNUALIZED_SORT}
 
 PREDICTIT_HOST = "https://www.predictit.org/api/marketdata/"
+
+MS_IN_ONE_YEAR = 365*24*60*60

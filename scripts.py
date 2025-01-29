@@ -1,8 +1,6 @@
 from QuestionData import QuestionData, BetOpportunityOrderBooks
 from BetOpportunity import BetOpportunity
 from constants import *
-from datetime import datetime
-from pprint import pprint
 
 def sort_bet_opportunities(sort_key : str, ops : list[BetOpportunity]) -> list[BetOpportunity]:
 
@@ -10,11 +8,11 @@ def sort_bet_opportunities(sort_key : str, ops : list[BetOpportunity]) -> list[B
         if sort_key == "parity_return":
             return sum(x.absolute_return)
         elif sort_key == "parity_return_annualized":
-            if(type(x)==float for x in x.annualized_return):
+            if all([isinstance(y, float) for y in x.annualized_return]):
                 return sum(x.annualized_return) #type: ignore
             else:
                 return -1
-        else:
+        else: 
             return -1
         
     if sort_key in BET_OPPORTUNITIES_SORT:
@@ -96,8 +94,8 @@ def get_bet_opportunity_orderbooks(id : str) -> tuple[BetOpportunity, BetOpportu
    return (bet_opportunity, orderbooks)
 
 if __name__ == "__main__":
-    # save_active_question_data_for_all_markets()
-    # generate_and_save_question_map()
+    save_active_question_data_for_all_markets()
+    generate_and_save_question_map()
     build_bet_opportunities()
     # refresh_bet_opportunities()
     # build_bet_opportunities()

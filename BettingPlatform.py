@@ -3,13 +3,11 @@ import json
 from typing import TypedDict, Tuple, List, Any
 from dateutil import parser #type: ignore
 from datetime import datetime, timezone
-from dotenv import load_dotenv # type: ignore
-import os
-import kalshi_python # type: ignore
-from kalshi_python.models import * # type: ignore
 from OrderBook import OrderBook, Order, OrderbookData
-from pprint import pprint
 from constants import *
+from external_apis.kalshi import KalshiAPI
+from dotenv import load_dotenv
+import os
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -311,13 +309,15 @@ class Kalshi(BettingPlatform):
     def __init__(self, host : str, platform_name : str):
         self.host = host # election endpoint is different
         self.platform_name = platform_name
+        load_dotenv()
+        kalshi_key_id = os.getenv("KALSHI_API_KEY_ID")
+        kalshi_key_file = os.getenv("KALSHI_KEY_FILE")
+        self.api = KalshiAPI(kalshi_key_id, kalshi_key_file)
     
     def get_orderbooks(self, data : (BinaryMarketMetadata | BinaryMarket)) -> list[OrderBook]:
-        api, config = self.login_to_kalshi()
-        config.host = self.host
-        response = api.get_market_orderbook(ticker = data.id)
-        yes_bids = response.orderbook.yes # type: ignore
-        no_asks = response.orderbook.no # type: ignore
+        response = self.api.get_market_orderbook(ticker = data.id)
+        yes_bids = response["orderbook"]["yes"]
+        no_asks = response["orderbook"]["no"]
         yes_orderbook : OrderbookData = {
             "asks" : [{"price" : (100-float(x[0]))/100, "size" : float(x[1])} for x in no_asks],
             "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in yes_bids]
@@ -330,56 +330,43 @@ class Kalshi(BettingPlatform):
         return [OrderBook(yes_orderbook), OrderBook(no_orderbook)]
 
     def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
-        api, config = self.login_to_kalshi()
-        config.host = self.host
+        
         out : List[BinaryMarket] = []
         ids = [x.id for x in data]
         for i in range(0, len(ids), KALSHI_REQUEST_LIMIT):
             batch = ids[i:i+KALSHI_REQUEST_LIMIT]
-            response = api.get_markets(limit = KALSHI_REQUEST_LIMIT, tickers = ",".join(batch))
-            markets = response.markets #type: ignore
+            response = self.api.get_batch_markets(limit = KALSHI_REQUEST_LIMIT, tickers = batch) 
+            markets = response["markets"] 
             for m in markets:
-                if valid_prices(m.yes_ask, m.no_ask, m.yes_bid, m.no_bid):
+                if valid_prices(m["yes_ask"], m["no_ask"], m["yes_bid"], m["no_bid"]):
                     out.append(
                         BinaryMarket(
                             self.platform_name,
-                            m.title,
-                            m.ticker,
+                            m["title"],
+                            m["ticker"],
                             None,
                             None,
-                            float(m.yes_ask)/100,
-                            float(m.no_ask)/100,
-                            float(m.yes_bid)/100,
-                            float(m.no_bid)/100,
-                            parser.parse(m.expiration_time).astimezone(timezone.utc)
+                            float(m["yes_ask"])/100,
+                            float(m["no_ask"])/100,
+                            float(m["yes_bid"])/100,
+                            float(m["no_bid"])/100,
+                            parser.parse(m["expiration_time"]).astimezone(timezone.utc)
                         )
                     )
         return out
     
-    def login_to_kalshi(self):
-        load_dotenv()
-        config = kalshi_python.Configuration()
-        config.host = KALSHI_NON_ELECTION_ENDPOINT
-        kalshi_api = kalshi_python.ApiInstance(
-            email=os.getenv("KALSHI_EMAIL"),
-            password=os.getenv("KALSHI_PASSWORD"),
-            configuration=config,
-        )
-        kalshi_api.auto_login_if_possible()
-        return kalshi_api, config
-    
     def get_active_markets(self, n : int | None) -> List[BinaryMarketMetadata]:
         
-        kalshi_api, config = self.login_to_kalshi()
         questions : List[BinaryMarketMetadata] = []
         question_count = 0
-        config.host = self.host
         cursor = None
         cursors = set()
         while True:
-            response = kalshi_api.market_api.get_markets(limit=KALSHI_REQUEST_LIMIT, status = "open", cursor = cursor)
-            cursor = response.cursor #type: ignore
-            markets = response.markets #type: ignore
+            response = self.api.get_markets(limit = KALSHI_REQUEST_LIMIT,
+                                            status="open",
+                                            cursor=cursor)
+            cursor = response["cursor"] #type: ignore
+            markets = response["markets"] #type: ignore
             #stop if cursor encountered twice
             if cursor in cursors:
                 break
@@ -389,11 +376,11 @@ class Kalshi(BettingPlatform):
                 
                 q = BinaryMarketMetadata(
                     self.platform_name,
-                    market.title,
-                    market.ticker,
+                    market["title"],
+                    market["ticker"],
                     None,
                     None,
-                    parser.parse(market.expiration_time).astimezone(timezone.utc)
+                    parser.parse(market["expiration_time"]).astimezone(timezone.utc)
                 )
                 questions.append(q)
                 question_count += 1
