@@ -49,7 +49,7 @@ def bet_opportunities():
 def delete_bet_opportunities(bet_id):
 
     Found, bet_opportunities = delete_bet_opportunity(bet_id)
-    print(Found)
+    logging.info(Found)
     if not Found:
         return jsonify({"message": "Bet opportunity not found"}), 404
 

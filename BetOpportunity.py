@@ -1,6 +1,7 @@
 from datetime import datetime, timezone, timedelta
 from BettingPlatform import BinaryMarket
 from constants import *
+import logging
 
 
 class BetOpportunity:
@@ -55,11 +56,12 @@ class BetOpportunity:
             yes_return_annualized = (1+yes_return)**result - 1
             no_return_annualized = (1+no_return)**result - 1
         except OverflowError:
-            print(f"Overflow error for yes / no return: {yes_return}/{no_return} and annualization exponent of {result}")
+            logging.info(f"Overflow error for yes / no return: {yes_return}/{no_return} and annualization exponent of {result}")
             return [None, None]
         if isinstance(yes_return_annualized, complex) or isinstance(yes_return_annualized, complex):
             return [None, None]
         return [yes_return_annualized, no_return_annualized]
+    
     def to_json(self):
         return {
             'question': self.question,
@@ -84,8 +86,3 @@ class BetOpportunity:
             last_update=last_update,
             id = data["id"]
         )
-
-    
-    def calculate_orderbook_aware_return(self, investment : float) -> float:
-        #TBU
-        return 0.0

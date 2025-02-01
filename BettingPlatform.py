@@ -8,6 +8,7 @@ from constants import *
 from external_apis.kalshi import KalshiAPI
 from dotenv import load_dotenv
 import os
+import logging
 
 class PolymarketGetMarketsResponse(TypedDict):
     data: List[Any]
@@ -201,7 +202,6 @@ class Polymarket(BettingPlatform):
                 "token_id" : id
             }
             response = requests.get(POLYMARKET_ENDPOINT + "book", params = params)
-            print("POLYMARKET" + "--"*20)
             response_dict = json.loads(response.text)
             bids : list[Order] = [{"price" : float(x["price"]), "size" : float(x["size"])} for x in response_dict["bids"]]
             asks  : list[Order] = [{"price" : float(x["price"]), "size" : float(x["size"])} for x in response_dict["asks"]]
@@ -315,19 +315,29 @@ class Kalshi(BettingPlatform):
         self.api = KalshiAPI(kalshi_key_id, kalshi_key_file)
     
     def get_orderbooks(self, data : (BinaryMarketMetadata | BinaryMarket)) -> list[OrderBook]:
-        response = self.api.get_market_orderbook(ticker = data.id)
-        yes_bids = response["orderbook"]["yes"]
-        no_asks = response["orderbook"]["no"]
-        yes_orderbook : OrderbookData = {
-            "asks" : [{"price" : (100-float(x[0]))/100, "size" : float(x[1])} for x in no_asks],
-            "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in yes_bids]
-        }
 
-        no_orderbook : OrderbookData = {
-            "asks" : [{"price" : (100-float(x[0]))/100, "size" : float(x[1])} for x in yes_bids],
-            "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in no_asks]
-        }
-        return [OrderBook(yes_orderbook), OrderBook(no_orderbook)]
+
+        try:
+        
+            response = self.api.get_market_orderbook(ticker = data.id)
+            
+            yes_bids_response = response["orderbook"]["yes"]
+            no_asks_response = response["orderbook"]["no"]
+
+            yes_orderbook : OrderbookData = {
+                "asks" : [{"price" : (100-float(x[0]))/100, "size" : float(x[1])} for x in no_asks_response],
+                "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in yes_bids_response]
+            }
+
+            no_orderbook : OrderbookData = {
+                "asks" : [{"price" : (100-float(x[0]))/100, "size" : float(x[1])} for x in yes_bids_response],
+                "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in no_asks_response]
+            }
+            return [OrderBook(yes_orderbook), OrderBook(no_orderbook)]
+        except:
+            logging.info(f"error retrieving orderbook data for {data.platform} {data.id}")
+            return [OrderBook(), OrderBook()] #returns empty orderbook data
+        
 
     def get_batch_market_data(self, data : List[BinaryMarketMetadata]) -> List[BinaryMarket]:
         
@@ -392,13 +402,13 @@ class Kalshi(BettingPlatform):
 
 if __name__ == "__main__":
     # polymarket = Polymarket()
-    # print("Pulling Polymarket markets...")
+    # logging.info("Pulling Polymarket markets...")
     # polymarket.save_active_markets("question_data/polymarket_questions.json", None)
     
-    # print("Pulling Kalshi markets...")
+    # logging.info("Pulling Kalshi markets...")
     # kalshi = Kalshi()
     # kalshi.save_active_markets("question_data/kalshi_questions.json", None)
     # pm = Polymarket()
     # link = pm.get_link("0x9279e0735a365ab5fe94c671e172b9dc68e402fa9dab36db4d8e171785fcf40e")
-    # print(link)
+    # logging.info(link)
     pass

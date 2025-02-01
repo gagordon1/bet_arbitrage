@@ -3,6 +3,7 @@ from SemanticEquivalence import SemanticEquivalence
 from BettingPlatform import BinaryMarketMetadata
 import torch # type: ignore
 from constants import SIMILARITY_CUTOFF
+import logging
 
 class QuestionMap:
     def __init__(self):
@@ -64,7 +65,7 @@ class QuestionMap:
         count = 0
         nlp = SemanticEquivalence()
         for platform_questions in questions_by_platform:
-            print("Processing Platform Data for platform " + str(count) + "...")
+            logging.info("Processing Platform Data for platform " + str(count) + "...")
             #only check questions from other platforms
             existing_questions = list(self.keys())
             existing_questions_embedding = nlp.encode_questions(existing_questions)

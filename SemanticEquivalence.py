@@ -7,6 +7,7 @@ import os
 from dotenv import load_dotenv
 from constants import *
 import json
+import logging
 
 class BetOpportunityTitles(TypedDict):
     id : str
@@ -54,7 +55,7 @@ class SemanticEquivalence:
         else:
             return [top_k_similar_questions, top_k_similar_question_ids]
         
-def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : list[BetOpportunityTitles], model : LLM  = LLM.deepseek_v2) -> tuple[set[str], float]:
+def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : list[BetOpportunityTitles], model : LLM) -> tuple[set[str], float]:
     """given a list of bet opportunity metadata (id and question titles), returns a list of bet opportunity ids with valid semantic equivalence
 
     Args:
@@ -90,26 +91,30 @@ def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : l
         )
     for batch in batches:
         prompt = f"{prompt_prefix}{batch}"
-        print("PROMPT:\n" +"---"*10 + "\n" + prompt)
-        chat_completion = client.chat.completions.create(
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt,
-                }
-            ],
-            model=model_name,
-        )
-        content = chat_completion.choices[0].message.content
-        usage = chat_completion.usage
-        if content:
-            print("RESPONSE:\n" + "---"*10 + "\n" + content)
-            out.update(set(json.loads(content)))
-        if usage:
-            prompt_tokens = usage.prompt_tokens
-            completion_tokens = usage.completion_tokens
-            print(f"Prompt tokens: {prompt_tokens}\n Completion tokens: {completion_tokens}")
+        # logging.info("PROMPT:\n" +"---"*10 + "\n" + prompt)
+        try:
+            chat_completion = client.chat.completions.create(
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt,
+                    }
+                ],
+                model=model_name,
+            )
+            content = chat_completion.choices[0].message.content
+            usage = chat_completion.usage
+            if content:
+                logging.info("RESPONSE:\n" + "---"*10 + "\n" + content)
+                out.update(set(json.loads(content)))
+            if usage:
+                prompt_tokens = usage.prompt_tokens
+                completion_tokens = usage.completion_tokens
+                logging.info(f"Prompt tokens: {prompt_tokens}\n Completion tokens: {completion_tokens}")
 
-            cost += prompt_tokens * LLM_INFO[model]["cost_per_1m_input_tokens"] /10**6
-            cost += completion_tokens * LLM_INFO[model]["cost_per_1m_output_tokens"] /10**6
+                cost += prompt_tokens * LLM_INFO[model]["cost_per_1m_input_tokens"] /10**6
+                cost += completion_tokens * LLM_INFO[model]["cost_per_1m_output_tokens"] /10**6
+        except json.decoder.JSONDecodeError as e:
+            logging.error(f"Json parsing error for prompt:\n {prompt}\nError message: {e}\nRaw response: {chat_completion} ")
+
     return out, cost

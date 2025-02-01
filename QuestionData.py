@@ -9,6 +9,7 @@ from constants import *
 from BetOpportunity import BetOpportunity
 from SemanticEquivalence import filter_bet_opportunities_with_llm_semantic_equivalence, BetOpportunityTitles
 import uuid
+import logging
 
 class MarketData(TypedDict):
     betting_platform: BettingPlatform
@@ -76,7 +77,7 @@ class QuestionData:
         """For each platform in the data set, gets all active markets and saves them lists of binary market metadata
         """
         for market_name in self.betting_platforms:
-            print("collecting data for "+ market_name + " ...")
+            logging.info("collecting data for "+ market_name + " ...")
             market = self.betting_platforms[market_name]["betting_platform"]
             market.save_active_markets(self.betting_platforms[market_name]["questions_filepath"], None)
 
@@ -102,9 +103,9 @@ class QuestionData:
         
         qmap = QuestionMap()
         qmap.map_questions_across_platforms(questions_by_platform)
-        print("Mapping all questions across platforms to a semantically unique question...")
+        logging.info("Mapping all questions across platforms to a semantically unique question...")
         qmap.get_best_match_by_platform()
-        print("Finding most semantically equivalent question for each platform for each question...")
+        logging.info("Finding most semantically equivalent question for each platform for each question...")
         return qmap
     
     def save_question_map_to_json(self, question_map : QuestionMap, filepath : str) -> None:
@@ -112,12 +113,17 @@ class QuestionData:
             json.dump(question_map.to_json(), f, indent = 4)
 
     def get_bet_opportunities(self) -> list[BetOpportunity]:
+        """Loads the latest bet opportunities from storage
+
+        Returns:
+            list[BetOpportunity]: list of current bet opportunites
+        """
         json_file = BET_OPPORTUNITIES_FILE
         with open(json_file, 'r') as f:
             bet_opportunities = json.load(f)
             return [BetOpportunity.from_json(bo) for bo in bet_opportunities]
 
-    def get_bet_opportunities_from_question_map(self, question_map: QuestionMap, n : (int | None) = None, llm_check = False) -> tuple[list[BetOpportunity], float]: 
+    def get_bet_opportunities_from_question_map(self, question_map: QuestionMap, n : (int | None) = None, llm_check : bool = False, llm_model : LLM | None = None) -> tuple[list[BetOpportunity], float]: 
         """Given a QuestionMap, gets a list of bet opportunities
 
         Args:
@@ -172,13 +178,13 @@ class QuestionData:
                                 )
                             )
         # check market title equivalence
-        if llm_check:
+        if llm_check and llm_model:
             # further guarantee name semantic equivalence using an LLM
-            print("filtering for semantic equivalence via llm...")
+            logging.info("filtering for semantic equivalence via llm...")
             titles : list[BetOpportunityTitles] = [{"id" : x.id, 
                     "market_1_question" : x.market_1.question, 
                     "market_2_question" : x.market_2.question} for x in out]
-            valid_ids, llm_cost = filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities=titles)
+            valid_ids, llm_cost = filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities=titles, model = llm_model)
             return list(filter(lambda x: x.id in valid_ids, out)), llm_cost
         return out, 0.0
 
@@ -227,11 +233,11 @@ class QuestionData:
                 bo.refresh_return_calculations()
                 out.append(bo)
             elif market_id_1 in updated_market_map:
-                print("Could not get market date for platform {} market {}".format(bo.market_2.platform, market_id_2))
+                logging.info("Could not get market date for platform {} market {}".format(bo.market_2.platform, market_id_2))
             elif market_id_2 in updated_market_map:
-                print("Could not get market date for platform {} market {}".format(bo.market_1.platform, market_id_1))
+                logging.info("Could not get market date for platform {} market {}".format(bo.market_1.platform, market_id_1))
             else:
-                print("Could not get market data for question {}".format(bo.question))
+                logging.info("Could not get market data for question {}".format(bo.question))
         return out
     
     def save_bet_opportunities(self, bet_opportunities : list[BetOpportunity]) -> None:
@@ -239,7 +245,7 @@ class QuestionData:
         filepath = BET_OPPORTUNITIES_FILE
         with open(filepath, "w") as json_file:
             json.dump(to_save, json_file, indent = 4)
-        print(f"Bet opportunities saved to {filepath}")
+        logging.info(f"Bet opportunities saved to {filepath}")
 
     def get_bet_opportunity(self, id : str) -> BetOpportunity:
         return [x for x in self.get_bet_opportunities() if x.id == id].pop(0)

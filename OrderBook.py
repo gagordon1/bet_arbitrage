@@ -8,8 +8,13 @@ class OrderbookData(TypedDict):
     bids : list[Order] #sorted by price increasing
     asks : list[Order] #sorted by price decreasing
 
+DEFAULT_ORDERBOOK_DATA : OrderbookData = {
+    "asks" : [],
+    "bids" : []
+}
+
 class OrderBook:
-    def __init__(self, orderbook_data : OrderbookData):
+    def __init__(self, orderbook_data : OrderbookData = DEFAULT_ORDERBOOK_DATA):
         self.data = self.sort_orderbook_data(orderbook_data)
 
     def sort_orderbook_data(self, data : OrderbookData) -> OrderbookData:
@@ -21,6 +26,12 @@ class OrderBook:
             "asks" : sorted_asks,
             "bids" :  sorted_bids
         }
+
+    def get_sorted_asks(self) -> list[Order]:
+        return self.data["asks"]
+    
+    def get_sorted_bids(self) -> list[Order]:
+        return self.data["bids"]
 
     def implied_ask_price(self, amount : float) -> float:
         return 0.0 #TBU

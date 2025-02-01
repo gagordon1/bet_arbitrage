@@ -9,7 +9,7 @@ KALSHI_REQUEST_LIMIT = 100
 
 POLYMARKET_REQUEST_LIMIT = 500
 
-SIMILARITY_CUTOFF = .85
+SIMILARITY_CUTOFF = .70
 
 BETTING_PLATFORM_DATA = {
         "Kalshi" : {
@@ -67,5 +67,26 @@ LLM_INFO : dict[Enum, LLMInfoDict] = {
         "api_key_name" : "DEEPSEEK_API_KEY",
         "cost_per_1m_input_tokens" : .014,
         "cost_per_1m_output_tokens" : .14
+    },
+    LLM.openai_4o : {
+        "base_url" : "https://api.openai.com/v1/",
+        "model_name" : "gpt-4o", 
+        "api_key_name" : "OPENAI_API_KEY",
+        "cost_per_1m_input_tokens" : 2.5,
+        "cost_per_1m_output_tokens" : 10.0
+    },
+    LLM.openai_4o_mini : {
+        "base_url" : "https://api.openai.com/v1/",
+        "model_name" : "gpt-4o-mini", 
+        "api_key_name" : "OPENAI_API_KEY",
+        "cost_per_1m_input_tokens" : .15,
+        "cost_per_1m_output_tokens" : .6
     }
+
 }
+
+class BetOpportunitySortKey(str, Enum):
+    parity_return = "parity return"
+    parity_return_annualized = "parity return annualized"
+    parity_return_orderbook_aware = "parity return orderbook aware"
+    parity_return_orderbook_aware_annualized = "parity return orderbook aware annualized"
