@@ -45,7 +45,17 @@ class KalshiAPI:
 
         path = f"{self.client.markets_url}/{ticker}/orderbook"
         response : KalshiGetMarketOrderbookResponse = self.client.get(path)
-        return response 
+        orderbook = response["orderbook"]
+        out: KalshiGetMarketOrderbookResponse ={
+            "orderbook" : {
+                "yes" :[],
+                "no" : []
+            }
+        }
+        for side in ["no", "yes"]:
+            if orderbook[side]:
+                out["orderbook"][side] = orderbook[side]
+        return out
 
     def get_markets(self, limit : int, status : str, cursor : str | None) -> KalshiGetMarketsResponse:
         response : KalshiGetMarketsResponse = self.client.get(self.client.markets_url, params ={

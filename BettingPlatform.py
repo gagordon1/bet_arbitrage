@@ -334,8 +334,9 @@ class Kalshi(BettingPlatform):
                 "bids" : [{"price" : float(x[0])/100, "size" : float(x[1])} for x in no_asks_response]
             }
             return [OrderBook(yes_orderbook), OrderBook(no_orderbook)]
-        except:
+        except Exception as e:
             logging.info(f"error retrieving orderbook data for {data.platform} {data.id}")
+            logging.error(f"Full error: {e}")
             return [OrderBook(), OrderBook()] #returns empty orderbook data
         
 

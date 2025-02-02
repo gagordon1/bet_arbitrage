@@ -10,7 +10,7 @@ logging.basicConfig(
     format="%(levelname)s - %(message)s",  # Log format
 )
 
-def sort_bet_opportunities(sort_key : BetOpportunitySortKey, ops : list[BetOpportunity]) -> list[BetOpportunity]:
+def sort_bet_opportunities(sort_key : BetOpportunitySortKey, ops : list[BetOpportunity], n: int | None = None) -> list[BetOpportunity]:
 
     def lambda_func(x : BetOpportunity):
         if sort_key == BetOpportunitySortKey.parity_return:
@@ -29,6 +29,8 @@ def sort_bet_opportunities(sort_key : BetOpportunitySortKey, ops : list[BetOppor
             key=lambda_func,
             reverse = True
         )
+    if n:
+        return ops[:n]
     return ops
 
 def save_active_question_data_for_all_markets():
@@ -58,7 +60,7 @@ def get_bet_opportunities(sort : (BetOpportunitySortKey | None) = None) -> list[
     else:
         return ops
 
-def refresh_bet_opportunities(sort : BetOpportunitySortKey | None = None, qdata : QuestionData | None = None) -> list[BetOpportunity]:
+def refresh_bet_opportunities(sort : BetOpportunitySortKey | None = None, qdata : QuestionData | None = None, n : int | None = None) -> list[BetOpportunity]:
     """Refreshes bet opportunites with latest non-orderbook aware market data
 
     Args:
@@ -74,7 +76,7 @@ def refresh_bet_opportunities(sort : BetOpportunitySortKey | None = None, qdata 
     updated_data = qdata.get_updated_bet_opportunity_data()
     qdata.save_bet_opportunities(updated_data)
     if sort:
-        return sort_bet_opportunities(sort, updated_data)
+        return sort_bet_opportunities(sort, updated_data, n = n)
     else:
         return updated_data
 
@@ -115,7 +117,7 @@ def get_bet_opportunity_orderbooks(id : str) -> tuple[BetOpportunity, BetOpportu
 def get_top_n_opportunities(
         n : int = 20, 
         final_sort = BetOpportunitySortKey.parity_return_orderbook_aware_annualized,
-        initial_sort = BetOpportunitySortKey.parity_return) -> list[tuple[BetOpportunity, float]]:
+        initial_sort = BetOpportunitySortKey.parity_return_annualized) -> list[tuple[BetOpportunity, float]]:
     """Refreshes market data for top n highest return bet opportunite, sorting by final sort
     Algorithm initially sorts by a non-orderbook-aware method as an optimization, then for the top opportunites pulls orderbook
     data for each finding the top n opportunities
@@ -128,10 +130,9 @@ def get_top_n_opportunities(
     Returns:
         list[BetOpportunity]: list of the top n bet opportunites
     """
-    BET_SIZE = 10
+    BET_SIZE = 200
     qdata = QuestionData()
-    ops = refresh_bet_opportunities(sort=initial_sort, qdata=qdata)
-    top_n_ops = ops[:n]
+    top_n_ops = refresh_bet_opportunities(sort=initial_sort, qdata=qdata, n = n)   
     out : list[tuple[BetOpportunity, float]] = []
     for op in top_n_ops:
         orderbooks = qdata.get_orderbooks(op)
@@ -144,18 +145,19 @@ def get_top_n_opportunities(
     return sorted(out, key= lambda x : x[1], reverse=True)
 
 if __name__ == "__main__":
-    # save_active_question_data_for_all_markets()
-    # generate_and_save_question_map()
-    # ops, cost = build_bet_opportunities(llm_check=True, llm_model = LLM.openai_4o_mini)
-    # logging.info(f"LLM cost: ${round(cost,5)}")
+    save_active_question_data_for_all_markets()
+    generate_and_save_question_map()
+    ops, cost = build_bet_opportunities(llm_check=True, llm_model = LLM.openai_4o_mini)
+    logging.info(f"LLM cost: ${round(cost,5)}")
     # refresh_bet_opportunities()
     # build_bet_opportunities()
     # refresh_bet_opportunities(sort = BetOpportunitySortKey.parity_return_orderbook_aware)
-    top_n = get_top_n_opportunities(n = 100)
-    for op, r in top_n:
-        market_1_platform = op.market_1.platform
-        market_2_platform = op.market_2.platform
-        market_1_name = op.market_1.question
-        market_2_name = op.market_2.question
-        logging.info("-----"*5)
-        logging.info(f"Market 1 Platform / Question: {market_1_platform} /  {market_1_name}\nMarket 2 Platform / Question: {market_2_platform} / {market_2_name}\nOrderbook size aware return: {r}")
+    # top_n = get_top_n_opportunities(n = 100)
+    # for op, r in top_n:
+    #     if r > 1:
+    #         market_1_platform = op.market_1.platform
+    #         market_2_platform = op.market_2.platform
+    #         market_1_name = op.market_1.question
+    #         market_2_name = op.market_2.question
+    #         logging.info("-----"*5)
+    #         logging.info(f"Market 1 Platform / Question: {market_1_platform} / {market_1_name}\nMarket 2 Platform / Question: {market_2_platform} / {market_2_name}\nOrderbook size aware return: {r}")
