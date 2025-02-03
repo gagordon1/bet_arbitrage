@@ -186,6 +186,9 @@ class BookParams(TypedDict):
 
 class Polymarket(BettingPlatform):
 
+    def __init__(self):
+        self.platform_name = BetPlatform.Polymarket.value
+
     def generate_book_params(self, token_ids : List[str]) -> List[BookParams]:
         out : List[BookParams] = []
         for t in token_ids:
@@ -250,7 +253,7 @@ class Polymarket(BettingPlatform):
             no_bid = no_prices[i][0]
             if valid_prices(yes_ask, no_ask, yes_bid, no_bid):
                 out.append(BinaryMarket(
-                    "Polymarket",
+                    self.platform_name,
                     data[i].question,
                     data[i].id,
                     data[i].yes_id,
@@ -306,19 +309,16 @@ class Polymarket(BettingPlatform):
     
 class Kalshi(BettingPlatform):
 
-    def __init__(self, host : str, platform_name : str):
-        self.host = host # election endpoint is different
-        self.platform_name = platform_name
+    def __init__(self):
+        self.host = KALSHI_ENDPOINT
+        self.platform_name = BetPlatform.Kalshi.value
         load_dotenv()
         kalshi_key_id = os.getenv("KALSHI_API_KEY_ID")
         kalshi_key_file = os.getenv("KALSHI_KEY_FILE")
         self.api = KalshiAPI(kalshi_key_id, kalshi_key_file)
     
     def get_orderbooks(self, data : (BinaryMarketMetadata | BinaryMarket)) -> list[OrderBook]:
-
-
         try:
-        
             response = self.api.get_market_orderbook(ticker = data.id)
             
             yes_bids_response = response["orderbook"]["yes"]

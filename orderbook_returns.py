@@ -47,7 +47,7 @@ def get_max_return(m1: OrderBook, m2 : OrderBook) -> tuple[float, float]:
     return size, 1 / (price_m1 + price_m2)
 
         
-def get_market_return(m1 : OrderBook, m2 : OrderBook, yes_contracts : int, no_contracts : int ) -> float | None:
+def get_market_return(m1 : OrderBook, m2 : OrderBook, yes_contracts : float, no_contracts : float ) -> float | None:
     """Gets return of two markets. buys yes contracts on first market and no contracts on second market
 
     Args:
@@ -60,11 +60,11 @@ def get_market_return(m1 : OrderBook, m2 : OrderBook, yes_contracts : int, no_co
     m1_yes_ep = get_effective_price(m1.get_sorted_asks(), yes_contracts)
     m2_no_ep = get_effective_price(m2.get_sorted_asks(), no_contracts)
     if m1_yes_ep and m2_no_ep:
-        return 1 / (m1_yes_ep + m2_no_ep)
+        return 1 / (m1_yes_ep + m2_no_ep) - 1
     else:
         return None
 
-def get_return_size_aware(yes_contracts : int, no_contracts : int,
+def get_return_size_aware(yes_contracts : float, no_contracts : float,
                       market_1_yes_orderbook : OrderBook,
                       market_1_no_orderbook : OrderBook,
                       market_2_yes_orderbook : OrderBook,

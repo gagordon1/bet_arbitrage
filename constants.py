@@ -11,11 +11,15 @@ POLYMARKET_REQUEST_LIMIT = 500
 
 SIMILARITY_CUTOFF = .70
 
+class BetPlatform(str, Enum):
+    Kalshi = "Kalshi"
+    Polymarket = "Polymarket"
+
 BETTING_PLATFORM_DATA = {
-        "Kalshi" : {
+        BetPlatform.Kalshi : {
             "question_filepath" :  "question_data/kalshi.json",
         }, 
-        "Polymarket" : {
+        BetPlatform.Polymarket : {
             "question_filepath" : "question_data/polymarket.json",
         },  
 }
@@ -84,6 +88,9 @@ LLM_INFO : dict[Enum, LLMInfoDict] = {
     }
 
 }
+
+class Strategy(str, Enum):
+    arbitrage_1 = "arbitrage_1"
 
 class BetOpportunitySortKey(str, Enum):
     parity_return = "parity return"
