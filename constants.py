@@ -9,7 +9,7 @@ KALSHI_REQUEST_LIMIT = 100
 
 POLYMARKET_REQUEST_LIMIT = 500
 
-SIMILARITY_CUTOFF = .70
+SIMILARITY_CUTOFF = .6
 
 class BetPlatform(str, Enum):
     Kalshi = "Kalshi"

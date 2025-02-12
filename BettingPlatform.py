@@ -44,6 +44,7 @@ class BinaryMarketMetadata:
         id : str,
         yes_id : str | None,
         no_id : str | None,
+        description : str,
         end_date : datetime
     ): 
         self.platform = platform
@@ -51,6 +52,7 @@ class BinaryMarketMetadata:
         self.id = id
         self.yes_id = yes_id
         self.no_id = no_id
+        self.description = description
         self.end_date = end_date
     # Method to convert the object to a JSON-compatible dictionary
     def to_json(self) -> dict:
@@ -60,6 +62,7 @@ class BinaryMarketMetadata:
             'id': self.id,
             'yes_id': self.yes_id,
             'no_id': self.no_id,
+            'description' : self.description,
             'end_date' : self.end_date.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
         }
 
@@ -72,6 +75,7 @@ class BinaryMarketMetadata:
             id=data['id'],
             yes_id=data.get('yes_id'),
             no_id=data.get('no_id'),
+            description = data.get('description'),
             end_date = parser.parse(data.get("end_date")).astimezone(timezone.utc)
         )
 
@@ -88,6 +92,7 @@ class BinaryMarket:
             yes_bid : float,
             no_bid : float,
             end_date : datetime,
+            description : str,
             can_close_early : bool | None = None
         ):
         self.platform = platform
@@ -100,6 +105,7 @@ class BinaryMarket:
         self.yes_bid = float(yes_bid)
         self.no_bid = float(no_bid)
         self.end_date = end_date
+        self.description = description
         self.can_close_early = can_close_early
     
     def __str__(self) -> str:
@@ -121,6 +127,7 @@ class BinaryMarket:
             'yes_bid': self.yes_bid,
             'no_bid': self.no_bid,
             'end_date' : self.end_date.strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
+            'description' : self.description,
             'can_close_early' : self.can_close_early
         }
 
@@ -138,6 +145,7 @@ class BinaryMarket:
             yes_bid=data.get('yes_bid'),
             no_bid=data.get('no_bid'),
             end_date = parser.parse(data.get("end_date")).astimezone(timezone.utc),
+            description = data.get('description'),
             can_close_early = data.get('can_close_early')
         )
         
@@ -262,7 +270,8 @@ class Polymarket(BettingPlatform):
                     float(no_ask),
                     float(yes_bid),
                     float(no_bid),
-                    data[i].end_date
+                    data[i].end_date,
+                    data[i].description,
                 ))
         return out
     
@@ -299,6 +308,7 @@ class Polymarket(BettingPlatform):
                                 market["condition_id"],
                                 next((t["token_id"] for t in tokens if t["outcome"] == "Yes"),None),
                                 next((t["token_id"] for t in tokens if t["outcome"] == "No"),None),
+                                market["description"],
                                 end_date
                             )
                             questions.append(entry)
@@ -361,7 +371,8 @@ class Kalshi(BettingPlatform):
                             float(m["no_ask"])/100,
                             float(m["yes_bid"])/100,
                             float(m["no_bid"])/100,
-                            parser.parse(m["expiration_time"]).astimezone(timezone.utc)
+                            parser.parse(m["expiration_time"]).astimezone(timezone.utc),
+                            m["rules_primary"]
                         )
                     )
         return out
@@ -391,6 +402,7 @@ class Kalshi(BettingPlatform):
                     market["ticker"],
                     None,
                     None,
+                    market["rules_primary"],
                     parser.parse(market["expiration_time"]).astimezone(timezone.utc)
                 )
                 questions.append(q)

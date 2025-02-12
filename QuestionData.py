@@ -183,7 +183,10 @@ class QuestionData:
             logging.info("filtering for semantic equivalence via llm...")
             titles : list[BetOpportunityTitles] = [{"id" : x.id, 
                     "market_1_question" : x.market_1.question, 
-                    "market_2_question" : x.market_2.question} for x in out]
+                    "market_1_description" : x.market_1.description,
+                    "market_2_question" : x.market_2.question,
+                    "market_2_description" : x.market_2.description
+                    } for x in out]
             valid_ids, llm_cost = filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities=titles, model = llm_model)
             return list(filter(lambda x: x.id in valid_ids, out)), llm_cost
         return out, 0.0

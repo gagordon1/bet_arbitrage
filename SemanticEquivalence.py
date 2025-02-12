@@ -12,7 +12,9 @@ import logging
 class BetOpportunityTitles(TypedDict):
     id : str
     market_1_question : str
+    market_1_description : str
     market_2_question : str
+    market_2_description : str
 
 class SemanticEquivalence:
     def __init__(self):
@@ -65,7 +67,7 @@ def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : l
         set[str]: set of bet opportunity ids that are semantically equivalent
         float: cost of the llm operation
     """
-    ENTRIES_PER_LLM_REQUEST = 50
+    ENTRIES_PER_LLM_REQUEST = 30
     load_dotenv()
     batches = [bet_opportunities[i:i+ENTRIES_PER_LLM_REQUEST] for i in range(0, len(bet_opportunities), ENTRIES_PER_LLM_REQUEST)]
     api_key_name = LLM_INFO[model]["api_key_name"]
@@ -73,6 +75,7 @@ def filter_bet_opportunities_with_llm_semantic_equivalence(bet_opportunities : l
     model_name = LLM_INFO[model]["model_name"]
     prompt_prefix = """for the below list, return a list of ids where market_1_question is semantically equivalent to market_2_question 
     i.e. they mean precisely the same thing. Return as a valid json list of strings for the valid ids. 
+    It is critical that returned ids are completely equivalent, meaning if the answer to one is yes the answer to the other must also be yes in all cases (and vice versa).
     In your response include no extra explanation or text just the list 
     Example response: 
     [

@@ -92,8 +92,8 @@ if __name__ == "__main__":
     data_manager = BetDataManager()
     # data_manager.save_active_question_data_for_all_markets()
     # data_manager.generate_and_save_question_map()
-    bet_ops, cost = data_manager.build_bet_opportunities(llm_check=True, llm_model=LLM.deepseek_r1 )
-    # logging.info(f"LLM cost: ${round(cost, 5)}")
+    bet_ops, cost = data_manager.build_bet_opportunities(llm_check=True, llm_model=LLM.openai_4o )
+    logging.info(f"LLM cost: ${round(cost, 5)}")
 
     # **Step 2: Get Actionables**
     # analyzer = BetArbitrageAnalyzer()

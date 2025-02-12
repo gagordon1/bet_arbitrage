@@ -18,6 +18,7 @@ class KalshiMarketResponse(TypedDict):
     yes_bid : int
     no_ask : int
     no_bid : int
+    rules_primary : str
 
 class KalshiGetMarketsResponse(TypedDict):
     cursor : str

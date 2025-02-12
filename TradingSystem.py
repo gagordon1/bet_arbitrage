@@ -3,6 +3,7 @@ import logging
 from TradingOpportunities import BetDataManager, BetArbitrageAnalyzer
 from constants import Strategy
 from strategies.arbitrage_1 import ArbitrageV1
+from constants import *
 
 STRATEGIES = {
     Strategy.arbitrage_1 : ArbitrageV1
@@ -38,6 +39,11 @@ class BetTradingSystem:
         STRATEGIES[strategy]().run()
 
 if __name__ == "__main__":
+    # dm = BetDataManager()
+    # dm.save_active_question_data_for_all_markets()
+    # dm.generate_and_save_question_map()
+    # ops, cost = dm.build_bet_opportunities(llm_check=True, llm_model=LLM.openai_4o)
+    # logging.info(f"Model Cost: {cost}")
     trading_system = BetTradingSystem(refresh_interval=300)  # Refresh every 5 minutes
     # trading_system.run(Strategy.arbitrage_1)
     trading_system.run_strategy(Strategy.arbitrage_1)

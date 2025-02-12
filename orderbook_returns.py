@@ -6,7 +6,7 @@ class Returns(TypedDict):
     no_contracts : float
     returns : float
 
-def get_effective_price(asks : list[Order], contracts : float) -> float | None:
+def get_effective_price(asks : list[Order], contracts : float, i : int = 0) -> float | None:
     """Given an orderbook and a number of contracts to buy, get the effective price.
 
     Args:
@@ -16,16 +16,15 @@ def get_effective_price(asks : list[Order], contracts : float) -> float | None:
     Returns: 
         float | None : effective price of the transaction, None if insufficient available asks to complete the transaction
     """
-    if len(asks) == 0:
+    if len(asks) == i:
         return None
     else:
-        ask = asks[0]
-        remaining_asks = asks[1:]
+        ask = asks[i]
         price, size = ask['price'], ask['size']
         if size >= contracts:
             return price
         remaining_contracts = contracts - size
-        effective_price_remaining = get_effective_price(remaining_asks, remaining_contracts)
+        effective_price_remaining = get_effective_price(asks, remaining_contracts, i + 1)
         if effective_price_remaining == None:
             return None
         else:
